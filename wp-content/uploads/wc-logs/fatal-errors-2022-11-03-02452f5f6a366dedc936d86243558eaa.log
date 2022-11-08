@@ -1,0 +1,164 @@
+2022-11-03T20:50:52+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/index.php dosyasında 7 numaralı satırda Uncaught Error: Call to undefined function get_field() in /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/index.php:7
+Stack trace:
+#0 /home/hellospace/public_html/vosistanbul/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vosistanbul/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vosistanbul/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-11-03T20:50:57+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/index.php dosyasında 7 numaralı satırda Uncaught Error: Call to undefined function get_field() in /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/index.php:7
+Stack trace:
+#0 /home/hellospace/public_html/vosistanbul/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vosistanbul/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vosistanbul/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-11-03T20:51:00+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/index.php dosyasında 7 numaralı satırda Uncaught Error: Call to undefined function get_field() in /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/index.php:7
+Stack trace:
+#0 /home/hellospace/public_html/vosistanbul/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vosistanbul/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vosistanbul/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-11-03T20:51:02+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/index.php dosyasında 7 numaralı satırda Uncaught Error: Call to undefined function get_field() in /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/index.php:7
+Stack trace:
+#0 /home/hellospace/public_html/vosistanbul/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vosistanbul/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vosistanbul/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-11-03T20:51:07+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/category.php dosyasında 63 numaralı satırda Uncaught Error: Call to undefined function get_field() in /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/category.php:63
+Stack trace:
+#0 /home/hellospace/public_html/vosistanbul/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vosistanbul/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vosistanbul/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-11-03T20:51:19+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/category.php dosyasında 63 numaralı satırda Uncaught Error: Call to undefined function get_field() in /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/category.php:63
+Stack trace:
+#0 /home/hellospace/public_html/vosistanbul/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vosistanbul/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vosistanbul/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-11-03T20:51:26+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/category.php dosyasında 63 numaralı satırda Uncaught Error: Call to undefined function get_field() in /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/category.php:63
+Stack trace:
+#0 /home/hellospace/public_html/vosistanbul/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vosistanbul/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vosistanbul/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-11-03T20:51:26+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/category.php dosyasında 63 numaralı satırda Uncaught Error: Call to undefined function get_field() in /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/category.php:63
+Stack trace:
+#0 /home/hellospace/public_html/vosistanbul/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vosistanbul/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vosistanbul/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-11-03T20:51:29+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/category.php dosyasında 63 numaralı satırda Uncaught Error: Call to undefined function get_field() in /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/category.php:63
+Stack trace:
+#0 /home/hellospace/public_html/vosistanbul/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vosistanbul/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vosistanbul/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-11-03T20:51:31+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/category.php dosyasında 63 numaralı satırda Uncaught Error: Call to undefined function get_field() in /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/category.php:63
+Stack trace:
+#0 /home/hellospace/public_html/vosistanbul/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vosistanbul/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vosistanbul/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-11-03T20:51:32+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/category.php dosyasında 63 numaralı satırda Uncaught Error: Call to undefined function get_field() in /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/category.php:63
+Stack trace:
+#0 /home/hellospace/public_html/vosistanbul/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vosistanbul/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vosistanbul/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-11-03T20:51:40+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/index.php dosyasında 7 numaralı satırda Uncaught Error: Call to undefined function get_field() in /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/index.php:7
+Stack trace:
+#0 /home/hellospace/public_html/vosistanbul/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vosistanbul/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vosistanbul/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-11-03T20:51:49+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/category.php dosyasında 63 numaralı satırda Uncaught Error: Call to undefined function get_field() in /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/category.php:63
+Stack trace:
+#0 /home/hellospace/public_html/vosistanbul/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vosistanbul/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vosistanbul/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-11-03T20:51:53+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/category.php dosyasında 63 numaralı satırda Uncaught Error: Call to undefined function get_field() in /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/category.php:63
+Stack trace:
+#0 /home/hellospace/public_html/vosistanbul/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vosistanbul/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vosistanbul/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-11-03T20:59:55+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php dosyasında 86 numaralı satırda Uncaught RuntimeException: Eylem kaydedilirken hata oluştu: Veritabanı hatası. in /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:86
+Stack trace:
+#0 /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_ActionFactory.php(177): ActionScheduler_DBStore->save_action(Object(ActionScheduler_Action))
+#1 /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#2 /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/functions.php(36): ActionScheduler_ActionFactory->single('woocommerce_run...', Array, 1667509192, 'woocommerce-rem...')
+#3 /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/includes/queue/class-wc-action-queue.php(44): 
+
+2022-11-03T21:01:10+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php dosyasında 86 numaralı satırda Uncaught RuntimeException: Eylem kaydedilirken hata oluştu: Duplicate entry '0' for key 'PRIMARY' in /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:86
+Stack trace:
+#0 /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_ActionFactory.php(177): ActionScheduler_DBStore->save_action(Object(ActionScheduler_Action))
+#1 /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#2 /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/functions.php(36): ActionScheduler_ActionFactory->single('wc-admin_import...', Array, 1667509275, 'wc-admin-data')
+#3 /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/includes/queue/class-wc-action-que
+
+2022-11-03T21:01:55+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php dosyasında 86 numaralı satırda Uncaught RuntimeException: Eylem kaydedilirken hata oluştu: Duplicate entry '0' for key 'PRIMARY' in /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:86
+Stack trace:
+#0 /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_ActionFactory.php(177): ActionScheduler_DBStore->save_action(Object(ActionScheduler_Action))
+#1 /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#2 /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/functions.php(36): ActionScheduler_ActionFactory->single('woocommerce_run...', Array, 1667509315, 'woocommerce-db-...')
+#3 /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/includes/queue/class-wc-actio
+
+2022-11-03T21:03:07+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/index.php dosyasında 7 numaralı satırda Uncaught Error: Call to undefined function get_field() in /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/index.php:7
+Stack trace:
+#0 /home/hellospace/public_html/vosistanbul/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vosistanbul/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vosistanbul/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-11-03T21:14:15+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/category.php dosyasında 63 numaralı satırda Uncaught Error: Call to undefined function get_field() in /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/category.php:63
+Stack trace:
+#0 /home/hellospace/public_html/vosistanbul/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vosistanbul/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vosistanbul/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-11-03T21:14:18+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/index.php dosyasında 7 numaralı satırda Uncaught Error: Call to undefined function get_field() in /home/hellospace/public_html/vosistanbul/wp-content/themes/vosistanbul/index.php:7
+Stack trace:
+#0 /home/hellospace/public_html/vosistanbul/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vosistanbul/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vosistanbul/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-11-03T21:24:32+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php dosyasında 86 numaralı satırda Uncaught RuntimeException: Eylem kaydedilirken hata oluştu: Veritabanı hatası. in /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:86
+Stack trace:
+#0 /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_ActionFactory.php(177): ActionScheduler_DBStore->save_action(Object(ActionScheduler_Action))
+#1 /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#2 /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/functions.php(36): ActionScheduler_ActionFactory->single('wc-admin_import...', Array, 1667510677, 'wc-admin-data')
+#3 /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/includes/queue/class-wc-action-queue.php(44): as_sc
+
