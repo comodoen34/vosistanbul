@@ -1,0 +1,118 @@
+[11-Nov-2022 21:55:15 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 21:55:15 Europe/Istanbul] PHP Warning:  require(/home/hellospace/public_html/vos/wp-includes/version.php): failed to open stream: No such file or directory in /home/hellospace/public_html/vos/wp-settings.php on line 33
+[11-Nov-2022 21:55:15 Europe/Istanbul] PHP Warning:  require(/home/hellospace/public_html/vos/wp-includes/version.php): failed to open stream: No such file or directory in /home/hellospace/public_html/vos/wp-settings.php on line 33
+[11-Nov-2022 21:55:15 Europe/Istanbul] PHP Fatal error:  require(): Failed opening required '/home/hellospace/public_html/vos/wp-includes/version.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/hellospace/public_html/vos/wp-settings.php on line 33
+[11-Nov-2022 21:57:16 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 21:57:16 Europe/Istanbul] PHP Warning:  require(/home/hellospace/public_html/vos/wp-includes/version.php): failed to open stream: No such file or directory in /home/hellospace/public_html/vos/wp-settings.php on line 33
+[11-Nov-2022 21:57:16 Europe/Istanbul] PHP Warning:  require(/home/hellospace/public_html/vos/wp-includes/version.php): failed to open stream: No such file or directory in /home/hellospace/public_html/vos/wp-settings.php on line 33
+[11-Nov-2022 21:57:16 Europe/Istanbul] PHP Fatal error:  require(): Failed opening required '/home/hellospace/public_html/vos/wp-includes/version.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/hellospace/public_html/vos/wp-settings.php on line 33
+[11-Nov-2022 21:59:17 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 21:59:17 Europe/Istanbul] PHP Warning:  require(/home/hellospace/public_html/vos/wp-includes/version.php): failed to open stream: No such file or directory in /home/hellospace/public_html/vos/wp-settings.php on line 33
+[11-Nov-2022 21:59:17 Europe/Istanbul] PHP Warning:  require(/home/hellospace/public_html/vos/wp-includes/version.php): failed to open stream: No such file or directory in /home/hellospace/public_html/vos/wp-settings.php on line 33
+[11-Nov-2022 21:59:17 Europe/Istanbul] PHP Fatal error:  require(): Failed opening required '/home/hellospace/public_html/vos/wp-includes/version.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/hellospace/public_html/vos/wp-settings.php on line 33
+[11-Nov-2022 22:01:31 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:01:31 Europe/Istanbul] PHP Warning:  require(/home/hellospace/public_html/vos/wp-includes/version.php): failed to open stream: No such file or directory in /home/hellospace/public_html/vos/wp-settings.php on line 33
+[11-Nov-2022 22:01:31 Europe/Istanbul] PHP Warning:  require(/home/hellospace/public_html/vos/wp-includes/version.php): failed to open stream: No such file or directory in /home/hellospace/public_html/vos/wp-settings.php on line 33
+[11-Nov-2022 22:01:31 Europe/Istanbul] PHP Fatal error:  require(): Failed opening required '/home/hellospace/public_html/vos/wp-includes/version.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/hellospace/public_html/vos/wp-settings.php on line 33
+[11-Nov-2022 22:03:29 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:03:29 Europe/Istanbul] PHP Warning:  require(/home/hellospace/public_html/vos/wp-includes/version.php): failed to open stream: No such file or directory in /home/hellospace/public_html/vos/wp-settings.php on line 33
+[11-Nov-2022 22:03:29 Europe/Istanbul] PHP Warning:  require(/home/hellospace/public_html/vos/wp-includes/version.php): failed to open stream: No such file or directory in /home/hellospace/public_html/vos/wp-settings.php on line 33
+[11-Nov-2022 22:03:29 Europe/Istanbul] PHP Fatal error:  require(): Failed opening required '/home/hellospace/public_html/vos/wp-includes/version.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/hellospace/public_html/vos/wp-settings.php on line 33
+[11-Nov-2022 22:05:38 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 19:05:38 UTC] PHP Warning:  require_once(/home/hellospace/public_html/vos/wp-includes/sodium_compat/src/Compat.php): failed to open stream: No such file or directory in /home/hellospace/public_html/vos/wp-includes/sodium_compat/autoload.php on line 45
+[11-Nov-2022 19:05:38 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/hellospace/public_html/vos/wp-includes/sodium_compat/src/Compat.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/hellospace/public_html/vos/wp-includes/sodium_compat/autoload.php on line 45
+[11-Nov-2022 22:07:42 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:07:52 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:07:59 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:08:14 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:08:46 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:08:54 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:08:56 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:08:56 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:08:56 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:08:56 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:09:00 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:09:03 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:09:10 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:09:11 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:09:11 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:09:11 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:09:12 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:09:29 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:09:39 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:09:41 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:09:42 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:09:50 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:09:52 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:10:02 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:10:53 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:12:12 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:13:11 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:14:10 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:15:10 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:16:22 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:17:18 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:18:41 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:19:18 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:19:18 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:20:41 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:21:26 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:22:46 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:23:08 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:23:37 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:24:57 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:25:37 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:25:38 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:26:59 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:02 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:03 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:06 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:08 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:08 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:08 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:09 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:09 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:09 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:10 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:11 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:14 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:14 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:14 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:14 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:15 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:30 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:41 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:45 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:51 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:52 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:53 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:27:57 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:28:12 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:29:04 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:29:09 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:29:21 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:29:23 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:29:28 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:29:31 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:29:32 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:29:57 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:30:14 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:30:36 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:31:28 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:32:06 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:32:17 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:32:37 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:33:36 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:34:24 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:34:25 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:34:38 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:35:51 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:36:30 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:36:39 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:36:49 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:37:58 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:37:58 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:37:58 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:38:31 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:40:27 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[11-Nov-2022 22:40:33 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
