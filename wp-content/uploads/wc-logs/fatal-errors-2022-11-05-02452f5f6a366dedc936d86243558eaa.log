@@ -1,7 +1,0 @@
-2022-11-05T17:59:11+00:00 CRITICAL /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php dosyasında 86 numaralı satırda Uncaught RuntimeException: Eylem kaydedilirken hata oluştu: Duplicate entry '0' for key 'PRIMARY' in /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:86
-Stack trace:
-#0 /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_ActionFactory.php(177): ActionScheduler_DBStore->save_action(Object(ActionScheduler_Action))
-#1 /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
-#2 /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/packages/action-scheduler/functions.php(36): ActionScheduler_ActionFactory->single('wc-admin_import...', Array, 1667671155, 'wc-admin-data')
-#3 /home/hellospace/public_html/vosistanbul/wp-content/plugins/woocommerce/includes/queue/class-wc-action-que
-
