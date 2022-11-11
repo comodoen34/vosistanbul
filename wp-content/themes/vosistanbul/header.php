@@ -64,7 +64,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/nice-select.css" />
     <!-- Style CSS -->
     <!-- <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css" /> -->
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=1.0" />
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/responsive.css" />
 
@@ -503,13 +503,13 @@
                       </div>
                       <div class="currency">
                       <?php global $current_user; wp_get_current_user(); ?>
-                      <?php
-                      
-		if ( is_user_logged_in() ) { 
-      ?>
-          <a href="<?php echo wc_logout_url(); ?>" class="generalButton girisyapButton">ÇIKIŞ YAP</a>
-    <?php } else {
-	?>
+                          <?php
+                                            
+                          if ( is_user_logged_in() ) { 
+                            ?>
+                                <a href="<?php echo wc_logout_url(); ?>" class="generalButton girisyapButton">ÇIKIŞ YAP</a>
+                          <?php } else {
+                        ?>
                         <a href="<?php the_permalink( 48 ); ?>" class="generalButton girisyapButton">GİRİŞ YAP</a>
                         <?php } ?>
                       </div>

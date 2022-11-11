@@ -45,7 +45,7 @@
                   <img class="w-100 mw-100" src="<?php bloginfo('template_url'); ?>/images/logo/VOS_cicek_logo.png" width="150px" alt="" style="margin-bottom:15px;" />
                 </div>
                 <div class="col-12 col-md-7">
-
+                  <h2><?php echo $hakkimizda['alt_baslik_2']; ?></h2>
                   <?php echo $hakkimizda['icerik']; ?>
                   <a href="#" class="generalButton m-0 ms-auto">Keşfet</a>
                 </div>
@@ -75,31 +75,31 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="categories-img img-full mb-30">
-                    <a href="<?php echo $kategori_grids_layout['kategori_url_02']; ?>"
-                      ><img src="<?php bloginfo('template_url'); ?>/images/category/home1-category-2.jpg" alt=""
-                    /></a>
+                    <a href="<?php echo $kategori_grids_layout['kategori_url_01']; ?>">
+                    <img src="<?php echo $kategori_grids_layout['kategori_resim_01']['url']; ?>" alt="<?php echo $kategori_grids_layout['kategori_adi_01']; ?>" />
+                  </a>
                     <div class="categories-content">
-                      <h3>ÇİÇEKLER</h3>
+                      <h3><?php echo $kategori_grids_layout['kategori_adi_01']; ?></h3>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="categories-img img-full mb-30">
-                    <a href="<?php echo $kategori_grids_layout['kategori_url_03']; ?>"
-                      ><img src="<?php bloginfo('template_url'); ?>/images/category/home1-category-2.jpg" alt=""
-                    /></a>
+                    <a href="<?php echo $kategori_grids_layout['kategori_url_02']; ?>">
+                      <img src="<?php echo $kategori_grids_layout['kategori_resim_02']['url']; ?>" alt="<?php echo $kategori_grids_layout['kategori_adi_02']; ?>" />
+                    </a>
                     <div class="categories-content">
-                      <h3>BİTKİLER</h3>
+                      <h3><?php echo $kategori_grids_layout['kategori_adi_02']; ?></h3>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="categories-img img-full mb-30">
-                    <a href="<?php echo $kategori_grids_layout['kategori_url_04']; ?>"
-                      ><img src="<?php bloginfo('template_url'); ?>/images/category/home1-category-2.jpg" alt=""
-                    /></a>
+                    <a href="<?php echo $kategori_grids_layout['kategori_url_03']; ?>">
+                      <img src="<?php echo $kategori_grids_layout['kategori_resim_03']['url']; ?>" alt="<?php echo $kategori_grids_layout['kategori_adi_03']; ?>" />
+                    </a>
                     <div class="categories-content">
-                      <h3>HEDİYE KUTULARI</h3>
+                      <h3><?php echo $kategori_grids_layout['kategori_adi_03']; ?></h3>
                     </div>
                   </div>
                 </div>
@@ -121,6 +121,7 @@
             </div>
             <!--Section Title End-->
           </div>
+          <?php /*
           <div class="row">
             <div class="col-lg-8 col-md-10 col-12 ms-auto me-auto mb-20">
               <!--Count Down Area Start-->
@@ -179,6 +180,7 @@
               <!--Count Down Area End-->
             </div>
           </div>
+          */ ?>
           <div class="row">
             <div class="offer-slider p-0">
               <?php 

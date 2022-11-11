@@ -1,12 +1,6 @@
 <?php
 	add_theme_support( 'post-thumbnails' );
 	add_image_size('category-pic', 220, 318,true);
-    add_image_size('haber-details-pics', 1096, 378,true);
-    add_image_size('blog-pics', 610, 380,true);
-    add_image_size('makale-pics', 270, 170,true);
-    add_image_size('yayin-pics', 206, 262,true);
-    add_image_size('haber-pics', 350, 220,true);
-    add_image_size('icon-pics', 132, 113,true);
 	
 	register_nav_menus( array(
 		'primary' => 'Ana Menü',
