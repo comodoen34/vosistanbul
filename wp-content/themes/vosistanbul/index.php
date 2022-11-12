@@ -16,11 +16,11 @@
             <div class="slider-progress"></div>
             <div class="container">
               <div class="hero-slider-content d-flex flex-column align-items-center">
-                <h1 class="fw-normal text-light" style="font-family: Cormorant SC;">
+                <h1 class="fw-normal text-light text-center text-uppercase" style="font-family: Cormorant SC;">
                   <?php echo $val['baslik']; ?>
                 </h1>
                 <div class="slider-border bg-light"></div>
-                <p class="text-light text-uppercase fs-5">
+                <p class="text-light text-center text-uppercase fs-5">
                   <?php echo $val['icerik']; ?>
                 </p>
                 <div class="slider-btn mt-5">
