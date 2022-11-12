@@ -418,7 +418,7 @@
                     $mini_cart_items = $woocommerce->cart->get_cart();
                   ?>
                   <div class="header-option">
-                    <div class="mini-cart-search">
+                    <div class="mini-cart-search flex-shrink-0 flex-nowrap">
                       <div class="mini-cart">
                         <a href="#">
                           <span class="cart-icon">
