@@ -79,7 +79,7 @@ the_post(); ?>
               </a>
               <div class="categories-content">
                 <p class="categories-content-title fs-2 text-white">Etkinlik ve Organizasyon</p>
-                <button type="button" class="btn btn-light border-0 px-4 py-2 categories-content-button">Learn More</button>
+                <button type="button" class="btn btn-light border-0 px-4 py-2 categories-content-button">Daha Fazlası</button>
               </div>
             </div>
           </div>
@@ -90,7 +90,7 @@ the_post(); ?>
               </a>
               <div class="categories-content">
                 <p class="categories-content-title fs-2 text-white ">Kişiye Özel</p>
-                <button type="button" class="btn btn-light border-0 px-4 py-2 categories-content-button">Learn More</button>
+                <button type="button" class="btn btn-light border-0 px-4 py-2 categories-content-button">Daha Fazlası</button>
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@ the_post(); ?>
               </a>
               <div class="categories-content">
                 <p class="categories-content-title fs-2 text-white ">Atölyeler</p>
-                <button type="button" class="btn btn-light border-0 px-4 py-2 categories-content-button">Learn More</button>
+                <button type="button" class="btn btn-light border-0 px-4 py-2 categories-content-button">Daha Fazlası</button>
               </div>
             </div>
           </div>
