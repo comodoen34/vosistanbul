@@ -35,7 +35,7 @@ get_header();
 		                <!--Banner Widget End-->
 		            </div> */ ?>
 
-		            <div class="col-lg-9 order-1 order-lg-2">
+		            <div class="col-12 order-1 order-lg-2">
 		                <div class="shop-layout">
 		                    <!--Grid & List View Start-->
 		                    <div class="shop-topbar-wrapper d-md-flex justify-content-md-between align-items-center">
