@@ -1,127 +1,129 @@
 <?php get_header(); ?>
-      <!--Slider Area Start-->
-      <div class="slider-area">
-        <div class="hero-slider owl-carousel">
-          <!--Single Slider Start-->
-          <?php wp_reset_query(); query_posts('page_id=14');  the_post(); ?>
-          <?php $value = get_field( "banner" );
-           foreach($value as $key => $val){
-          ?>
-          <div
-            class="single-slider"
-            
-            <?php  /* style="background-image: url(<?php echo $val['resim']['url']; ?>)"  */?>
-            style="background-image: url('<?php bloginfo('template_url'); ?>/images/bg/bg3.jpg')"
-          >
-            <div class="slider-progress"></div>
-            <div class="container">
-              <div class="hero-slider-content d-flex flex-column align-items-center">
-                <h1 class="fw-normal text-light text-center text-uppercase" style="font-family: Cormorant SC;">
-                  <?php echo $val['baslik']; ?>
-                </h1>
-                <div class="slider-border bg-light"></div>
-                <p class="text-light text-center text-uppercase fs-5">
-                  <?php echo $val['icerik']; ?>
-                </p>
-                <div class="slider-btn mt-5">
-                  <a class="border border-2 bg-transparent text-uppercase hero-btn" style="letter-spacing: 9px; font-family: Cormorant SC;" href="<?php echo $val['buton_url']; ?>"><?php echo $val['buton_adi']; ?></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <?php } ?>
-          <!--Single Slider End-->
-        </div>
-      </div>
-      <?php wp_reset_query(); query_posts('page_id=23');  the_post(); ?>
-      <?php $hakkimizda = get_field( "hakkimizda" ); ?>
-      <!--Our History Area Start-->
-      <div class="our-history-area mt-85">
+<!--Slider Area Start-->
+<div class="slider-area">
+  <div class="hero-slider owl-carousel">
+    <!--Single Slider Start-->
+    <?php wp_reset_query();
+    query_posts('page_id=14');
+    the_post(); ?>
+    <?php $value = get_field("banner");
+    foreach ($value as $key => $val) {
+    ?>
+      <div class="single-slider" <?php  /* style="background-image: url(<?php echo $val['resim']['url']; ?>)"  */ ?> style="background-image: url('<?php bloginfo('template_url'); ?>/images/bg/bg3.jpg')">
+        <div class="slider-progress"></div>
         <div class="container">
-          <div class="row">
-            <div class="ms-auto me-auto">
-              <div class="history-area-content text-right d-flex flex-column flex-md-row">
-                <div class="col-12 col-md-4">
-                  <img class="w-100 mw-100" src="<?php bloginfo('template_url'); ?>/images/logo/VOS_cicek_logo.png" width="150px" alt="" style="margin-bottom:15px;" />
-                </div>
-                <div class="col-12 col-md-8">
-                  <h2 class="text-end mb-5"><?php echo $hakkimizda['alt_baslik_2']; ?></h2>
-                  <?php echo $hakkimizda['icerik']; ?>
-                  <a href="#" class="discoverButton text-center m-0 ms-auto mt-5">Keşfet</a>
-                </div>
-              </div>
+          <div class="hero-slider-content d-flex flex-column align-items-center">
+            <h1 class="fw-normal text-light text-center text-uppercase" style="font-family: Cormorant SC;">
+              <?php echo $val['baslik']; ?>
+            </h1>
+            <div class="slider-border bg-light"></div>
+            <p class="text-light text-center text-uppercase fs-5">
+              <?php echo $val['icerik']; ?>
+            </p>
+            <div class="slider-btn mt-5">
+              <a class="border border-2 bg-transparent text-uppercase hero-btn" style="letter-spacing: 9px; font-family: Cormorant SC;" href="<?php echo $val['buton_url']; ?>"><?php echo $val['buton_adi']; ?></a>
             </div>
           </div>
         </div>
       </div>
-      <!--Our History Area End-->
-      <!--Categories Area Start-->
-      <div class="categories-area mt-115">
-        <div class="container">
-          <div class="row">
-            <!--Section Title Start-->
-<!--             <div class="col-12">
+    <?php } ?>
+    <!--Single Slider End-->
+  </div>
+</div>
+<?php wp_reset_query();
+query_posts('page_id=23');
+the_post(); ?>
+<?php $hakkimizda = get_field("hakkimizda"); ?>
+<!--Our History Area Start-->
+<div class="our-history-area mt-85">
+  <div class="container">
+    <div class="row">
+      <div class="ms-auto me-auto">
+        <div class="history-area-content text-right d-flex flex-column flex-md-row">
+          <div class="col-12 col-md-4">
+            <img class="w-100 mw-100" src="<?php bloginfo('template_url'); ?>/images/logo/VOS_cicek_logo.png" width="150px" alt="" style="margin-bottom:15px;" />
+          </div>
+          <div class="col-12 col-md-8">
+            <h2 class="text-end mb-5"><?php echo $hakkimizda['alt_baslik_2']; ?></h2>
+            <?php echo $hakkimizda['icerik']; ?>
+            <a href="#" class="discoverButton text-center m-0 ms-auto mt-5">Keşfet</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Our History Area End-->
+<!--Categories Area Start-->
+<div class="categories-area mt-115">
+  <div class="container">
+    <div class="row">
+      <!--Section Title Start-->
+      <!--             <div class="col-12">
               <div class="section-title text-center mb-35">
                 <span>Vos İstanbul Koleksiyonu</span>                
               </div>
             </div> -->
-            <!--Section Title End-->
+      <!--Section Title End-->
+    </div>
+  </div>
+  <?php $kategori_grids_layout = get_field("kategori_grids_layout"); ?>
+  <div class="container-fluid pl-50 pr-50">
+    <div class="container-xxl row mx-auto">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="categories-img img-full mb-30">
+              <a href="<?php echo $kategori_grids_layout['kategori_url_01']; ?>">
+                <img src="<?php bloginfo('template_url'); ?>/images/collections/collection_one.jpg" alt="<?php echo $kategori_grids_layout['kategori_adi_01']; ?>" />
+              </a>
+              <div class="categories-content">
+                <p class="categories-content-title fs-2 text-white">Etkinlik ve Organizasyon</p>
+                <button type="button" class="btn btn-light border-0 px-4 py-2 categories-content-button">Learn More</button>
+              </div>
+            </div>
           </div>
-        </div>
-        <?php $kategori_grids_layout = get_field( "kategori_grids_layout" ); ?>
-        <div class="container-fluid pl-50 pr-50">
-          <div class="container-xxl row mx-auto">
-            <div class="col-md-12">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="categories-img img-full mb-30">
-                    <a href="<?php echo $kategori_grids_layout['kategori_url_01']; ?>">
-                    <img src="<?php bloginfo('template_url'); ?>/images/collections/collection_one.jpg" alt="<?php echo $kategori_grids_layout['kategori_adi_01']; ?>" />
-                  </a>
-                    <div class="categories-content">
-                      <h3><?php echo $kategori_grids_layout['kategori_adi_01']; ?></h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="categories-img img-full mb-30">
-                    <a href="<?php echo $kategori_grids_layout['kategori_url_02']; ?>">
-                      <img src="<?php bloginfo('template_url'); ?>/images/collections/collection_two.jpeg" alt="<?php echo $kategori_grids_layout['kategori_adi_02']; ?>" />
-                    </a>
-                    <div class="categories-content">
-                      <h3><?php echo $kategori_grids_layout['kategori_adi_02']; ?></h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="categories-img img-full mb-30">
-                    <a href="<?php echo $kategori_grids_layout['kategori_url_03']; ?>">
-                      <img src="<?php bloginfo('template_url'); ?>/images/collections/collection_three.jpg" alt="<?php echo $kategori_grids_layout['kategori_adi_03']; ?>" />
-                    </a>
-                    <div class="categories-content">
-                      <h3><?php echo $kategori_grids_layout['kategori_adi_03']; ?></h3>
-                    </div>
-                  </div>
-                </div>
+          <div class="col-md-4">
+            <div class="categories-img img-full mb-30">
+              <a href="<?php echo $kategori_grids_layout['kategori_url_02']; ?>">
+                <img src="<?php bloginfo('template_url'); ?>/images/collections/collection_two.jpeg" alt="<?php echo $kategori_grids_layout['kategori_adi_02']; ?>" />
+              </a>
+              <div class="categories-content">
+                <p class="categories-content-title fs-2 text-white ">Kişiye Özel</p>
+                <button type="button" class="btn btn-light border-0 px-4 py-2 categories-content-button">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="categories-img img-full mb-30">
+              <a href="<?php echo $kategori_grids_layout['kategori_url_03']; ?>">
+                <img src="<?php bloginfo('template_url'); ?>/images/collections/collection_three.jpg" alt="<?php echo $kategori_grids_layout['kategori_adi_03']; ?>" />
+              </a>
+              <div class="categories-content">
+                <p class="categories-content-title fs-2 text-white ">Atölyeler</p>
+                <button type="button" class="btn btn-light border-0 px-4 py-2 categories-content-button">Learn More</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!--Categories Area End-->
-      <!--Product Countdown Area Start-->
-      <div class="product-countdown-area mt-105 ml-50 mr-50">
-        <div class="container">
-          <div class="row">
-            <!--Section Title Start-->
-            <div class="col-12">
-              <div class="section-title text-center mb-30">
-                <h3>Özel Günlerimiz</h3>
-              </div>
-            </div>
-            <!--Section Title End-->
-          </div>
-          <?php /*
+    </div>
+  </div>
+</div>
+<!--Categories Area End-->
+<!--Product Countdown Area Start-->
+<div class="product-countdown-area mt-105 ml-50 mr-50">
+  <div class="container">
+    <div class="row">
+      <!--Section Title Start-->
+      <div class="col-12">
+        <div class="section-title text-center mb-30">
+          <h3>Özel Günlerimiz</h3>
+        </div>
+      </div>
+      <!--Section Title End-->
+    </div>
+    <?php /*
           <div class="row">
             <div class="col-lg-8 col-md-10 col-12 ms-auto me-auto mb-20">
               <!--Count Down Area Start-->
@@ -181,179 +183,183 @@
             </div>
           </div>
           */ ?>
-          <div class="row">
-            <div class="offer-slider p-0">
-              <?php 
-                wp_reset_query();
-                $the_query = new WP_Query( array(
-                  'post_type' => 'product',
-                  'tax_query' => array(
-                      array (
-                          'taxonomy' => 'product_cat',
-                          'field' => 'slug',
-                          'terms' => 'ozel-urunlerimiz',
-                      )
-                  ),
-                ) );
-              
-                while ( $the_query->have_posts() ) :
-                $the_query->the_post();
-                global $product;
-                
-              ?> 
-              <div class="col-md-4">
-                <!--Single Product Start-->
-                <div class="single-product mb-25">
-                  <div class="product-img img-full">
-                    <a href="<?php the_permalink(); ?>">
-                      <?php echo woocommerce_get_product_thumbnail(); ?>
-                    </a>
-                  </div>
-                  <div class="product-content">
-                    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                    <div class="product-price">
-                      <div class="price-box">
-                        <span class="regular-price"><?php echo $product->get_sale_price().' TL'; ?></span>
-                      </div>
-                    </div>
+    <div class="row">
+      <div class="offer-slider p-0">
+        <?php
+        wp_reset_query();
+        $the_query = new WP_Query(array(
+          'post_type' => 'product',
+          'tax_query' => array(
+            array(
+              'taxonomy' => 'product_cat',
+              'field' => 'slug',
+              'terms' => 'ozel-urunlerimiz',
+            )
+          ),
+        ));
+
+        while ($the_query->have_posts()) :
+          $the_query->the_post();
+          global $product;
+
+        ?>
+          <div class="col-md-4">
+            <!--Single Product Start-->
+            <div class="single-product mb-25">
+              <div class="product-img img-full">
+                <a href="<?php the_permalink(); ?>">
+                  <?php echo woocommerce_get_product_thumbnail(); ?>
+                </a>
+              </div>
+              <div class="product-content">
+                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <div class="product-price">
+                  <div class="price-box">
+                    <span class="regular-price"><?php echo $product->get_sale_price() . ' TL'; ?></span>
                   </div>
                 </div>
-                <!--Single Product End-->
               </div>
-              <?php 
-                  endwhile;
-                  wp_reset_query();
-              ?>
             </div>
+            <!--Single Product End-->
+          </div>
+        <?php
+        endwhile;
+        wp_reset_query();
+        ?>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Product Countdown Area End-->
+<!--Slider Area End-->
+<?php wp_reset_query();
+query_posts('page_id=23');
+the_post(); ?>
+<?php $cta_butonlar = get_field("cta_butonlar"); ?>
+<!--Feature Area Start-->
+<div class="feature-area mt-120">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <!--Single Feature Start-->
+        <div class="single-feature mb-35">
+          <div class="feature-icon">
+            <span class="lnr lnr-rocket"></span>
+          </div>
+          <div class="feature-content">
+            <h3><?php echo $cta_butonlar['cta_01_baslik']; ?></h3>
+            <p><?php echo $cta_butonlar['cta_01_alt_baslik']; ?></p>
           </div>
         </div>
+        <!--Single Feature End-->
       </div>
-      <!--Product Countdown Area End-->
-       <!--Slider Area End-->
-       <?php wp_reset_query(); query_posts('page_id=23');  the_post(); ?>
-      <?php $cta_butonlar = get_field( "cta_butonlar" ); ?>
-      <!--Feature Area Start-->
-      <div class="feature-area mt-120">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <!--Single Feature Start-->
-              <div class="single-feature mb-35">
-                <div class="feature-icon">
-                  <span class="lnr lnr-rocket"></span>
-                </div>
-                <div class="feature-content">
-                  <h3><?php echo $cta_butonlar['cta_01_baslik']; ?></h3>
-                  <p><?php echo $cta_butonlar['cta_01_alt_baslik']; ?></p>
-                </div>
-              </div>
-              <!--Single Feature End-->
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <!--Single Feature Start-->
-              <div class="single-feature mb-35">
-                <div class="feature-icon">
-                  <span class="lnr lnr-phone"></span>
-                </div>
-                <div class="feature-content">
-                  <h3><?php echo $cta_butonlar['cta_02_baslik']; ?></h3>
-                  <p><?php echo $cta_butonlar['cta_02_alt_baslik']; ?></p>
-                </div>
-              </div>
-              <!--Single Feature End-->
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <!--Single Feature Start-->
-              <div class="single-feature mb-35">
-                <div class="feature-icon">
-                  <span class="lnr lnr-redo"></span>
-                </div>
-                <div class="feature-content">
-                  <h3><?php echo $cta_butonlar['cta_03_baslik']; ?></h3>
-                  <p><?php echo $cta_butonlar['cta_03_alt_baslik']; ?></p>
-                </div>
-              </div>
-              <!--Single Feature End-->
-            </div>
+      <div class="col-lg-4 col-md-6">
+        <!--Single Feature Start-->
+        <div class="single-feature mb-35">
+          <div class="feature-icon">
+            <span class="lnr lnr-phone"></span>
+          </div>
+          <div class="feature-content">
+            <h3><?php echo $cta_butonlar['cta_02_baslik']; ?></h3>
+            <p><?php echo $cta_butonlar['cta_02_alt_baslik']; ?></p>
           </div>
         </div>
+        <!--Single Feature End-->
       </div>
-      <!--Feature Area End-->
-      <?php wp_reset_query(); ?>
-      <!--Blog Area Start-->
-      <div class="blog-area ml-50 mr-50 mt-105">
-        <div class="container">
-          <div class="row">
-            <!--Section Title Start-->
-            <div class="col-12">
-              <div class="section-title text-center mb-35">
-                <span>VOS'ta Neler Var?</span>
-              </div>
-            </div>
-            <!--Section Title End-->
+      <div class="col-lg-4 col-md-6">
+        <!--Single Feature Start-->
+        <div class="single-feature mb-35">
+          <div class="feature-icon">
+            <span class="lnr lnr-redo"></span>
           </div>
-          <div class="row">
-            <div class="blog-slider-active p-0">
-              <?php 
-                    wp_reset_query(); 
-                    query_posts( array( 'cat' => '23','posts_per_page'=> '-1', 'order'=>'DESC' ) ); 
-                    if ( have_posts() ) : while ( have_posts() ) : the_post();  
-              ?>
-              <div class="col-md-4">
-                <!--Single Blog Start-->
-                <div class="single-blog">
-                  <div class="blog-img img-full">
-                    <a href="<?php the_permalink(); ?>">
-                      <img src="<?php bloginfo('template_url'); ?>/images/blog/blog1.jpg" alt="" />
-                    </a>
-                  </div>
-                  <div class="blog-content">
-                    <div class="post-date"><?php echo get_the_date(); ?></div>
-                    <h3 class="post-title">
-                      <a href="<?php the_permalink(); ?>"><?php the_field('baslik'); ?></a>
-                    </h3>
-                    <p class="post-description"><?php the_field('kisa_aciklama'); ?></p>
-                  </div>
-                </div>
-                <!--Single Blog End-->
-              </div>
-              <?php endwhile; endif; wp_reset_query(); ?>
-            </div>
+          <div class="feature-content">
+            <h3><?php echo $cta_butonlar['cta_03_baslik']; ?></h3>
+            <p><?php echo $cta_butonlar['cta_03_alt_baslik']; ?></p>
           </div>
         </div>
+        <!--Single Feature End-->
       </div>
-      <!--Blog Area End-->
+    </div>
+  </div>
+</div>
+<!--Feature Area End-->
+<?php wp_reset_query(); ?>
+<!--Blog Area Start-->
+<div class="blog-area ml-50 mr-50 mt-105">
+  <div class="container">
+    <div class="row">
+      <!--Section Title Start-->
+      <div class="col-12">
+        <div class="section-title text-center mb-35">
+          <span>VOS'ta Neler Var?</span>
+        </div>
+      </div>
+      <!--Section Title End-->
+    </div>
+    <div class="row">
+      <div class="blog-slider-active p-0">
+        <?php
+        wp_reset_query();
+        query_posts(array('cat' => '23', 'posts_per_page' => '-1', 'order' => 'DESC'));
+        if (have_posts()) : while (have_posts()) : the_post();
+        ?>
+            <div class="col-md-4">
+              <!--Single Blog Start-->
+              <div class="single-blog">
+                <div class="blog-img img-full">
+                  <a href="<?php the_permalink(); ?>">
+                    <img src="<?php bloginfo('template_url'); ?>/images/blog/blog1.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="blog-content">
+                  <div class="post-date"><?php echo get_the_date(); ?></div>
+                  <h3 class="post-title">
+                    <a href="<?php the_permalink(); ?>"><?php the_field('baslik'); ?></a>
+                  </h3>
+                  <p class="post-description"><?php the_field('kisa_aciklama'); ?></p>
+                </div>
+              </div>
+              <!--Single Blog End-->
+            </div>
+        <?php endwhile;
+        endif;
+        wp_reset_query(); ?>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Blog Area End-->
 
-      <?php  
-  //   $args = array(
-  //     'post_type'      => 'product',
-  //     'posts_per_page' => 10,
-  //     'cat_id' => 25
-  // );
+<?php
+//   $args = array(
+//     'post_type'      => 'product',
+//     'posts_per_page' => 10,
+//     'cat_id' => 25
+// );
 
-  // $loop = new WP_Query( $args );
+// $loop = new WP_Query( $args );
 
-  // echo "xxxx";
+// echo "xxxx";
 
-  // while ( $loop->have_posts() ) : $loop->the_post();
-  // echo '<br /><a href="'.get_permalink().'">' . woocommerce_get_product_thumbnail().' '.get_the_title().'</a>';
-  //     global $product;
-  //     //echo $product;
-  //     echo $product->get_id();
-  //     echo $product->get_name();
-  //     echo $product->get_sale_price();
-  //     echo $product->get_regular_price();
-  //     echo $product->get_sku();
-  //     echo $product->get_low_stock_amount();
-  //     echo $product->get_review_count();
-  //     echo $product->get_short_description();
-  //     $ratting = $product->get_rating_counts();
-  //     for($i = 0 ; $i < count($ratting); $i++) {
-  //         echo $ratting[i];
-  //     }
-  // endwhile;
+// while ( $loop->have_posts() ) : $loop->the_post();
+// echo '<br /><a href="'.get_permalink().'">' . woocommerce_get_product_thumbnail().' '.get_the_title().'</a>';
+//     global $product;
+//     //echo $product;
+//     echo $product->get_id();
+//     echo $product->get_name();
+//     echo $product->get_sale_price();
+//     echo $product->get_regular_price();
+//     echo $product->get_sku();
+//     echo $product->get_low_stock_amount();
+//     echo $product->get_review_count();
+//     echo $product->get_short_description();
+//     $ratting = $product->get_rating_counts();
+//     for($i = 0 ; $i < count($ratting); $i++) {
+//         echo $ratting[i];
+//     }
+// endwhile;
 
-  // wp_reset_query();
+// wp_reset_query();
 
 ?>
 
@@ -537,5 +543,5 @@
         </div>
       </section>
 
-    */ ?>  
+    */ ?>
 <?php get_footer(); ?>

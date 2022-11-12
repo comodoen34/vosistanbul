@@ -3310,7 +3310,6 @@ a.generalButton:hover {
 }
 
 .categories-content {
-  background: #fff;
   left: 50%;
   margin: 0;
   margin-right: -50%;
@@ -9091,4 +9090,14 @@ a.ideas-btn:hover {
 .discoverButton:hover{
   color: #ffff;
   background: #7a7c7c;
+}
+
+.categories-content .categories-content-title{
+  line-height: 2rem;
+  
+}
+
+.categories-content .categories-content-button{
+  background: rgba(214,214,214,.77);
+  font-weight: 300;
 }
