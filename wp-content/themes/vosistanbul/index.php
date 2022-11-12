@@ -70,13 +70,13 @@
         </div>
         <?php $kategori_grids_layout = get_field( "kategori_grids_layout" ); ?>
         <div class="container-fluid pl-50 pr-50">
-          <div class="row">
+          <div class="container-xxl row mx-auto">
             <div class="col-md-12">
               <div class="row">
                 <div class="col-md-4">
                   <div class="categories-img img-full mb-30">
                     <a href="<?php echo $kategori_grids_layout['kategori_url_01']; ?>">
-                    <img src="<?php echo $kategori_grids_layout['kategori_resim_01']['url']; ?>" alt="<?php echo $kategori_grids_layout['kategori_adi_01']; ?>" />
+                    <img src="<?php bloginfo('template_url'); ?>/images/collections/collection_one.jpg" alt="<?php echo $kategori_grids_layout['kategori_adi_01']; ?>" />
                   </a>
                     <div class="categories-content">
                       <h3><?php echo $kategori_grids_layout['kategori_adi_01']; ?></h3>
@@ -86,7 +86,7 @@
                 <div class="col-md-4">
                   <div class="categories-img img-full mb-30">
                     <a href="<?php echo $kategori_grids_layout['kategori_url_02']; ?>">
-                      <img src="<?php echo $kategori_grids_layout['kategori_resim_02']['url']; ?>" alt="<?php echo $kategori_grids_layout['kategori_adi_02']; ?>" />
+                      <img src="<?php bloginfo('template_url'); ?>/images/collections/collection_two.jpeg" alt="<?php echo $kategori_grids_layout['kategori_adi_02']; ?>" />
                     </a>
                     <div class="categories-content">
                       <h3><?php echo $kategori_grids_layout['kategori_adi_02']; ?></h3>
@@ -96,7 +96,7 @@
                 <div class="col-md-4">
                   <div class="categories-img img-full mb-30">
                     <a href="<?php echo $kategori_grids_layout['kategori_url_03']; ?>">
-                      <img src="<?php echo $kategori_grids_layout['kategori_resim_03']['url']; ?>" alt="<?php echo $kategori_grids_layout['kategori_adi_03']; ?>" />
+                      <img src="<?php bloginfo('template_url'); ?>/images/collections/collection_three.jpg" alt="<?php echo $kategori_grids_layout['kategori_adi_03']; ?>" />
                     </a>
                     <div class="categories-content">
                       <h3><?php echo $kategori_grids_layout['kategori_adi_03']; ?></h3>
