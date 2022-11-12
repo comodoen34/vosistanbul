@@ -215,9 +215,6 @@
                       <div class="price-box">
                         <span class="regular-price"><?php echo $product->get_sale_price().' TL'; ?></span>
                       </div>
-                      <div class="add-to-cart">
-                        <a href="<?php the_permalink(); ?>">Ürünü İncele</a>
-                      </div>
                     </div>
                   </div>
                 </div>

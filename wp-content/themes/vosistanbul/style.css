@@ -3481,10 +3481,6 @@ a.generalButton:hover {
   padding-right: 5px;
 }
 
-.single-product:hover .price-box {
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-}
 
 .add-to-cart {
   left: 0;
