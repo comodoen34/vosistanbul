@@ -41,13 +41,13 @@
           <div class="row">
             <div class="ms-auto me-auto">
               <div class="history-area-content text-right d-flex flex-column flex-md-row">
-                <div class="col-12 col-md-5">
+                <div class="col-12 col-md-4">
                   <img class="w-100 mw-100" src="<?php bloginfo('template_url'); ?>/images/logo/VOS_cicek_logo.png" width="150px" alt="" style="margin-bottom:15px;" />
                 </div>
-                <div class="col-12 col-md-7">
-                  <h2><?php echo $hakkimizda['alt_baslik_2']; ?></h2>
+                <div class="col-12 col-md-8">
+                  <h2 class="text-end mb-5"><?php echo $hakkimizda['alt_baslik_2']; ?></h2>
                   <?php echo $hakkimizda['icerik']; ?>
-                  <a href="#" class="generalButton m-0 ms-auto">Keşfet</a>
+                  <a href="#" class="discoverButton text-center m-0 ms-auto mt-5">Keşfet</a>
                 </div>
               </div>
             </div>

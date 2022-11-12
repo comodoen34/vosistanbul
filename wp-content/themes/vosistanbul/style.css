@@ -9072,3 +9072,26 @@ a.ideas-btn:hover {
   transition: transform .5s;
   transform: scale(1.25)
 }
+
+.discoverButton{
+  background: #acaeaf;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  height: 48px;
+  letter-spacing: 0.03em;
+  line-height: 48px;
+  cursor: pointer;
+  margin: 50px auto 0 auto;
+  max-width: 150px;
+  padding: 0 32px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.discoverButton:hover{
+  color: #ffff;
+  background: #7a7c7c;
+}
