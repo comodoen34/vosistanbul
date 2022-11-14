@@ -109,6 +109,54 @@ the_post(); ?>
       </div>
     </div>
   </div>
+
+  <!-- BLOG -->
+  <div class="container-fluid pl-50 pr-50 mt-105">
+    <div class="container-xxl row mx-auto">
+        <div>
+          <div>
+            <h2 class="fw-bold text-center mb-3">BLOG</h2>
+            <p class="fs-5 text-center lh-base mt-1 mx-auto" style="width: min(992px, 100%);">
+              Montag olarak, bu platformu sizlerle deneyimlerimizi paylaşmak için kullanıyoruz olacağız. Merak edenler için, ekibimizin nelere kafayı taktığını ve ürettiği çözümleri güncel olarak takip etmenin en iyi yolu burayı takip etmek olacak.
+            </p>
+          </div>
+
+          <div class="row mt-5 gap-5 gap-lg-0">
+            <div class="col-12 col-lg-6">
+              <div class="row h-100">
+                <img class="col-4 ps-0" style="aspect-ratio: 1;" src="<?php bloginfo('template_url'); ?>/images/collections/collection_one.jpg" alt="<?php echo $kategori_grids_layout['kategori_adi_01']; ?>" />
+                <div class="col-8 d-flex flex-column">
+                  <div>
+                    <span class="fw-bold fs-3 text-dark">16</span>
+                    <span class="text-secondary fs-5" style="font-weight: 500;">Jun</span>
+                  </div>
+
+                  <p class="text-dark fs-5 mt-2 mb-1" style="font-weight: 500;">SOĞUK SUYLA DEMLENEN COLD BREW NEDİR? EVDE NASIL YAPILIR ?</p>
+                  <p class="mb-1" style="font-weight: 500;">Şimdi sıcak kahve severler yana çekilsin. Çekilsin ki şöyle buz gibi demlenmiş, kendi özgü tat profiliyle gönülleri fetheden ve kısa sürede sıcak yaz günlerinin vazgeçilmezi...</p>
+                  <a class="text-decoration-underline" href="" style="font-weight: 500;">Devamını Oku</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="row h-100">
+                <img class="col-4 ps-0" style="aspect-ratio: 1;" src="<?php bloginfo('template_url'); ?>/images/collections/collection_two.jpeg" alt="<?php echo $kategori_grids_layout['kategori_adi_01']; ?>" />
+                <div class="col-8 d-flex flex-column">
+                  <div>
+                    <span class="fw-bold fs-3 text-dark">18</span>
+                    <span class="text-secondary fs-5" style="font-weight: 500;">Jun</span>
+                  </div>
+
+                  <p class="text-dark fs-5 mt-2 mb-1" style="font-weight: 500;">NİTELİKLİ KAHVE OKURYAZARLIĞI</p>
+                  <p class="mb-1" style="font-weight: 500;">Nitelikli kahve(SPECIALITY COFFEE) nedir? Bilgiye ulaşma şansımız arttıkça tükettiğimiz ürünlerin arka planını daha çok merak ediyoruz. Önümüze gelen ürüne "razı olmak" yerine tercihh hakkı...</p>
+                  <a class="text-decoration-underline" href="" style="font-weight: 500;">Devamını Oku</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
 </div>
 <!--Categories Area End-->
 <!--Product Countdown Area Start-->
