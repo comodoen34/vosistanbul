@@ -116,7 +116,7 @@ the_post(); ?>
         <div>
           <div>
             <h2 class="fw-bold text-center mb-3">BLOG</h2>
-            <p class="fs-5 text-center lh-base mt-1"">
+            <p class="fs-5 text-center lh-base mt-1 mx-auto" style="width: min(992px, 100%);">
               Montag olarak, bu platformu sizlerle deneyimlerimizi paylaşmak için kullanıyoruz olacağız. Merak edenler için, ekibimizin nelere kafayı taktığını ve ürettiği çözümleri güncel olarak takip etmenin en iyi yolu burayı takip etmek olacak.
             </p>
           </div>

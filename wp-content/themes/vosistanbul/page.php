@@ -127,9 +127,9 @@ get_header();
                                                                     <span class="price"><?php echo $product->get_sale_price().' TL'; ?></span>
                                                                     <span class="regular-price"><?php echo $product->get_sale_price().' TL'; ?></span>
                                                                 </div>
-                                                                <div class="add-to-cart">
+        <!--                                                         <div class="add-to-cart">
                                                                     <a href="<?php the_permalink(); ?>">Ürünü İncele</a>
-                                                                </div>
+                                                                </div> -->
                                                             </div>
                                                         </div>
                                                     </div>
