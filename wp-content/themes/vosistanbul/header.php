@@ -381,31 +381,16 @@
                     <nav>
                       <ul class="main-menu">
                         <li>
-                          <a href="#">ALIŞVERİŞ</a>
+                          <a href="<?php echo get_category_link(17); ?>">ÇİÇEK</a>
                           <!--Mega Menu Start-->
                           <ul class="mega-menu">
-                            <li>
-                              <a href="<?php echo get_category_link(17); ?>" class="item-link">ÇİÇEKLER</a>
-                              <ul>
-                                <li><a href="<?php echo get_category_link(18); ?>">BUKET</a></li>
-                                <li><a href="<?php echo get_category_link(19); ?>">KUTUDA ÇİÇEK</a></li>
-                                <li><a href="<?php echo get_category_link(20); ?>">VAZODA ÇİÇEK</a></li>
-                              </ul>
-                            </li>
-                            <li>
-                              <a href="<?php echo get_category_link(21); ?>" class="item-link">BİTKİLER</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo get_category_link(22); ?>" class="item-link">HEDİYE KUTULARI</a>
-                            </li>
-                            <li>
-                              <a href="#" class="item-link">ÇİÇEK ÜYELİĞİ</a>
-                            </li>
+                          <li><a href="<?php echo get_category_link(18); ?>">BUKET</a></li>
+                          <li><a href="<?php echo get_category_link(19); ?>">KUTUDA</a></li>
+                          <li><a href="<?php echo get_category_link(20); ?>">VAZODA</a></li>
                           </ul>
                           <!--Mega Menu End-->
                         </li>
-                        <li><a href="<?php the_permalink(180); ?>">ETKİNLİKLER</a></li>
-                        <li><a href="<?php the_permalink(182); ?>">ATÖLYELER</a></li>
+                        <li><a href="<?php the_permalink(180); ?>">CAFE'MİZ</a></li>
                         <li><a href="<?php the_permalink(184); ?>">HİKAYEMİZ</a></li>
                       </ul>
                     </nav>
