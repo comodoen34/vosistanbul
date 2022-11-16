@@ -75,10 +75,10 @@ the_post(); ?>
           <div class="col-md-4">
             <div class="categories-img img-full mb-30">
               <a href="<?php echo $kategori_grids_layout['kategori_url_01']; ?>">
-                <img src="<?php bloginfo('template_url'); ?>/images/collections/collection_one.jpg" alt="<?php echo $kategori_grids_layout['kategori_adi_01']; ?>" />
+                <img src="<?php echo $kategori_grids_layout['kategori_resim_01']['url']; ?>" alt="<?php echo $kategori_grids_layout['kategori_adi_01']; ?>" />
               </a>
               <div class="categories-content">
-                <p class="categories-content-title fs-2 text-white">Etkinlik ve Organizasyon</p>
+                <p class="categories-content-title fs-2 text-white"><?php echo $kategori_grids_layout['kategori_adi_01']; ?></p>
                 <button type="button" class="btn btn-light border-0 px-4 py-2 categories-content-button">Daha Fazlası</button>
               </div>
             </div>
@@ -86,10 +86,10 @@ the_post(); ?>
           <div class="col-md-4">
             <div class="categories-img img-full mb-30">
               <a href="<?php echo $kategori_grids_layout['kategori_url_02']; ?>">
-                <img src="<?php bloginfo('template_url'); ?>/images/collections/collection_two.jpeg" alt="<?php echo $kategori_grids_layout['kategori_adi_02']; ?>" />
+                <img src="<?php echo $kategori_grids_layout['kategori_resim_02']['url']; ?>" alt="<?php echo $kategori_grids_layout['kategori_adi_02']; ?>" />
               </a>
               <div class="categories-content">
-                <p class="categories-content-title fs-2 text-white ">Kişiye Özel</p>
+                <p class="categories-content-title fs-2 text-white "><?php echo $kategori_grids_layout['kategori_adi_02']; ?></p>
                 <button type="button" class="btn btn-light border-0 px-4 py-2 categories-content-button">Daha Fazlası</button>
               </div>
             </div>
@@ -97,10 +97,10 @@ the_post(); ?>
           <div class="col-md-4">
             <div class="categories-img img-full mb-30">
               <a href="<?php echo $kategori_grids_layout['kategori_url_03']; ?>">
-                <img src="<?php bloginfo('template_url'); ?>/images/collections/collection_three.jpg" alt="<?php echo $kategori_grids_layout['kategori_adi_03']; ?>" />
+                <img src="<?php echo $kategori_grids_layout['kategori_resim_03']['url']; ?>" alt="<?php echo $kategori_grids_layout['kategori_adi_03']; ?>" />
               </a>
               <div class="categories-content">
-                <p class="categories-content-title fs-2 text-white ">Atölyeler</p>
+                <p class="categories-content-title fs-2 text-white "><?php echo $kategori_grids_layout['kategori_adi_03']; ?></p>
                 <button type="button" class="btn btn-light border-0 px-4 py-2 categories-content-button">Daha Fazlası</button>
               </div>
             </div>
@@ -111,6 +111,7 @@ the_post(); ?>
   </div>
 
   <!-- BLOG -->
+  <?php wp_reset_query(); query_posts('page_id=23'); the_post(); ?>
   <div class="container-fluid pl-50 pr-50 mt-105">
     <div class="container-xxl row mx-auto">
       <div>
@@ -118,43 +119,35 @@ the_post(); ?>
           <div class="section-title text-center mb-3">
             <span>BLOG</span>
           </div>
-          <p class="fs-6 text-center lh-base mt-1 mx-auto" style="width: min(992px, 100%);">
-            Montag olarak, bu platformu sizlerle deneyimlerimizi paylaşmak için kullanıyoruz olacağız. Merak edenler için, ekibimizin nelere kafayı taktığını ve ürettiği çözümleri güncel olarak takip etmenin en iyi yolu burayı takip etmek olacak.
-          </p>
+          <div class="fs-6 text-center lh-base mt-1 mx-auto" style="width: min(992px, 100%);">
+            <?php the_field('anasayfa_blog_aciklama'); ?>
+          </div>
         </div>
-
         <div class="row mt-5 gap-5 gap-lg-0">
+        <?php
+            wp_reset_query();
+            query_posts(array('cat' => '23', 'posts_per_page' => '2', 'order' => 'DESC'));
+            if (have_posts()) : while (have_posts()) : the_post();
+        ?>
           <div class="col-12 col-lg-6">
             <div class="row h-100">
-              <img class="col-4 ps-0" style="aspect-ratio: 1;" src="<?php bloginfo('template_url'); ?>/images/collections/collection_one.jpg" alt="<?php echo $kategori_grids_layout['kategori_adi_01']; ?>" />
+              <?php $blog_pic = get_field('resim'); ?>
+              <img class="col-4 ps-0" style="aspect-ratio: 1;" src="<?php echo $blog_pic['url']; ?>" alt="<?php the_field('baslik'); ?>" />
               <div class="col-8 d-flex flex-column">
                 <div>
-                  <span class="fw-bold fs-3 text-dark">16</span>
-                  <span class="text-secondary fs-5" style="font-weight: 500;">Jun</span>
+                  <span class="fw-bold fs-3 text-dark"><?php echo get_the_date('j'); ?></span>
+                  <span class="text-secondary fs-5" style="font-weight: 500;"><?php echo get_the_date('M'); ?></span>
                 </div>
 
-                <p class="post-title mt-2" style="font-weight: 500;">Soğuk suyla demlenen cold brew nedi̇r? evde nasil yapilir ?</p>
-                <p class="mb-1" style="font-weight: 500;">Şimdi sıcak kahve severler yana çekilsin. Çekilsin ki şöyle buz gibi demlenmiş, kendi özgü tat profiliyle gönülleri fetheden ve kısa sürede sıcak yaz günlerinin vazgeçilmezi...</p>
-                <a class="text-decoration-underline" href="" style="font-weight: 500;">Devamını Oku</a>
+                <p class="post-title mt-2" style="font-weight: 500;"><?php the_field('baslik'); ?></p>
+                <p class="mb-1" style="font-weight: 500;"><?php the_field('kisa_aciklama'); ?></p>
+                <a class="text-decoration-underline" href="<?php the_permalink(); ?>" style="font-weight: 500;">Devamını Oku</a>
               </div>
             </div>
           </div>
-
-          <div class="col-12 col-lg-6">
-            <div class="row h-100">
-              <img class="col-4 ps-0" style="aspect-ratio: 1;" src="<?php bloginfo('template_url'); ?>/images/collections/collection_two.jpeg" alt="<?php echo $kategori_grids_layout['kategori_adi_01']; ?>" />
-              <div class="col-8 d-flex flex-column">
-                <div>
-                  <span class="fw-bold fs-3 text-dark">18</span>
-                  <span class="text-secondary fs-5" style="font-weight: 500;">Jun</span>
-                </div>
-
-                <p class="post-title mt-2" style="font-weight: 500;">Ni̇teli̇kli̇ kahve okuryazarliği</p>
-                <p class="mb-1" style="font-weight: 500;">Nitelikli kahve(SPECIALITY COFFEE) nedir? Bilgiye ulaşma şansımız arttıkça tükettiğimiz ürünlerin arka planını daha çok merak ediyoruz. Önümüze gelen ürüne "razı olmak" yerine tercihh hakkı...</p>
-                <a class="text-decoration-underline" href="" style="font-weight: 500;">Devamını Oku</a>
-              </div>
-            </div>
-          </div>
+          <?php endwhile;
+        endif;
+        wp_reset_query(); ?>
         </div>
       </div>
     </div>
@@ -335,6 +328,7 @@ the_post(); ?>
 <!--Feature Area End-->
 <?php wp_reset_query(); ?>
 <!--Blog Area Start-->
+<?php /*
 <div class="blog-area ml-50 mr-50 mt-105">
   <div class="container">
     <div class="row">
@@ -378,6 +372,7 @@ the_post(); ?>
     </div>
   </div>
 </div>
+*/ ?>
 <!--Blog Area End-->
 
 <?php
