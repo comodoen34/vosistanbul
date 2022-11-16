@@ -328,6 +328,26 @@ the_post(); ?>
 <!--Feature Area End-->
 <?php wp_reset_query(); ?>
 <!--Blog Area Start-->
+<div class="blog-area ml-50 mr-50 mt-105">
+  <div class="container">
+    <div class="row">
+      <!--Section Title Start-->
+      <div class="col-12">
+        <div class="section-title text-center mb-35">
+          <span>Vos Instagram Hesabında Neler Oluyor?</span>
+        </div>
+      </div>
+      <!--Section Title End-->
+    </div>
+    <div class="row">
+    <?php wp_reset_query();
+query_posts('page_id=247');
+the_post(); ?>
+            <?php the_content(); ?>
+        <?php wp_reset_query(); ?>
+    </div>
+  </div>
+</div>
 <?php /*
 <div class="blog-area ml-50 mr-50 mt-105">
   <div class="container">
