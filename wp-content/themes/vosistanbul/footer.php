@@ -14,12 +14,6 @@
                 </div>
                 <ul class="link-widget">
                   <li><a href="about.html">About Us</a></li>
-                  <li><a href="#">Team Member</a></li>
-                  <li><a href="#">Career</a></li>
-                  <li><a href="#">Specials</a></li>
-                  <li><a href="shop.html">Best sellers</a></li>
-                  <li><a href="#">Our stores</a></li>
-                  <li><a href="contact.html">Contact us</a></li>
                 </ul>
               </div>
               <!--Single Footer Widget End-->
@@ -31,13 +25,10 @@
                   <h3>ALIŞVERİŞ</h3>
                 </div>
                 <ul class="link-widget">
-                  <li><a href="<?php echo get_category_link(17); ?>">ÇİÇEKLER</a></li>
+                  <li><a href="<?php echo get_category_link(17); ?>">ÇİÇEK</a></li>
                   <li><a href="<?php echo get_category_link(18); ?>">BUKET</a></li>
-                  <li><a href="<?php echo get_category_link(19); ?>">KUTUDA ÇİÇEK</a></li>
-                  <li><a href="<?php echo get_category_link(20); ?>">VAZODA ÇİÇEK</a></li>
-                  <li><a href="<?php echo get_category_link(21); ?>">BİTKİLER</a></li>
-                  <li><a href="<?php echo get_category_link(22); ?>">HEDİYE KUTULARI</a></li>
-                  <li><a href="#">ÇİÇEK ÜYELİĞİ</a></li>
+                  <li><a href="<?php echo get_category_link(19); ?>">KUTUDA</a></li>
+                  <li><a href="<?php echo get_category_link(20); ?>">VAZODA</a></li>
                 </ul>
               </div>
               <!--Single Footer Widget End-->

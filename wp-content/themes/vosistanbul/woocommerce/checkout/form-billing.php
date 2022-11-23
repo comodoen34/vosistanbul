@@ -25,14 +25,24 @@ defined( 'ABSPATH' ) || exit;
 
 	<?php else : ?>
 
-		<h3><?php esc_html_e( 'Billing details', 'woocommerce' ); ?></h3>
+		<h3><?php esc_html_e( 'Shipping details', 'woocommerce' ); ?></h3>
 
 	<?php endif; ?>
 
 	<?php do_action( 'woocommerce_before_checkout_billing_form', $checkout ); ?>
-
+	<?php 
+		global $woocommerce, $product; 
+		$main_cart_items = $woocommerce->cart->get_cart();
+		// print_r($main_cart_items);
+		foreach ( $main_cart_items as $key => $field ) {
+			echo '('.$main_cart_items[$key]['teslimat_adres_secimi'].')';
+			break;
+		}
+	?>
+	
 	<div class="woocommerce-billing-fields__field-wrapper">
 		<?php
+		
 		$fields = $checkout->get_checkout_fields( 'billing' );
 
 		foreach ( $fields as $key => $field ) {
@@ -40,7 +50,6 @@ defined( 'ABSPATH' ) || exit;
 		}
 		?>
 	</div>
-
 	<?php do_action( 'woocommerce_after_checkout_billing_form', $checkout ); ?>
 </div>
 

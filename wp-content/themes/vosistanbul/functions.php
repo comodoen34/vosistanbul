@@ -197,3 +197,10 @@ function teslimat_adres_secimi_add_cart_item_data( $cart_item, $product_id ){
 
 }
 add_filter( 'woocommerce_add_cart_item_data', 'teslimat_adres_secimi_add_cart_item_data', 10, 2 );
+
+
+add_filter( 'woocommerce_add_to_cart_redirect', 'misha_skip_cart_redirect_checkout' );
+ 
+function misha_skip_cart_redirect_checkout( $url ) {
+	return wc_get_checkout_url();
+}

@@ -40,8 +40,20 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 				<?php do_action( 'woocommerce_checkout_billing' ); ?>
 			</div>
 
+			<?php /*
 			<div class="col-2">
 				<?php do_action( 'woocommerce_checkout_shipping' ); ?>
+			</div>
+			*/ ?>
+			<div class="col-2">
+				<div>
+				<h3 id="order_review_heading" style="margin:15px 0;"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
+				<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
+				<div id="order_review" class="woocommerce-checkout-review-order">
+					<?php do_action( 'woocommerce_checkout_order_review' ); ?>
+				</div>
+				<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
+				</div>
 			</div>
 		</div>
 
@@ -51,6 +63,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 	
 	<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
 
+	<?php /*
 	<div>
 	
 	<h3 id="order_review_heading" style="margin:15px 0;"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
@@ -63,6 +76,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 	<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
 	</div>
+	*/ ?>
 
 </form>
 

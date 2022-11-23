@@ -43,7 +43,7 @@ get_header(); the_post(); ?>
 											<th class="plantmore-product-price"><?php esc_html_e( 'Price', 'woocommerce' ); ?></th>
 		                                    <th class="plantmore-product-quantity">Adet</th>
 											<th class="plantmore-product-date">Teslimat Tarihi</th>
-											<th class="plantmore-product-time">Teslimat Ücreti</th>
+											<!-- <th class="plantmore-product-time">Teslimat Ücreti</th> -->
 		                                    <th class="plantmore-product-subtotal">Fiyat</th>
 		                                </tr>
 		                            </thead>
@@ -148,9 +148,11 @@ get_header(); the_post(); ?>
 												<?php echo $cart_item['teslimat_saati']; ?>
 											</td>
 											*/ ?>
+											<?php /*
 											<td class="plantmore-product-time">
 												<?php echo $cart_item['teslimat_adres_secimi']; ?>
 											</td>
+											*/ ?>
 											<td class="product-subtotal" data-title="<?php esc_attr_e( 'Subtotal', 'woocommerce' ); ?>">
 												<?php
 													echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
