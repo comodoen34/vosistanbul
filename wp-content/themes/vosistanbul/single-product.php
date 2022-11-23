@@ -82,6 +82,7 @@
                                 <p><?php echo $product->get_short_description(); ?></p>
                             </div>
                             <form class="cart" action="<?php echo esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->get_permalink() ) ); ?>" method="post" enctype='multipart/form-data'>
+                            <?php /*
 							<div class="product-size mb-30">
                                 <p style="margin-top:8px;">TESLİMAT SAATİ:</p>
                                 <?php $teslimat_saati = get_field('teslimat_saati'); ?>
@@ -93,6 +94,7 @@
                                     <?php } ?>
 								</select>
 							</div>
+                            */ ?>
 							<div class="color-pick mb-30">
 								<p>TESLİMAT TARİHİ : </p>
                                 <?php 
@@ -103,6 +105,7 @@
                                 <?php $teslimat_tarihi_count++; } ?>
                                 <label class="calendarDateBox teslimat_tarihi_takvim">Takvim <span id="calendarDateNumber_takvim" class="calendarDateName"></span> <input class="custom_radio" type="radio" id="takvim" name="_teslimat_tarihi_secim"></label>
 							</div>
+                            
                             <p class="errorTeslimTarihi" style="display:none;">Lutfen bir secim yapiniz</p>
                             <?php $product_id = $product->id; 
                             ?>
