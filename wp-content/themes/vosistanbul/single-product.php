@@ -82,8 +82,8 @@
                                 <p><?php echo $product->get_short_description(); ?></p>
                             </div>
                             <form class="cart" action="<?php echo esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->get_permalink() ) ); ?>" method="post" enctype='multipart/form-data'>
-                            <?php /*
-							<div class="product-size mb-30">
+							<?php /*
+                            <div class="product-size mb-30">
                                 <p style="margin-top:8px;">TESLİMAT SAATİ:</p>
                                 <?php $teslimat_saati = get_field('teslimat_saati'); ?>
 								<select name="_teslimat_saati" class="nice-select" name="sortby">
@@ -95,6 +95,11 @@
 								</select>
 							</div>
                             */ ?>
+                            
+                            <div class="product-size mb-30">
+                                <p style="margin-top:16px;">ADRES:</p>
+                                <input type="text" id="checkoutCustomForm" name="_teslimat_adres_secimi" placeholder="Gönderim Adresi Seçiniz">
+							</div>
 							<div class="color-pick mb-30">
 								<p>TESLİMAT TARİHİ : </p>
                                 <?php 
@@ -216,7 +221,8 @@
 
                                         $('#addToCart').click(function(e){
                                             const tempTeslim = $('input[name="_teslimat_tarihi_secim"]:checked').val();
-                                            if(tempTeslim) { 
+                                            const tempAdress = $('input[name="_teslimat_adres_secimi"]').val();
+                                            if(tempTeslim && tempAdress) { 
                                                 return true;
                                             }
                                             else {

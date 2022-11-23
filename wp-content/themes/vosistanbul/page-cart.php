@@ -29,8 +29,6 @@ get_header(); the_post(); ?>
 						global $woocommerce, $product;
 						$main_cart_total = $woocommerce->cart->get_cart_total();
 						$main_cart_items = $woocommerce->cart->get_cart();
-
-						// print_r($main_cart_items);
 					?>
 		            <div class="col-12">
 					<form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
@@ -45,7 +43,7 @@ get_header(); the_post(); ?>
 											<th class="plantmore-product-price"><?php esc_html_e( 'Price', 'woocommerce' ); ?></th>
 		                                    <th class="plantmore-product-quantity">Adet</th>
 											<th class="plantmore-product-date">Teslimat Tarihi</th>
-											<th class="plantmore-product-time">Teslimat Saati</th>
+											<th class="plantmore-product-time">Teslimat Ücreti</th>
 		                                    <th class="plantmore-product-subtotal">Fiyat</th>
 		                                </tr>
 		                            </thead>
@@ -145,8 +143,13 @@ get_header(); the_post(); ?>
 													document.getElementById("plantmore-product-date_<?php echo $cart_item['key']; ?>").innerHTML = calculate_date_name();
 												</script>
 											</td>
+											<?php /*
 											<td class="plantmore-product-time">
 												<?php echo $cart_item['teslimat_saati']; ?>
+											</td>
+											*/ ?>
+											<td class="plantmore-product-time">
+												<?php echo $cart_item['teslimat_adres_secimi']; ?>
 											</td>
 											<td class="product-subtotal" data-title="<?php esc_attr_e( 'Subtotal', 'woocommerce' ); ?>">
 												<?php

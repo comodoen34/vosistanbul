@@ -186,3 +186,14 @@ function teslimat_saati_add_cart_item_data( $cart_item, $product_id ){
 
 }
 add_filter( 'woocommerce_add_cart_item_data', 'teslimat_saati_add_cart_item_data', 10, 2 );
+
+function teslimat_adres_secimi_add_cart_item_data( $cart_item, $product_id ){
+
+    if( isset( $_POST['_teslimat_adres_secimi'] ) ) {
+        $cart_item['teslimat_adres_secimi'] = sanitize_text_field( $_POST[ '_teslimat_adres_secimi' ] );
+    }
+
+    return $cart_item;
+
+}
+add_filter( 'woocommerce_add_cart_item_data', 'teslimat_adres_secimi_add_cart_item_data', 10, 2 );
