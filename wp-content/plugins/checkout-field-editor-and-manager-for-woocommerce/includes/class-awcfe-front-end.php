@@ -61,6 +61,7 @@ class AWCFE_Front_End
             add_action('woocommerce_form_field', array($this, 'woocommerce_form_field'), 10, 4);
 
             add_action('woocommerce_order_details_after_order_table', array($this, 'order_details_after_order_table'), 10, 1);
+			
             add_action('woocommerce_email_after_order_table', array($this, 'email_after_order_table'), 10, 1);
 
             // add_action('woocommerce_admin_order_data_after_billing_address', array($this, 'fields_display_order_data_billing_in_admin'), 20, 1);
@@ -742,7 +743,7 @@ class AWCFE_Front_End
                     $email_is_valid = is_email( $data[ $key ] );
                     $data[ $key ]   = sanitize_email( $data[ $key ] );
 
-                    if ( $validate_fieldset && ! $email_is_valid ) {
+                    if ( $validate_fieldset && ! $email_is_valid && $required ) {
 
                         /* translators: %s: email address */
                         $errors->add( 'validation', sprintf( __( '%s is not a valid email address.', 'woocommerce' ), '<strong>' . esc_html( $field_label ) . '</strong>' ) );

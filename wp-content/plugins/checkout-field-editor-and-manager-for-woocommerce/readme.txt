@@ -5,8 +5,8 @@ Contributors: acowebs, acowebssupport, saneshacodez
 Donate link:
 Tags: WooCommerce custom checkout fields, WooCommerce Checkout field editor, WooCommerce Checkout Manager, WooCommerce Checkout Field Manager
 Requires at least: 4.0
-Tested up to: 5.9
-Stable tag: 2.1.22
+Tested up to: 6.0
+Stable tag: 2.1.26
 
 WooCommerce checkout field editor and manager helps to manage checkout fields in WooCommerce
 
@@ -15,12 +15,16 @@ WooCommerce checkout field editor and manager helps to manage checkout fields in
 WooCommerce checkout field editor and manager plugin helps to manage the checkout page fields in WooCommerce Store.
 It's drag and drop form builder helps editing checkout fields easier. It can use to add, modify or hide default WooCommerce checkout fields.
 
+[Try the Demo](http://wcfe-free.demo.acowebs.com/) | [Documents](https://acowebs.com/guideline/plugin-docs-faqs/wcfem/) | [Pro Version](https://acowebs.com/woocommerce-checkout-field-editor-and-manager/)
 
 == HOW TO manage WooCommerce Checkout Fields? ==
 
 After activating WooCommerce checkout field editor  plugin, go to the menu WooCommerce >>Checkout Field in WordPress left menu bar.
 Here you can manage all the fields available in WooCommerce and also you can add WooCommerce custom checkout fields
 
+= Check out our video demo on how this works: =
+ [youtube http://www.youtube.com/watch?v=lo0vHSmX9MU&rel=0]
+ 
 == CHECKOUT FIELD EDITOR FEATURES ==
 
 👉 Edit Default Fields - Checkout field manager will help to edit the default woocommerce checkout fields
@@ -46,21 +50,25 @@ Here you can manage all the fields available in WooCommerce and also you can add
 
 = Following Fields are supported =
 
-- Text Field - Input type text, Can use for single line texts
-- Email Field - Input type email
-- Password Field - Input type Password
-- Textarea - Textarea checkout field, Can use for entering multiline texts
-- Radio - Set radio fields to choose from
-- Paragraph - Paragraph field can be used to show instructions on checkout fields, It can use to show messages in between checkout fields
-- Header  - Header fields can use to set html Header tag in woocommerce checkout fields, It provides h1 to h6 variations
+- Text Field  
+	Input type text, Can use for single line texts
+- Email Field  
+	Input type email
+- Password Field  
+	Input type Password
+- Textarea  
+	Textarea checkout field, Can use for entering multiline texts
+- Radio  
+	Set radio fields to choose from
+- Paragraph  
+	Paragraph field can be used to show instructions on checkout fields, It can use to show messages in between checkout fields
+- Header  
+	Header fields can use to set html Header tag in woocommerce checkout fields, It provides h1 to h6 variations
 
 == DEMO - CHECK THIS OUT IN REAL ==
 
 🔗 [Front end Demo](http://wcfe-free.demo.acowebs.com/checkout/?add-to-cart=32)
 🔗 [Backend Demo](http://wcfe-free.demo.acowebs.com/wp-admin/admin.php?page=awcfe_admin_ui#/section/billing)
-
-= Check out our video demo on how this works: =
- [youtube http://www.youtube.com/watch?v=lo0vHSmX9MU&rel=0]
 
 == PRO FEATURES ==
 
@@ -83,6 +91,25 @@ Here you can manage all the fields available in WooCommerce and also you can add
 
 🔗 [Front end Demo](http://wcfe.demo.acowebs.com/)
 🔗 [Backend Demo](http://wcfe.demo.acowebs.com/wp-admin/admin.php?page=awcfe_admin_ui#/)
+
+== Why Acowebs? ==
+Acowebs is responsible for empowering your e-commerce stores with reliable Shopify applications and WooCommerce plugins. We own a team of experts who develop the WordPress plugins and themes to offer a great customer experience. Since we are an award-winning software development company, our team of professionals offers incredible support to improve the User experience.
+
+Check out our other WordPress plugins [here](https://profiles.wordpress.org/acowebs/#content-plugins).
+
+== What our customer says: ==
+“No words on how the plugin could easily let our customers choose and save their favorites from the store. Excellent plugin support and features you can go for".
+
+" Outstanding customer support and features worth investment. WooCommerce Wishlist has improved our conversion rates and customer engagement multifold. Can't thank you enough! ”
+
+== OTHER USEFUL LINKS ==
+🔹 [Find all PRO features](https://acowebs.com/woocommerce-checkout-field-editor-and-manager/)
+🔹 [Documentation](https://acowebs.com/support/)
+🔹 [Find Our Other Plugins](https://acowebs.com/woocommerce-plugins/)
+🔹 [Support Ticket](https://support.acowebs.com/portal/newticket)
+🔹 [Facebook](https://www.facebook.com/acowebs)
+🔹 [Twitter](https://twitter.com/acowebs)
+🔹 [YouTube](https://www.youtube.com/channel/UCXoOjbKiXjDocNMe8qd3WHw)
 
 == INSTALLATION ==
 
@@ -119,6 +146,15 @@ Yes it is possible with pro version of our plugin, but not with free version.
 
 
 == Changelog ==
+= 2.1.25 =
+* Bug fix
+= 2.1.25 =
+* Support for WooCommerce 6.8
+= 2.1.24 =
+* Support for WooCommerce 6.7
+= 2.1.23 =
+* Support for WordPress 6
+* Support for WooCommerce 6.5
 = 2.1.22 =
 * Support for WooCommerce 6.4
 = 2.1.21 =
