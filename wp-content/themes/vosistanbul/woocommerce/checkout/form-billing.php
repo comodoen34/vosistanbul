@@ -33,9 +33,11 @@ defined( 'ABSPATH' ) || exit;
 	<?php 
 		global $woocommerce, $product; 
 		$main_cart_items = $woocommerce->cart->get_cart();
-		// print_r($main_cart_items);
+
+		$selected_address;
+		
 		foreach ( $main_cart_items as $key => $field ) {
-			echo '('.$main_cart_items[$key]['teslimat_adres_secimi'].')';
+			$selected_address = $main_cart_items[$key]['teslimat_adres_secimi'];
 			break;
 		}
 	?>
@@ -78,6 +80,34 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php endif; ?>
 
+		<?php 
+			$first_address = strtolower($selected_address);
+			$found_zip_code;
+			wp_reset_query();
+			query_posts('page_id=187');
+			the_post(); 
+
+			$all_d_s = get_field('gonderim_bolgeleri');
+
+			foreach($all_d_s as $key => $field) {
+				$second_address = strtolower($all_d_s[$key]['ilce_adi']);
+				if (str_contains($first_address, $second_address)) {
+					if($all_d_s[$key]['acik_kapali'] == 1) {
+						$found_zip_code = $all_d_s[$key]['posta_kodu'];
+						?>
+						<script type="text/javascript">
+							jQuery(document).ready(function () {
+								$('input[name=billing_postcode]').val('<?php echo $all_d_s[$key]['posta_kodu']; ?>');
+							});
+						</script>
+
+		<?php
+						break;
+					}
+				}
+			}
+		?>			
+		<?php wp_reset_query(); ?>
 		<?php do_action( 'woocommerce_after_checkout_registration_form', $checkout ); ?>
 	</div>
 <?php endif; ?>
