@@ -1,0 +1,22 @@
+2022-11-12T18:20:06+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/index.php dosyasında 17 numaralı satırda require(): Failed opening required '/home/hellospace/public_html/vos/wp-content/themes/vosistanbul/wp-blog-header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear')
+
+2022-11-12T18:20:11+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/index.php dosyasında 17 numaralı satırda require(): Failed opening required '/home/hellospace/public_html/vos/wp-content/themes/vosistanbul/wp-blog-header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear')
+
+2022-11-12T18:20:28+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/index.php dosyasında 17 numaralı satırda require(): Failed opening required '/home/hellospace/public_html/vos/wp-content/themes/vosistanbul/wp-blog-header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear')
+
+2022-11-12T18:20:32+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/index.php dosyasında 17 numaralı satırda require(): Failed opening required '/home/hellospace/public_html/vos/wp-content/themes/vosistanbul/wp-blog-header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear')
+
+2022-11-12T18:20:40+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/index.php dosyasında 17 numaralı satırda require(): Failed opening required '/home/hellospace/public_html/vos/wp-content/themes/vosistanbul/wp-blog-header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear')
+
+2022-11-12T18:22:14+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/index.php dosyasında 17 numaralı satırda require(): Failed opening required '/home/hellospace/public_html/vos/wp-content/themes/vosistanbul/wp-blog-header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear')
+
+2022-11-12T18:22:16+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/index.php dosyasında 17 numaralı satırda require(): Failed opening required '/home/hellospace/public_html/vos/wp-content/themes/vosistanbul/wp-blog-header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear')
+
+2022-11-12T18:22:38+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/index.php dosyasında 17 numaralı satırda require(): Failed opening required '/home/hellospace/public_html/vos/wp-content/themes/vosistanbul/wp-blog-header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear')
+
+2022-11-12T18:22:38+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/index.php dosyasında 17 numaralı satırda require(): Failed opening required '/home/hellospace/public_html/vos/wp-content/themes/vosistanbul/wp-blog-header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear')
+
+2022-11-12T18:22:56+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/index.php dosyasında 17 numaralı satırda require(): Failed opening required '/home/hellospace/public_html/vos/wp-content/themes/vosistanbul/wp-blog-header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear')
+
+2022-11-12T18:23:00+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/index.php dosyasında 17 numaralı satırda require(): Failed opening required '/home/hellospace/public_html/vos/wp-content/themes/vosistanbul/wp-blog-header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear')
+

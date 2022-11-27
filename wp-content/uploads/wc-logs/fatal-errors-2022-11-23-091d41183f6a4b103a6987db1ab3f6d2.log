@@ -1,0 +1,25 @@
+2022-11-23T21:32:42+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/plugins/flexible-shipping/vendor_prefixed/wpdesk/wp-plugin-flow-common/src/plugin-init-php52-free.php dosyasında 21 numaralı satırda Uncaught Error: Class 'FSVendor\WPDesk\Plugin\Flow\Initialization\Simple\SimpleFactory' not found in /home/hellospace/public_html/vos/wp-content/plugins/flexible-shipping/vendor_prefixed/wpdesk/wp-plugin-flow-common/src/plugin-init-php52-free.php:21
+Stack trace:
+#0 /home/hellospace/public_html/vos/wp-content/plugins/flexible-shipping/flexible-shipping.php(65): require()
+#1 /home/hellospace/public_html/vos/wp-admin/includes/plugin.php(2314): include_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vos/wp-admin/includes/plugin.php(661): plugin_sandbox_scrape('flexible-shippi...')
+#3 /home/hellospace/public_html/vos/wp-admin/plugins.php(58): activate_plugin('flexible-shippi...', 'https://hellosp...', false)
+#4 {main}
+  thrown
+
+2022-11-23T21:32:45+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/plugins/flexible-shipping/vendor_prefixed/wpdesk/wp-plugin-flow-common/src/plugin-init-php52-free.php dosyasında 21 numaralı satırda Uncaught Error: Class 'FSVendor\WPDesk\Plugin\Flow\Initialization\Simple\SimpleFactory' not found in /home/hellospace/public_html/vos/wp-content/plugins/flexible-shipping/vendor_prefixed/wpdesk/wp-plugin-flow-common/src/plugin-init-php52-free.php:21
+Stack trace:
+#0 /home/hellospace/public_html/vos/wp-content/plugins/flexible-shipping/flexible-shipping.php(65): require()
+#1 /home/hellospace/public_html/vos/wp-admin/includes/plugin.php(2314): include_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vos/wp-admin/plugins.php(192): plugin_sandbox_scrape('flexible-shippi...')
+#3 {main}
+  thrown
+
+2022-11-23T21:32:45+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/plugins/flexible-shipping/vendor_prefixed/wpdesk/wp-plugin-flow-common/src/plugin-init-php52-free.php dosyasında 21 numaralı satırda Uncaught Error: Class 'FSVendor\WPDesk\Plugin\Flow\Initialization\Simple\SimpleFactory' not found in /home/hellospace/public_html/vos/wp-content/plugins/flexible-shipping/vendor_prefixed/wpdesk/wp-plugin-flow-common/src/plugin-init-php52-free.php:21
+Stack trace:
+#0 /home/hellospace/public_html/vos/wp-content/plugins/flexible-shipping/flexible-shipping.php(65): require()
+#1 /home/hellospace/public_html/vos/wp-admin/includes/plugin.php(2314): include_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vos/wp-admin/plugins.php(192): plugin_sandbox_scrape('flexible-shippi...')
+#3 {main}
+  thrown
+

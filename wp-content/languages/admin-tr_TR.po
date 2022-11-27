@@ -44,39 +44,39 @@ msgid "Continue"
 msgstr "Devam"
 
 #. translators: 1: Learn WordPress link.
-#: wp-admin/about.php:518
+#: wp-admin/about.php:549
 msgid "Explore <a href=\"%s\">learn.wordpress.org</a> for tutorial videos, online workshops, courses, and lesson plans for Meetup organizers, including new features in WordPress."
 msgstr "WordPress içindeki yeni özelliklerle birlikte Meetup düzenleyicileri için öğretici videolar, çevrimiçi atölyeler, kurslar ve ders planları bulunan <a href=\"%s\">learn.wordpress.org</a> sitesini keşfedin."
 
-#: wp-admin/about.php:456
+#: wp-admin/about.php:487
 msgid "https://wordpress.org/plugins/performance-lab/"
 msgstr "https://wordpress.org/plugins/performance-lab/"
 
 #. translators: %s: Link to fluid typography demo.
-#: wp-admin/about.php:185
+#: wp-admin/about.php:216
 msgid "<a href=\"%s\">Fluid typography</a> lets you define font sizes that adapt for easy reading in any screen size."
 msgstr "<a href=\"%s\">Duyarlı tipografi</a>, herhangi bir ekran boyutunda kolay okuma için uyarlanan yazı tipi boyutlarını tanımlamanıza olanak tanır."
 
-#: wp-admin/about.php:180
+#: wp-admin/about.php:211
 msgid "More responsive text with fluid typography"
 msgstr "Duyarlı tipografi ile daha duyarlı metin"
 
-#: wp-admin/about.php:478
+#: wp-admin/about.php:509
 msgid "Combine it with block locking options for even more advanced control over your blocks."
 msgstr "Bloklarınızın üzerinde daha ileri düzeyde kontrol sağlamak için blok kilitleme seçenekleriyle birleştirin."
 
 #. translators: %s: Link to content locking dev note.
-#: wp-admin/about.php:473
+#: wp-admin/about.php:504
 msgid "Thanks to <a href=\"%s\">content-only editing settings</a>, layouts can be locked within container blocks. In a content-only block, its children are invisible to the List View and entirely uneditable. So you control the layout while your writers can focus on the content."
 msgstr "<a href=\"%s\">Yalnızca içerik düzenleme ayarları</a> ile düzenler kapsayıcı bloklar içinde kilitlenebilir. Yalnızca içerik bloğunda, alt ögeler liste görünümünde görünmez ve tamamen düzenlenemez. Böylece, yazarlarınız içeriğe odaklanırken düzeni siz kontrol edersiniz."
 
-#: wp-admin/about.php:468
+#: wp-admin/about.php:499
 msgid "Content-only editing support for container blocks"
 msgstr "Kapsayıcı blokları için yalnızca içerik düzenleme desteği"
 
 #. translators: %s: Link to install Performance Lab plugin if permitted,
 #. otherwise link to plugin on WordPress.org.
-#: wp-admin/about.php:455
+#: wp-admin/about.php:486
 msgid "Be among the first to get the latest improvements by adding the <a href=\"%s\">Performance Lab plugin</a> to your WordPress test site or sandbox."
 msgstr "WordPress deneme sitenize ya da kum havuzunuza <a href=\"%s\">Performance Lab eklentisini</a> ekleyerek en son iyileştirmeleri ilk alanlardan biri olun."
 
@@ -84,206 +84,206 @@ msgstr "WordPress deneme sitenize ya da kum havuzunuza <a href=\"%s\">Performanc
 #. note, 3: code-formatted "WP_Query" linked to dev note, 4: Block registration
 #. performance dev note, 5: Site health checks dev note; 6: code-formatted
 #. "async", 7: Performance field guide.
-#: wp-admin/about.php:440
+#: wp-admin/about.php:471
 msgid "WordPress 6.1 resolved more than 25 tickets dedicated to enhancing performance. From the  <a href=\"%1$s\">REST API</a> to <a href=\"%2$s\">multisite</a>, %3$s to <a href=\"%4$s\">core block registration</a>, and <a href=\"%5$s\">new Site Health checks</a> to the addition of the %6$s attribute to images, there are performance improvements for every type of site. A full breakdown can be found in the <a href=\"%7$s\">Performance Field Guide</a>."
 msgstr "WordPress 6.1, performansı artırmaya adanmış 25 üzerinde sorun bildirimini çözüyor. <a href=\"%1$s\">REST API</a>, <a href=\"%2$s\">multisite</a>, %3$s <a href=\"%4$s\">temel blok kaydı</a> ve görsellere %6$s özniteliğinin eklenmesi, <a href=\"%5$s\">yeni site sağlığı denetimleri</a> gibi her türlü site için performans iyileştirmeleri yapıldı. <a href=\"%7$s\">Performans alanı rehberi</a> bölümünde ayrıntıları bulabilirsiniz."
 
-#: wp-admin/about.php:435
+#: wp-admin/about.php:466
 msgid "Performance highlights"
 msgstr "Performansın öne çıkan özellikleri"
 
 #. translators: %s: Link to spacing presets dev note.
-#: wp-admin/about.php:419
+#: wp-admin/about.php:450
 msgid "Save time and help avoid hard-coding a values into a theme with <a href=\"%s\">preset margin and padding values for multiple blocks</a>."
 msgstr "Zamandan tasarruf edin ve birden çok blok için <a href=\"%s\">önceden ayarlanmış kenar boşluğu ve dolgu değerleri</a> ile bir değeri bir temaya sabit kodlamanın önlenmesine yardımcı olun."
 
-#: wp-admin/about.php:414
+#: wp-admin/about.php:445
 msgid "Spacing presets for faster, consistent design"
 msgstr "Daha hızlı, tutarlı tasarım için boşluk ön ayarları"
 
 #. translators: %s: Link to theme.json filters dev note.
-#: wp-admin/about.php:401
+#: wp-admin/about.php:432
 msgid "<a href=\"%s\">Leverage filters</a> in the Styles sidebar to control settings at all four levels of your site—core, theme, user, or block, from less to more specific."
 msgstr "Sitenizin dört düzeyindeki (çekirdek, tema, kullanıcı ya da blok) ayarları genelden özele doğru kontrol etmek için Stiller yan çubuğundaki <a href=\"%s\">süzgeçleri kullanın</a>."
 
-#: wp-admin/about.php:396
+#: wp-admin/about.php:427
 msgid "Filters for all your styles"
 msgstr "Tüm stilleriniz için filtreler"
 
 #. translators: %s: Link to query loop dev note.
-#: wp-admin/about.php:379
+#: wp-admin/about.php:410
 msgid "<a href=\"%s\">New filters</a> let Query Block variations support custom queries for more powerful variations and advanced hierarchical post types filtering options."
 msgstr "<a href=\"%s\">Yeni süzgeçler</a>, sorgu bloğu çeşitlerinin daha güçlü çeşitler ve gelişmiş hiyerarşik gönderi türleri süzme seçenekleri için özel sorguları desteklemesini sağlar."
 
-#: wp-admin/about.php:374
+#: wp-admin/about.php:405
 msgid "Expanded support for Query Loop blocks"
 msgstr "Sorgu döngüsü blokları için genişletilmiş destek"
 
 #. translators: 1: Link to block-based template parts in classic themes dev
 #. note, 2: Folder name.
-#: wp-admin/about.php:360
+#: wp-admin/about.php:391
 msgid "<a href=\"%1$s\">Block template parts can now be defined in classic themes</a> by adding the appropriate HTML files to the %2$s directory at the root of the theme."
 msgstr "<a href=\"%1$s\">Artık klasik temalarda blok kalıbı bölümleri tanımlanabilir</a>. Bunun için uygun HTML dosyaları temanın kök klasöründeki %2$s klasörüne eklenebilir."
 
-#: wp-admin/about.php:355
+#: wp-admin/about.php:386
 msgid "Block template parts in classic themes"
 msgstr "Klasik temalarda blok şablon parçaları"
 
 #. translators: %s: Link to layout support refactor dev note.
-#: wp-admin/about.php:338
+#: wp-admin/about.php:369
 msgid "The default content dimensions provided by themes can now be overridden in the Styles Sidebar, giving site builders better control over full-width content. Developers have <a href=\"%s\">fine-grained control over these controls</a>."
 msgstr "Temalar tarafından sağlanan varsayılan içerik boyutları artık Stiller yan çubuğundan değiştirilebilir. Böylece site oluşturuculara tam genişlikteki içerik üzerinde daha iyi kontrol sağlanır. Geliştiriciler, <a href=\"%s\">bu kontroller üzerinde ayrıntılı işlem yapabilir</a>."
 
-#: wp-admin/about.php:333
+#: wp-admin/about.php:364
 msgid "Continued evolution of layout options"
 msgstr "Düzen seçeneklerinin sürekli gelişimi"
 
 #. translators: %s: Link to styling elements dev note.
-#: wp-admin/about.php:320
+#: wp-admin/about.php:351
 msgid "Updates include <a href=\"%s\">styling elements</a> like buttons, citations, and links globally; controlling hover, active, and focus states for links using theme.json (not available to control in the interface yet); and customizing outline support for blocks and elements, among other features."
 msgstr "Güncellemeler, küresel olarak düğmeler, alıntılar ve bağlantılar gibi <a href=\"%s\">stil bileşenlerini</a> içerir. theme.json ile bağlantılar için vurgulu, etkin ve odak durumlarının kontrol edilmesi (henüz arayüzde kontrol edilemez) ve diğer özelliklerin yanı sıra bloklar ve bileşenler için çerçeve desteğini özelleştirme."
 
-#: wp-admin/about.php:315
+#: wp-admin/about.php:346
 msgid "Updated interface options and features"
 msgstr "Güncellenmiş arayüz seçenekleri ve özellikleri"
 
-#: wp-admin/about.php:302
+#: wp-admin/about.php:333
 msgid "A new modal design offers a background blur effect, making it easier to focus on the task at hand."
 msgstr "Yeni bir üste açılan pencere tasarımı, eldeki göreve odaklanmayı kolaylaştıran bir arka plan bulanıklığı etkisi sağlar."
 
 #. translators: %s: "General Settings" admin page title, linked to the page if
 #. the user can edit options.
-#: wp-admin/about.php:297
+#: wp-admin/about.php:328
 msgid "The site tagline is empty by default in new sites but can be modified in %s."
 msgstr "Site sloganı yeni sitelerde varsayılan olarak boştur ancak %s içinde değiştirilebilir."
 
-#: wp-admin/about.php:292
+#: wp-admin/about.php:323
 msgid "6.1 includes a new time-to-read feature showing content authors the approximate time-to-read values for pages, posts, and custom post types."
 msgstr "6.1, içerik yazarlarına sayfalar, yazılar ve özel yazı türleri için yaklaşık okuma süresi değerlerini gösteren yeni bir okuma süresi özelliği içerir."
 
-#: wp-admin/about.php:291
+#: wp-admin/about.php:322
 msgid "Other notes of interest"
 msgstr "Diğer ilgi notları"
 
 #. translators: %s: Link to accessibility improvements dev note.
-#: wp-admin/about.php:278
+#: wp-admin/about.php:309
 msgid "More than 40 improvements in accessibility include resolving focus loss problems in the editor, improving form labels and audible messages, making alternative text easier to edit, and fixing the sub-menu overlap in the expanded admin side navigation at smaller screen sizes and higher zoom levels. Learn more about <a href=\"%s\">accessibility in WordPress</a>."
 msgstr "Erişilebilirlik ile ilgili 40 üzerinde iyileştirme, düzenleyicideki odak kaybı sorunlarının çözülmesi, form etiketlerinin ve sesli iletilerin iyileştirilmesi, alternatif metinlerin daha kolay düzenlenmesi ve daha küçük ekran boyutlarında ve daha yüksek yakınlaştırma düzeylerinde genişletilmiş yönetici tarafındaki gezinmede alt menü çakışmasını gibi sorunlarla ilgili düzenlemeleri içerir. <a href=\"%s\">WordPress üzerinde erişilebilirlik</a> hakkında ayrıntılı bilgi alın."
 
-#: wp-admin/about.php:273
+#: wp-admin/about.php:304
 msgid "Improved admin and editor accessibility"
 msgstr "İyileştirilmiş yönetici ve düzenleyici erişilebilirliği"
 
 #. translators: %s: Link style engine dev note.
-#: wp-admin/about.php:257
+#: wp-admin/about.php:288
 msgid "The CSS rules for margin, padding, typography, colors, and borders within the <a href=\"%s\">styles engine</a> are now all in one place, reducing time spent on layout-specific tasks and helps to generate semantic class names."
 msgstr "<a href=\"%s\">Stiller motorundaki</a> kenar boşluğu, dolgu, tipografi, renkler ve kenarlıklar için CSS kurallarının tümü artık tek bir yerde, düzene özgü görevlerde harcanan zamanı azaltıyor ve anlamsal sınıf adları oluşturmaya yardımcı oluyor."
 
-#: wp-admin/about.php:252
+#: wp-admin/about.php:283
 msgid "A streamlined style system"
 msgstr "Modern bir stil sistemi"
 
 #. translators: %s: Link to block editor preferences dev note.
-#: wp-admin/about.php:239
+#: wp-admin/about.php:270
 msgid "Site Editor settings are now <a href=\"%s\">persistent for each user</a>. This means your settings will now be consistent across browsers and devices."
 msgstr "Site düzenleyici ayarları artık <a href=\"%s\">her kullanıcı için kalıcı</a>. Bu, ayarlarınızın artık tarayıcılar ve cihazlar arasında tutarlı olacağı anlamına gelir."
 
-#: wp-admin/about.php:234
+#: wp-admin/about.php:265
 msgid "Keep your Site Editor settings for later"
 msgstr "Site düzenleyici ayarlarınızı sonraya saklayın"
 
-#: wp-admin/about.php:219
+#: wp-admin/about.php:250
 msgid "https://wordpress.org/themes/tags/full-site-editing/"
 msgstr "https://wordpress.org/themes/tags/full-site-editing/"
 
-#. translators: %s: Link to "full site editing" themes on WordPress.org.
-#: wp-admin/about.php:218
+#. translators: %s: Link to Block Themes on WordPress.org.
+#: wp-admin/about.php:249
 msgid "The Themes Directory has <a href=\"%s\">a filter for block themes</a>, and a pattern preview gives a better sense of what the theme might look like while exploring different themes and patterns."
 msgstr "Tema klasöründe <a href=\"%s\">blok temaları için bir süzgeç</a> bulunur ve bir model ön izlemesi, farklı temaları ve modelleri keşfederken temanın nasıl görünebileceği konusunda daha iyi bir fikir verir."
 
-#: wp-admin/about.php:213
+#: wp-admin/about.php:244
 msgid "Find block themes faster"
 msgstr "Blok temalarını daha hızlı bulun"
 
-#: wp-admin/about.php:204
+#: wp-admin/about.php:235
 msgid "In WordPress 6.0, when you created a new page, you would see suggested patterns so you did not have to start with a blank page. In 6.1, you will also see the starter patterns modal when you create a new instance of any post type."
 msgstr "WordPress 6.0'da yeni bir sayfa oluşturduğunuzda, boş bir sayfayla başlamak zorunda kalmamanız için önerilen modelleri görürsünüz. 6.1 sürümünde, herhangi bir yazı türünün yeni bir örneğini oluşturduğunuzda, başlangıç modelleri modunu da göreceksiniz."
 
-#: wp-admin/about.php:203
+#: wp-admin/about.php:234
 msgid "Add starter patterns to any post type"
 msgstr "Herhangi bir yazı türüne başlangıç modelleri ekleyin"
 
-#: wp-admin/about.php:174
+#: wp-admin/about.php:205
 msgid "The List and Quote blocks now support inner blocks, allowing for more flexible and rich compositions like adding headings inside your Quote blocks."
 msgstr "Liste ve alıntı blokları artık iç blokları destekleyerek alıntı bloklarınızın içine başlık eklemek gibi daha esnek ve zengin kompozisyonlara izin verir."
 
-#: wp-admin/about.php:173
+#: wp-admin/about.php:204
 msgid "Compose richer lists and quotes with inner blocks"
 msgstr "İç bloklarla daha zengin listeler ve alıntılar oluşturun"
 
-#: wp-admin/about.php:167
+#: wp-admin/about.php:198
 msgid "Various blocks have improved placeholders that reflect customization options to help you design your site and its content. For example, the Image block placeholder displays custom borders and duotone filters even before selecting an image."
 msgstr "Çeşitli bloklar, sitenizi ve içeriğini tasarlamanıza yardımcı olacak özelleştirme seçeneklerini yansıtan gelişmiş yer tutuculara sahiptir. Örneğin, görsel bloğu yer tutucusu, bir görsel seçmeden önce bile özel kenarlıklar ve çift tonlu filtreler görüntüler."
 
-#: wp-admin/about.php:166
+#: wp-admin/about.php:197
 msgid "Improved block placeholders"
 msgstr "Geliştirilmiş blok yer tutucuları"
 
-#: wp-admin/about.php:157
+#: wp-admin/about.php:188
 msgid "When locking blocks, a new toggle lets you apply your lock settings to all the blocks in a containing block like the group, cover, and column blocks."
 msgstr "Blokları kilitlerken, yeni bir geçiş, kilit ayarlarınızı kapsayıcı bir bloktaki grup, kapak ve sütun blokları gibi tüm bloklara uygulamanıza olanak tanır."
 
-#: wp-admin/about.php:156
+#: wp-admin/about.php:187
 msgid "One-click lock settings for all inner blocks"
 msgstr "Tüm iç bloklar için tek tıklamayla kilit ayarları"
 
-#: wp-admin/about.php:150
+#: wp-admin/about.php:181
 msgid "A cleaner, better-organized display helps you easily view and manage important post and page settings, especially the template picker and scheduler."
 msgstr "Daha temiz, daha iyi organize edilmiş bir ekran, önemli yazı ve sayfa ayarlarını, özellikle de şablon seçici ve planlayıcıyı kolayca görüntülemenize ve yönetmenize yardımcı olur."
 
-#: wp-admin/about.php:149
+#: wp-admin/about.php:180
 msgid "Improved layout and visualization of document settings"
 msgstr "Belge ayarlarının iyileştirilmiş düzeni ve görselleştirilmesi"
 
 #. translators: %s: Link to navigation block fallback dev note.
-#: wp-admin/about.php:131
+#: wp-admin/about.php:162
 msgid "<a href=\"%s\">New fallback options</a> in the navigation block mean you can edit the menu that’s open; no searching needed. Plus, the controls for choosing and working on menus have their own place in the block settings. The mobile menu system also gets an upgrade with new features, including different icon options, to make the menu yours."
 msgstr "Gezinme bloğundaki <a href=\"%s\">yeni yedek seçenekler</a>, açık menüyü düzenleyebileceğiniz anlamına gelir; aramaya gerek yok. Ayrıca, menü seçme ve menüler üzerinde çalışma kontrollerinin blok ayarlarında kendi yeri vardır. Mobil menü sistemi, menüyü size ait kılmak için farklı simge seçenekleri de dahil olmak üzere yeni özelliklerle bir yükseltme alır."
 
-#: wp-admin/about.php:126
+#: wp-admin/about.php:157
 msgid "Menus just got easier to create and manage"
 msgstr "Menüleri oluşturmak ve yönetmek artık daha kolay"
 
 #. translators: %s: Link to layout support refactor dev note.
-#: wp-admin/about.php:116
+#: wp-admin/about.php:147
 msgid "Upgrades to the <a href=\"%s\">controls for design elements and blocks</a> make the layout and site-building process more consistent, complete, and intuitive."
 msgstr "<a href=\"%s\">Tasarım öğeleri ve bloklar için denetimlerde</a> yapılan yükseltmeler, düzen ve site oluşturma sürecini daha tutarlı, eksiksiz ve sezgisel hale getirir."
 
-#: wp-admin/about.php:111
+#: wp-admin/about.php:142
 msgid "More consistency and control across design tools"
 msgstr "Tasarım araçları arasında daha fazla tutarlılık ve kontrol"
 
 #. translators: 1: Link to template options dev note, 2: Link to template
 #. creation dev note.
-#: wp-admin/about.php:90
+#: wp-admin/about.php:121
 msgid "<a href=\"%1$s\">New templates</a> include a custom template for posts and pages in the Site Editor. Search-and-replace tools speed up the design of <a href=\"%2$s\">template parts</a>."
 msgstr "<a href=\"%1$s\">Yeni şablonlar</a>, Site düzenleyicisindeki yazılar ve sayfalar için özel bir şablon sağlar. Arama ve değiştirme araçları, <a href=\"%2$s\">şablon parçalarının</a> tasarımını hızlandırır."
 
-#: wp-admin/about.php:85
+#: wp-admin/about.php:116
 msgid "A better creator experience with refined and additional templates"
 msgstr "İyileştirilmiş ve ek şablonlarla daha iyi bir içerik oluşturucu deneyimi"
 
 #. translators: 1: Variation announcement post URL, 2: Accessibility-ready
 #. handbook page.
-#: wp-admin/about.php:74
+#: wp-admin/about.php:105
 msgid "Building on the foundational elements in the 5.9 and 6.0 releases for block themes and style variations, the new default theme, Twenty Twenty-Three, includes <a href=\"%1$s\">10 different styles</a> and is &#147;<a href=\"%2$s\">Accessibility Ready</a>&#148;."
 msgstr "Blok temaları ve stil çeşitleri için 5.9 ve 6.0 sürümlerindeki temel bileşenlere dayanan yeni varsayılan tema Twenty Twenty-Three, <a href=\"%1$s\">10 farklı stil</a> içerir ve & #147;<a href=\"%2$s\">Erişilebilirlik özellikleri hazır</a>&#148;."
 
-#: wp-admin/about.php:69
+#: wp-admin/about.php:100
 msgid "A new default theme powered by 10 distinct style variations"
 msgstr "10 farklı stil çeşidi tarafından desteklenen yeni bir varsayılan tema"
 
-#: wp-admin/about.php:57
+#: wp-admin/about.php:88
 msgid "This page highlights some of the most significant changes to the product since the May 2022 release of WordPress 6.0. You will also find resources for developers and anyone seeking a deeper understanding of WordPress."
 msgstr "Bu sayfa, WordPress 6.0'ın Mayıs 2022 sürümünden bu yana üründe yapılan en önemli değişikliklerden bazılarını vurgulamaktadır. Ayrıca geliştiriciler ve WordPress hakkında daha derin bir anlayış arayan herkes için kaynaklar bulacaksınız."
 
@@ -344,7 +344,7 @@ msgstr "Önerilen öğeler siteniz için faydalı olarak kabul edilir, ancak kri
 msgid "Critical issues are items that may have a high impact on your sites performance or security, and resolving these issues should be prioritized."
 msgstr "Kritik sorunlar, sitelerinizin performansı veya güvenliği üzerinde yüksek etkisi olabilecek öğelerdir ve bu sorunların çözülmesine öncelik verilmelidir."
 
-#: wp-admin/site-editor.php:28
+#: wp-admin/site-editor.php:23 wp-admin/site-editor.php:28
 msgid "The theme you are currently using is not compatible with the Site Editor."
 msgstr "Şu anda kullanmakta olduğunuz tema tam site düzenleyici ile uyumlu değil."
 
@@ -614,40 +614,40 @@ msgid "Reach out to WordPress Core developers to ensure you'll never have this p
 msgstr "Bu sorunu bir daha asla yaşamayacağınızdan emin olmak için WordPress Core geliştiricilerine ulaşın."
 
 #. translators: 1: WordPress version number, 2: Link to update WordPress
-#: wp-admin/about.php:611
+#: wp-admin/about.php:642
 msgid "Important! Your version of WordPress (%1$s) will stop receiving security updates in the near future. To keep your site secure, please <a href=\"%2$s\">update to the latest version of WordPress</a>."
 msgstr "Önemli! WordPress sürümünüz (%1$s) yakın zamanda güvenlik güncellemeleri almayı durduracak. Sitenizi güvende tutmak için lütfen <a href=\"%2$s\">son WordPress sürümüne güncelleyin</a>."
 
 #. translators: 1: WordPress version number, 2: Link to update WordPress
-#: wp-admin/about.php:608
+#: wp-admin/about.php:639
 msgid "Important! Your version of WordPress (%1$s) is no longer supported, you will not receive any security updates for your website. To keep your site secure, please <a href=\"%2$s\">update to the latest version of WordPress</a>."
 msgstr "Önemli! WordPress sürümünüz (%1$s) artık desteklenmiyor. Web siteniz için herhangi bir güvenlik güncellemesi alamayacaksınız. Sitenizi güvende tutmak için lütfen <a href=\"%2$s\">son WordPress sürümüne güncelleyin</a>."
 
-#: wp-admin/about.php:530
+#: wp-admin/about.php:561
 msgid "https://make.wordpress.org/core/2022/10/12/wordpress-6-1-field-guide/"
 msgstr "https://make.wordpress.org/core/2022/10/12/wordpress-6-1-field-guide/"
 
 #. translators: 1: WordPress Release Notes link, 2: WordPress version number.
-#: wp-admin/about.php:540
+#: wp-admin/about.php:571
 msgid "<a href=\"%1$s\">Read the WordPress %2$s Release Notes</a> for more information on the included enhancements and issues fixed, installation information, developer notes and resources, release contributors, and the list of file changes in this release."
 msgstr "Bu sürüme dahil edilen geliştirmeler ve düzeltilen sorunlar, yükleme bilgileri, geliştirici notları ve kaynakları, sürüme katkıda bulunanlar ve bu sürümdeki dosya değişikliklerinin listesi hakkında daha fazla bilgi için <a href=\"%1$s\">WordPress %2$s sürüm notlarını okuyun.</a>."
 
 #. translators: %s: WordPress Field Guide link.
-#: wp-admin/about.php:529
+#: wp-admin/about.php:560
 msgid "Check out the latest version of the <a href=\"%s\">WordPress Field Guide</a>. It is overflowing with detailed developer notes to help you build with WordPress."
 msgstr "<a href=\"%s\">WordPress Alan Rehberi</a>nin en son sürümüne göz atın. WordPress ile oluşturmanıza yardımcı olacak ayrıntılı geliştirici notlarıyla dolup taşıyor."
 
 #. translators: %s: 6.1 overview video link.
-#: wp-admin/about.php:504
+#: wp-admin/about.php:535
 msgid "See WordPress 6.1 in action! <a href=\"%s\">Watch a brief overview video</a> highlighting some of the major features debuting in WordPress 6.1."
 msgstr "WordPress 6.1'i iş başında görün! WordPress 6.1 ile ortaya çıkan bazı önemli özellikleri vurgulayan <a href=\"%s\">kısa genel bakış videosunu izleyin</a> ."
 
 #. translators: %s: Version number.
-#: wp-admin/about.php:495
+#: wp-admin/about.php:526
 msgid "Learn more about WordPress %s"
 msgstr "WordPress %s hakkında daha fazla bilgi edinin"
 
-#: wp-admin/about.php:487
+#: wp-admin/about.php:518
 msgid "Exploring WordPress 6.1 video"
 msgstr "WordPress 6.1 videosunu keşfedin"
 
@@ -778,7 +778,7 @@ msgstr "Aktif"
 
 #: wp-admin/includes/class-core-upgrader.php:160
 #: wp-admin/includes/class-wp-upgrader.php:166
-#: wp-admin/includes/update-core.php:1019
+#: wp-admin/includes/update-core.php:1020
 msgid "The update cannot be installed because some files could not be copied. This is usually due to inconsistent file permissions."
 msgstr "Bazı dosyalar kopyalanamadığı için güncelleştirme yüklenemiyor. Bu genellikle tutarsız dosya izinlerinden kaynaklanır."
 
@@ -945,10 +945,6 @@ msgstr "Durum sekmesinde, dikkatinizi gerektiren diğer her şeyle birlikte Word
 msgid "This screen allows you to obtain a health diagnosis of your site, and displays an overall rating of the status of your installation."
 msgstr "Bu ekran, sitenizin sağlık teşhisi almanızı sağlar ve kurulumunuzun durumunun genel bir derecelendirmesini görüntüler."
 
-#: wp-admin/site-editor.php:23
-msgid "The theme you are currently using is not compatible with Full Site Editing."
-msgstr "Şu anda kullanmakta olduğunuz tema tam site düzenleme ile uyumlu değil."
-
 #: wp-admin/options-privacy.php:44
 msgid "<a href=\"https://wordpress.org/support/article/settings-privacy-screen/\">Documentation on Privacy Settings</a>"
 msgstr "<a href=\"https://wordpress.org/support/article/settings-privacy-screen/\">Gizlilik ayarlarına ilişkin belgeler</a>"
@@ -1032,7 +1028,7 @@ msgstr "Web siteniz, şu anda uygulama şifreleriyle uyumlu olmayan temel kimlik
 msgid "%1$s &#8220;%2$s&#8221;"
 msgstr "%1$s &#8220;%2$s&#8221;"
 
-#: wp-admin/includes/theme.php:338
+#: wp-admin/includes/theme.php:339
 msgid "Template Editing"
 msgstr "Şablon düzenleme"
 
@@ -1599,7 +1595,7 @@ msgstr "Yeni uygulama parolası ekle"
 msgid "Required to create an Application Password, but not to update the user."
 msgstr "Bir Uygulama Parolası oluşturmak için gereklidir, ancak kullanıcıyı güncellemek için gerekli değildir."
 
-#: wp-admin/about.php:558
+#: wp-admin/about.php:589
 msgid "Go to Updates"
 msgstr "Güncellemelere git"
 
@@ -1944,7 +1940,7 @@ msgstr "Ortam türü"
 msgid "Auto-updates are only available for plugins recognized by WordPress.org, or that include a compatible update system."
 msgstr "Otomatik güncellemeler WordPress.org tarafından tanınan ya da uyumlu güncelleme sistemine sahip eklentiler için kullanılabilir."
 
-#: wp-admin/includes/theme.php:874 wp-admin/themes.php:1036
+#: wp-admin/includes/theme.php:875 wp-admin/themes.php:1036
 msgid "Update Incompatible"
 msgstr "Güncelleme uyumlu değil"
 
@@ -2619,17 +2615,13 @@ msgstr "Gerekli WordPress sürümü"
 msgid "Theme name"
 msgstr "Tema adı"
 
-#: wp-admin/includes/theme.php:1063 wp-admin/theme-install.php:432
+#: wp-admin/includes/theme.php:1064 wp-admin/theme-install.php:432
 #: wp-admin/theme-install.php:464
 msgctxt "theme"
 msgid "Cannot Install"
 msgstr "Yüklenemiyor"
 
-#: wp-admin/includes/theme.php:334
-msgid "Full Site Editing"
-msgstr "Tam site düzenleme"
-
-#: wp-admin/includes/theme.php:324
+#: wp-admin/includes/theme.php:325
 msgid "Block Editor Patterns"
 msgstr "Blok düzenleyici modelleri"
 
@@ -2689,11 +2681,11 @@ msgstr "PHP bellek sınırı (sadece yönetici ekranları için)"
 msgid "Is this site discouraging search engines?"
 msgstr "Bu site arama motorlarını geri çeviriyor mu?"
 
-#: wp-admin/includes/theme.php:350
+#: wp-admin/includes/theme.php:351
 msgid "Wide Blocks"
 msgstr "Geniş bloklar"
 
-#: wp-admin/includes/theme.php:325
+#: wp-admin/includes/theme.php:326
 msgid "Block Editor Styles"
 msgstr "Blok düzenleyicisi stilleri"
 
@@ -2890,7 +2882,7 @@ msgid "The seventh parameter passed to %s should be numeric representing menu po
 msgstr "%s için gönderilen yedinci parametre menü pozisyonunu temsil edecek sayı olmalı."
 
 #. translators: 1: WordPress version number, 2: The PHP extension name needed.
-#: wp-admin/includes/update-core.php:1114
+#: wp-admin/includes/update-core.php:1115
 msgid "The update cannot be installed because WordPress %1$s requires the %2$s PHP extension."
 msgstr "WordPress %1$s, %2$s PHP eklentisine ihtiyaç duyduğundan güncelleme yüklenemedi."
 
@@ -3748,7 +3740,7 @@ msgstr "%1$s için yeni bir sürüm mevcut fakat sizin PHP sürümünüzle çal�
 msgid "This plugin failed to load properly and is paused during recovery mode."
 msgstr "Bu eklenti düzgün yüklenemedi ve kurtarma modu sırasında duraklatıldı."
 
-#: wp-admin/includes/theme.php:1208
+#: wp-admin/includes/theme.php:1209
 msgid "Go to the Themes screen"
 msgstr "Temalar ekranına gidin"
 
@@ -4672,7 +4664,7 @@ msgid "Must Use Plugins"
 msgstr "Kullanımı zorunlu eklentiler"
 
 #: wp-admin/includes/class-wp-debug-data.php:153
-#: wp-admin/includes/theme.php:834 wp-admin/themes.php:958
+#: wp-admin/includes/theme.php:835 wp-admin/themes.php:958
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:917
 msgid "Active Theme"
 msgstr "Etkin tema"
@@ -4923,11 +4915,11 @@ msgctxt "plugin"
 msgid "Cannot Install"
 msgstr "Yüklenemiyor"
 
-#. translators: %s: WordPress version number.
 #. translators: %s: WordPress version.
-#: wp-admin/about.php:543 wp-admin/includes/update.php:306
-#: wp-admin/index.php:119 wp-admin/install.php:239 wp-admin/update-core.php:94
-#: wp-admin/upgrade.php:81
+#. translators: %s: WordPress version number.
+#: wp-admin/about.php:67 wp-admin/about.php:574
+#: wp-admin/includes/update.php:306 wp-admin/index.php:119
+#: wp-admin/install.php:239 wp-admin/update-core.php:94 wp-admin/upgrade.php:81
 msgid "https://wordpress.org/support/wordpress-version/version-%s/"
 msgstr "https://wordpress.org/support/wordpress-version/version-%s/"
 
@@ -4942,15 +4934,15 @@ msgctxt "plugin"
 msgid "Resume %s"
 msgstr "%s eklentisini devam ettir"
 
-#: wp-admin/includes/theme.php:1206
+#: wp-admin/includes/theme.php:1207
 msgid "You can find more details and make changes on the Themes screen."
 msgstr "Temalar ekranında daha fazla ayrıntı bulabilir ve değişiklik yapabilirsiniz."
 
-#: wp-admin/includes/theme.php:1205
+#: wp-admin/includes/theme.php:1206
 msgid "One or more themes failed to load properly."
 msgstr "Bir ya da daha fazla tema düzgün yüklenemedi."
 
-#: wp-admin/includes/theme.php:1176
+#: wp-admin/includes/theme.php:1177
 msgid "Could not resume the theme."
 msgstr "Tema devam ettirilemedi."
 
@@ -6378,7 +6370,7 @@ msgid "Select one or more Theme features to filter by"
 msgstr "Filtrelemek için bir veya daha fazla tema özelliği şeçiniz"
 
 #. translators: %s: Number of ratings.
-#: wp-admin/includes/theme.php:857 wp-admin/theme-install.php:489
+#: wp-admin/includes/theme.php:858 wp-admin/theme-install.php:489
 msgid "(%s ratings)"
 msgstr "(%s oy)"
 
@@ -6555,7 +6547,7 @@ msgstr "%s başarıyla silindi."
 msgid "The search for installed plugins will search for terms in their name, description, or author."
 msgstr "Yüklü eklentilerin içinde yapılan arama, isim, açıklama ya da geliştirici alanlarında aranır."
 
-#: wp-admin/includes/theme.php:329
+#: wp-admin/includes/theme.php:330
 msgid "Custom Logo"
 msgstr "Özel logo"
 
@@ -6687,43 +6679,43 @@ msgstr "Lütfen WordPress&#8217;i hemen güncelleyin"
 msgid "<a href=\"%1$s\">WordPress %2$s</a> is available! <a href=\"%3$s\" aria-label=\"%4$s\">Please update now</a>."
 msgstr "<a href=\"%1$s\">WordPress %2$s</a> hazır! <a href=\"%3$s\" aria-label=\"%4$s\">Lütfen hemen güncelleyin</a>."
 
-#: wp-admin/includes/theme.php:319
+#: wp-admin/includes/theme.php:320
 msgid "Portfolio"
 msgstr "Portföy"
 
-#: wp-admin/includes/theme.php:318
+#: wp-admin/includes/theme.php:319
 msgid "Photography"
 msgstr "Fotoğraf"
 
-#: wp-admin/includes/dashboard.php:1314 wp-admin/includes/theme.php:317
+#: wp-admin/includes/dashboard.php:1314 wp-admin/includes/theme.php:318
 msgid "News"
 msgstr "Haber"
 
-#: wp-admin/includes/theme.php:315
+#: wp-admin/includes/theme.php:316
 msgid "Food & Drink"
 msgstr "Yiyecek ve içecek"
 
-#: wp-admin/includes/theme.php:314
+#: wp-admin/includes/theme.php:315
 msgid "Entertainment"
 msgstr "Eğlence"
 
-#: wp-admin/includes/theme.php:313
+#: wp-admin/includes/theme.php:314
 msgid "Education"
 msgstr "Eğitim"
 
-#: wp-admin/includes/theme.php:312
+#: wp-admin/includes/theme.php:313
 msgid "E-Commerce"
 msgstr "E-ticaret"
 
-#: wp-admin/includes/theme.php:311
+#: wp-admin/includes/theme.php:312
 msgid "Blog"
 msgstr "Blog"
 
-#: wp-admin/includes/theme.php:333
+#: wp-admin/includes/theme.php:334
 msgid "Footer Widgets"
 msgstr "Alt alan bileşenleri"
 
-#: wp-admin/includes/theme.php:343
+#: wp-admin/includes/theme.php:344
 msgid "Grid Layout"
 msgstr "Izgara düzeni"
 
@@ -7295,7 +7287,7 @@ msgid "(Currently set to: %s)"
 msgstr "(Mevcut: %s)"
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:582
+#: wp-admin/about.php:613
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>Sürüm %s</strong> bir güvenlik açığını kapatıyor."
 
@@ -7307,15 +7299,15 @@ msgstr "https://en.gravatar.com/"
 msgid "Profile Picture"
 msgstr "Profil resmi"
 
-#: wp-admin/about.php:579
+#: wp-admin/about.php:47 wp-admin/about.php:610
 msgid "Maintenance and Security Releases"
 msgstr "Bakım ve güvenlik dağıtımları"
 
-#: wp-admin/about.php:576
+#: wp-admin/about.php:607
 msgid "Security Releases"
 msgstr "Güvenlik dağıtımları"
 
-#: wp-admin/about.php:573
+#: wp-admin/about.php:604
 msgid "Maintenance Releases"
 msgstr "Bakım dağıtımları"
 
@@ -8183,7 +8175,7 @@ msgstr ""
 "###SITENAME###\n"
 "###SITEURL###"
 
-#: wp-admin/includes/theme.php:821 wp-admin/themes.php:945
+#: wp-admin/includes/theme.php:822 wp-admin/themes.php:945
 msgid "Close details dialog"
 msgstr "Detaylar penceresini kapat"
 
@@ -8781,12 +8773,12 @@ msgctxt "theme"
 msgid "Active:"
 msgstr "Etkin:"
 
-#: wp-admin/includes/theme.php:323
+#: wp-admin/includes/theme.php:324
 msgid "Accessibility Ready"
 msgstr "Erişilebilir"
 
 #. translators: %s: Theme name.
-#: wp-admin/includes/theme.php:948 wp-admin/themes.php:1115
+#: wp-admin/includes/theme.php:949 wp-admin/themes.php:1115
 msgid "This is a child theme of %s."
 msgstr "Bu %s temasının alt temasıdır."
 
@@ -8880,15 +8872,15 @@ msgstr "Aşağıdaki eklentiler başarıyla güncellendi:"
 msgid "Add Widget"
 msgstr "Bileşen ekle"
 
-#: wp-admin/includes/theme.php:820 wp-admin/themes.php:944
+#: wp-admin/includes/theme.php:821 wp-admin/themes.php:944
 msgid "Show next theme"
 msgstr "Sonraki temayı göster"
 
-#: wp-admin/includes/theme.php:819 wp-admin/themes.php:943
+#: wp-admin/includes/theme.php:820 wp-admin/themes.php:943
 msgid "Show previous theme"
 msgstr "Önceki temayı göster"
 
-#: wp-admin/includes/theme.php:869 wp-admin/themes.php:1031
+#: wp-admin/includes/theme.php:870 wp-admin/themes.php:1031
 msgid "Update Available"
 msgstr "Güncelleme var"
 
@@ -9003,8 +8995,8 @@ msgstr "Siteniz %1$s WordPress %2$s sürümüne güncellenirken kritik bir hata 
 msgid "WordPress %s is also now available."
 msgstr "WordPress %s uygulanabilir."
 
-#: wp-admin/includes/update-core.php:1191
-#: wp-admin/includes/update-core.php:1227
+#: wp-admin/includes/update-core.php:1192
+#: wp-admin/includes/update-core.php:1228
 msgid "The update cannot be installed because your site is unable to copy some files. This is usually due to inconsistent file permissions."
 msgstr "Bazı dosyalar kopyalanamadığı için güncelleme yapılamıyor. Bu genelde tutarsız dosya izinlerinden kaynaklanır."
 
@@ -9119,7 +9111,7 @@ msgstr "Çevirileri güncelle"
 msgid "Background updates"
 msgstr "Arka plan güncellemeleri"
 
-#: wp-admin/includes/update-core.php:1287
+#: wp-admin/includes/update-core.php:1288
 msgid "There is not enough free disk space to complete the update."
 msgstr "Bu güncellemeye devam edebilmek için gerekli disk alanı yok."
 
@@ -9197,11 +9189,11 @@ msgstr "Girdiğiniz kullanıcı adı geçersiz karakterler içeriyor."
 msgid "Please provide a valid username."
 msgstr "Lütfen geçerli bir kullanıcı adı girin."
 
-#: wp-admin/includes/update-core.php:1208
+#: wp-admin/includes/update-core.php:1209
 msgid "Copying the required files&#8230;"
 msgstr "Gerekli dosyalar kopyalanıyor&#8230;"
 
-#: wp-admin/includes/update-core.php:1122
+#: wp-admin/includes/update-core.php:1123
 msgid "Preparing to install the latest version&#8230;"
 msgstr "Son sürüm yüklenmeye hazırlanıyor&#8230;"
 
@@ -9894,7 +9886,7 @@ msgid "Search engine visibility"
 msgstr "Arama motoru görünürlüğü"
 
 #. translators: 1: WordPress version, 2: URL to About screen.
-#: wp-admin/includes/update-core.php:1521 wp-admin/update-core.php:904
+#: wp-admin/includes/update-core.php:1522 wp-admin/update-core.php:904
 msgid "Welcome to WordPress %1$s. You will be redirected to the About WordPress screen. If not, click <a href=\"%2$s\">here</a>."
 msgstr "WordPress %1$s sürümüne hoşgeldiniz. WordPress hakkında sayfasına yönlendirileceksiniz. İstemiyorsanız, <a href=\"%2$s\">buraya</a> tıklayın."
 
@@ -10615,14 +10607,15 @@ msgstr "Siteye davet etmek için var olan bir kullanıcının e-posta adresini g
 msgid "Show Toolbar when viewing site"
 msgstr "Siteyi görüntülerken araç çubuğunu göster"
 
+#. translators: %s: HelpHub URL.
 #. translators: %s: Documentation URL.
-#: wp-admin/about.php:605
+#: wp-admin/about.php:64 wp-admin/about.php:636
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "Daha fazla bilgi için <a href=\"%s\">dağıtım notlarına</a> bakın."
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:599
+#: wp-admin/about.php:630
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>%1$s sürümü</strong> bazı güvenlik açıkları için çıkartıldı ve %2$s açığı kapattı."
@@ -10630,33 +10623,33 @@ msgstr[1] "<strong>%1$s sürümü</strong> bazı güvenlik açıkları için ç�
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:593
+#: wp-admin/about.php:624
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>%1$s sürümü</strong> bir güvenlik açığı için çıkartıldı ve %2$s hatayı düzeltti."
 msgstr[1] "<strong>%1$s sürümü</strong> bir güvenlik açığı için çıkartıldı ve %2$s hatayı düzeltti."
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs.
-#: wp-admin/about.php:587
+#: wp-admin/about.php:52 wp-admin/about.php:618
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>%1$s sürümü</strong> %2$s açığı kapatıyor."
 msgstr[1] "<strong>%1$s sürümü</strong> %2$s açığı kapatıyor."
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:584
+#: wp-admin/about.php:615
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>%s sürümü</strong> bazı güvenlik açıklarını giderdi."
 
-#: wp-admin/about.php:578
+#: wp-admin/about.php:609
 msgid "Maintenance and Security Release"
 msgstr "Bakım ve Güvenlik dağıtımı"
 
-#: wp-admin/about.php:575
+#: wp-admin/about.php:606
 msgid "Security Release"
 msgstr "Güvenlik dağıtımı"
 
-#: wp-admin/about.php:572
+#: wp-admin/about.php:603
 msgid "Maintenance Release"
 msgstr "Bakım dağıtımı"
 
@@ -10670,7 +10663,7 @@ msgid "This screen allows you to choose your permalink structure. You can choose
 msgstr "Bu ekran, varsayılan kalıcı bağlantı yapısını seçmenize olanak sağlar. Genel ayarlardan birini kullanabilir ya da kendi özel adres yapınızı oluşturabilirsiniz."
 
 #. translators: 1: WordPress version, 2: URL to About screen.
-#: wp-admin/includes/update-core.php:1529 wp-admin/update-core.php:912
+#: wp-admin/includes/update-core.php:1530 wp-admin/update-core.php:912
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "WordPress %1$s&#8217;e hoşgeldiniz. <a href=\"%2$s\">Daha fazla bilgi</a>."
 
@@ -10938,15 +10931,15 @@ msgid "Because this is a multisite installation, you may add accounts that alrea
 msgstr "Çoklu site kurulumu olduğu için ağda var olan diğer kullanıcıları kullanıcı ismi ya da e-posta ile ekleyebilir, rollerini atayabilirsiniz. Daha fazla seçenek için, parola belirlemek vb, ağ yöneticisi olmalı ve Ağ yönetimi > Tüm kullanıcılar bölümünden ulaştığınız kullanıcının bağlantılarını kullanın."
 
 #. translators: %s: Version number.
-#: wp-admin/about.php:51
+#: wp-admin/about.php:82
 msgid "Welcome to WordPress %s"
 msgstr "WordPress %s sürümüne hoşgeldiniz."
 
-#: wp-admin/about.php:561
+#: wp-admin/about.php:592
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Başlangıç ekranına git &rarr; Ana sayfa"
 
-#: wp-admin/about.php:558
+#: wp-admin/about.php:589
 msgid "Go to Dashboard &rarr; Updates"
 msgstr "Başlangıç &rarr; Güncellemeler ekranına git"
 
@@ -11222,7 +11215,7 @@ msgstr "Siteyi sil"
 
 #. translators: %s: Plugin name.
 #: wp-admin/includes/class-wp-theme-install-list-table.php:493
-#: wp-admin/includes/deprecated.php:1387 wp-admin/includes/theme.php:1060
+#: wp-admin/includes/deprecated.php:1387 wp-admin/includes/theme.php:1061
 #: wp-admin/theme-install.php:425 wp-admin/theme-install.php:462
 #: wp-admin/includes/network.php:374
 msgid "Install"
@@ -11329,19 +11322,19 @@ msgstr ""
 "Lütfen hesabınızı etkinleştirmek için aşağıdaki bağlantıya tıklayın:\n"
 "%%s"
 
-#: wp-admin/includes/meta-boxes.php:495 wp-admin/includes/theme.php:336
+#: wp-admin/includes/meta-boxes.php:495 wp-admin/includes/theme.php:337
 msgid "Post Formats"
 msgstr "Yazı biçimleri"
 
-#: wp-admin/includes/theme.php:335
+#: wp-admin/includes/theme.php:336
 msgid "Full Width Template"
 msgstr "Tam genişli şablon"
 
-#: wp-admin/includes/theme.php:332
+#: wp-admin/includes/theme.php:333
 msgid "Featured Images"
 msgstr "Öne çıkan görseller"
 
-#: wp-admin/includes/theme.php:331
+#: wp-admin/includes/theme.php:332
 msgid "Featured Image Header"
 msgstr "Öne çıkan görsel başlıkları"
 
@@ -11769,7 +11762,7 @@ msgstr "Güncelleme işlemi başlıyor. Bu süreç bazı sunucularda uzun süreb
 msgid "Apply Filters"
 msgstr "Filtreleri uygula"
 
-#: wp-admin/includes/theme.php:330
+#: wp-admin/includes/theme.php:331
 msgid "Editor Style"
 msgstr "Düzenleyici biçimi"
 
@@ -12678,7 +12671,7 @@ msgid "User already exists. Password inherited."
 msgstr "Kullanıcı zaten mevcut. Parola alındı."
 
 #: wp-admin/includes/class-wp-automatic-updater.php:428
-#: wp-admin/includes/update-core.php:1515 wp-admin/update-core.php:900
+#: wp-admin/includes/update-core.php:1516 wp-admin/update-core.php:900
 msgid "WordPress updated successfully."
 msgstr "WordPress başarıyla güncellendi."
 
@@ -12707,7 +12700,7 @@ msgstr "WordPress güncellemeleri"
 msgid "Edit menu item"
 msgstr "Menü elemanını düzenle"
 
-#: wp-admin/about.php:561 wp-admin/includes/network.php:148
+#: wp-admin/about.php:592 wp-admin/includes/network.php:148
 msgid "Go to Dashboard"
 msgstr "Başlangıca git"
 
@@ -13144,7 +13137,7 @@ msgstr "Düzenlemek istediğiniz temayı seçin:"
 msgid "Edit Themes"
 msgstr "Temaları düzenle"
 
-#: wp-admin/includes/theme.php:1028 wp-admin/themes.php:1121
+#: wp-admin/includes/theme.php:1029 wp-admin/themes.php:1121
 msgid "Tags:"
 msgstr "Etiketler:"
 
@@ -13524,7 +13517,7 @@ msgstr "İsteyen herkes kayıt olabilsin"
 msgid "Membership"
 msgstr "Üyelik"
 
-#: wp-admin/about.php:298 wp-admin/options-general.php:20
+#: wp-admin/about.php:329 wp-admin/options-general.php:20
 msgid "General Settings"
 msgstr "Genel ayarlar"
 
@@ -13916,34 +13909,34 @@ msgstr "Güncelle: %s"
 msgid "You are using a development version (%1$s). Cool! Please <a href=\"%2$s\">stay updated</a>."
 msgstr "Şu anda bir geliştirme sürümü (%1$s) kullanıyorsunuz. Harika! Lütfen <a href=\"%2$s\">en güncel sürümü kullanın</a>."
 
-#: wp-admin/includes/update-core.php:1445
+#: wp-admin/includes/update-core.php:1446
 msgid "Upgrading database&#8230;"
 msgstr "Veritabanı güncelleniyor&#8230;"
 
-#: wp-admin/includes/update-core.php:1003
+#: wp-admin/includes/update-core.php:1004
 msgid "The update could not be unpacked"
 msgstr "Güncelleme dosyası açılamadı"
 
-#: wp-admin/includes/update-core.php:985
+#: wp-admin/includes/update-core.php:986
 msgid "Verifying the unpacked files&#8230;"
 msgstr "Açılan paketteki dosyalar doğrulanıyor&#8230;"
 
 #. translators: 1: WordPress version number, 2: Minimum required MySQL version
 #. number, 3: Current MySQL version number.
-#: wp-admin/includes/update-core.php:1100
+#: wp-admin/includes/update-core.php:1101
 msgid "The update cannot be installed because WordPress %1$s requires MySQL version %2$s or higher. You are running version %3$s."
 msgstr "Bu güncelleme yüklenemez, çünkü WordPress %1$s MySQL sürüm %2$s ya da daha üstünü gerektiriyor. Şu an %3$s sürümünü kullanıyorsunuz."
 
 #. translators: 1: WordPress version number, 2: Minimum required PHP version
 #. number, 3: Current PHP version number.
-#: wp-admin/includes/update-core.php:1089
+#: wp-admin/includes/update-core.php:1090
 msgid "The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher. You are running version %3$s."
 msgstr "Bu güncelleme yüklenemez, çünkü WordPress %1$s PHP sürüm %2$s ya da daha üstünü gerektiriyor. Şu an %3$s sürümünü kullanıyorsunuz."
 
 #. translators: 1: WordPress version number, 2: Minimum required PHP version
 #. number, 3: Minimum required MySQL version number, 4: Current PHP version
 #. number, 5: Current MySQL version number.
-#: wp-admin/includes/update-core.php:1076
+#: wp-admin/includes/update-core.php:1077
 msgid "The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s."
 msgstr "Bu güncelleme yüklenemez, çünkü WordPress %1$s PHP sürüm %2$s ya da daha üstü ve MySQL sürüm %3$s ya da daha üstünü gerektiriyor. Şu an PHP sürümü olarak %4$s ve MySQL sürümü olarak %5$s kullanıyorsunuz."
 
@@ -13961,7 +13954,7 @@ msgid "This theme is already installed."
 msgstr "Bu tema zaten kurulu."
 
 #. translators: %s: Theme version.
-#: wp-admin/includes/theme.php:839 wp-admin/theme-install.php:500
+#: wp-admin/includes/theme.php:840 wp-admin/theme-install.php:500
 #: wp-admin/themes.php:963
 msgid "Version: %s"
 msgstr "Sürüm: %s"
@@ -13974,51 +13967,51 @@ msgstr "Eğer elinizde .zip biçiminde bir tema varsa, buradan yükleyerek kurab
 msgid "Find Themes"
 msgstr "Tema bul"
 
-#: wp-admin/includes/theme.php:316
+#: wp-admin/includes/theme.php:317
 msgid "Holiday"
 msgstr "Tatil"
 
-#: wp-admin/includes/theme.php:310 wp-admin/includes/theme.php:380
+#: wp-admin/includes/theme.php:311 wp-admin/includes/theme.php:381
 msgid "Subject"
 msgstr "Konu"
 
-#: wp-admin/includes/theme.php:337
+#: wp-admin/includes/theme.php:338
 msgid "Sticky Post"
 msgstr "Sabit yazı"
 
-#: wp-admin/includes/theme.php:339
+#: wp-admin/includes/theme.php:340
 msgid "Theme Options"
 msgstr "Tema seçenekleri"
 
-#: wp-admin/includes/theme.php:327
+#: wp-admin/includes/theme.php:328
 msgid "Custom Colors"
 msgstr "Özel renkler"
 
-#: wp-admin/includes/theme.php:322 wp-admin/includes/theme.php:379
+#: wp-admin/includes/theme.php:323 wp-admin/includes/theme.php:380
 msgid "Features"
 msgstr "Özellikler"
 
-#: wp-admin/includes/theme.php:349
+#: wp-admin/includes/theme.php:350
 msgid "Right Sidebar"
 msgstr "Sağ kenar çubuğu"
 
-#: wp-admin/includes/theme.php:348
+#: wp-admin/includes/theme.php:349
 msgid "Left Sidebar"
 msgstr "Sol kenar çubuğu"
 
-#: wp-admin/includes/theme.php:347
+#: wp-admin/includes/theme.php:348
 msgid "Four Columns"
 msgstr "Dört sütun"
 
-#: wp-admin/includes/theme.php:346
+#: wp-admin/includes/theme.php:347
 msgid "Three Columns"
 msgstr "Üç sütun"
 
-#: wp-admin/includes/theme.php:345
+#: wp-admin/includes/theme.php:346
 msgid "Two Columns"
 msgstr "İki sütun"
 
-#: wp-admin/includes/theme.php:344
+#: wp-admin/includes/theme.php:345
 msgid "One Column"
 msgstr "Bir sütun"
 
@@ -14884,7 +14877,7 @@ msgid "Empty archive."
 msgstr "Boş arşiv."
 
 #: wp-admin/includes/file.php:1742 wp-admin/includes/file.php:1872
-#: wp-admin/includes/file.php:1917 wp-admin/includes/update-core.php:1386
+#: wp-admin/includes/file.php:1917 wp-admin/includes/update-core.php:1387
 msgid "Could not copy file."
 msgstr "Dosyalar kopyalanamıyor."
 
@@ -15202,12 +15195,12 @@ msgid "The plugin is at the latest version."
 msgstr "Eklenti en son sürümünde."
 
 #: wp-admin/includes/class-wp-upgrader.php:169
-#: wp-admin/includes/update-core.php:1335
+#: wp-admin/includes/update-core.php:1336
 msgid "Disabling Maintenance mode&#8230;"
 msgstr "Bakım modu etkisizleştiriliyor&#8230;"
 
 #: wp-admin/includes/class-wp-upgrader.php:168
-#: wp-admin/includes/update-core.php:1199
+#: wp-admin/includes/update-core.php:1200
 msgid "Enabling Maintenance mode&#8230;"
 msgstr "Bakım modu etkinleştiriliyor&#8230;"
 
@@ -15673,7 +15666,7 @@ msgid "Header updated. <a href=\"%s\">Visit your site</a> to see how it looks."
 msgstr "Üst kısım güncellendi. Nasıl göründüğünü görmek için <a href=\"%s\">sitenizi ziyaret edin</a>."
 
 #: wp-admin/includes/class-custom-image-header.php:504
-#: wp-admin/includes/theme.php:328
+#: wp-admin/includes/theme.php:329
 msgid "Custom Header"
 msgstr "Özel Başlık"
 
@@ -15693,7 +15686,7 @@ msgid "Background updated. <a href=\"%s\">Visit your site</a> to see how it look
 msgstr "Arkaplan güncellendi. Nasıl göründüğünü görmek için <a href=\"%s\">sitenizi ziyaret edin</a>."
 
 #: wp-admin/includes/class-custom-background.php:233
-#: wp-admin/includes/theme.php:326
+#: wp-admin/includes/theme.php:327
 msgid "Custom Background"
 msgstr "Özel arkaplan"
 
