@@ -35,9 +35,10 @@ defined( 'ABSPATH' ) || exit;
 		$main_cart_items = $woocommerce->cart->get_cart();
 
 		$selected_address;
-		
+
 		foreach ( $main_cart_items as $key => $field ) {
 			$selected_address = $main_cart_items[$key]['teslimat_adres_secimi'];
+			echo $selected_address;
 			break;
 		}
 	?>
