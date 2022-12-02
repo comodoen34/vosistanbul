@@ -264,7 +264,6 @@ the_post(); ?>
     </div>
   </div>
 </div>
-
 <!--Blog Area Start-->
 <div class="blog-area ml-50 mr-50 mt-105">
   <div class="container">

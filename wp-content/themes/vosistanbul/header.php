@@ -2,6 +2,26 @@
 <html lang="en">
 <head>
 
+
+  <?php /*
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <title><?php wp_title(''); ?></title>
+    <link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/apple-touch-icon.png">
+    <link rel="icon" href="<?php bloginfo('template_url'); ?>/content/images/favicon.ico" />
+    <link rel="canonical" href="index.html" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/assets/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/assets/css/fancy-slider.css" />
+    <!-- <link rel="stylesheet" href="../use.typekit.net/qxn1hce.css" /> -->
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/style316d.css?v=1617272987" />
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+
+    */ ?>
+
 <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title><?php wp_title(''); ?></title>
