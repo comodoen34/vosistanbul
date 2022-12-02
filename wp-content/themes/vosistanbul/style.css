@@ -9097,3 +9097,8 @@ a.ideas-btn:hover {
   background: rgba(214, 214, 214, 0.77);
   font-weight: 300;
 }
+
+
+.woocommerce-message {
+  border-top-color: #acaeaf !important;
+}

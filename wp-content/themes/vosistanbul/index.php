@@ -160,72 +160,12 @@ the_post(); ?>
     <div class="row">
       <!--Section Title Start-->
       <div class="col-12">
-        <div class="section-title text-center mb-30">
-          <h3>Özel Günlerimiz</h3>
-        </div>
+        <div class="section-title text-center mb-3">
+            <span>SİZİN İÇİN SEÇTİKLERİMİZ</span>
+          </div>
       </div>
       <!--Section Title End-->
     </div>
-    <?php /*
-          <div class="row">
-            <div class="col-lg-8 col-md-10 col-12 ms-auto me-auto mb-20">
-              <!--Count Down Area Start-->
-              <div class="count-down-area">
-                <!--Count Down Start-->
-                <div class="countdown-inner">
-                  <div class="count-box">
-                    <div
-                      class="pro-countdown"
-                      data-countdown="2022/04/30"
-                    ></div>
-                  </div>
-                </div>
-                <!--Count Down End-->
-                <!--Count Down Start-->
-                <div class="countdown-inner">
-                  <div class="count-box">
-                    <div
-                      class="pro-countdown"
-                      data-countdown="2022/04/30"
-                    ></div>
-                  </div>
-                </div>
-                <!--Count Down End-->
-                <!--Count Down Start-->
-                <div class="countdown-inner">
-                  <div class="count-box">
-                    <div
-                      class="pro-countdown"
-                      data-countdown="2022/04/30"
-                    ></div>
-                  </div>
-                </div>
-                <!--Count Down End-->
-                <!--Count Down Start-->
-                <div class="countdown-inner">
-                  <div class="count-box">
-                    <div
-                      class="pro-countdown"
-                      data-countdown="2022/04/30"
-                    ></div>
-                  </div>
-                </div>
-                <!--Count Down End-->
-                <!--Count Down Start-->
-                <div class="countdown-inner">
-                  <div class="count-box">
-                    <div
-                      class="pro-countdown"
-                      data-countdown="2022/04/30"
-                    ></div>
-                  </div>
-                </div>
-                <!--Count Down End-->
-              </div>
-              <!--Count Down Area End-->
-            </div>
-          </div>
-          */ ?>
     <div class="row">
       <div class="offer-slider p-0">
         <?php
@@ -348,265 +288,67 @@ the_post(); ?>
     </div>
   </div>
 </div>
-<?php /*
-<div class="blog-area ml-50 mr-50 mt-105">
-  <div class="container">
-    <div class="row">
-      <!--Section Title Start-->
-      <div class="col-12">
-        <div class="section-title text-center mb-35">
-          <span>VOS'ta Neler Var?</span>
-        </div>
-      </div>
-      <!--Section Title End-->
-    </div>
-    <div class="row">
-      <div class="blog-slider-active p-0">
-        <?php
-        wp_reset_query();
-        query_posts(array('cat' => '23', 'posts_per_page' => '-1', 'order' => 'DESC'));
-        if (have_posts()) : while (have_posts()) : the_post();
-        ?>
-            <div class="col-md-4">
-              <!--Single Blog Start-->
-              <div class="single-blog">
-                <div class="blog-img img-full">
-                  <a href="<?php the_permalink(); ?>">
-                    <img src="<?php bloginfo('template_url'); ?>/images/blog/blog1.jpg" alt="" />
-                  </a>
-                </div>
-                <div class="blog-content">
-                  <div class="post-date"><?php echo get_the_date(); ?></div>
-                  <h3 class="post-title">
-                    <a href="<?php the_permalink(); ?>"><?php the_field('baslik'); ?></a>
-                  </h3>
-                  <p class="post-description"><?php the_field('kisa_aciklama'); ?></p>
-                </div>
-              </div>
-              <!--Single Blog End-->
-            </div>
-        <?php endwhile;
-        endif;
-        wp_reset_query(); ?>
-      </div>
-    </div>
-  </div>
-</div>
-*/ ?>
 <!--Blog Area End-->
 
-<?php
-//   $args = array(
-//     'post_type'      => 'product',
-//     'posts_per_page' => 10,
-//     'cat_id' => 25
-// );
-
-// $loop = new WP_Query( $args );
-
-// echo "xxxx";
-
-// while ( $loop->have_posts() ) : $loop->the_post();
-// echo '<br /><a href="'.get_permalink().'">' . woocommerce_get_product_thumbnail().' '.get_the_title().'</a>';
-//     global $product;
-//     //echo $product;
-//     echo $product->get_id();
-//     echo $product->get_name();
-//     echo $product->get_sale_price();
-//     echo $product->get_regular_price();
-//     echo $product->get_sku();
-//     echo $product->get_low_stock_amount();
-//     echo $product->get_review_count();
-//     echo $product->get_short_description();
-//     $ratting = $product->get_rating_counts();
-//     for($i = 0 ; $i < count($ratting); $i++) {
-//         echo $ratting[i];
-//     }
-// endwhile;
-
-// wp_reset_query();
-
-?>
-
 <?php /*
+<!--Related Product Start-->
+<div class="Related-product mt-105 mb-100">
+		    <div class="container">
+		        <div class="row">
+		            <!--Section Title Start-->
+                    <div class="col-12">
+                        <div class="section-title text-center mb-35">
+                            <h3>Benzer Ürünler</h3>
+                        </div>
+                    </div>
+                    <!--Section Title End-->
+		        </div>
+		        <div class="row">
+		            <div class="product-slider-active p-0">
+                        <?php 
+                                wp_reset_query();
+                                $term = get_queried_object();
+                                $the_query = new WP_Query( array(
+                                    'post_type' => 'product',
+                                    'orderby'        => 'rand',
+                                    'posts_per_page' => 6
+                                    ) );
 
-<div class="fnc-slider example-slider">
-        <div class="fnc-slider__slides">
-          <!-- slide start -->
-          <?php wp_reset_query(); query_posts('page_id=45');  the_post(); ?>
-          <?php $value = get_field( "slider" );
-           foreach($value as $key => $val){
-          ?>
-          <div class="fnc-slide <?php if($key === 0) echo 'm--active-slide' ?>">
-            <div
-              class="fnc-slide__inner"
-              style="background-image: url(<?php echo $val['slider_resim']['url'] ?>)"
-            >
-              <div class="fnc-slide__mask">
-                <div
-                  class="fnc-slide__mask-inner"
-                  style="
-                    background-image: url(<?php echo $val['slider_resim']['url'] ?>);
-                  "
-                ></div>
-              </div>
-              <div class="fnc-slide__content">
-                <div class="txt">
-                  <h1><?php echo $val['slider_title']; ?></h1>
-                  <div class="desc"><?php echo $val['slider_subtitle']; ?></div>
-                  <a class="button" href="<?php echo $val['slider_button_url']; ?>"><?php echo $val['slider_button']; ?></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <?php } ?>
-        </div>
-        <nav class="fnc-nav">
-          <div class="fnc-nav__bgs">
-            <div class="fnc-nav__bg m--navbg-green m--active-nav-bg"></div>
-            <div class="fnc-nav__bg m--navbg-dark"></div>
-            <div class="fnc-nav__bg m--navbg-red"></div>
-            <div class="fnc-nav__bg m--navbg-blue"></div>
-            <div class="fnc-nav__bg m--navbg-dark"></div>
-            <div class="fnc-nav__bg m--navbg-red"></div>
-          </div>
-          <div class="fnc-nav__controls">
-            <?php foreach($value as $key => $val){ ?>
-            <button class="fnc-nav__control">
-              <?php echo $key; ?>
-              <span class="fnc-nav__control-progress"></span>
-            </button>
-            <?php } ?>
-          </div>
-        </nav>
-      </div>
-      <section class="contact-box anim anim-ready anim-del">
-        <div class="container">
-          <div class="bg">
-            <div class="row">
-              <div class="col-sm-8">
-                <h2>Sorunuz mu var? Hemen mesaj gönderin.</h2>
-                <div>
-                  <p>
-                    İletişim formumuzu doldurun. Sizi arayalım ve merak
-                    ettikleriniz hakkında bilgi verelim.
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-4 m-t-20 text-right">
-                <a class="button open-popup">Formu Doldur</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="welcome anim">
-        <div class="container">
-          <?php $cliniquePicture = get_field( "klinik_resim" ); ?>
-          <div
-            class="img"
-            style="background-image: url(<?php echo $cliniquePicture['url']; ?>)"
-          ></div>
-          <div class="txt">
-            <h2><?php the_field('klinik_baslik'); ?></h2>
-            <div class="content" style="white-space: normal;">
-              <?php the_field('klinik_aciklama'); ?>
-            </div>
-            <a href="<?php the_permalink(32); ?>" class="button">Daha fazlası</a>
-          </div>
-        </div>
-      </section>
-      <?php wp_reset_query(); ?>
-      <section class="treatments anim">
-        <div class="title">
-          <div class="container">
-            <h2 class="text-center"></h2>
-          </div>
-        </div>
-        <div class="boxes">
-          <div
-            class="box"
-            style="background-image: url(<?php bloginfo('template_url'); ?>/content/img/untitled-d-1846e062.jpg)"
-          >
-            <div class="txt">
-              <h3>Ameliyatlı Top 5 İşlem</h3>
-              <div class="desc">
-                <a
-                  href="ameliyatli-estetik/yuz-estetigi/ameliyatli-top-5-islem.html"
-                  target="_blank"
-                  class="button"
-                  >Daha Fazlası</a
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="box"
-            style="background-image: url(<?php bloginfo('template_url'); ?>/content/img/untitled-d-1dc693ec.jpg)"
-          >
-            <div class="txt">
-              <h3>Ameliyatsız Top 5 İşlem</h3>
-              <div class="desc">
-                <a
-                  href="ameliyatsiz-estetik/yuz-islemleri/ameliyatsiz-top-5-islem.html"
-                  target="_blank"
-                  class="button"
-                  >Daha Fazlası</a
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="box"
-            style="background-image: url(<?php bloginfo('template_url'); ?>/content/img/untitled-d-5b71b177.jpg)"
-          >
-            <div class="txt">
-              <h3>Güzellik &amp; Bakım Top 5 İşlem</h3>
-              <div class="desc">
-                <a
-                  href="guzellik-ve-bakim/cilt-bakimi/guzellik-bakim-top-5-islemler.html"
-                  target="_blank"
-                  class="button"
-                  >Daha Fazlası</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="clearfix"></div>
-        </div>
-      </section>
-      <section class="faq anim">
-        <div class="container">
-          <h2 class="text-center">Sıkça Sorulan Sorular</h2>
-          <a class="all" href="<?php the_permalink(375); ?>">Tümünü Göster</a>
-          <div class="clearfix"></div>
-          <div class="slider row">
-          <?php
-              query_posts( array( 'post_type' => 'sikca_sorulan_sorula','posts_per_page'=> '-1', 'order'=>'DESC' ) ); 
-              if ( have_posts() ) : while ( have_posts() ) : the_post(); 
-              $soru_anasayfa = get_field('soru_anasayfa');
-              if($soru_anasayfa == 1) {
-          ?>
-            <a
-              href="<?php the_permalink(); ?>"
-              class="item col-sm-3"
-            >
-              <?php $soru_resim = get_field('soru_resim'); ?>
-              <div
-                class="img"
-                style="
-                  background-image: url(<?php echo $soru_resim['url']; ?>);
-                "
-              ></div>
-              <div class="box">
-                <div class="title"><?php the_field('soru_baslik'); ?></div>
-                <div class="m-t-20">...</div>
-              </div>
-            </a>
-            <?php } endwhile; endif; wp_reset_query(); ?> 	
-          </div>
-        </div>
-      </section>
-
-    */ ?>
+                                while ( $the_query->have_posts() ) :
+                                    $the_query->the_post();
+                                    global $product;
+                        ?>
+		                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+		                    <!--Single Product Start-->
+		                    <div class="single-product mb-25">
+		                        <div class="product-img img-full">
+		                            <a href="<?php the_permalink(); ?>">
+                                        <?php echo woocommerce_get_product_thumbnail(); ?>
+		                            </a>
+		                        </div>
+		                        <div class="product-content">
+		                            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+		                            <div class="product-price">
+		                                <div class="price-box">
+                                            <span class="price"><?php echo $product->get_sale_price().' TL'; ?></span>
+                                            <span class="regular-price"><?php echo $product->get_sale_price().' TL'; ?></span>
+		                                </div>
+		                                <div class="add-to-cart">
+                                            <a href="<?php the_permalink(); ?>">Ürünü İncele</a>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    <!--Single Product End-->
+		                </div>
+                        <?php 
+                            endwhile;
+                            wp_reset_query();
+                        ?>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<!--Related Product End-->
+*/ ?>
 <?php get_footer(); ?>
