@@ -3213,6 +3213,7 @@ a.generalButton:hover {
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 5px;
+  line-height: 25px;
 }
 
 .feature-content > p {

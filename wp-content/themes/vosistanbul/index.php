@@ -9,7 +9,7 @@
     <?php $value = get_field("banner");
     foreach ($value as $key => $val) {
     ?>
-      <div class="single-slider" <?php  /* style="background-image: url(<?php echo $val['resim']['url']; ?>)"  */ ?> style="background-image: url('<?php bloginfo('template_url'); ?>/images/bg/bg3.jpg')">
+      <div class="single-slider" style="background-image: url('<?php echo $val['resim']['url']; ?>')">
         <div class="slider-progress"></div>
         <div class="container">
           <div class="hero-slider-content d-flex flex-column align-items-center">
@@ -41,10 +41,10 @@ the_post(); ?>
       <div class="ms-auto me-auto">
         <div class="history-area-content text-right d-flex flex-column flex-md-row">
           <div class="col-12 col-md-4">
-            <img class="w-100 mw-100" src="<?php bloginfo('template_url'); ?>/images/logo/VOS_cicek_logo.png" width="150px" alt="" style="margin-bottom:15px;" />
+            <img src="<?php bloginfo('template_url'); ?>/images/logo/cicek_logo_gri.png" width="150px" alt="" style="margin-bottom:15px;" />
           </div>
           <div class="col-12 col-md-8">
-            <h2 class="text-end mb-5"><?php echo $hakkimizda['alt_baslik_2']; ?></h2>
+            <h4 class="text-end mb-5" style="color:#988a8a;"><?php echo $hakkimizda['alt_baslik_2']; ?></h4>
             <?php echo $hakkimizda['icerik']; ?>
             <a href="#" class="discoverButton text-center m-0 ms-auto mt-5">Keşfet</a>
           </div>
@@ -53,107 +53,8 @@ the_post(); ?>
     </div>
   </div>
 </div>
+<?php wp_reset_query(); ?>
 <!--Our History Area End-->
-<!--Categories Area Start-->
-<div class="categories-area mt-115">
-  <div class="container">
-    <div class="row">
-      <!--Section Title Start-->
-      <!--             <div class="col-12">
-              <div class="section-title text-center mb-35">
-                <span>Vos İstanbul Koleksiyonu</span>                
-              </div>
-            </div> -->
-      <!--Section Title End-->
-    </div>
-  </div>
-  <?php $kategori_grids_layout = get_field("kategori_grids_layout"); ?>
-  <div class="container-fluid pl-50 pr-50">
-    <div class="container-xxl row mx-auto">
-      <div class="col-md-12">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="categories-img img-full mb-30">
-              <a href="<?php echo $kategori_grids_layout['kategori_url_01']; ?>">
-                <img src="<?php echo $kategori_grids_layout['kategori_resim_01']['url']; ?>" alt="<?php echo $kategori_grids_layout['kategori_adi_01']; ?>" />
-              </a>
-              <div class="categories-content">
-                <p class="categories-content-title fs-2 text-white"><?php echo $kategori_grids_layout['kategori_adi_01']; ?></p>
-                <button type="button" class="btn btn-light border-0 px-4 py-2 categories-content-button">Daha Fazlası</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="categories-img img-full mb-30">
-              <a href="<?php echo $kategori_grids_layout['kategori_url_02']; ?>">
-                <img src="<?php echo $kategori_grids_layout['kategori_resim_02']['url']; ?>" alt="<?php echo $kategori_grids_layout['kategori_adi_02']; ?>" />
-              </a>
-              <div class="categories-content">
-                <p class="categories-content-title fs-2 text-white "><?php echo $kategori_grids_layout['kategori_adi_02']; ?></p>
-                <button type="button" class="btn btn-light border-0 px-4 py-2 categories-content-button">Daha Fazlası</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="categories-img img-full mb-30">
-              <a href="<?php echo $kategori_grids_layout['kategori_url_03']; ?>">
-                <img src="<?php echo $kategori_grids_layout['kategori_resim_03']['url']; ?>" alt="<?php echo $kategori_grids_layout['kategori_adi_03']; ?>" />
-              </a>
-              <div class="categories-content">
-                <p class="categories-content-title fs-2 text-white "><?php echo $kategori_grids_layout['kategori_adi_03']; ?></p>
-                <button type="button" class="btn btn-light border-0 px-4 py-2 categories-content-button">Daha Fazlası</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- BLOG -->
-  <?php wp_reset_query(); query_posts('page_id=23'); the_post(); ?>
-  <div class="container-fluid pl-50 pr-50 mt-105">
-    <div class="container-xxl row mx-auto">
-      <div>
-        <div>
-          <div class="section-title text-center mb-3">
-            <span>BLOG</span>
-          </div>
-          <div class="fs-6 text-center lh-base mt-1 mx-auto" style="width: min(992px, 100%);">
-            <?php the_field('anasayfa_blog_aciklama'); ?>
-          </div>
-        </div>
-        <div class="row mt-5 gap-5 gap-lg-0">
-        <?php
-            wp_reset_query();
-            query_posts(array('cat' => '23', 'posts_per_page' => '2', 'order' => 'DESC'));
-            if (have_posts()) : while (have_posts()) : the_post();
-        ?>
-          <div class="col-12 col-lg-6">
-            <div class="row h-100">
-              <?php $blog_pic = get_field('resim'); ?>
-              <img class="col-4 ps-0" style="aspect-ratio: 1;" src="<?php echo $blog_pic['url']; ?>" alt="<?php the_field('baslik'); ?>" />
-              <div class="col-8 d-flex flex-column">
-                <div>
-                  <span class="fw-bold fs-3 text-dark"><?php echo get_the_date('j'); ?></span>
-                  <span class="text-secondary fs-5" style="font-weight: 500;"><?php echo get_the_date('M'); ?></span>
-                </div>
-
-                <p class="post-title mt-2" style="font-weight: 500;"><?php the_field('baslik'); ?></p>
-                <p class="mb-1" style="font-weight: 500;"><?php the_field('kisa_aciklama'); ?></p>
-                <a class="text-decoration-underline" href="<?php the_permalink(); ?>" style="font-weight: 500;">Devamını Oku</a>
-              </div>
-            </div>
-          </div>
-          <?php endwhile;
-        endif;
-        wp_reset_query(); ?>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!--Categories Area End-->
 <!--Product Countdown Area Start-->
 <div class="product-countdown-area mt-105 ml-50 mr-50">
   <div class="container">
@@ -214,6 +115,57 @@ the_post(); ?>
   </div>
 </div>
 <!--Product Countdown Area End-->
+
+<?php wp_reset_query();
+query_posts('page_id=23');
+the_post(); ?>
+<!--Categories Area Start-->
+<div class="categories-area mt-115">
+  <?php $kategori_grids_layout = get_field("kategori_grids_layout"); ?>
+  <div class="container-fluid pl-50 pr-50">
+    <div class="container-xxl row mx-auto">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="categories-img img-full mb-30">
+              <a href="<?php echo $kategori_grids_layout['kategori_url_01']; ?>">
+                <img src="<?php echo $kategori_grids_layout['kategori_resim_01']['url']; ?>" alt="<?php echo $kategori_grids_layout['kategori_adi_01']; ?>" />
+              </a>
+              <div class="categories-content">
+                <p class="categories-content-title fs-2 text-white"><?php echo $kategori_grids_layout['kategori_adi_01']; ?></p>
+                <button type="button" class="btn btn-light border-0 px-4 py-2 categories-content-button">Daha Fazlası</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="categories-img img-full mb-30">
+              <a href="<?php echo $kategori_grids_layout['kategori_url_02']; ?>">
+                <img src="<?php echo $kategori_grids_layout['kategori_resim_02']['url']; ?>" alt="<?php echo $kategori_grids_layout['kategori_adi_02']; ?>" />
+              </a>
+              <div class="categories-content">
+                <p class="categories-content-title fs-2 text-white "><?php echo $kategori_grids_layout['kategori_adi_02']; ?></p>
+                <button type="button" class="btn btn-light border-0 px-4 py-2 categories-content-button">Daha Fazlası</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="categories-img img-full mb-30">
+              <a href="<?php echo $kategori_grids_layout['kategori_url_03']; ?>">
+                <img src="<?php echo $kategori_grids_layout['kategori_resim_03']['url']; ?>" alt="<?php echo $kategori_grids_layout['kategori_adi_03']; ?>" />
+              </a>
+              <div class="categories-content">
+                <p class="categories-content-title fs-2 text-white "><?php echo $kategori_grids_layout['kategori_adi_03']; ?></p>
+                <button type="button" class="btn btn-light border-0 px-4 py-2 categories-content-button">Daha Fazlası</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Categories Area End-->
+
 <!--Slider Area End-->
 <?php wp_reset_query();
 query_posts('page_id=23');
@@ -267,6 +219,52 @@ the_post(); ?>
 </div>
 <!--Feature Area End-->
 <?php wp_reset_query(); ?>
+
+<div class="categories-area mt-115">
+  <!-- BLOG -->
+  <?php wp_reset_query(); query_posts('page_id=23'); the_post(); ?>
+  <div class="container-fluid pl-50 pr-50 mt-105">
+    <div class="container-xxl row mx-auto">
+      <div>
+        <div>
+          <div class="section-title text-center mb-3">
+            <span>BLOG</span>
+          </div>
+          <div class="fs-6 text-center lh-base mt-1 mx-auto" style="width: min(992px, 100%);">
+            <?php the_field('anasayfa_blog_aciklama'); ?>
+          </div>
+        </div>
+        <div class="row mt-5 gap-5 gap-lg-0">
+        <?php
+            wp_reset_query();
+            query_posts(array('cat' => '23', 'posts_per_page' => '2', 'order' => 'DESC'));
+            if (have_posts()) : while (have_posts()) : the_post();
+        ?>
+          <div class="col-12 col-lg-6">
+            <div class="row h-100">
+              <?php $blog_pic = get_field('resim'); ?>
+              <img class="col-4 ps-0" style="aspect-ratio: 1;" src="<?php echo $blog_pic['url']; ?>" alt="<?php the_field('baslik'); ?>" />
+              <div class="col-8 d-flex flex-column">
+                <div>
+                  <span class="fw-bold fs-3 text-dark"><?php echo get_the_date('j'); ?></span>
+                  <span class="text-secondary fs-5" style="font-weight: 500;"><?php echo get_the_date('M'); ?></span>
+                </div>
+
+                <p class="post-title mt-2" style="font-weight: 500;"><?php the_field('baslik'); ?></p>
+                <p class="mb-1" style="font-weight: 500;"><?php the_field('kisa_aciklama'); ?></p>
+                <a class="text-decoration-underline" href="<?php the_permalink(); ?>" style="font-weight: 500;">Devamını Oku</a>
+              </div>
+            </div>
+          </div>
+          <?php endwhile;
+        endif;
+        wp_reset_query(); ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!--Blog Area Start-->
 <div class="blog-area ml-50 mr-50 mt-105">
   <div class="container">

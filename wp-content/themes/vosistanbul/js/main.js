@@ -389,7 +389,6 @@
   $(".offer-slider").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    asNavFor: ".count-down-area",
     dots: true,
     centerMode: true,
     arrows: false,

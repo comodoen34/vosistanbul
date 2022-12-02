@@ -178,7 +178,8 @@
                                             onClose: function () {
                                                 $(this).data('datepicker').inline = false;
                                                 $("#takvim").toggleClass('opened');
-                                            }
+                                            },
+                                            minDate: 0
                                         });
 
                                         $('.teslimat_tarihi_1').addClass("calendarDateBoxChecked");
