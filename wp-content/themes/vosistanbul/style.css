@@ -375,7 +375,7 @@ input[type="checkbox"] {
 
 .my-account .woocommerce {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .my-account .woocommerce-MyAccount-navigation {
@@ -9099,7 +9099,14 @@ a.ideas-btn:hover {
   font-weight: 300;
 }
 
-
 .woocommerce-message {
   border-top-color: #acaeaf !important;
+}
+
+.woocommerce form .form-row .optional {
+  visibility: hidden !important;
+}
+
+.woocommerce-billing-fields h3 {
+  margin: 20px 0;
 }

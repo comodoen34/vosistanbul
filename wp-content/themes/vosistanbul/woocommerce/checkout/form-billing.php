@@ -19,7 +19,7 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 <div class="woocommerce-billing-fields">
-	<?php if ( wc_ship_to_billing_address_only() && WC()->cart->needs_shipping() ) : ?>
+	<?php /* if ( wc_ship_to_billing_address_only() && WC()->cart->needs_shipping() ) : ?>
 
 		<h3><?php esc_html_e( 'Billing &amp; Shipping', 'woocommerce' ); ?></h3>
 
@@ -27,9 +27,8 @@ defined( 'ABSPATH' ) || exit;
 
 		<h3><?php esc_html_e( 'Shipping details', 'woocommerce' ); ?></h3>
 
-	<?php endif; ?>
+	<?php endif; */ ?>
 
-	<?php do_action( 'woocommerce_before_checkout_billing_form', $checkout ); ?>
 	<?php 
 		global $woocommerce, $product; 
 		$main_cart_items = $woocommerce->cart->get_cart();
@@ -42,7 +41,9 @@ defined( 'ABSPATH' ) || exit;
 			break;
 		}
 	?>
-	
+
+	<?php do_action( 'woocommerce_before_checkout_billing_form', $checkout ); ?>
+	<h3 style="margin-top: 20px;">Fatura Bilgileri</h3>
 	<div class="woocommerce-billing-fields__field-wrapper">
 		<?php
 		

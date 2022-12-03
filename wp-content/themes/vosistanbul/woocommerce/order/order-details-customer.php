@@ -23,8 +23,8 @@ $show_shipping = ! wc_ship_to_billing_address_only() && $order->needs_shipping_a
 
 	<?php if ( $show_shipping ) : ?>
 
-	<section class="woocommerce-columns woocommerce-columns--2 woocommerce-columns--addresses col2-set addresses">
-		<div class="woocommerce-column woocommerce-column--1 woocommerce-column--billing-address col-1">
+	<section class="woocommerce-columns woocommerce-columns woocommerce-columns--addresses col-set addresses">
+		<div class="woocommerce-column woocommerce-column woocommerce-column--billing-address col">
 
 	<?php endif; ?>
 
@@ -42,7 +42,7 @@ $show_shipping = ! wc_ship_to_billing_address_only() && $order->needs_shipping_a
 		<?php endif; ?>
 	</address>
 
-	<?php if ( $show_shipping ) : ?>
+	<?php /* if ( $show_shipping ) : ?>
 
 		</div><!-- /.col-1 -->
 
@@ -59,7 +59,7 @@ $show_shipping = ! wc_ship_to_billing_address_only() && $order->needs_shipping_a
 
 	</section><!-- /.col2-set -->
 
-	<?php endif; ?>
+	<?php endif; */ ?>
 
 	<?php do_action( 'woocommerce_order_details_after_customer_details', $order ); ?>
 
