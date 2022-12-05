@@ -9110,3 +9110,7 @@ a.ideas-btn:hover {
 .woocommerce-billing-fields h3 {
   margin: 20px 0;
 }
+
+.woocommerce-message::before {
+  color: #acaeaf !important;
+}
