@@ -180,7 +180,7 @@
                                                 $("#takvim").toggleClass('opened');
                                             },
                                             minDate: 0
-                                        });
+                                        },$.datepicker.regional["tr"]);
 
                                         $('.teslimat_tarihi_1').addClass("calendarDateBoxChecked");
                                         $('input:radio[name="_teslimat_tarihi_secim"]').filter('[id="teslimat_tarihi_1"]').attr('checked', true);

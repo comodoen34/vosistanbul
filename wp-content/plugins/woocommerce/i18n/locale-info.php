@@ -3576,7 +3576,7 @@ return array(
 		'name'           => 'Turkish lira',
 		'singular'       => 'Turkish lira',
 		'plural'         => 'Turkish Lira',
-		'short_symbol'   => '₺',
+		'short_symbol'   => 'TL',
 		'locales'        => $locales['TRY'],
 	),
 	'TT' => array(
