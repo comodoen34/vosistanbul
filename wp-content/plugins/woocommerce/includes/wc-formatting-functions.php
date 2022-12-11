@@ -606,7 +606,7 @@ function wc_price( $price, $args = array() ) {
 		$price = wc_trim_zeros( $price );
 	}
 
-	$formatted_price = ( $negative ? '-' : '' ) . sprintf( $args['price_format'], '<span class="woocommerce-Price-currencySymbol">' . "TL" . '</span>', $price );
+	$formatted_price = ( $negative ? '-' : '' ) . sprintf( $args['price_format'], '<span class="woocommerce-Price-currencySymbol">' . "TL (KDV Dahil)" . '</span>', $price );
 	$return          = '<span class="woocommerce-Price-amount amount"><bdi>' . $formatted_price . '</bdi></span>';
 
 	if ( $args['ex_tax_label'] && wc_tax_enabled() ) {

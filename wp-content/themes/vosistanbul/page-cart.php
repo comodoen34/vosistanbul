@@ -190,10 +190,10 @@ get_header(); the_post(); ?>
 		                    </div>
 							<?php do_action( 'woocommerce_after_cart_contents' ); ?>
 							<?php do_action( 'woocommerce_before_cart_collaterals' ); ?>
-		                    <div class="row">
+		                    <div class="row justify-content-end">
 		                        <div class="col-md-5 ml-auto">
 		                            <div class="cart-page-total">
-		                                <h2>Sepetiniz</h2>
+		                                <h2>Sipariş Özeti</h2>
 		                                <ul>
 		                                    <li>Ara Toplam <span><?php wc_cart_totals_subtotal_html(); ?></span></li>
 		                                    <li>Toplam <span><?php wc_cart_totals_order_total_html(); ?></span></li>

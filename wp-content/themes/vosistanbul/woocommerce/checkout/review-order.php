@@ -52,10 +52,12 @@ defined( 'ABSPATH' ) || exit;
 	</tbody>
 	<tfoot>
 
+		<?php /* 
 		<tr class="cart-subtotal">
 			<th><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
 			<td><?php wc_cart_totals_subtotal_html(); ?></td>
 		</tr>
+		*/ ?>
 
 		<?php foreach ( WC()->cart->get_coupons() as $code => $coupon ) : ?>
 			<tr class="cart-discount coupon-<?php echo esc_attr( sanitize_title( $code ) ); ?>">
@@ -85,7 +87,7 @@ defined( 'ABSPATH' ) || exit;
 			<?php if ( 'itemized' === get_option( 'woocommerce_tax_total_display' ) ) : ?>
 				<?php foreach ( WC()->cart->get_tax_totals() as $code => $tax ) : // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited ?>
 					<tr class="tax-rate tax-rate-<?php echo esc_attr( sanitize_title( $code ) ); ?>">
-						<th><?php echo esc_html( $tax->label ); ?></th>
+						<th>KDV</th>
 						<td><?php echo wp_kses_post( $tax->formatted_amount ); ?></td>
 					</tr>
 				<?php endforeach; ?>

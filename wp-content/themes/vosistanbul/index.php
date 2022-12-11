@@ -1,6 +1,12 @@
 <?php get_header(); ?>
 <!--Slider Area Start-->
 <div class="slider-area">
+<?php wp_reset_query();
+    query_posts('page_id=23');
+    the_post(); ?>
+    <?php the_field('anasayfa_banner'); ?>
+    <?php wp_reset_query(); ?>
+  <?php /*
   <div class="hero-slider owl-carousel">
     <!--Single Slider Start-->
     <?php wp_reset_query();
@@ -29,6 +35,7 @@
     <?php } ?>
     <!--Single Slider End-->
   </div>
+  */ ?>
 </div>
 <?php wp_reset_query();
 query_posts('page_id=23');
@@ -46,7 +53,7 @@ the_post(); ?>
           <div class="col-12 col-md-8">
             <h4 class="text-end mb-5" style="color:#988a8a;"><?php echo $hakkimizda['alt_baslik_2']; ?></h4>
             <?php echo $hakkimizda['icerik']; ?>
-            <a href="#" class="discoverButton text-center m-0 ms-auto mt-5">Keşfet</a>
+            <a href="<?php the_permalink(184); ?>" class="discoverButton text-center m-0 ms-auto mt-5">Keşfet</a>
           </div>
         </div>
       </div>
@@ -55,20 +62,20 @@ the_post(); ?>
 </div>
 <?php wp_reset_query(); ?>
 <!--Our History Area End-->
-<!--Product Countdown Area Start-->
-<div class="product-countdown-area mt-105 ml-50 mr-50">
-  <div class="container">
-    <div class="row">
-      <!--Section Title Start-->
-      <div class="col-12">
-        <div class="section-title text-center mb-3">
-            <span>SİZİN İÇİN SEÇTİKLERİMİZ</span>
-          </div>
+
+<!--Categories Area Start-->
+<div class="categories-area mt-115">
+    <!--Section Title Start-->
+    <div class="col-12">
+    <div class="section-title text-center mb-3">
+        <span>SİZİN İÇİN SEÇTİKLERİMİZ</span>
       </div>
+  </div>
       <!--Section Title End-->
-    </div>
-    <div class="row">
-      <div class="offer-slider p-0">
+  <div class="container-fluid pl-50 pr-50">
+    <div class="container-xxl row mx-auto">
+      <div class="col-md-12">
+        <div class="row">
         <?php
         wp_reset_query();
         $the_query = new WP_Query(array(
@@ -110,11 +117,13 @@ the_post(); ?>
         endwhile;
         wp_reset_query();
         ?>
+        </div>
       </div>
     </div>
   </div>
 </div>
-<!--Product Countdown Area End-->
+<!--Categories Area End-->
+
 
 <?php wp_reset_query();
 query_posts('page_id=23');

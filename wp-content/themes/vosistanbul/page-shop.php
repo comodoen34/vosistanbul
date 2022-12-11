@@ -88,6 +88,7 @@ get_header(); the_post(); ?>
                                                 while ( $the_query->have_posts() ) :
                                                 $the_query->the_post();
                                                 global $product;
+                                                
                                             ?>
 		                                        <div class="col-md-4">
 		                                            <!--Single Product Start-->
@@ -101,7 +102,7 @@ get_header(); the_post(); ?>
                                                             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                                                             <div class="product-price">
                                                                 <div class="price-box">
-                                                                    <span class="price"><?php echo $product->get_sale_price().' TL'; ?></span>
+                                                                    <span class="price"><?php echo $product->get_regular_price().' TL'; ?></span>
                                                                     <span class="regular-price"><?php echo $product->get_sale_price().' TL'; ?></span>
                                                                 </div>
                                                                 <div class="add-to-cart">
@@ -152,7 +153,7 @@ get_header(); the_post(); ?>
                                                             </div>
                                                             <div class="product-price">
                                                                 <div class="price-box">
-                                                                    <span class="price"><?php echo $product->get_sale_price().' TL'; ?></span>
+                                                                    <span class="price"><?php echo $product->get_regular_price().' TL'; ?></span>
                                                                     <span class="regular-price"><?php echo $product->get_sale_price().' TL'; ?></span>
                                                                 </div>
                                                             </div>

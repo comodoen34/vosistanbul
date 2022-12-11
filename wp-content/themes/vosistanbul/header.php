@@ -204,7 +204,7 @@
                             <span class="float-right"><?php wc_cart_totals_order_total_html(); ?></span>
                           </p>
                           <p class="cart-btn">
-                            <a href="<?php echo esc_url( wc_get_cart_url() ); ?>">Sepete Git</a>
+                            <a href="<?php echo esc_url( wc_get_cart_url() ); ?>">SEPETE GİT</a>
                             <a href="<?php echo esc_url( wc_get_checkout_url() ); ?>">Ödeme Yap</a>
                           </p>
                           <?php else : ?>

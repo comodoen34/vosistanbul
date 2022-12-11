@@ -9092,6 +9092,7 @@ a.ideas-btn:hover {
 
 .categories-content .categories-content-title {
   line-height: 2rem;
+  min-height: 55px;
 }
 
 .categories-content .categories-content-button {
@@ -9099,7 +9100,8 @@ a.ideas-btn:hover {
   font-weight: 300;
 }
 
-.woocommerce-message {
+.woocommerce-message,
+.woocommerce-info {
   border-top-color: #acaeaf !important;
 }
 
@@ -9111,6 +9113,13 @@ a.ideas-btn:hover {
   margin: 20px 0;
 }
 
-.woocommerce-message::before {
+.woocommerce-message::before,
+.woocommerce-info::before {
   color: #acaeaf !important;
+}
+
+.woocommerce form .form-row.woocommerce-validated .select2-container,
+.woocommerce form .form-row.woocommerce-validated input.input-text,
+.woocommerce form .form-row.woocommerce-validated select {
+  border-color: #727272 !important;
 }
