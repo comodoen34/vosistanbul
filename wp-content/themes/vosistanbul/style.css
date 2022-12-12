@@ -6085,7 +6085,7 @@ a.popup-img:hover {
 }
 
 .product-details-content > h2 {
-  color: #555;
+  color: #acaeaf;
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -6200,7 +6200,7 @@ a.popup-img:hover {
 
 .color-pick p,
 .product-size p {
-  color: #555;
+  color: #acaeaf;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -6352,7 +6352,7 @@ a.product-btn:hover {
 }
 
 .product-meta .posted-in {
-  color: #555;
+  color: #acaeaf;
   font-size: 14px;
   font-weight: 700;
   margin-right: 10px;
@@ -6456,7 +6456,7 @@ a.product-btn:hover {
 
 .dec-and-review-menu > li > a.active,
 .dec-and-review-menu > li > a:hover {
-  color: #000;
+  color: #acaeaf;
 }
 
 .product-review-content-tab {
@@ -6728,7 +6728,7 @@ a.product-btn:hover {
 }
 
 .coupon-all input.button {
-  background-color: #333;
+  background-color: #acaeaf;
   border: 0 none;
   border-radius: 2px;
   color: #fff;
@@ -6748,6 +6748,7 @@ a.product-btn:hover {
 
 .coupon-all input.button:hover {
   background: #acaeaf;
+  opacity: 0.7;
 }
 
 .coupon2 {
@@ -6763,6 +6764,7 @@ a.product-btn:hover {
   font-weight: 700;
   margin-bottom: 20px;
   text-transform: capitalize;
+  color: #acaeaf;
 }
 
 .cart-page-total > ul {
@@ -6788,8 +6790,8 @@ a.product-btn:hover {
 }
 
 .cart-page-total > a {
-  background-color: #333;
-  border: 1px solid #333;
+  background-color: #acaeaf;
+  border: 1px solid #acaeaf;
   color: #fff;
   display: inline-block;
   margin-top: 30px;
@@ -6802,6 +6804,7 @@ a.product-btn:hover {
 .cart-page-total > a:hover {
   background: #acaeaf;
   border-color: #acaeaf;
+  opacity: 0.7;
 }
 
 /*-------------------------

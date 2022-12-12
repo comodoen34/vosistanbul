@@ -76,7 +76,7 @@
 		                    <h2><?php echo $product->get_name(); ?></h2>
                             <div class="single-product-price">
                                 <span class="price new-price"><?php echo $product->get_regular_price(). ' TL'; ?></span>
-                                <span class="regular-price"><?php echo $product->get_price(). ' TL'; ?><span style="font-size:12px;"> ( KDV Dahil )</span></span>
+                                <span class="regular-price"><?php echo $product->get_price(). ' TL'; ?><span style="font-size:12px;"> + KDV</span></span>
                             </div>
                             <div class="product-description">
                                 <p><?php echo $product->get_short_description(); ?></p>
@@ -106,7 +106,7 @@
                                     $teslimat_tarihi = get_field('teslim_tarihi'); 
                                     for ($i = 0; $i < $teslimat_tarihi; $i++) {
                                 ?>
-                                <label class="calendarDateBox <?php echo 'teslimat_tarihi_'.($i + 1); ?>"><span id="<?php echo 'calendarDateName_'.($i + 1); ?>" class="calendarDateName"></span> <div id="<?php echo 'calendarDateNumber_'.($i + 1); ?>" class="calendarDateNumber"></div> <input class="custom_radio" type="radio" id="<?php echo 'teslimat_tarihi_'.($i + 1); ?>" name="_teslimat_tarihi_secim"></label>
+                                <label id="calendarDateBoxDay" class="calendarDateBox <?php echo 'teslimat_tarihi_'.($i + 1); ?>"><span id="<?php echo 'calendarDateName_'.($i + 1); ?>" class="calendarDateName"></span> <div id="<?php echo 'calendarDateNumber_'.($i + 1); ?>" class="calendarDateNumber"></div> <input class="custom_radio" type="radio" id="<?php echo 'teslimat_tarihi_'.($i + 1); ?>" name="_teslimat_tarihi_secim"></label>
                                 <?php $teslimat_tarihi_count++; } ?>
                                 <label class="calendarDateBox teslimat_tarihi_takvim">Takvim <span id="calendarDateNumber_takvim" class="calendarDateName"></span> <input class="custom_radio" type="radio" id="takvim" name="_teslimat_tarihi_secim"></label>
 							</div>
@@ -167,6 +167,9 @@
 
                                     jQuery(document).ready(function () {
                                         $("#datepicker").datepicker({
+                                            monthNames: [ "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık" ],
+                                            dayNamesMin: [ "Pa", "Pt", "Sl", "Ça", "Pe", "Cu", "Ct" ],
+                                            firstDay:1,
                                             onSelect: function () {
                                                 $(this).data('datepicker').inline = true;
                                                 $("#datepicker").datepicker('hide');
@@ -179,8 +182,21 @@
                                                 $(this).data('datepicker').inline = false;
                                                 $("#takvim").toggleClass('opened');
                                             },
-                                            minDate: 0
-                                        },$.datepicker.regional["tr"]);
+                                            minDate: mdate()
+                                        });
+
+
+                                        function mdate(){
+                                                var time = new Date().getHours();
+                                                console.log(time);
+                                                var str = 0;
+                                                if(time >= 16){
+                                                    str = 1;
+                                                    $('#calendarDateBoxDay').css("display", "none");
+                                                }
+                                                return str;
+                                        }
+                                        
 
                                         $('.teslimat_tarihi_1').addClass("calendarDateBoxChecked");
                                         $('input:radio[name="_teslimat_tarihi_secim"]').filter('[id="teslimat_tarihi_1"]').attr('checked', true);
@@ -235,7 +251,7 @@
                             </script>
                             <div class="product-meta">
                                 <span class="posted-in">
-                                        Kategori: 
+                                        KATEGORİ: 
 		                                <?php echo $product->get_categories(); ?>
 		                            </span>
                             </div>

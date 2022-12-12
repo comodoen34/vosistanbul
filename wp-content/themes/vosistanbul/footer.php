@@ -42,13 +42,9 @@
                 <ul class="link-widget">
                   <li><a href="<?php the_permalink(184); ?>">HİKAYEMİZ</a></li>
                   <li><a href="<?php the_permalink(205); ?>">İLETİŞİM</a></li>
-                  <li><a href="<?php the_permalink(3); ?>">GİZLİLİK KOŞULLARI</a></li>
-                  <li><a href="<?php the_permalink(187); ?>">GÖNDERİM BÖLGELERİ</a></li>
-                  <li><a href="<?php the_permalink(189); ?>">İADE POLİTİKASI</a></li>
                   <li><a href="<?php the_permalink(191); ?>">MESAFELİ SATIŞ SÖZLEŞMESİ</a></li>
-                  <li><a href="<?php the_permalink(193); ?>">KULLANIM KOŞULLARI</a></li>
-                  <li><a href="<?php the_permalink(195); ?>">HİZMET ŞARTLARI</a></li>
-                  <li><a href="<?php the_permalink(197); ?>">PARA İADE POLİTİKASI</a></li>
+                  <li><a href="<?php the_permalink(3); ?>">KİŞİSEL VERİLERİN KORUNMASI VE GİZLİLİK POLİTİKASI</a></li>
+                  <li><a href="<?php the_permalink(187); ?>">GÖNDERİM BÖLGELERİ</a></li>
                 </ul>
               </div>
               <!--Single Footer Widget End-->
@@ -66,7 +62,7 @@
               <div class="single-footer-widget mb-30">
                 <div class="footer-logo">
                   <a href="index.html"
-                    ><img src="<?php bloginfo('template_url'); ?>/images/logo/VOS_Logo.png" width="175px" alt=""
+                    ><img src="<?php bloginfo('template_url'); ?>/images/logo/vos_logo_gri.png" width="177px" alt=""
                   /></a>
                 </div>
               </div>

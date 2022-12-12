@@ -90,9 +90,10 @@ defined( 'ABSPATH' ) || exit;
 			the_post(); 
 
 			$all_d_s = get_field('gonderim_bolgeleri');
-
+			print_r($all_d_s);
 			foreach($all_d_s as $key => $field) {
 				$second_address = strtolower($all_d_s[$key]['ilce_adi']);
+				echo $all_d_s[$key]['posta_kodu'];
 				if (str_contains($first_address, $second_address)) {
 					if($all_d_s[$key]['acik_kapali'] == 1) {
 						$found_zip_code = $all_d_s[$key]['posta_kodu'];
