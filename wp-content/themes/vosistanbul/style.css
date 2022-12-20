@@ -7720,6 +7720,10 @@ a.about-btn:hover {
   text-align: justify;
 }
 
+p {
+  line-height: 1.75rem;
+}
+
 /*-----------------------------
     28. Service Page CSS
 ------------------------------*/
