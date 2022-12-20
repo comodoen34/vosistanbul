@@ -145,7 +145,7 @@ the_post(); ?>
         <div class="row">
           <div class="col-md-4">
             <div class="categories-img img-full mb-30">
-              <a href="<?php echo $kategori_grids_layout['kategori_url_01']; ?>">
+              <a href="<?php the_permalink(349); ?>">
                 <img src="<?php echo $kategori_grids_layout['kategori_resim_01']['url']; ?>" alt="<?php echo $kategori_grids_layout['kategori_adi_01']; ?>" />
               </a>
               <div class="categories-content">
@@ -156,7 +156,7 @@ the_post(); ?>
           </div>
           <div class="col-md-4">
             <div class="categories-img img-full mb-30">
-              <a href="<?php echo $kategori_grids_layout['kategori_url_02']; ?>">
+              <a href="<?php the_permalink(352); ?>">
                 <img src="<?php echo $kategori_grids_layout['kategori_resim_02']['url']; ?>" alt="<?php echo $kategori_grids_layout['kategori_adi_02']; ?>" />
               </a>
               <div class="categories-content">
@@ -167,7 +167,7 @@ the_post(); ?>
           </div>
           <div class="col-md-4">
             <div class="categories-img img-full mb-30">
-              <a href="<?php echo $kategori_grids_layout['kategori_url_03']; ?>">
+              <a href="<?php the_permalink(182); ?>">
                 <img src="<?php echo $kategori_grids_layout['kategori_resim_03']['url']; ?>" alt="<?php echo $kategori_grids_layout['kategori_adi_03']; ?>" />
               </a>
               <div class="categories-content">
