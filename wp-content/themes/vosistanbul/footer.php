@@ -13,7 +13,7 @@
                     query_posts('page_id=23');
                     the_post(); 
               ?>
-                  <?php the_field('e_bulten'); ?>
+                  <?php the_field('e-bulten'); ?>
               <?php wp_reset_query(); ?>
               </div>
               <!--Single Footer Widget End-->
