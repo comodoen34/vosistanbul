@@ -200,7 +200,6 @@ the_post(); ?>
           </div>
           <div class="feature-content">
             <h3><?php echo $cta_butonlar['cta_01_baslik']; ?></h3>
-            <p><?php echo $cta_butonlar['cta_01_alt_baslik']; ?></p>
           </div>
         </div>
         <!--Single Feature End-->
@@ -213,7 +212,6 @@ the_post(); ?>
           </div>
           <div class="feature-content">
             <h3><?php echo $cta_butonlar['cta_02_baslik']; ?></h3>
-            <p><?php echo $cta_butonlar['cta_02_alt_baslik']; ?></p>
           </div>
         </div>
         <!--Single Feature End-->
@@ -226,7 +224,6 @@ the_post(); ?>
           </div>
           <div class="feature-content">
             <h3><?php echo $cta_butonlar['cta_03_baslik']; ?></h3>
-            <p><?php echo $cta_butonlar['cta_03_alt_baslik']; ?></p>
           </div>
         </div>
         <!--Single Feature End-->

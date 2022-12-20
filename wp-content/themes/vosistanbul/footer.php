@@ -9,12 +9,12 @@
             <div class="col-lg-6 col-md-6">
               <!--Single Footer Widget Start-->
               <div class="single-footer-widget mb-40">
-                <div class="footer-title">
-                  <h3>GÖNDERİ BÖLGELERİ</h3>
-                </div>
-                <ul class="link-widget">
-                  <li><a href="about.html">About Us</a></li>
-                </ul>
+              <?php wp_reset_query();
+                    query_posts('page_id=23');
+                    the_post(); 
+              ?>
+                  <?php the_field('e_bulten'); ?>
+              <?php wp_reset_query(); ?>
               </div>
               <!--Single Footer Widget End-->
             </div>
@@ -117,17 +117,6 @@
           <div class="row">
             <div class="col-md-12">
               <!--Footer Menu Start-->
-              <!-- <div class="footer-menu text-center">
-                <nav>
-                  <ul>
-                    <li><a href="#">Site Map</a></li>
-                    <li><a href="#">Search Terms</a></li>
-                    <li><a href="#">Advanced Search</a></li>
-                    <li><a href="#">Orders and Returns</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                  </ul>
-                </nav>
-              </div> -->
               <!--Footer Menu End-->
               <!--Footer Copyright Start-->
               <div class="footer-copyright">
