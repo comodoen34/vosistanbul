@@ -9130,3 +9130,17 @@ a.ideas-btn:hover {
 .woocommerce form .form-row.woocommerce-validated select {
   border-color: #727272 !important;
 }
+
+.single-footer-widget form{
+  display: flex;
+  gap: .5rem;
+}
+
+.single-footer-widget input[type="email"]{
+  max-width: 250px;
+}
+
+.single-footer-widget input[type="submit"]{
+  max-width: 110px;
+}
+
