@@ -2184,13 +2184,13 @@ a.generalButton:hover {
   transform: translateY(-50%);
 }
 
-.cart-icon:before {
+/* .cart-icon:before {
   content: "\f07a";
   font-family: FontAwesome;
   line-height: 1;
   font-size: 18px;
 }
-
+ */
 .cart-quantity {
   position: absolute;
   background: #acaeaf;
@@ -2201,7 +2201,7 @@ a.generalButton:hover {
   border-radius: 100%;
   color: #fff;
   font-size: 12px;
-  left: 12px;
+  left: 17px;
   top: -6px;
   z-index: 1;
 }
