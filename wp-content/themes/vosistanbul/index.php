@@ -194,9 +194,9 @@ the_post(); ?>
     <div class="row">
       <div class="col-lg-4 col-md-6">
         <!--Single Feature Start-->
-        <div class="single-feature mb-35">
+        <div class="single-feature mb-35 flex-column gap-3">
           <div class="feature-icon">
-            <span class="lnr lnr-rocket"></span>
+          <img src="<?php bloginfo('template_url'); ?>/images/slider/ozgun-modern.png" alt="" />
           </div>
           <div class="feature-content">
             <h3><?php echo $cta_butonlar['cta_01_baslik']; ?></h3>
@@ -207,9 +207,9 @@ the_post(); ?>
       </div>
       <div class="col-lg-4 col-md-6">
         <!--Single Feature Start-->
-        <div class="single-feature mb-35">
+        <div class="single-feature mb-35 flex-column gap-3">
           <div class="feature-icon">
-            <span class="lnr lnr-phone"></span>
+          <img src="<?php bloginfo('template_url'); ?>/images/slider/taze-cicekler.png" alt="" />
           </div>
           <div class="feature-content">
             <h3><?php echo $cta_butonlar['cta_02_baslik']; ?></h3>
@@ -220,9 +220,9 @@ the_post(); ?>
       </div>
       <div class="col-lg-4 col-md-6">
         <!--Single Feature Start-->
-        <div class="single-feature mb-35">
+        <div class="single-feature mb-35 flex-column gap-3">
           <div class="feature-icon">
-            <span class="lnr lnr-redo"></span>
+          <img src="<?php bloginfo('template_url'); ?>/images/slider/teslimat.png" alt="" />
           </div>
           <div class="feature-content">
             <h3><?php echo $cta_butonlar['cta_03_baslik']; ?></h3>
