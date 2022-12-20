@@ -123,10 +123,16 @@ get_header();
                                                         <div class="product-content">
                                                             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                                                             <div class="product-price">
+																<?php if(!empty($product->get_sale_price())) { ?>
                                                                 <div class="price-box">
                                                                     <span class="price"><?php echo $product->get_regular_price().' TL'; ?></span>
                                                                     <span class="regular-price"><?php echo $product->get_sale_price().' TL'; ?></span>
                                                                 </div>
+																<?php } else { ?>
+																<div class="price-box">
+                                                                    <span class="regular-price"><?php echo $product->get_regular_price().' TL'; ?></span>
+                                                                </div>	
+																<?php } ?>
         <!--                                                         <div class="add-to-cart">
                                                                     <a href="<?php the_permalink(); ?>">Ürünü İncele</a>
                                                                 </div> -->
@@ -174,10 +180,16 @@ get_header();
                                                                 <p><?php echo $product->short_description; ?></p>
                                                             </div>
                                                             <div class="product-price">
-                                                                <div class="price-box">
-																	<span class="price"><?php echo $product->get_regular_price().' TL'; ?></span>
-                                                                    <span class="regular-price"><?php echo $product->get_sale_price().' TL'; ?></span>
-                                                                </div>
+																<?php if(!empty($product->get_sale_price())) { ?>
+																	<div class="price-box">
+																		<span class="price"><?php echo $product->get_regular_price().' TL'; ?></span>
+																		<span class="regular-price"><?php echo $product->get_sale_price().' TL'; ?></span>
+																	</div>
+																<?php } else { ?>
+																	<div class="price-box">
+																		<span class="regular-price"><?php echo $product->get_regular_price().' TL'; ?></span>
+                                                                	</div>
+																<?php } ?>
                                                             </div>
                                                             <div class="product-list-action">
                                                                <div class="add-btn">

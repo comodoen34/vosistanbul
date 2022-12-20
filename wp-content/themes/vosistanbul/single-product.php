@@ -74,10 +74,16 @@
                             <!--Product Nav Start-->
                             <!--Product Nav End-->
 		                    <h2><?php echo $product->get_name(); ?></h2>
-                            <div class="single-product-price">
-                                <span class="price new-price"><?php echo $product->get_regular_price(). ' TL'; ?></span>
-                                <span class="regular-price"><?php echo $product->get_price(). ' TL'; ?><span style="font-size:12px;"> + KDV</span></span>
-                            </div>
+                            <?php if(!empty($product->get_sale_price())) { ?>
+                                <div class="single-product-price">
+                                    <span class="price new-price"><?php echo $product->get_regular_price(). ' TL'; ?></span>
+                                    <span class="regular-price"><?php echo $product->get_sale_price(). ' TL'; ?><span style="font-size:12px;"> + KDV</span></span>
+                                </div>
+                            <?php } else { ?>
+                                <div class="single-product-price">
+                                    <span class="regular-price"><?php echo $product->get_regular_price(). ' TL'; ?><span style="font-size:12px;"> + KDV</span></span>
+                                </div>
+                            <?php } ?>
                             <div class="product-description">
                                 <p><?php echo $product->get_short_description(); ?></p>
                             </div>
