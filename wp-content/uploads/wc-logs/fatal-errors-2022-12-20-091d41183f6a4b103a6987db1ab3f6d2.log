@@ -1,0 +1,72 @@
+2022-12-20T20:01:24+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/single-product.php dosyasında 79 numaralı satırda Uncaught Error: Call to undefined method WC_Product_Simple::sale_price() in /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/single-product.php:79
+Stack trace:
+#0 /home/hellospace/public_html/vos/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vos/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vos/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-12-20T20:01:26+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/single-product.php dosyasında 79 numaralı satırda Uncaught Error: Call to undefined method WC_Product_Simple::sale_price() in /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/single-product.php:79
+Stack trace:
+#0 /home/hellospace/public_html/vos/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vos/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vos/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-12-20T20:02:20+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/single-product.php dosyasında 79 numaralı satırda Uncaught Error: Call to undefined method WC_Product_Simple::sale_price() in /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/single-product.php:79
+Stack trace:
+#0 /home/hellospace/public_html/vos/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vos/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vos/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-12-20T20:02:22+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/single-product.php dosyasında 79 numaralı satırda Uncaught Error: Call to undefined method WC_Product_Simple::sale_price() in /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/single-product.php:79
+Stack trace:
+#0 /home/hellospace/public_html/vos/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vos/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vos/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-12-20T20:02:25+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/single-product.php dosyasında 79 numaralı satırda Uncaught Error: Call to undefined method WC_Product_Simple::sale_price() in /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/single-product.php:79
+Stack trace:
+#0 /home/hellospace/public_html/vos/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vos/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vos/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-12-20T20:02:33+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/single-product.php dosyasında 79 numaralı satırda Uncaught Error: Call to undefined method WC_Product_Simple::sale_price() in /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/single-product.php:79
+Stack trace:
+#0 /home/hellospace/public_html/vos/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vos/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vos/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-12-20T20:02:38+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/single-product.php dosyasında 79 numaralı satırda Uncaught Error: Call to undefined method WC_Product_Simple::sale_price() in /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/single-product.php:79
+Stack trace:
+#0 /home/hellospace/public_html/vos/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vos/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vos/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-12-20T20:02:39+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/single-product.php dosyasında 79 numaralı satırda Uncaught Error: Call to undefined method WC_Product_Simple::sale_price() in /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/single-product.php:79
+Stack trace:
+#0 /home/hellospace/public_html/vos/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vos/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vos/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
+2022-12-20T20:02:41+00:00 CRITICAL /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/single-product.php dosyasında 79 numaralı satırda Uncaught Error: Call to undefined method WC_Product_Simple::sale_price() in /home/hellospace/public_html/vos/wp-content/themes/vosistanbul/single-product.php:79
+Stack trace:
+#0 /home/hellospace/public_html/vos/wp-includes/template-loader.php(106): include()
+#1 /home/hellospace/public_html/vos/wp-blog-header.php(19): require_once('/home/hellospac...')
+#2 /home/hellospace/public_html/vos/index.php(17): require('/home/hellospac...')
+#3 {main}
+  thrown
+
