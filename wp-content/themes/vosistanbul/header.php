@@ -69,6 +69,9 @@
   <!-- Responsive CSS -->
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/responsive.css" />
 
+  <script type="text/javascript"  src="<?php bloginfo('template_url'); ?>/js/modal.js"></script>
+
+
 </head>
 <?php wp_head(); ?>
 
