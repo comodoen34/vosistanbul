@@ -160,12 +160,12 @@ get_header(); the_post(); ?>
                                                             <div class="product-price">
                                                                 <?php if(!empty($product->get_sale_price())) { ?>
 																	<div class="price-box">
-																		<span class="price"><?php echo $product->get_regular_price().' TL'; ?></span>
-																		<span class="regular-price"><?php echo $product->get_sale_price().' TL'; ?></span>
+																		<span class="price"><?php echo $product->get_regular_price() * 1.18. ' TL'; ?></span>
+																		<span class="regular-price"><?php echo wc_price( wc_get_price_including_tax( $product ) ); ?><span style="font-size:12px;"> + KDV Dahil</span></span>
 																	</div>
 																<?php } else { ?>
 																	<div class="price-box">
-																		<span class="regular-price"><?php echo $product->get_regular_price().' TL'; ?></span>
+																		<span class="regular-price"><?php echo wc_price( wc_get_price_including_tax( $product ) ); ?><span style="font-size:12px;"> + KDV Dahil</span></span>
                                                                 	</div>
 																<?php } ?>
                                                             </div>

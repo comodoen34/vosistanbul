@@ -64,10 +64,10 @@ the_post(); ?>
 <!--Our History Area End-->
 
 <!--Categories Area Start-->
-<div class="categories-area mt-115">
+<div class="categories-area mt-85">
     <!--Section Title Start-->
     <div class="col-12">
-    <div class="section-title text-center mb-3">
+    <div class="section-title text-center mb-30">
         <span>SİZİN İÇİN SEÇTİKLERİMİZ</span>
       </div>
   </div>
@@ -108,12 +108,12 @@ the_post(); ?>
                   
                     <?php if(!empty($product->get_sale_price())) { ?>
                       <div class="price-box">
-                        <span class="price"><?php echo $product->get_regular_price().' TL'; ?></span>
-												<span class="regular-price"><?php echo $product->get_sale_price().' TL'; ?></span>
+                        <span class="price"><?php echo $product->get_regular_price() * 1.18.' TL'; ?></span>
+												<span class="regular-price"><?php echo $product->get_sale_price() * 1.18.' TL'; ?><span style="font-size:12px;"> (KDV Dahil)</span></span>
                       </div>
                     <?php } else { ?>
                       <div class="price-box">
-												<span class="regular-price"><?php echo $product->get_regular_price().' TL'; ?></span>
+												<span class="regular-price"><?php echo $product->get_regular_price() * 1.18.' TL'; ?><span style="font-size:12px;"> (KDV Dahil)</span></span>
                       </div>
                     <?php } ?>
                 </div>
@@ -137,7 +137,7 @@ the_post(); ?>
 query_posts('page_id=23');
 the_post(); ?>
 <!--Categories Area Start-->
-<div class="categories-area mt-115">
+<div class="categories-area mt-85">
   <?php $kategori_grids_layout = get_field("kategori_grids_layout"); ?>
   <div class="container-fluid pl-50 pr-50">
     <div class="container-xxl row mx-auto">
@@ -189,14 +189,22 @@ query_posts('page_id=23');
 the_post(); ?>
 <?php $cta_butonlar = get_field("cta_butonlar"); ?>
 <!--Feature Area Start-->
-<div class="feature-area mt-120">
+<div class="feature-area mt-50">
   <div class="container">
+    <div>
+      <div class="section-title text-center mb-20">
+        <span>ÇİÇEKLERİNİZ AYNI GÜN İÇİNDE SİZLERLER</span>
+      </div>
+    </div>
+    <div class="text-center mb-70">
+      <a href="#" class="discoverButton text-center m-0 ms-auto mt-5" style="margin-right: auto !important; max-width: 300px;">Teslimat Bölgelerimiz</a>
+    </div>
     <div class="row">
       <div class="col-lg-4 col-md-6">
         <!--Single Feature Start-->
-        <div class="single-feature mb-35 flex-column gap-3">
-          <div class="feature-icon">
-          <img src="<?php bloginfo('template_url'); ?>/images/slider/ozgun-modern.png" alt="" />
+        <div class="single-feature mb-35 flex-column gap-2">
+          <div class="feature-icon mb-2" style="text-align:center">
+          <img src="<?php bloginfo('template_url'); ?>/images/slider/ozgun.png" width="37%" alt="" />
           </div>
           <div class="feature-content">
             <h3><?php echo $cta_butonlar['cta_01_baslik']; ?></h3>
@@ -206,9 +214,9 @@ the_post(); ?>
       </div>
       <div class="col-lg-4 col-md-6">
         <!--Single Feature Start-->
-        <div class="single-feature mb-35 flex-column gap-3">
-          <div class="feature-icon">
-          <img src="<?php bloginfo('template_url'); ?>/images/slider/taze-cicekler.png" alt="" />
+        <div class="single-feature mb-35 flex-column gap-2">
+          <div class="feature-icon mb-2" style="text-align:center">
+          <img src="<?php bloginfo('template_url'); ?>/images/slider/taze-ciceklerr.png" width="60%" alt="" />
           </div>
           <div class="feature-content">
             <h3><?php echo $cta_butonlar['cta_02_baslik']; ?></h3>
@@ -218,9 +226,9 @@ the_post(); ?>
       </div>
       <div class="col-lg-4 col-md-6">
         <!--Single Feature Start-->
-        <div class="single-feature mb-35 flex-column gap-3">
-          <div class="feature-icon">
-          <img src="<?php bloginfo('template_url'); ?>/images/slider/teslimat.png" alt="" />
+        <div class="single-feature mb-35 flex-column gap-2">
+          <div class="feature-icon mb-2" style="text-align:center">
+          <img src="<?php bloginfo('template_url'); ?>/images/slider/teslimatt.png" width="47%" alt="" />
           </div>
           <div class="feature-content">
             <h3><?php echo $cta_butonlar['cta_03_baslik']; ?></h3>
@@ -234,7 +242,7 @@ the_post(); ?>
 <!--Feature Area End-->
 <?php wp_reset_query(); ?>
 
-<div class="categories-area mt-115">
+<div class="categories-area mt-85">
   <!-- BLOG -->
   <?php wp_reset_query(); query_posts('page_id=23'); the_post(); ?>
   <div class="container-fluid pl-50 pr-50 mt-105">

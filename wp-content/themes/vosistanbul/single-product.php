@@ -68,6 +68,7 @@
 		                    <!--Product Tab Menu End-->
 		                </div>
 		            </div>
+                    
 		            <div class="col-md-12 col-lg-7">
                         <!--Product Details Content Start-->
 		                <div class="product-details-content">
@@ -76,12 +77,12 @@
 		                    <h2><?php echo $product->get_name(); ?></h2>
                             <?php if(!empty($product->get_sale_price())) { ?>
                                 <div class="single-product-price">
-                                    <span class="price new-price"><?php echo $product->get_regular_price(). ' TL'; ?></span>
-                                    <span class="regular-price"><?php echo $product->get_sale_price(). ' TL'; ?><span style="font-size:12px;"> + KDV</span></span>
+                                    <span class="price new-price"><?php echo $product->get_regular_price() * 1.18. ' TL'; ?></span>
+                                    <span class="regular-price"><?php echo $product->get_sale_price() * 1.18. ' TL'; ?><span style="font-size:12px;"> (KDV Dahil)</span></span>
                                 </div>
                             <?php } else { ?>
                                 <div class="single-product-price">
-                                    <span class="regular-price"><?php echo $product->get_regular_price(). ' TL'; ?><span style="font-size:12px;"> + KDV</span></span>
+                                    <span class="regular-price"><?php echo $product->get_regular_price() * 1.18. ' TL'; ?><span style="font-size:12px;"> (KDV Dahil)</span></span>
                                 </div>
                             <?php } ?>
                             <div class="product-description">
