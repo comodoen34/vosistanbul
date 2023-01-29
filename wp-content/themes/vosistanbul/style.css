@@ -6180,7 +6180,7 @@ a.popup-img:hover {
   color: #666;
   position: relative;
   transition: all 0.15s !important;
-  width: calc(25% - 30px);
+  width: 120px;
   margin-left: 5px;
   margin-right: 5px;
   padding: 10px 5px;

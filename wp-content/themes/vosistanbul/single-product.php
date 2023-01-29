@@ -106,26 +106,29 @@ the_post(); ?>
                             <p style="margin-top:16px;">ADRES:</p>
                             <input type="text" id="checkoutCustomForm" name="_teslimat_adres_secimi" placeholder="Gönderim Adresi Seçiniz">
                         </div>
-                        <div class="color-pick mb-30">
+                        <div class="color-pick mb-30 d-flex flex-column" >
                             <p>TESLİMAT TARİHİ : </p>
-                            <?php
-                            $teslimat_tarihi = get_field('teslim_tarihi');
-                            $hazirlama_tarihi = get_field('teslim_tarihi_hazirlama_gun_sayisi');
-                            for ($i = 0; $i < $teslimat_tarihi; $i++) {
-                                if ($i < $hazirlama_tarihi) {
-                                    $customCl = 'display: none';
-                                } else {
-                                    $customCl = 'display: flex';
-                                }
+                            <div class="d-flex flex-wrap" style="row-gap: .25rem;">
+                                <?php
+                                $teslimat_tarihi = get_field('teslim_tarihi');
+                                $hazirlama_tarihi = get_field('teslim_tarihi_hazirlama_gun_sayisi');
+                                for ($i = 0; $i < $teslimat_tarihi; $i++) {
+                                    if ($i < $hazirlama_tarihi) {
+                                        $customCl = 'display: none';
+                                    } else {
+                                        $customCl = 'display: flex';
+                                    }
 
-                            ?>
-                                <label id="calendarDateBoxDay" style="<?php echo $customCl; ?>" class="calendarDateBox <?php echo 'teslimat_tarihi_' . ($i + 1); ?>"><span id="<?php echo 'calendarDateName_' . ($i + 1); ?>" class="calendarDateName"></span>
-                                    <div id="<?php echo 'calendarDateNumber_' . ($i + 1); ?>" class="calendarDateNumber"></div> <input class="custom_radio" type="radio" id="<?php echo 'teslimat_tarihi_' . ($i + 1); ?>" name="_teslimat_tarihi_secim">
-                                </label>
-                            <?php $teslimat_tarihi_count++;
-                            }
-                            ?>
-                            <label class="calendarDateBox teslimat_tarihi_takvim">Takvim <span id="calendarDateNumber_takvim" class="calendarDateName"></span> <input class="custom_radio" type="radio" id="takvim" name="_teslimat_tarihi_secim"></label>
+                                ?>
+                                    <label id="calendarDateBoxDay" style="<?php echo $customCl; ?>" class="calendarDateBox <?php echo 'teslimat_tarihi_' . ($i + 1); ?>"><span id="<?php echo 'calendarDateName_' . ($i + 1); ?>" class="calendarDateName"></span>
+                                        <div id="<?php echo 'calendarDateNumber_' . ($i + 1); ?>" class="calendarDateNumber"></div> <input class="custom_radio" type="radio" id="<?php echo 'teslimat_tarihi_' . ($i + 1); ?>" name="_teslimat_tarihi_secim">
+                                    </label>
+                                <?php $teslimat_tarihi_count++;
+                                }
+                                ?>
+                                <label class="calendarDateBox teslimat_tarihi_takvim">Takvim <span id="calendarDateNumber_takvim" class="calendarDateName"></span> <input class="custom_radio" type="radio" id="takvim" name="_teslimat_tarihi_secim"></label>
+                            </div>
+
                         </div>
 
                         <p class="errorTeslimTarihi" style="display:none;">Lutfen bir secim yapiniz</p>
