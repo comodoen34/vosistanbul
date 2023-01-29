@@ -1597,11 +1597,34 @@ Common Style CSS
 }
 
 .mean-container a.meanmenu-reveal span {
+  position: absolute;
   display: block;
   background: #282828;
   height: 3px;
   margin-top: 3px;
 }
+.mean-container a.meanmenu-reveal span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: #282828;
+  margin-top: 3px;
+  width: 22px;
+  height: 3px !important;
+  top: 3px;
+}
+
+.mean-container a.meanmenu-reveal span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: #282828;
+  margin-top: 3px;
+  width: 22px;
+  height: 3px !important;
+  top: 9px;
+}
+
 
 .mobile-menu .mean-bar .meanmenu-reveal span.menu-bar:before,
 .mobile-menu .mean-bar .meanmenu-reveal span.menu-bar:after {

@@ -120,6 +120,20 @@
                       </li>
                       <li><a href="<?php the_permalink(180); ?>">CAFE'MİZ</a></li>
                       <li><a href="<?php the_permalink(184); ?>">HİKAYEMİZ</a></li>
+                      <?php
+
+                      if (is_user_logged_in()) {
+                      ?>
+                        <li>
+                          <a href="<?php echo wc_logout_url(); ?>">ÇIKIŞ YAP</a>
+                        </li>
+
+                      <?php } else {
+                      ?>
+                        <li>
+                          <a href="<?php the_permalink(48); ?>">GİRİŞ YAP</a>
+                        </li>
+                      <?php } ?>
                     </ul>
                   </nav>
                 </div>
@@ -223,10 +237,10 @@
 
                       if (is_user_logged_in()) {
                       ?>
-                        <a href="<?php echo wc_logout_url(); ?>" class="generalButton girisyapButton">ÇIKIŞ YAP</a>
+                        <a href="<?php echo wc_logout_url(); ?>" class="d-none generalButton girisyapButton">ÇIKIŞ YAP</a>
                       <?php } else {
                       ?>
-                        <a href="<?php the_permalink(48); ?>" class="generalButton girisyapButton">GİRİŞ YAP</a>
+                        <a href="<?php the_permalink(48); ?>" class="d-none generalButton girisyapButton">GİRİŞ YAP</a>
                       <?php } ?>
                     </div>
                   </div>
