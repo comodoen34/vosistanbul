@@ -6200,6 +6200,15 @@ a.popup-img:hover {
   left: 68% !important;
 }
 
+@media screen and (max-width: 992px) {
+  #ui-datepicker-div {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .custom_radio {
   visibility: hidden;
   height: 0px !important;
