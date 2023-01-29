@@ -1625,7 +1625,6 @@ Common Style CSS
   top: 9px;
 }
 
-
 .mobile-menu .mean-bar .meanmenu-reveal span.menu-bar:before,
 .mobile-menu .mean-bar .meanmenu-reveal span.menu-bar:after {
   content: "";
@@ -9173,4 +9172,13 @@ a.ideas-btn:hover {
 
 .single-footer-widget input[type="submit"] {
   max-width: 110px;
+}
+
+.woocommerce ul.order_details {
+  margin: 50px auto !important;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
 }

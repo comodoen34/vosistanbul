@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Email Footer
  *
@@ -15,42 +16,50 @@
  * @version 3.7.0
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 ?>
-															</div>
-														</td>
-													</tr>
-												</table>
-												<!-- End Content -->
-											</td>
-										</tr>
-									</table>
-									<!-- End Body -->
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-				<tr>
-					<td align="center" valign="top">
-						<!-- Footer -->
-						<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer">
-							<tr>
-								<td valign="top">
-									<table border="0" cellpadding="10" cellspacing="0" width="100%">
-										<tr>
-											<td colspan="2" valign="middle" id="credit">
-												<?php echo wp_kses_post( wpautop( wptexturize( apply_filters( 'woocommerce_email_footer_text', get_option( 'woocommerce_email_footer_text' ) ) ) ) ); ?>
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</table>
-						<!-- End Footer -->
-					</td>
-				</tr>
-			</table>
-		</div>
-	</body>
+</div>
+</td>
+</tr>
+</table>
+<!-- End Content -->
+</td>
+</tr>
+</table>
+<!-- End Body -->
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+	<td align="center" valign="top">
+		<!-- Footer -->
+		<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer">
+			<tr>
+				<td valign="top">
+					<table border="0" cellpadding="10" cellspacing="0" width="100%">
+						<tr>
+							<td colspan="2" valign="middle" id="credit">
+								Bizi seçtiğiniz için teşekkür ederiz.<br /><br />
+								Tüm soru ve görüşleriniz için:<br />
+								hello@vosistanbul.com<br /><br />
+
+								Vos Flower and Coffee<br />
+								19 Mayıs Mah. Rıkfı Bey Sok. No:8/1-2 Kadıköy, İstanbul<br />
+								0216 999 37 97<br />
+								<?php /* echo wp_kses_post(wpautop(wptexturize(apply_filters('woocommerce_email_footer_text', get_option('woocommerce_email_footer_text'))))); */ ?>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<!-- End Footer -->
+	</td>
+</tr>
+</table>
+</div>
+</body>
+
 </html>
