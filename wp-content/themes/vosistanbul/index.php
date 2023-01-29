@@ -207,7 +207,7 @@ the_post(); ?>
             <img src="<?php bloginfo('template_url'); ?>/images/slider/ozgun.png" width="37%" alt="" />
           </div>
           <div class="feature-content">
-            <h3><?php echo $cta_butonlar['cta_01_baslik']; ?></h3>
+            <h3 class="text-center"><?php echo $cta_butonlar['cta_01_baslik']; ?></h3>
           </div>
         </div>
         <!--Single Feature End-->
