@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/modal.js"></script>
 <!--Slider Area Start-->
 <div class="slider-area">
   <?php wp_reset_query();
