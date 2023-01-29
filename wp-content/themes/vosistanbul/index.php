@@ -193,7 +193,7 @@ the_post(); ?>
   <div class="container">
     <div>
       <div class="section-title text-center mb-20">
-        <span>ÇİÇEKLERİNİZ AYNI GÜN İÇİNDE SİZLERLER</span>
+        <span>ÇİÇEKLERİNİZ AYNI GÜN İÇİNDE SİZLERLE</span>
       </div>
     </div>
     <div class="text-center mb-70">
@@ -318,21 +318,14 @@ the_post(); ?>
         <h5 class="modal-title">Teslimat Bölgelerimiz</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="row g-3 mt-3">
-        <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column align-items-center">
-          <div>test</div>
-          <div>test</div>
-          <div>test</div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column align-items-center">
-          <div>test</div>
-          <div>test</div>
-          <div>test</div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column align-items-center">
-          <div>test</div>
-          <div>test</div>
-          <div>test</div>
+      <div class="row">
+        <div class="col d-flex flex-column align-items-center" style="margin: 15px 0;">
+          <?php wp_reset_query();
+          query_posts('page_id=23');
+          the_post();
+          ?>
+          <?php the_field('teslimat_bolgelerimiz'); ?>
+          <?php wp_reset_query(); ?>
         </div>
       </div>
     </div>
