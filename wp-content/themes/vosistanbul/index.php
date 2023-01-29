@@ -46,8 +46,8 @@ the_post(); ?>
   <div class="container">
     <div class="row">
       <div class="ms-auto me-auto">
-        <div class="history-area-content text-right d-flex flex-column flex-md-row">
-          <div class="col-12 col-md-4">
+        <div class="history-area-content text-right d-flex flex-column flex-md-row gap-3 gap-md-0">
+          <div class="col-12 col-md-4 d-flex justify-content-center">
             <img src="<?php bloginfo('template_url'); ?>/images/logo/cicek_logo_gri.png" width="150px" alt="" style="margin-bottom:15px;" />
           </div>
           <div class="col-12 col-md-8">
@@ -248,8 +248,7 @@ the_post(); ?>
   query_posts('page_id=23');
   the_post(); ?>
   <div class="container-fluid pl-50 pr-50 mt-105">
-    <div class="container-xxl row mx-auto">
-      <div>
+    <div class="container-xxl row mx-auto px-0 justify-content-center">
         <div>
           <div class="section-title text-center mb-3">
             <span>BLOG</span>
@@ -258,17 +257,17 @@ the_post(); ?>
             <?php the_field('anasayfa_blog_aciklama'); ?>
           </div>
         </div>
-        <div class="row mt-5 gap-5 gap-lg-0">
+        <div class="row mt-5 gy-3">
           <?php
           wp_reset_query();
           query_posts(array('cat' => '23', 'posts_per_page' => '2', 'order' => 'DESC'));
           if (have_posts()) : while (have_posts()) : the_post();
           ?>
               <div class="col-12 col-lg-6">
-                <div class="row h-100">
+                <div class="row h-100 gy-3">
                   <?php $blog_pic = get_field('resim'); ?>
-                  <img class="col-4 ps-0" style="aspect-ratio: 1;" src="<?php echo $blog_pic['url']; ?>" alt="<?php the_field('baslik'); ?>" />
-                  <div class="col-8 d-flex flex-column">
+                  <img class="col-12 col-md-6 ps-0 pr-0 pe-md-3" style="aspect-ratio: 1;" src="<?php echo $blog_pic['url']; ?>" alt="<?php the_field('baslik'); ?>" />
+                  <div class="col-12 col-md-6 d-flex flex-column px-0 ">
                     <div>
                       <span class="fw-bold fs-3 text-dark"><?php echo get_the_date('j'); ?></span>
                       <span class="text-secondary fs-5" style="font-weight: 500;"><?php echo get_the_date('M'); ?></span>
@@ -284,7 +283,6 @@ the_post(); ?>
           endif;
           wp_reset_query(); ?>
         </div>
-      </div>
     </div>
   </div>
 </div>
