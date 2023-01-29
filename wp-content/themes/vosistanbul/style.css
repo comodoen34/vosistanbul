@@ -3923,7 +3923,6 @@ a.generalButton:hover {
    12. Blog Area CSS
 ------------------------*/
 .blog-area {
-  background-color: #f8f8fa;
   padding-top: 115px;
   padding-bottom: 105px;
 }
@@ -9131,16 +9130,15 @@ a.ideas-btn:hover {
   border-color: #727272 !important;
 }
 
-.single-footer-widget form{
+.single-footer-widget form {
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
-.single-footer-widget input[type="email"]{
+.single-footer-widget input[type="email"] {
   max-width: 250px;
 }
 
-.single-footer-widget input[type="submit"]{
+.single-footer-widget input[type="submit"] {
   max-width: 110px;
 }
-
