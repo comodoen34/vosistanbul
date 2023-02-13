@@ -106,7 +106,7 @@ the_post(); ?>
                             <p style="margin-top:16px;">ADRES:</p>
                             <input type="text" id="checkoutCustomForm" name="_teslimat_adres_secimi" placeholder="Gönderim Adresi Seçiniz">
                         </div>
-                        <div class="color-pick mb-30 d-flex flex-column" >
+                        <div class="color-pick mb-30 d-flex flex-column">
                             <p>TESLİMAT TARİHİ : </p>
                             <div class="d-flex flex-wrap" style="row-gap: .25rem;">
                                 <?php
@@ -216,6 +216,9 @@ the_post(); ?>
                                 if (time >= 16) {
                                     str = 1;
                                     $('#calendarDateBoxDay').css("display", "none");
+                                }
+                                if (hazirlama_tarih_value > 0) {
+                                    str = str + (hazirlama_tarih_value - 1);
                                 }
                                 return str;
                             }
