@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Order Customer Details
  *
@@ -15,13 +16,13 @@
  * @version 5.6.0
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
-$show_shipping = ! wc_ship_to_billing_address_only() && $order->needs_shipping_address();
+$show_shipping = !wc_ship_to_billing_address_only() && $order->needs_shipping_address();
 ?>
 <section class="woocommerce-customer-details">
 
-	<?php if ( $show_shipping ) : ?>
+	<?php /* if ( $show_shipping ) : ?>
 
 	<section class="woocommerce-columns woocommerce-columns woocommerce-columns--addresses col-set addresses">
 		<div class="woocommerce-column woocommerce-column woocommerce-column--billing-address col">
@@ -42,6 +43,8 @@ $show_shipping = ! wc_ship_to_billing_address_only() && $order->needs_shipping_a
 		<?php endif; ?>
 	</address>
 
+	*/ ?>
+
 	<?php /* if ( $show_shipping ) : ?>
 
 		</div><!-- /.col-1 -->
@@ -61,6 +64,6 @@ $show_shipping = ! wc_ship_to_billing_address_only() && $order->needs_shipping_a
 
 	<?php endif; */ ?>
 
-	<?php do_action( 'woocommerce_order_details_after_customer_details', $order ); ?>
+	<?php do_action('woocommerce_order_details_after_customer_details', $order); ?>
 
 </section>
