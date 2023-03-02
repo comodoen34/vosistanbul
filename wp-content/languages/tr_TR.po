@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the WordPress - 6.1.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-11-04 23:05:35+0000\n"
+"PO-Revision-Date: 2023-01-04 13:32:22+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
 "Language: tr\n"
 "Project-Id-Version: WordPress - 6.1.x - Development\n"
 
@@ -61,7 +61,7 @@ msgstr "words"
 #: wp-admin/maint/repair.php:24 wp-admin/upgrade.php:69
 #, gp-priority: high
 msgid "https://wordpress.org/"
-msgstr "https://wordpress.org/"
+msgstr "https://tr.wordpress.org/"
 
 #. translators: If there are characters in your language that are not supported
 #. by Open Sans, translate this to 'off'. Do not translate into your own
@@ -284,6 +284,11 @@ msgstr "Ocak"
 #, gp-priority: high
 msgid "Uncategorized"
 msgstr "Genel"
+
+#. translators: %s: plugins_loaded
+#: wp-includes/class-wp-user-query.php:784
+msgid "User queries should not be run before the %s hook."
+msgstr "Kullanıcı sorguları, %s kancasından önce çalıştırılmamalıdır."
 
 #. translators: %s: The '$value' argument.
 #: wp-includes/class-wp-block-type.php:364
@@ -1081,6 +1086,12 @@ msgstr "Öne çıkan"
 #: wp-includes/script-loader.php:1295
 msgid "Use Site Editor"
 msgstr "Site düzenleyiciyi kullan"
+
+#. translators: 1: Link to Site Editor documentation on HelpHub, 2: HTML
+#. button.
+#: wp-includes/script-loader.php:1290
+msgid "Hurray! Your theme supports site editing with blocks. <a href=\"%1$s\">Tell me more</a>. %2$s"
+msgstr "Yaşasın! Temanız bloklarla site düzenlemeyi destekliyor. <a href=\"%1$s\">Daha fazlası</a>. %2$s"
 
 #: wp-includes/script-loader.php:1291 wp-includes/js/dist/edit-site.js:5665
 msgid "https://wordpress.org/support/article/site-editor/"
@@ -4507,7 +4518,7 @@ msgstr "Bu tema sizin WordPress sürümünüzle çalışmaz."
 #: wp-admin/includes/class-wp-plugins-list-table.php:1310
 #: wp-admin/includes/plugin.php:1136 wp-admin/includes/theme.php:901
 #: wp-admin/includes/theme.php:932 wp-admin/includes/theme.php:978
-#: wp-admin/includes/theme.php:1001 wp-admin/includes/update-core.php:1059
+#: wp-admin/includes/theme.php:1001 wp-admin/includes/update-core.php:1057
 #: wp-admin/includes/update.php:757 wp-admin/includes/update.php:784
 #: wp-admin/install.php:245 wp-admin/theme-install.php:336
 #: wp-admin/theme-install.php:359 wp-admin/theme-install.php:526
@@ -6378,7 +6389,7 @@ msgstr "Site simgesini seç"
 
 #: wp-includes/user.php:4579
 msgid "An incomplete personal data request for this email address already exists."
-msgstr "Bu e-posta adresi için eksik bir kişisel gizlilik isteği zaten var."
+msgstr "Bu e-posta adresi için tamamlanmamış bir kişisel gizlilik isteği zaten var."
 
 #: wp-includes/class-wp-customize-widgets.php:804
 msgid "Keep widget settings and move it to the inactive widgets"
