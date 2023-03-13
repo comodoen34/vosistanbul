@@ -283,6 +283,41 @@ the_post(); ?>
                             <?php echo $product->get_categories(); ?>
                         </span>
                     </div>
+                    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/modal.js"></script>
+                    <div class="mb-70">
+                        <button class="btn btn-secondary rounded-0 py-2 px-3" style="margin-bottom: 10px;" type="button" href="#" id="delivery-zone-btn" text-center m-0 ms-auto mt-5" style="margin-right: auto !important; max-width: 300px;" data-toggle="modal" data-target="#myModal">Gönderim Bölgelerimiz</button>
+                        <br />
+                        <strong>Sadece İstanbul içi gönderim seçeneğimiz bulunmaktadır, "Gönderim Bölgelerimiz" için tıklayın.</strong>
+                    </div>
+                    <div class="modal px-2 discover-modal " tabindex="-1" id="#discover-modal">
+                        <div class="modal-dialog p-3 position-absolute top-50 start-50 translate-middle" style="width: min(700px, 100%);">
+                            <div class="modal-content p-3">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Teslimat Bölgelerimiz</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="row">
+                                    <div class="col d-flex flex-column align-items-center" style="margin: 15px 0;">
+                                        <?php wp_reset_query();
+                                        query_posts('page_id=23');
+                                        the_post();
+                                        ?>
+                                        <?php the_field('teslimat_bolgelerimiz'); ?>
+                                        <?php wp_reset_query(); ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <style>
+                        @media (min-width: 576px) {
+                            .modal-dialog {
+                                max-width: 800px;
+                                margin: 1.75rem auto;
+                            }
+                        }
+                    </style>
                 </div>
                 <!--Product Details Content End-->
             </div>
