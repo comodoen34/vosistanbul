@@ -39,7 +39,7 @@ class RateCalculatorFactory {
 		$prices_includes_tax        = self::prices_include_tax( $cart );
 
 		$cart_contents = new ShippingContentsImplementation(
-			$cart->cart_contents,
+			apply_filters( 'flexible-shipping/cart/cart-contents', $cart->get_cart_contents() ),
 			$prices_includes_tax,
 			$cost_rounding_precision,
 			DestinationAddressFactory::create_from_package_destination( $package['destination'] ),

@@ -20,7 +20,7 @@ class BeaconDeactivationTracker implements Hookable {
 	 * Hooks.
 	 */
 	public function hooks() {
-		add_filter( 'wpdesk_tracker_deactivation_data', array( $this, 'append_beacon_data_to_deactivation_tracker' ) );
+		add_filter( 'wpdesk_tracker_deactivation_data', [ $this, 'append_beacon_data_to_deactivation_tracker' ] );
 	}
 
 	/**
@@ -28,17 +28,16 @@ class BeaconDeactivationTracker implements Hookable {
 	 *
 	 * @param array $data Data.
 	 *
-	 * @internal
-	 *
 	 * @return array
+	 * @internal
 	 */
 	public function append_beacon_data_to_deactivation_tracker( array $data ) {
 		if ( empty( $data[ self::ADDITIONAL_DATA ] ) || ! is_array( $data[ self::ADDITIONAL_DATA ] ) ) {
-			$data[ self::ADDITIONAL_DATA ] = array();
+			$data[ self::ADDITIONAL_DATA ] = [];
 		}
-		$data[ self::ADDITIONAL_DATA ]['beacon'] = array( 'clicked' => 1 === (int) get_option( BeaconClickedAjax::OPTION_NAME, 0 ) ? 'yes' : 'no' );
+
+		$data[ self::ADDITIONAL_DATA ]['beacon'] = [ 'clicked' => 1 === (int) get_option( BeaconClickedAjax::OPTION_NAME, 0 ) ? 'yes' : 'no' ];
 
 		return $data;
 	}
-
 }

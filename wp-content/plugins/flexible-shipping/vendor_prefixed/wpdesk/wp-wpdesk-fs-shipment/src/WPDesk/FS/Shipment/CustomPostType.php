@@ -186,9 +186,10 @@ class CustomPostType implements \FSVendor\WPDesk\PluginBuilder\Plugin\Hookable
         global $fs_package_id;
         $order_shipping_methods = $order->get_shipping_methods();
         $packages = $cart->get_shipping_packages();
-        $package_id = -1;
+        $current_package = -1;
         foreach ($order_shipping_methods as $shipping_id => $shipping_method) {
-            $package_id++;
+            $current_package++;
+            $package_id = \array_keys($packages)[$current_package];
             $fs_package_id = $package_id;
             $fs_method = $this->get_fs_method_from_order_shipping_method($shipping_method);
             if (!empty($fs_method['method_integration'])) {

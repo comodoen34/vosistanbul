@@ -7,7 +7,7 @@
 
 namespace WPDesk\FS\TableRate;
 
-use FSVendor\WPDesk\Beacon\BeaconGetShouldShowStrategy;
+use WPDesk\FS\TableRate\Beacon\BeaconDisplayStrategy;
 
 /**
  * Can display Help Scout beacon.

@@ -204,7 +204,6 @@ class Flexible_Shipping_Plugin extends AbstractPlugin implements HookableCollect
 		$this->admin_notices = new WPDesk_Flexible_Shipping_Admin_Notices( $this );
 
 		$this->add_hookable( new WPDesk\FS\Rate\WPDesk_Flexible_Shipping_Rate_Notice() );
-
 		$this->add_hookable( new WPDesk_Flexible_Shipping_Shorcode_Unit_Weight() );
 		$this->add_hookable( new WPDesk_Flexible_Shipping_Shorcode_Unit_Dimension() );
 
@@ -246,6 +245,8 @@ class Flexible_Shipping_Plugin extends AbstractPlugin implements HookableCollect
 			)
 		);
 		$this->add_hookable( new \WPDesk\FS\Onboarding\TableRate\Tracker( $finish_option ) );
+
+		$this->add_hookable( new \FSVendor\Octolize\ShippingExtensions\ShippingExtensions( $this->plugin_info ) );
 
 		$this->add_hookable( new MethodTitle() );
 		$this->add_hookable( new MethodDescription( $this->renderer ) );

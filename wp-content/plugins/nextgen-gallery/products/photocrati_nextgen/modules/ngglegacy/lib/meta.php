@@ -430,23 +430,23 @@ class nggMeta{
      * @param string $object
      * @return mixed $value
      */
-	function get_META($object = false) {
+	function get_META($object = FALSE)
+    {
+        if ($value = $this->get_saved_meta($object))
+            return $value;
 
-		// defined order first look into database, then XMP, IPTC and EXIF.
-		if ($value = $this->get_saved_meta($object))
-			return $value;
-		if ($value = $this->get_XMP($object))
-			return $value;
-		if ($object == 'created_timestamp' && ($d = $this->get_IPTC('created_date')) && ($t = $this->get_IPTC('created_time'))) {
-			return $this->exif_date2ts($d . ' '.$t);
-		}
-		if ($value = $this->get_IPTC($object))
-			return $value;
-		if ($value = $this->get_EXIF($object))
-			return $value;
+        if ($object == 'created_timestamp' && ($d = $this->get_IPTC('created_date')) && ($t = $this->get_IPTC('created_time')))
+            return $this->exif_date2ts($d . ' '.$t);
 
-		// nothing found ?
-		return false;
+        $order = apply_filters('ngg_metadata_parse_order', ['XMP', 'IPTC', 'EXIF']);
+
+        foreach ($order as $method) {
+            $method = 'get_' . $method;
+            if (method_exists($this, $method) && $value = $this->$method($object))
+                return $value;
+        }
+
+        return FALSE;
 	}
 
     /**

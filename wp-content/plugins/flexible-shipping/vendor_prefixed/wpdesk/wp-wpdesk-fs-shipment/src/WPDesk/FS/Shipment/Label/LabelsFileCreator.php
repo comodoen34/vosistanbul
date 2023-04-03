@@ -7,6 +7,8 @@
  */
 namespace FSVendor\WPDesk\FS\Shipment\Label;
 
+use FSVendor\WPDesk\FS\Shipment\Exception\UnableToCreateTmpFileException;
+use FSVendor\WPDesk\FS\Shipment\Exception\UnableToCreateTmpZipFileException;
 /**
  * Can create labels file.
  * When there is one label file it creates file from this label.
@@ -46,7 +48,7 @@ class LabelsFileCreator
     /**
      * Create labels file.
      *
-     * @throws \WPDesk_Flexible_Shipping_Unable_To_Create_Tmp_Zip_File_Exception .
+     * @throws UnableToCreateTmpZipFileException .
      */
     public function create_labels_file()
     {
@@ -56,7 +58,7 @@ class LabelsFileCreator
         } else {
             $zip = new \ZipArchive();
             if (!$zip->open($this->tmp_file_name, \ZipArchive::CREATE)) {
-                throw new \FSVendor\WPDesk_Flexible_Shipping_Unable_To_Create_Tmp_Zip_File_Exception();
+                throw new \FSVendor\WPDesk\FS\Shipment\Exception\UnableToCreateTmpZipFileException();
             }
             foreach ($this->labels as $label) {
                 if (isset($label['content'])) {
@@ -68,7 +70,7 @@ class LabelsFileCreator
     /**
      * Prepare file names.
      *
-     * @throws \WPDesk_Flexible_Shipping_Unable_To_Create_Tmp_File_Exception .
+     * @throws UnableToCreateTmpFileException .
      */
     private function prepare_file_names()
     {
@@ -80,7 +82,7 @@ class LabelsFileCreator
         $this->tmp_file_name = @\tempnam('tmp', 'labels_');
         // phpcs:ignore
         if (!$this->tmp_file_name) {
-            throw new \FSVendor\WPDesk_Flexible_Shipping_Unable_To_Create_Tmp_File_Exception();
+            throw new \FSVendor\WPDesk\FS\Shipment\Exception\UnableToCreateTmpFileException();
         }
     }
     /**

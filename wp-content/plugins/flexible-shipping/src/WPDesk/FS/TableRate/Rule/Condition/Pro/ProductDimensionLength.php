@@ -20,7 +20,7 @@ class ProductDimensionLength extends AbstractCondition {
 		$this->condition_id = self::CONDITION_ID;
 		$this->name         = __( 'Length', 'flexible-shipping' );
 		$this->description  = __( 'Shipping cost based on the product\'s length', 'flexible-shipping' );
-		$this->group        = __( 'Weight & Dimensions', 'flexible-shipping' );
+		$this->group        = __( 'Product', 'flexible-shipping' );
 		$this->priority     = $priority;
 		$this->is_disabled  = true;
 

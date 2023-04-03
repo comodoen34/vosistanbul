@@ -7,6 +7,7 @@
  */
 namespace FSVendor\WPDesk\FS\Shipment\Subscriptions;
 
+use FSVendor\WC_Subscriptions_Cart;
 use FSVendor\WPDesk\FS\Shipment\CustomPostType;
 use FSVendor\WPDesk\PluginBuilder\Plugin\Hookable;
 /**
@@ -43,6 +44,8 @@ class SubscriptionsIntegration implements \FSVendor\WPDesk\PluginBuilder\Plugin\
      */
     public function create_shipping_for_subscription($subscription, $order, $recurring_cart)
     {
+        $WC_Subscriptions_Cart = '\\' . 'WC_Subscriptions_Cart';
+        $WC_Subscriptions_Cart::set_calculation_type('recurring_total');
         $this->shipment_cpt->create_shipping_for_order_and_cart($subscription, $recurring_cart);
     }
     /**

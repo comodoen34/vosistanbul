@@ -3,7 +3,7 @@ Contributors: nishathbd31
 Donate link: https://www.facebook.com/nishat.rafi.60
 Tags: Autocomplete,Google Address Autocomplete,Autocomplete Google Address,Address Autocomplete
 Requires at least: 5.0
-Tested up to: 6.0.2
+Tested up to: 6.1.1
 Stable tag: trunk
 Requires PHP: 5.4
 License: GPLv2 or later
@@ -62,6 +62,9 @@ Missing address solved (Ninja Form,Gravity form and all froms)
 
 
 == Upgrade Notice ==
+= 1.9.1=
+tested with wp 6.1.1 nothing changed
+
 = 1.9.1=
 jquery bug fixed you will not lose any data after update
 = 1.8 =

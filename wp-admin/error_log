@@ -12295,3 +12295,14 @@ Stack trace:
 [13-Mar-2023 02:54:57 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
 [13-Mar-2023 02:55:01 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
 [13-Mar-2023 02:57:17 Europe/Istanbul] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[13-Mar-2023 22:11:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function trailingslashit() in /home/vosistanbul/public_html/wp-includes/class-wp-textdomain-registry.php:103
+Stack trace:
+#0 /home/vosistanbul/public_html/wp-includes/l10n.php(784): WP_Textdomain_Registry->set('default', 'tr_TR', '/home/vosistanb...')
+#1 /home/vosistanbul/public_html/wp-includes/load.php(1401): load_textdomain('default', '/home/vosistanb...', 'tr_TR')
+#2 /home/vosistanbul/public_html/wp-includes/load.php(278): wp_load_translations_early()
+#3 /home/vosistanbul/public_html/wp-settings.php(74): wp_maintenance()
+#4 /home/vosistanbul/public_html/wp-config.php(91): require_once('/home/vosistanb...')
+#5 /home/vosistanbul/public_html/wp-load.php(50): require_once('/home/vosistanb...')
+#6 /home/vosistanbul/public_html/wp-admin/admin-ajax.php(22): require_once('/home/vosistanb...')
+#7 {main}
+  thrown in /home/vosistanbul/public_html/wp-includes/class-wp-textdomain-registry.php on line 103

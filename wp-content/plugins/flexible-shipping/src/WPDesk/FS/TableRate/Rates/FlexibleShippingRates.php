@@ -37,7 +37,7 @@ class FlexibleShippingRates {
 	 * @return array
 	 */
 	private static function get_flexible_shipping_rates_from_configuration() {
-		$rates = array();
+		$rates = [];
 		foreach ( self::get_shipping_zones() as $zone ) {
 			foreach ( $zone['shipping_methods'] as $instance_id => $woo_shipping_method ) {
 				if ( WPDesk_Flexible_Shipping::METHOD_ID === $woo_shipping_method->id ) {
@@ -56,6 +56,9 @@ class FlexibleShippingRates {
 	 * @return WC_Shipping_Zone[]
 	 */
 	private static function get_shipping_zones() {
+		if ( WC()->countries === null ) {
+			return [];
+		}
 		$zones                               = WC_Shipping_Zones::get_zones();
 		$zone0                               = WC_Shipping_Zones::get_zone( 0 );
 		$zones[0]                            = $zone0->get_data();

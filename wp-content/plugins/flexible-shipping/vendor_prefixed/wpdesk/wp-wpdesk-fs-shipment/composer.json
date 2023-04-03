@@ -16,6 +16,7 @@
         "php": ">=7.0.8",
         "wpdesk\/wp-builder": "^2.0",
         "wpdesk\/wp-mutex": "^1.1",
+        "wpdesk\/wp-notice": "^3.2",
         "wpdesk\/wp-wpdesk-fs-shipment-interfaces": "^1.0"
     },
     "require-dev": {

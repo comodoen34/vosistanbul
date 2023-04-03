@@ -7,8 +7,6 @@
 
 namespace WPDesk\FS\TableRate\Beacon;
 
-use FSVendor\WPDesk\Beacon\BeaconGetShouldShowStrategy;
-
 /**
  * Can display Help Scout beacon.
  */
@@ -17,7 +15,7 @@ class Beacon extends \FSVendor\WPDesk\Beacon\Beacon {
 	/**
 	 * Beacon constructor.
 	 *
-	 * @param BeaconDisplayStrategy $strategy .
+	 * @param BeaconDisplayStrategy $strategy   .
 	 * @param string                $assets_url .
 	 */
 	public function __construct( BeaconDisplayStrategy $strategy, $assets_url ) {

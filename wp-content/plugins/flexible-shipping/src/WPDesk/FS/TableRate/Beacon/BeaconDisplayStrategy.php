@@ -22,12 +22,12 @@ class BeaconDisplayStrategy extends BeaconGetShouldShowStrategy {
 	 * BeaconDisplayStrategy constructor.
 	 */
 	public function __construct() {
-		$conditions = array(
-			array(
+		$conditions = [
+			[
 				'page' => 'wc-settings',
 				'tab'  => 'shipping',
-			),
-		);
+			],
+		];
 		parent::__construct( $conditions );
 	}
 
@@ -51,8 +51,8 @@ class BeaconDisplayStrategy extends BeaconGetShouldShowStrategy {
 					return false;
 				}
 			}
-			if ( isset( $_GET['section'] ) && sanitize_key( $_GET['section'] ) === 'flexible_shipping_info' ) { // phpcs:ignore
 
+			if ( isset( $_GET['section'] ) && sanitize_key( $_GET['section'] ) === 'flexible_shipping_info' ) { // phpcs:ignore
 				return true;
 			}
 		}

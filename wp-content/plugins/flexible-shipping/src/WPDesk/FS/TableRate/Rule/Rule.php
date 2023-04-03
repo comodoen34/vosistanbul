@@ -8,10 +8,11 @@
 namespace WPDesk\FS\TableRate\Rule;
 
 use FSVendor\WPDesk\Forms\Field;
-use FSVendor\WPDesk\FS\TableRate\Logger\ArrayLogger;
 use FSVendor\WPDesk\FS\TableRate\Settings\MethodSettings;
 use Psr\Log\LoggerInterface;
+use WPDesk\FS\TableRate\Rule\Condition\AbstractCondition;
 use WPDesk\FS\TableRate\Rule\Condition\Condition;
+use WPDesk\FS\TableRate\Rule\Cost\AbstractAdditionalCost;
 use WPDesk\FS\TableRate\Rule\Cost\AdditionalCost;
 use WPDesk\FS\TableRate\Rule\ShippingContents\ShippingContents;
 use WPDesk\FS\TableRate\Rule\SpecialAction\None;
@@ -22,10 +23,10 @@ use WPDesk\FS\TableRate\Rule\SpecialAction\SpecialAction;
  */
 class Rule {
 
-	const CONDITION_ID = 'condition_id';
-	const CONDITIONS = 'conditions';
+	const CONDITION_ID     = 'condition_id';
+	const CONDITIONS       = 'conditions';
 	const ADDITIONAL_COSTS = 'additional_costs';
-	const SPECIAL_ACTION = 'special_action';
+	const SPECIAL_ACTION   = 'special_action';
 
 	/**
 	 * @var array
@@ -92,13 +93,11 @@ class Rule {
 	}
 
 	/**
-	 * .
-	 *
 	 * @param ShippingContents $shipping_contents .
 	 *
 	 * @return ShippingContents
 	 */
-	public function process_shipping_contents( ShippingContents $shipping_contents ) {
+	public function process_shipping_contents( ShippingContents $shipping_contents ): ShippingContents {
 		if ( $this->has_rule_conditions() ) {
 			foreach ( $this->rule_settings[ self::CONDITIONS ] as $condition_settings_key => $condition_settings ) {
 				if ( isset( $condition_settings[ self::CONDITION_ID ], $this->available_conditions[ $condition_settings[ self::CONDITION_ID ] ] ) ) {
@@ -117,16 +116,22 @@ class Rule {
 	 *
 	 * @return bool
 	 */
-	public function is_rule_triggered( ShippingContents $shipping_contents, LoggerInterface $logger ) {
+	public function is_rule_triggered( ShippingContents $shipping_contents, LoggerInterface $logger ): bool {
 		$triggered = true;
+
 		if ( $this->has_rule_conditions() ) {
 			foreach ( $this->rule_settings[ self::CONDITIONS ] as $condition_settings_key => $condition_settings ) {
 				if ( isset( $condition_settings[ self::CONDITION_ID ], $this->available_conditions[ $condition_settings[ self::CONDITION_ID ] ] ) ) {
 
-					$condition           = $this->available_conditions[ $condition_settings[ self::CONDITION_ID ] ];
+					/** @var AbstractCondition $condition */
+					$condition = $this->available_conditions[ $condition_settings[ self::CONDITION_ID ] ];
+
+					$condition->set_rule( $this );
+
 					$condition_triggered = $condition->is_condition_matched_with_method_settings( $condition_settings, $shipping_contents, $logger, $this->method_settings );
 					$triggered           = $triggered && $condition_triggered;
 				}
+
 				if ( ! $triggered ) {
 					break;
 				}
@@ -139,7 +144,7 @@ class Rule {
 	/**
 	 * @return bool
 	 */
-	public function has_rule_conditions() {
+	public function has_rule_conditions(): bool {
 		return isset( $this->rule_settings[ self::CONDITIONS ] );
 	}
 
@@ -149,15 +154,19 @@ class Rule {
 	 *
 	 * @return float
 	 */
-	public function get_rule_cost( ShippingContents $shipping_contents, LoggerInterface $logger ) {
+	public function get_rule_cost( ShippingContents $shipping_contents, LoggerInterface $logger ): float {
 		// Translators: items.
 		$logger->debug( sprintf( __( '   Matched items: %1$s', 'flexible-shipping' ), $this->format_contents_for_log( $shipping_contents ) ) );
+
 		// Translators: items costs.
 		$logger->debug( sprintf( __( '   Matched items cost: %1$d %2$s', 'flexible-shipping' ), $shipping_contents->get_contents_cost(), $shipping_contents->get_currency() ) );
+
 		// Translators: items weight.
 		$logger->debug( sprintf( __( '   Matched items weight: %1$s', 'flexible-shipping' ), wc_format_weight( $shipping_contents->get_contents_weight() ) ) );
 		$logger->debug( sprintf( '   %1$s', __( 'Rule costs:', 'flexible-shipping' ) ) );
+
 		$cost = 0.0;
+
 		foreach ( $this->cost_fields as $cost_field ) {
 			if ( isset( $this->rule_settings[ $cost_field->get_name() ] ) ) {
 				$field_cost = (float) $this->rule_settings[ $cost_field->get_name() ];
@@ -165,6 +174,7 @@ class Rule {
 				$cost += $field_cost;
 			}
 		}
+
 		$cost += $this->get_additional_costs( $shipping_contents, $logger );
 
 		return $cost;
@@ -190,9 +200,9 @@ class Rule {
 	public function get_special_action() {
 		if ( isset( $this->rule_settings[ self::SPECIAL_ACTION ], $this->available_special_actions[ $this->rule_settings[ self::SPECIAL_ACTION ] ] ) ) {
 			return $this->available_special_actions[ $this->rule_settings[ self::SPECIAL_ACTION ] ];
-		} else {
-			return new None();
 		}
+
+		return new None();
 	}
 
 	/**
@@ -201,12 +211,17 @@ class Rule {
 	 *
 	 * @return float
 	 */
-	private function get_additional_costs( ShippingContents $shipping_contents, LoggerInterface $logger ) {
-		$additional_costs          = 0.0;
+	private function get_additional_costs( ShippingContents $shipping_contents, LoggerInterface $logger ): float {
+		$additional_costs = 0.0;
+
 		$additional_costs_settings = $this->rule_settings[ self::ADDITIONAL_COSTS ] ?? [];
 		foreach ( $additional_costs_settings as $additional_cost_setting ) {
 			if ( isset( $this->available_additional_costs[ $additional_cost_setting['based_on'] ] ) ) {
-				$additional_costs += $this->available_additional_costs[ $additional_cost_setting['based_on'] ]->calculate_cost_with_method_settings( $shipping_contents, $additional_cost_setting, $logger, $this->method_settings );
+				/** @var AbstractAdditionalCost $additional_cost */
+				$additional_cost = $this->available_additional_costs[ $additional_cost_setting['based_on'] ];
+				$additional_cost->set_rule( $this );
+
+				$additional_costs += $additional_cost->calculate_cost_with_method_settings( $shipping_contents, $additional_cost_setting, $logger, $this->method_settings );
 			}
 		}
 
@@ -216,7 +231,7 @@ class Rule {
 	/**
 	 * @return array
 	 */
-	public function get_rules_settings() {
+	public function get_rules_settings(): array {
 		return $this->rule_settings;
 	}
 
@@ -229,5 +244,4 @@ class Rule {
 		// Translators: rule number.
 		return sprintf( __( 'Rule %1$s:', 'flexible-shipping' ), $rule_number );
 	}
-
 }

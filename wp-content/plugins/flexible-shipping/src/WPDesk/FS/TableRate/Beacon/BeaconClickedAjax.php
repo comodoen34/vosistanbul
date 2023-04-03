@@ -7,7 +7,6 @@
 
 namespace WPDesk\FS\TableRate\Beacon;
 
-use FSVendor\WPDesk\Beacon\BeaconGetShouldShowStrategy;
 use FSVendor\WPDesk\PluginBuilder\Plugin\Hookable;
 
 /**
@@ -37,13 +36,13 @@ class BeaconClickedAjax implements Hookable {
 	/**
 	 * BeaconAjax constructor.
 	 *
-	 * @param BeaconDisplayStrategy $strategy .
-	 * @param string                $assets_url .
+	 * @param BeaconDisplayStrategy $strategy        .
+	 * @param string                $assets_url      .
 	 * @param string                $scripts_version .
 	 */
 	public function __construct( BeaconDisplayStrategy $strategy, $assets_url, $scripts_version ) {
-		$this->strategy = $strategy;
-		$this->assets_url = $assets_url;
+		$this->strategy        = $strategy;
+		$this->assets_url      = $assets_url;
 		$this->scripts_version = $scripts_version;
 	}
 
@@ -53,9 +52,9 @@ class BeaconClickedAjax implements Hookable {
 	public function hooks() {
 		if ( 0 === (int) get_option( self::OPTION_NAME, 0 ) ) {
 			if ( $this->strategy->shouldDisplay() ) {
-				add_action( 'admin_enqueue_scripts', array( $this, 'add_script' ) );
+				add_action( 'admin_enqueue_scripts', [ $this, 'add_script' ] );
 			}
-			add_action( 'wp_ajax_' . self::AJAX_ACTION, array( $this, 'handle_ajax_action' ) );
+			add_action( 'wp_ajax_' . self::AJAX_ACTION, [ $this, 'handle_ajax_action' ] );
 		}
 	}
 
@@ -65,21 +64,24 @@ class BeaconClickedAjax implements Hookable {
 	public function add_script() {
 		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 		$handle = 'fs_beacon_clicked';
+
 		wp_register_script(
 			$handle,
 			trailingslashit( $this->assets_url ) . 'js/beacon-clicked' . $suffix . '.js',
-			array( 'jquery' ),
+			[ 'jquery' ],
 			$this->scripts_version
 		);
+
 		wp_localize_script(
 			$handle,
 			'fs_beacon_clicked',
-			array(
+			[
 				'ajax_url' => admin_url( 'admin-ajax.php' ),
 				'action'   => self::AJAX_ACTION,
 				'nonce'    => wp_create_nonce( self::NONCE_ACTION ),
-			)
+			]
 		);
+
 		wp_enqueue_script( $handle );
 	}
 
@@ -92,5 +94,4 @@ class BeaconClickedAjax implements Hookable {
 		check_ajax_referer( self::AJAX_ACTION, 'nonce' );
 		update_option( self::OPTION_NAME, 1 );
 	}
-
 }

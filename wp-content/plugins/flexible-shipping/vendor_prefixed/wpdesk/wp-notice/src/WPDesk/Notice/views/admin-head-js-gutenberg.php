@@ -9,7 +9,7 @@ if (!\defined('ABSPATH')) {
 ?>
 <script type="text/javascript">
     <?php 
-include \dirname(__FILE__) . '/../../../../assets/js/gutenberg.js';
+include \dirname(__FILE__, 5) . '/assets/js/gutenberg.js';
 ?>
 </script>
 <?php 

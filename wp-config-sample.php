@@ -8,27 +8,27 @@
  *
  * Bu dosya şu ayarları içerir:
  * 
- * * MySQL ayarları
+ * * Veritabanı ayarları
  * * Gizli anahtarlar
  * * Veritabanı tablo ön eki
  * * ABSPATH
  * 
- * @link https://wordpress.org/support/article/editing-wp-config-php/
+ * @link https://wordpress.org/documentation/article/editing-wp-config-php/
  *
  * @package WordPress
  */
 
-// ** MySQL ayarları - Bu bilgileri servis sağlayıcınızdan alabilirsiniz ** //
+// ** Veritabanı ayarları - Bu bilgileri servis sağlayıcınızdan alabilirsiniz ** //
 /** WordPress için kullanılacak veritabanının adı */
 define( 'DB_NAME', 'veritabaniismi' );
 
-/** MySQL veritabanı kullanıcısı */
+/** Veritabanı kullanıcısı */
 define( 'DB_USER', 'kullaniciadi' );
 
-/** MySQL veritabanı parolası */
+/** Veritabanı parolası */
 define( 'DB_PASSWORD', 'parola' );
 
-/** MySQL sunucusu */
+/** Veritabanı sunucusu */
 define( 'DB_HOST', 'localhost' );
 
 /** Yaratılacak tablolar için veritabanı karakter seti. */
@@ -42,7 +42,9 @@ define( 'DB_COLLATE', '' );
  *
  * Her anahtar farklı bir karakter kümesi olmalı!
  * {@link http://api.wordpress.org/secret-key/1.1/salt WordPress.org secret-key service} servisini kullanarak yaratabilirsiniz.
- * Çerezleri geçersiz kılmak için istediğiniz zaman bu değerleri değiştirebilirsiniz. Bu tüm kullanıcıların tekrar giriş yapmasını gerektirecektir.
+ * 
+ * Çerezleri geçersiz kılmak için istediğiniz zaman bu değerleri değiştirebilirsiniz.
+ * Bu tüm kullanıcıların tekrar giriş yapmasını gerektirecektir.
  *
  * @since 2.6.0
  */
@@ -68,16 +70,20 @@ $table_prefix = 'wp_';
 /**
  * Geliştiriciler için: WordPress hata ayıklama modu.
  *
- * Bu değeri "true" yaparak geliştirme sırasında hataların ekrana basılmasını sağlayabilirsiniz.
- * Tema ve eklenti geliştiricilerinin geliştirme aşamasında WP_DEBUG
- * kullanmalarını önemle tavsiye ederiz.
+ * Bu değeri true olarak ayarlayıp geliştirme sırasında hataların ekrana
+ * basılmasını sağlayabilirsiniz. Tema ve eklenti geliştiricilerinin geliştirme
+ * aşamasında WP_DEBUG kullanmalarını önemle tavsiye ederiz.
  * 
  * Hata ayıklama için kullanabilecek diğer sabitler ile ilgili daha fazla bilgiyi
  * belgelerden edinebilirsiniz.
  * 
- * @link https://wordpress.org/support/article/debugging-in-wordpress/
+ * @link https://wordpress.org/documentation/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
+
+/* Her türlü özel değeri bu satı ile "Hepsi bu kadar" yazan satır arasına ekleyebilirsiniz. */
+
+
 
 /* Hepsi bu kadar. Mutlu bloglamalar! */
 

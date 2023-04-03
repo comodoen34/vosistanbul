@@ -23,21 +23,20 @@ class ItemMeta implements Hookable {
 	 * Hooks.
 	 */
 	public function hooks() {
-		add_action( 'woocommerce_checkout_update_order_meta', array( $this, 'update_order_shipping_meta' ) );
-
-		add_action( 'woocommerce_before_order_itemmeta', array( $this, 'filter_meta_if_flexible_shipping_method' ), 10, 2 );
-		add_action( 'woocommerce_after_order_itemmeta', array( $this, 'remove_filter_meta_if_flexible_shipping_method' ) );
+		add_action( 'woocommerce_checkout_order_created', [ $this, 'update_order_shipping_meta' ] );
+		add_action( 'woocommerce_before_order_itemmeta', [ $this, 'filter_meta_if_flexible_shipping_method' ], 10, 2 );
+		add_action( 'woocommerce_after_order_itemmeta', [ $this, 'remove_filter_meta_if_flexible_shipping_method' ] );
 	}
 
 	/**
-	 * @param int $order_id .
+	 * @param \WC_Order $order .
 	 */
-	public function update_order_shipping_meta( $order_id ) {
-		$order = wc_get_order( $order_id );
-
-		foreach ( $order->get_shipping_methods() as $shipping_method ) {
-			$shipping_method->delete_meta_data( RateCalculator::DESCRIPTION_BASE64ENCODED );
-			$shipping_method->save_meta_data();
+	public function update_order_shipping_meta( $order ) {
+		if ( $order ) {
+			foreach ( $order->get_shipping_methods() as $shipping_method ) {
+				$shipping_method->delete_meta_data( RateCalculator::DESCRIPTION_BASE64ENCODED );
+				$shipping_method->save_meta_data();
+			}
 		}
 	}
 
@@ -47,9 +46,9 @@ class ItemMeta implements Hookable {
 	 */
 	public function filter_meta_if_flexible_shipping_method( $item_id, WC_Order_Item $item ) {
 		if ( $item instanceof WC_Order_Item_Shipping ) {
-			if ( in_array( $item->get_method_id(), array( WPDesk_Flexible_Shipping::METHOD_ID, ShippingMethodSingle::SHIPPING_METHOD_ID ), true ) ) {
-				add_filter( 'woocommerce_hidden_order_itemmeta', array( $this, 'hide_flexible_shipping_item_meta' ) );
-				add_filter( 'woocommerce_order_item_display_meta_key', array( $this, 'format_display_key' ) );
+			if ( in_array( $item->get_method_id(), [ WPDesk_Flexible_Shipping::METHOD_ID, ShippingMethodSingle::SHIPPING_METHOD_ID ], true ) ) {
+				add_filter( 'woocommerce_hidden_order_itemmeta', [ $this, 'hide_flexible_shipping_item_meta' ] );
+				add_filter( 'woocommerce_order_item_display_meta_key', [ $this, 'format_display_key' ] );
 			}
 		}
 	}
@@ -79,8 +78,8 @@ class ItemMeta implements Hookable {
 	 * .
 	 */
 	public function remove_filter_meta_if_flexible_shipping_method() {
-		remove_filter( 'woocommerce_hidden_order_itemmeta', array( $this, 'hide_flexible_shipping_item_meta' ) );
-		remove_filter( 'woocommerce_order_item_display_meta_key', array( $this, 'format_display_key' ) );
+		remove_filter( 'woocommerce_hidden_order_itemmeta', [ $this, 'hide_flexible_shipping_item_meta' ] );
+		remove_filter( 'woocommerce_order_item_display_meta_key', [ $this, 'format_display_key' ] );
 	}
 
 }

@@ -8,7 +8,6 @@
 namespace WPDesk\FS\TableRate\Rule\ShippingContents;
 
 use WPDesk\FS\TableRate\Rule\ContentsFilter;
-use WPDesk\FS\TableRate\Rule\ShippingContents\ShippingContents;
 
 /**
  * Can provide shipping contents.
@@ -18,12 +17,12 @@ class ShippingContentsImplementation implements ShippingContents {
 	/**
 	 * @var array
 	 */
-	private $non_filtered_contents = array();
+	private $non_filtered_contents;
 
 	/**
 	 * @var array
 	 */
-	private $contents = array();
+	private $contents;
 
 	/**
 	 * @var bool
@@ -61,6 +60,11 @@ class ShippingContentsImplementation implements ShippingContents {
 	private $weight_rounding_precision = 6;
 
 	/**
+	 * @var ShippingContentsMeta[]
+	 */
+	private $meta = [];
+
+	/**
 	 * ShippingContents constructor.
 	 *
 	 * @param array              $contents                .
@@ -83,13 +87,6 @@ class ShippingContentsImplementation implements ShippingContents {
 	 */
 	public function set_weight_rounding_precision( $weight_rounding_precision ) {
 		$this->weight_rounding_precision = $weight_rounding_precision;
-	}
-
-	/**
-	 * @param \WC_Cart $cart .
-	 */
-	private function prepare_contents( $cart ) {
-		return $cart->cart_contents;
 	}
 
 	/**
@@ -132,6 +129,7 @@ class ShippingContentsImplementation implements ShippingContents {
 	 */
 	private function calculate_contents_weight() {
 		$weight = 0.0;
+
 		foreach ( $this->contents as $item ) {
 			$weight += $this->get_item_weight( $item );
 		}
@@ -145,7 +143,7 @@ class ShippingContentsImplementation implements ShippingContents {
 	 * @return float
 	 */
 	private function get_item_weight( $item ) {
-		return (float) ( (float) $item['data']->get_weight() * (float) $item['quantity'] );
+		return (float) $item['data']->get_weight() * (float) $item['quantity'];
 	}
 
 	/**
@@ -169,14 +167,14 @@ class ShippingContentsImplementation implements ShippingContents {
 		$line_total = 0.0;
 		if ( $this->prices_includes_tax ) {
 			if ( isset( $item['line_total'] ) ) {
-				$line_total = floatval( $item['line_total'] );
+				$line_total = (float) $item['line_total'];
 			}
 			if ( isset( $item['line_tax'] ) ) {
-				$line_total += floatval( $item['line_tax'] );
+				$line_total += (float) $item['line_tax'];
 			}
 		} else {
 			if ( isset( $item['line_total'] ) ) {
-				$line_total = floatval( $item['line_total'] );
+				$line_total = (float) $item['line_total'];
 			}
 		}
 
@@ -195,7 +193,6 @@ class ShippingContentsImplementation implements ShippingContents {
 		return $items_count;
 	}
 
-
 	/**
 	 * @param ContentsFilter $contents_filter .
 	 */
@@ -203,6 +200,8 @@ class ShippingContentsImplementation implements ShippingContents {
 		$this->contents        = $contents_filter->get_filtered_contents( $this->contents );
 		$this->contents_cost   = null;
 		$this->contents_weight = null;
+
+		do_action( 'flexible-shipping/shipping-contents/filter/after', $this );
 	}
 
 	/**
@@ -223,10 +222,12 @@ class ShippingContentsImplementation implements ShippingContents {
 		$this->contents        = $this->non_filtered_contents;
 		$this->contents_cost   = null;
 		$this->contents_weight = null;
+
+		do_action( 'flexible-shipping/shipping-contents/reset/after', $this );
 	}
 
 	/**
-	 * @return array
+	 * @return DestinationAddress
 	 */
 	public function get_destination_address() {
 		return $this->destination_address;
@@ -239,4 +240,23 @@ class ShippingContentsImplementation implements ShippingContents {
 		return $this->currency;
 	}
 
+	/**
+	 * @param ShippingContentsMeta $meta .
+	 *
+	 * @return $this
+	 */
+	public function set_meta( ShippingContentsMeta $meta ): ShippingContentsImplementation {
+		$this->meta[ $meta->get_key() ] = $meta;
+
+		return $this;
+	}
+
+	/**
+	 * @param string $key
+	 *
+	 * @return ShippingContentsMeta|null
+	 */
+	public function get_meta( string $key ): ?ShippingContentsMeta {
+		return $this->meta[ $key ] ?? null;
+	}
 }

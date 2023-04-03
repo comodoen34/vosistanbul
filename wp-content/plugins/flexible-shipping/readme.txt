@@ -2,10 +2,10 @@
 Contributors: octolize,grola,sebastianpisula
 Donate link: https://octol.io/fs-repo-up
 Tags: table rate, table rate shipping, conditional shipping, free shipping, woocommerce shipping, woocommerce table rate shipping, cart based shipping, weight based shipping, totals based shipping, order based shipping, advanced shipping
-Requires at least: 5.7
+Requires at least: 5.8
 Tested up to: 6.1
-Stable tag: 4.16.2
-Requires PHP: 7.0
+Stable tag: 4.19.1
+Requires PHP: 7.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -74,6 +74,24 @@ These are only a few examples of the Flexible Shipping usage, however, sky is th
 
 [Upgrade to PRO Now &rarr;](https://octol.io/fs-repo-up)
 
+= Flexible Shipping Box Packing WooCommerce =
+
+Flexible Shipping Box Packing WooCommerce introduces the advanced box packing algorithm allowing to automatically fit the ordered products into your shipping boxes the most optimal way. Give it a try and configure the shipping cost calculation rules based on the type and number of the used shipping boxes. It works with both the free and PRO versions, so you can buy it separately if you don't need the PRO features.
+
+[Buy Flexible Shipping Box Packing WooCommerce now &rarr;](https://octol.io/fs-repo-cross-bp)
+
+= Distance Based Shipping Rates for WooCommerce =
+
+Distance Based Shipping Rates for WooCommerce extends the Flexible Shipping plugin functionalities by adding the rules based on distance and delivery duration. It works with both the free and PRO versions, so you can buy it separately if you don't need the PRO features.
+
+[Buy Distance Based Shipping Rates for WooCommerce now &rarr;](https://octol.io/fs-repo-cross-dbsr)
+
+= WooCommerce Delivery Date Picker =
+
+WooCommerce Delivery Date Picker extends the default features of Flexible Shipping plugin, allows you to choose a convenient delivery date for your ordered products and makes the shipping cost dependent on the selected date. It works with both the free and PRO versions, so you can buy it separately if you don't need the PRO features.
+
+[Buy WooCommerce Delivery Date Picker now &rarr;](https://octol.io/fs-repo-cross-ddp)
+
 = Flexible Shipping Locations Add-On =
 
 Flexible Shipping Locations Add-On extends the default Flexible Shipping for WooCommerce functionalities and adds the possiblity to create the additional rules based on locations (WooCommerce and custom ones). It works with both, free and PRO versions, so you can buy it separately if you do not need the PRO features.
@@ -91,18 +109,6 @@ Flexible Shipping Import Export Add-On allows you to easily import and export Fl
 Multi Vendor Shipping for WooCommerce Add-on extends the Flexible Shipping plugin by adding rules based on Product Author (Vendor). This allows you to assign shipping methods to vendors or set additional shipping costs to them. It works with both, free and PRO versions so you can buy it separately if you do not need the PRO features.
 
 [Buy Multi Vendor Shipping for WooCommerce Add-On now &rarr;](https://octol.io/fs-repo-cross-mvs)
-
-= WooCommerce Delivery Date Picker =
-
-WooCommerce Delivery Date Picker extends the default features of Flexible Shipping plugin, allows you to choose a convenient delivery date for your ordered products and makes the shipping cost dependent on the selected date. It works with both the free and PRO versions, so you can buy it separately if you don't need the PRO features.
-
-[Buy WooCommerce Delivery Date Picker now &rarr;](https://octol.io/fs-repo-cross-ddp)
-
-= Distance Based Shipping Rates for WooCommerce =
-
-Distance Based Shipping Rates for WooCommerce extends the Flexible Shipping plugin functionalities by adding the rules based on distance and delivery duration. It works with both the free and PRO versions, so you can buy it separately if you don't need the PRO features.
-
-[Buy Distance Based Shipping Rates for WooCommerce now &rarr;](https://octol.io/fs-repo-cross-dbsr)
 
 You might also be interested in other...
 
@@ -130,7 +136,7 @@ We provide a limited support for the free version of our Flexible Shipping plugi
 
 **United Kingdom**
 
-We have released a DPD UK & Local WooCommerce integration for Flexible Shipping covering the whole UK teritory. Check our plugin and [offer your customers the DPD UK services at your shop &rarr;](https://octol.io/fs-repo-cross-dpd-uk)
+We have released a DPD UK & Local WooCommerce integrations for Flexible Shipping covering the whole UK territory. Check our plugins - [offer your customers the DPD UK services in your shop](https://octol.io/fs-repo-cross-dpd-uk) and [show them the DPD UK Pickup Points map](https://octol.io/fs-repo-cross-dpd-uk-pp) to choose their preferred one to collect their orders from.
 
 **Poland**
 
@@ -227,6 +233,43 @@ We provide a limited support for the free version of our Flexible Shipping plugi
 If you are upgrading from the old Flexible Shipping version (1.3.2, woo-flexible-shipping) make sure to completely delete the old version first. If you install the new version without deleting the old one it may break your WordPress installation.
 
 == Changelog ==
+
+= 4.19.1 - 2023-02-27 =
+* Fixed occasionally fatal error on checkout (shipping item meta)
+
+= 4.19.0 - 2023-02-09 =
+* Improved calculated for packages
+
+= 4.18.6 - 2023-01-26 =
+* Added support for WooCommerce 7.4
+* Fixed fatal error when loading Shipping Zones
+
+= 4.18.5 - 2023-01-25 =
+* Added `flexible-shipping/cart/cart-contents` filter
+* Rules settings removed from order metadata by default, can be changed by filter `flexible-shipping/order-meta-data/keep-method-rules`
+* Added `flexible-shipping/order-meta-data/keep-method-rules` filter
+
+= 4.18.4 - 2023-01-19 =
+* Improved calculated for cart value
+
+= 4.18.3 - 2023-01-03 =
+* Fixed shipping edit for RTL
+
+= 4.18.2 - 2022-12-27 =
+* Fixed exception handling on bulk labels
+
+= 4.18.1 - 2022-12-21 =
+* Added support for WooCommerce 7.3
+* Fixed bulk labels when multiple integrations in selected orders
+
+= 4.18.0 - 2022-12-13 =
+* Added the Shipping Extensions tab
+* Improved shipping manifests actions (when availiable for shipping integrations: DPD and InPost)
+
+= 4.17.0 - 2022-11-23 =
+* Added the WooCommerce High-Performance Order Storage (HPOS) compatibility declaration
+* Added support for WooCommerce 7.2
+* Fixed WooCommerce Subscription integration
 
 = 4.16.2 - 2022-11-15 =
 * Added extended debug information

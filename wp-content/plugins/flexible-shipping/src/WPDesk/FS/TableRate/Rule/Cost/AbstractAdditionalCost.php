@@ -12,6 +12,7 @@ use FSVendor\WPDesk\FS\TableRate\Settings\MethodSettings;
 use JsonSerializable;
 use Psr\Log\LoggerInterface;
 use Throwable;
+use WPDesk\FS\TableRate\Rule\Rule;
 use WPDesk\FS\TableRate\Rule\ShippingContents\ShippingContents;
 
 /**
@@ -33,6 +34,11 @@ abstract class AbstractAdditionalCost implements AdditionalCost, JsonSerializabl
 	 * @var MethodSettings
 	 */
 	protected $method_settings;
+
+	/**
+	 * @var Rule
+	 */
+	protected $rule;
 
 	/**
 	 * @return string
@@ -132,6 +138,17 @@ abstract class AbstractAdditionalCost implements AdditionalCost, JsonSerializabl
 	}
 
 	/**
+	 * @param Rule $rule
+	 *
+	 * @return $this
+	 */
+	public function set_rule( Rule $rule ): AbstractAdditionalCost {
+		$this->rule = $rule;
+
+		return $this;
+	}
+
+	/**
 	 * Returns value from shipment contents to calculate cost.
 	 *
 	 * @param ShippingContents $shipping_contents .
@@ -146,11 +163,10 @@ abstract class AbstractAdditionalCost implements AdditionalCost, JsonSerializabl
 	public function jsonSerialize() {
 		$renderer = new JsonNormalizedRenderer();
 
-		return array(
+		return [
 			'additional_cost_id' => $this->get_based_on(),
 			'label'              => $this->get_name(),
-			'parameters'         => $renderer->render_fields( $this, array() ),
-		);
+			'parameters'         => $renderer->render_fields( $this, [] ),
+		];
 	}
-
 }

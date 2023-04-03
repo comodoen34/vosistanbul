@@ -2,25 +2,46 @@
 
 namespace FSVendor\WPDesk\FS\Shipment\Manifest;
 
+use FSVendor\WPDesk\Notice\Notice;
 use FSVendor\WPDesk\PluginBuilder\Plugin\Hookable;
 class ManifestCustomPostType implements \FSVendor\WPDesk\PluginBuilder\Plugin\Hookable
 {
     public function hooks()
     {
-        \add_action('init', array($this, 'register_post_types'), 20);
-        \add_action('admin_init', array($this, 'cancel_manifest'), 20);
-        \add_action('admin_init', array($this, 'download_manifest'), 20);
-        \add_action('admin_menu', array($this, 'admin_menu'), 199);
-        \add_action('add_meta_boxes', array($this, 'add_meta_boxes'), 20, 2);
-        \add_action('trash_shipping_manifest', array($this, 'trash_shipping_manifest'));
-        \add_filter('manage_edit-shipping_manifest_columns', array($this, 'manage_edit_shipping_manifest_columns'), 11);
-        \add_action('manage_shipping_manifest_posts_custom_column', array($this, 'manage_shipping_manifest_posts_custom_column'), 11);
-        \add_filter('post_row_actions', array($this, 'shipping_manifest_row_actions'), 10, 2);
-        \add_action('do_meta_boxes', array($this, 'hide_publish_metabox'));
-        \add_filter('woocommerce_screen_ids', array($this, 'woocommerce_screen_ids'));
-        \add_filter('bulk_actions-edit-shipping_manifest', array($this, 'bulk_actions_edit_shipping_manifest'));
-        \add_action('restrict_manage_posts', array($this, 'restrict_manage_posts'), 9999);
-        \add_filter('parse_query', array($this, 'parse_query'), 999);
+        \add_action('init', [$this, 'register_post_types'], 20);
+        \add_action('admin_notices', [$this, 'add_admin_notices']);
+        \add_action('admin_init', [$this, 'cancel_manifest'], 20);
+        \add_action('admin_init', [$this, 'download_manifest'], 20);
+        \add_action('admin_menu', [$this, 'admin_menu'], 199);
+        \add_action('add_meta_boxes', [$this, 'add_meta_boxes'], 20, 2);
+        \add_action('trash_shipping_manifest', [$this, 'trash_shipping_manifest']);
+        \add_filter('manage_edit-shipping_manifest_columns', [$this, 'manage_edit_shipping_manifest_columns'], 11);
+        \add_action('manage_shipping_manifest_posts_custom_column', [$this, 'manage_shipping_manifest_posts_custom_column'], 11);
+        \add_filter('post_row_actions', [$this, 'shipping_manifest_row_actions'], 10, 2);
+        \add_action('do_meta_boxes', [$this, 'hide_publish_metabox']);
+        \add_filter('woocommerce_screen_ids', [$this, 'woocommerce_screen_ids']);
+        \add_filter('bulk_actions-edit-shipping_manifest', [$this, 'bulk_actions_edit_shipping_manifest']);
+        \add_action('restrict_manage_posts', [$this, 'restrict_manage_posts'], 9999);
+        \add_filter('parse_query', [$this, 'parse_query'], 999);
+    }
+    /**
+     * @return void
+     *
+     * @internal
+     */
+    public function add_admin_notices()
+    {
+        $current_screen = \get_current_screen();
+        if ($current_screen && $current_screen->id === 'edit-shipping_manifest') {
+            $success = $_GET['success'] ?? '';
+            if ($success === '1') {
+                new \FSVendor\WPDesk\Notice\Notice(\__('Shipping manifest canceled.', 'flexible-shipping'));
+            }
+            if ($success === '0' && isset($_GET['message'])) {
+                $message = \sanitize_text_field($_GET['message']);
+                new \FSVendor\WPDesk\Notice\Notice($message, \FSVendor\WPDesk\Notice\Notice::NOTICE_TYPE_ERROR);
+            }
+        }
     }
     /**
      * Register post types.
@@ -30,7 +51,7 @@ class ManifestCustomPostType implements \FSVendor\WPDesk\PluginBuilder\Plugin\Ho
         if (\post_type_exists('shipping_manifest')) {
             return;
         }
-        \register_post_type('shipping_manifest', array('labels' => array('name' => \__('Shipping Manifests', 'flexible-shipping'), 'singular_name' => \__('Shipping Manifest', 'flexible-shipping'), 'menu_name' => \__('Shipping Manifests', 'flexible-shipping'), 'parent_item_colon' => '', 'all_items' => \__('Shipping Manifests', 'flexible-shipping'), 'view_item' => \__('View Shipping Manifests', 'flexible-shipping'), 'add_new_item' => \__('Add new Shipping Manifest', 'flexible-shipping'), 'add_new' => \__('Add new Shipping Manifests', 'flexible-shipping'), 'edit_item' => \__('Edit Shipping Manifest', 'flexible-shipping'), 'update_item' => \__('Save Shipping Manifest', 'flexible-shipping'), 'search_items' => \__('Search Shipping Manifests', 'flexible-shipping'), 'not_found' => \__('Shipping Manifests not found', 'flexible-shipping'), 'not_found_in_trash' => \__('Shipping Manifests not found in trash', 'flexible-shipping')), 'description' => \__('Shipping Manifests.', 'flexible-shipping'), 'public' => \false, 'show_ui' => \true, 'capability_type' => 'post', 'capabilities' => array('create_posts' => \false), 'map_meta_cap' => \true, 'publicly_queryable' => \false, 'exclude_from_search' => \true, 'hierarchical' => \false, 'query_var' => \true, 'supports' => array('title'), 'has_archive' => \false, 'show_in_nav_menus' => \false, 'show_in_menu' => 'edit.php?post_type=shop_order', 'menu_icon' => 'dashicons-upload'));
+        \register_post_type('shipping_manifest', ['labels' => ['name' => \__('Shipping Manifests', 'flexible-shipping'), 'singular_name' => \__('Shipping Manifest', 'flexible-shipping'), 'menu_name' => \__('Shipping Manifests', 'flexible-shipping'), 'parent_item_colon' => '', 'all_items' => \__('Shipping Manifests', 'flexible-shipping'), 'view_item' => \__('View Shipping Manifests', 'flexible-shipping'), 'add_new_item' => \__('Add new Shipping Manifest', 'flexible-shipping'), 'add_new' => \__('Add new Shipping Manifests', 'flexible-shipping'), 'edit_item' => \__('Edit Shipping Manifest', 'flexible-shipping'), 'update_item' => \__('Save Shipping Manifest', 'flexible-shipping'), 'search_items' => \__('Search Shipping Manifests', 'flexible-shipping'), 'not_found' => \__('Shipping Manifests not found', 'flexible-shipping'), 'not_found_in_trash' => \__('Shipping Manifests not found in trash', 'flexible-shipping')], 'description' => \__('Shipping Manifests.', 'flexible-shipping'), 'public' => \false, 'show_ui' => \true, 'capability_type' => 'post', 'capabilities' => ['create_posts' => \false], 'map_meta_cap' => \true, 'publicly_queryable' => \false, 'exclude_from_search' => \true, 'hierarchical' => \false, 'query_var' => \true, 'supports' => ['title'], 'has_archive' => \false, 'show_in_nav_menus' => \false, 'show_in_menu' => 'edit.php?post_type=shop_order', 'menu_icon' => 'dashicons-upload']);
     }
     public function admin_menu()
     {
@@ -42,17 +63,7 @@ class ManifestCustomPostType implements \FSVendor\WPDesk\PluginBuilder\Plugin\Ho
     public function add_meta_boxes($post_type, $post)
     {
         if ($post_type == 'shipping_manifest') {
-            /*
-            add_meta_box(
-                'shipping_manifest_meta_box',
-                __('Shipping manifest data', 'flexible-shipping'),
-                array( $this, 'metabox' ),
-                'shipping_manifest',
-                'normal',
-                'high'
-            );
-            */
-            \add_meta_box('shipping_manifest_shipments', \__('Shipments', 'flexible-shipping'), array($this, 'shipments_metabox'), 'shipping_manifest', 'normal', 'high');
+            \add_meta_box('shipping_manifest_shipments', \__('Shipments', 'flexible-shipping'), [$this, 'shipments_metabox'], 'shipping_manifest', 'normal', 'high');
         }
     }
     public function metabox()
@@ -74,17 +85,12 @@ class ManifestCustomPostType implements \FSVendor\WPDesk\PluginBuilder\Plugin\Ho
     {
         global $post;
         $manifest = fs_get_manifest($post->ID);
-        $shipments_array = $manifest->get_meta('_shipments', array());
-        $shipments = array();
+        $shipments_array = $manifest->get_meta('_shipments', []);
+        $shipments = [];
         foreach ($shipments_array as $shipment_id) {
             $shipments[] = fs_get_shipment($shipment_id);
         }
-        include 'views/manifest-metabox.php';
-        /*
-        echo "<pre>";
-        print_r($shipments);
-        echo "</pre>";
-        */
+        include __DIR__ . '/views/manifest-metabox.php';
     }
     public function manage_edit_shipping_manifest_columns($columns)
     {
@@ -101,7 +107,7 @@ class ManifestCustomPostType implements \FSVendor\WPDesk\PluginBuilder\Plugin\Ho
     public function shipping_manifest_row_actions($actions, $post)
     {
         if ($post->post_type == 'shipping_manifest') {
-            $actions = array();
+            $actions = [];
         }
         return $actions;
     }
@@ -109,7 +115,7 @@ class ManifestCustomPostType implements \FSVendor\WPDesk\PluginBuilder\Plugin\Ho
     {
         global $post;
         global $manifest;
-        $integrations = \apply_filters('flexible_shipping_integration_options', array());
+        $integrations = \apply_filters('flexible_shipping_integration_options', []);
         if (empty($manifest) || $manifest->get_id() != $post->ID) {
             $manifest = fs_get_manifest($post->ID);
         }
@@ -121,16 +127,16 @@ class ManifestCustomPostType implements \FSVendor\WPDesk\PluginBuilder\Plugin\Ho
         }
         if ($column == 'external_number') {
             $download_manifest_url = \admin_url('edit.php?post_type=shipping_manifest&flexible_shipping_download_manifest=' . $manifest->get_id() . '&nonce=' . \wp_create_nonce('flexible_shipping_download_manifest'));
-            include 'views/column-number.php';
+            include __DIR__ . '/views/column-number.php';
         }
         if ($column == 'shipment_count') {
-            echo \count($manifest->get_meta('_shipments', array()));
+            echo \count($manifest->get_meta('_shipments', []));
         }
         if ($column == 'actions') {
             if ($manifest->get_status() != 'trash') {
                 $download_manifest_url = \admin_url('edit.php?post_type=shipping_manifest&flexible_shipping_download_manifest=' . $manifest->get_id() . '&nonce=' . \wp_create_nonce('flexible_shipping_download_manifest'));
                 $cancel_url = \admin_url('edit.php?post_type=shipping_manifest&flexible_shipping_cancel_manifest=' . $manifest->get_id() . '&nonce=' . \wp_create_nonce('flexible_shipping_cancel_manifest'));
-                include 'views/column-actions.php';
+                include __DIR__ . '/views/column-actions.php';
             }
         }
     }
@@ -142,7 +148,7 @@ class ManifestCustomPostType implements \FSVendor\WPDesk\PluginBuilder\Plugin\Ho
     }
     public function bulk_actions_edit_shipping_manifest($bulk_actions)
     {
-        $bulk_actions = array();
+        $bulk_actions = [];
         return $bulk_actions;
     }
     public function cancel_manifest()
@@ -159,10 +165,12 @@ class ManifestCustomPostType implements \FSVendor\WPDesk\PluginBuilder\Plugin\Ho
                 $shipping_manifest = fs_get_manifest($shipping_manifest_id);
                 $shipping_manifest->cancel();
                 fs_delete_manifest($shipping_manifest);
-                \wp_redirect($sendback);
+                $sendback .= '&success=1';
+                \wp_safe_redirect($sendback);
                 exit;
-            } catch (\FSVendor\WPDesk\FS\Shipment\Manifest\Exception $e) {
-                \wp_redirect($sendback);
+            } catch (\Exception $e) {
+                $sendback .= '&success=0&message=' . \sprintf(\__('Wystąpił błąd: %1$s', 'woocommerce-paczkomaty-inpost'), $e->getMessage());
+                \wp_safe_redirect($sendback);
                 exit;
             }
         }
@@ -194,7 +202,7 @@ class ManifestCustomPostType implements \FSVendor\WPDesk\PluginBuilder\Plugin\Ho
     public function trash_shipping_manifest($post_id)
     {
         $manifest = fs_get_manifest($post_id);
-        $shipments_posts = \get_posts(array('posts_per_page' => -1, 'post_type' => 'shipment', 'post_status' => 'any', 'meta_key' => '_manifest', 'meta_value' => $post_id));
+        $shipments_posts = \get_posts(['posts_per_page' => -1, 'post_type' => 'shipment', 'post_status' => 'any', 'meta_key' => '_manifest', 'meta_value' => $post_id]);
         foreach ($shipments_posts as $shipment_post) {
             $shipment = fs_get_shipment($shipment_post->ID);
             $shipment->delete_meta('_manifest');
@@ -208,7 +216,7 @@ class ManifestCustomPostType implements \FSVendor\WPDesk\PluginBuilder\Plugin\Ho
     {
         global $typenow;
         if ('shipping_manifest' == $typenow) {
-            $integrations = \apply_filters('flexible_shipping_integration_options', array());
+            $integrations = \apply_filters('flexible_shipping_integration_options', []);
             foreach ($integrations as $key => $integration) {
                 if (!\class_exists('WPDesk_Flexible_Shipping_Manifest_' . $key)) {
                     unset($integrations[$key]);
@@ -218,7 +226,7 @@ class ManifestCustomPostType implements \FSVendor\WPDesk\PluginBuilder\Plugin\Ho
             if (isset($_GET['flexible_shipping_integration_filter'])) {
                 $integration = \sanitize_key($_GET['flexible_shipping_integration_filter']);
             }
-            include 'views/filter-form.php';
+            include __DIR__ . '/views/filter-form.php';
         }
     }
     /**
@@ -235,9 +243,9 @@ class ManifestCustomPostType implements \FSVendor\WPDesk\PluginBuilder\Plugin\Ho
             if ($integration != '') {
                 if ($integration != '') {
                     if (!isset($query->query_vars['meta_query'])) {
-                        $query->query_vars['meta_query'] = array();
+                        $query->query_vars['meta_query'] = [];
                     }
-                    $meta_query = array();
+                    $meta_query = [];
                     $meta_query['key'] = '_integration';
                     $meta_query['value'] = $integration;
                     $query->query_vars['meta_query'][] = $meta_query;

@@ -38,7 +38,6 @@ if (!\class_exists('FSVendor\\WPDesk_Tracker_Data_Provider_Server')) {
                 $server_data['php_post_max_size'] = \size_format(\wc_let_to_num(\ini_get('post_max_size')));
                 $server_data['php_time_limt'] = \ini_get('max_execution_time');
                 $server_data['php_max_input_vars'] = \ini_get('max_input_vars');
-                $server_data['php_suhosin'] = \extension_loaded('suhosin') ? 'Yes' : 'No';
             }
             global $wpdb;
             $server_data['mysql_version'] = $wpdb->db_version();

@@ -70,4 +70,7 @@ interface ShippingContents {
 	 */
 	public function get_currency();
 
+	public function set_meta( ShippingContentsMeta $meta );
+
+	public function get_meta( string $key ): ?ShippingContentsMeta;
 }

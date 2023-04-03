@@ -13,6 +13,7 @@ use FSVendor\WPDesk\Forms\Renderer\JsonNormalizedRenderer;
 use FSVendor\WPDesk\FS\TableRate\Settings\MethodSettings;
 use JsonSerializable;
 use Psr\Log\LoggerInterface;
+use WPDesk\FS\TableRate\Rule\Rule;
 use WPDesk\FS\TableRate\Rule\ShippingContents\ShippingContents;
 
 /**
@@ -51,6 +52,11 @@ abstract class AbstractCondition implements Condition, FieldProvider, JsonSerial
 	protected $is_disabled = false;
 
 	/**
+	 * @var Rule
+	 */
+	protected $rule;
+
+	/**
 	 * @return string
 	 */
 	public function get_condition_id() {
@@ -82,7 +88,18 @@ abstract class AbstractCondition implements Condition, FieldProvider, JsonSerial
 	 * @return string
 	 */
 	public function get_group() {
-		return $this->group ? $this->group : _x( 'General', 'Default Condition Group', 'flexible-shipping' );
+		return $this->group ?: _x( 'General', 'Default Condition Group', 'flexible-shipping' );
+	}
+
+	/**
+	 * @param Rule $rule .
+	 *
+	 * @return self
+	 */
+	public function set_rule( Rule $rule ): self {
+		$this->rule = $rule;
+
+		return $this;
 	}
 
 	/**
@@ -135,11 +152,10 @@ abstract class AbstractCondition implements Condition, FieldProvider, JsonSerial
 	protected function format_for_log( array $condition_settings, $condition_matched, $input_data ) {
 		// Translators: condition name.
 		$formatted_for_log = '   ' . sprintf( __( 'Condition: %1$s;', 'flexible-shipping' ), $this->get_name() );
+
 		foreach ( $this->get_fields() as $field ) {
-			$value = '';
-			if ( isset( $condition_settings[ $field->get_name() ] ) ) {
-				$value = $condition_settings[ $field->get_name() ];
-			}
+			$value = $condition_settings[ $field->get_name() ] ?? '';
+
 			if ( $field instanceof Field\SelectField ) {
 				$options = $field->get_meta_value( 'possible_values' );
 				foreach ( $options as $option ) {
@@ -148,10 +164,13 @@ abstract class AbstractCondition implements Condition, FieldProvider, JsonSerial
 					}
 				}
 			}
+
 			$formatted_for_log .= sprintf( ' %1$s: %2$s;', $field->get_name(), is_array( $value ) ? implode( ', ', $value ) : $value );
 		}
+
 		// Translators: input data.
 		$formatted_for_log .= sprintf( __( ' input data: %1$s;', 'flexible-shipping' ), $input_data );
+
 		// Translators: matched condition.
 		$formatted_for_log .= sprintf( __( ' matched: %1$s', 'flexible-shipping' ), $condition_matched ? __( 'yes', 'flexible-shipping' ) : __( 'no', 'flexible-shipping' ) );
 

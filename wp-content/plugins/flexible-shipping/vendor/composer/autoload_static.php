@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitFlexibleShipping
+class ComposerStaticInit7a3800353c1b80aab31bae13e6e8f801
 {
     public static $prefixLengthsPsr4 = array (
         'W' => 
@@ -29,6 +29,7 @@ class ComposerStaticInitFlexibleShipping
     );
 
     public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'FSVendor\\Monolog\\ErrorHandler' => __DIR__ . '/../..' . '/vendor_prefixed/monolog/monolog/src/Monolog/ErrorHandler.php',
         'FSVendor\\Monolog\\Formatter\\ChromePHPFormatter' => __DIR__ . '/../..' . '/vendor_prefixed/monolog/monolog/src/Monolog/Formatter/ChromePHPFormatter.php',
         'FSVendor\\Monolog\\Formatter\\ElasticaFormatter' => __DIR__ . '/../..' . '/vendor_prefixed/monolog/monolog/src/Monolog/Formatter/ElasticaFormatter.php',
@@ -126,6 +127,16 @@ class ComposerStaticInitFlexibleShipping
         'FSVendor\\Monolog\\ResettableInterface' => __DIR__ . '/../..' . '/vendor_prefixed/monolog/monolog/src/Monolog/ResettableInterface.php',
         'FSVendor\\Monolog\\SignalHandler' => __DIR__ . '/../..' . '/vendor_prefixed/monolog/monolog/src/Monolog/SignalHandler.php',
         'FSVendor\\Monolog\\Utils' => __DIR__ . '/../..' . '/vendor_prefixed/monolog/monolog/src/Monolog/Utils.php',
+        'FSVendor\\Octolize\\ShippingExtensions\\AdminPage' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/AdminPage.php',
+        'FSVendor\\Octolize\\ShippingExtensions\\Assets' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Assets.php',
+        'FSVendor\\Octolize\\ShippingExtensions\\Page' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Page.php',
+        'FSVendor\\Octolize\\ShippingExtensions\\PageViewTracker' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/PageViewTracker.php',
+        'FSVendor\\Octolize\\ShippingExtensions\\Page\\Plugin' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Page/Plugin.php',
+        'FSVendor\\Octolize\\ShippingExtensions\\PluginLinks' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/PluginLinks.php',
+        'FSVendor\\Octolize\\ShippingExtensions\\ShippingExtensions' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/ShippingExtensions.php',
+        'FSVendor\\Octolize\\ShippingExtensions\\Tracker\\DataProvider\\ShippingExtensionsDataProvider' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Tracker/DataProvider/ShippingExtensionsDataProvider.php',
+        'FSVendor\\Octolize\\ShippingExtensions\\Tracker\\Tracker' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Tracker/Tracker.php',
+        'FSVendor\\Octolize\\ShippingExtensions\\Tracker\\ViewPageTracker' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Tracker/ViewPageTracker.php',
         'FSVendor\\Octolize\\Tracker\\OptInNotice\\OptInNotice' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-octolize-tracker/src/OptInNotice/OptInNotice.php',
         'FSVendor\\Octolize\\Tracker\\OptInNotice\\ShouldDisplay' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-octolize-tracker/src/OptInNotice/ShouldDisplay.php',
         'FSVendor\\Octolize\\Tracker\\OptInNotice\\ShouldDisplayAlways' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-octolize-tracker/src/OptInNotice/ShouldDisplayAlways.php',
@@ -154,6 +165,8 @@ class ComposerStaticInitFlexibleShipping
         'FSVendor\\WPDesk\\FS\\Compatibility\\PluginDetails' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-fs-compatibility/src/PluginDetails.php',
         'FSVendor\\WPDesk\\FS\\Shipment\\Assets' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-fs-shipment/src/WPDesk/FS/Shipment/Assets.php',
         'FSVendor\\WPDesk\\FS\\Shipment\\CustomPostType' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-fs-shipment/src/WPDesk/FS/Shipment/CustomPostType.php',
+        'FSVendor\\WPDesk\\FS\\Shipment\\Exception\\UnableToCreateTmpFileException' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-fs-shipment/src/WPDesk/FS/Shipment/Exception/UnableToCreateTmpFileException.php',
+        'FSVendor\\WPDesk\\FS\\Shipment\\Exception\\UnableToCreateTmpZipFileException' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-fs-shipment/src/WPDesk/FS/Shipment/Exception/UnableToCreateTmpZipFileException.php',
         'FSVendor\\WPDesk\\FS\\Shipment\\Label\\LabelsBulkActionHandler' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-fs-shipment/src/WPDesk/FS/Shipment/Label/LabelsBulkActionHandler.php',
         'FSVendor\\WPDesk\\FS\\Shipment\\Label\\LabelsFileCreator' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-fs-shipment/src/WPDesk/FS/Shipment/Label/LabelsFileCreator.php',
         'FSVendor\\WPDesk\\FS\\Shipment\\Label\\LabelsFileDispatcher' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-fs-shipment/src/WPDesk/FS/Shipment/Label/LabelsFileDispatcher.php',
@@ -547,6 +560,7 @@ class ComposerStaticInitFlexibleShipping
         'WPDesk\\FS\\TableRate\\Rule\\ShippingContents\\DestinationAddressFactory' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/Rule/ShippingContents/DestinationAddressFactory.php',
         'WPDesk\\FS\\TableRate\\Rule\\ShippingContents\\ShippingContents' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/Rule/ShippingContents/ShippingContents.php',
         'WPDesk\\FS\\TableRate\\Rule\\ShippingContents\\ShippingContentsImplementation' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/Rule/ShippingContents/ShippingContentsImplementation.php',
+        'WPDesk\\FS\\TableRate\\Rule\\ShippingContents\\ShippingContentsMeta' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/Rule/ShippingContents/ShippingContentsMeta.php',
         'WPDesk\\FS\\TableRate\\Rule\\SpecialAction\\AbstractSpecialAction' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/Rule/SpecialAction/AbstractSpecialAction.php',
         'WPDesk\\FS\\TableRate\\Rule\\SpecialAction\\None' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/Rule/SpecialAction/None.php',
         'WPDesk\\FS\\TableRate\\Rule\\SpecialAction\\SpecialAction' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/Rule/SpecialAction/SpecialAction.php',
@@ -607,9 +621,9 @@ class ComposerStaticInitFlexibleShipping
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitFlexibleShipping::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitFlexibleShipping::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitFlexibleShipping::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit7a3800353c1b80aab31bae13e6e8f801::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit7a3800353c1b80aab31bae13e6e8f801::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit7a3800353c1b80aab31bae13e6e8f801::$classMap;
 
         }, null, ClassLoader::class);
     }

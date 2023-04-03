@@ -15,7 +15,7 @@ $beacon_image_content = !empty($beacon_image_content) ? $beacon_image_content : 
 if ('' !== $confirmation_message) {
     ?><div id="wpdesk-helpscout-beacon">
 	<div class="wpdesk-helpscout-beacon-frame">
-        <div style="position: fixed; bottom: 37px; right: 37px; outline: none;">
+        <div class="wpdesk-helpscout-beacon-icon-container">
             <img class="<?php 
     echo \esc_attr($beacon_button_class);
     ?>" id="image0" src="<?php 

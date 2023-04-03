@@ -30,7 +30,7 @@ class Weight extends AbstractCondition {
 		$this->condition_id = self::CONDITION_ID;
 		$this->name         = __( 'Weight', 'flexible-shipping' );
 		$this->description  = __( 'Shipping cost based on the weight of the cart or package', 'flexible-shipping' );
-		$this->group        = __( 'Weight & Dimensions', 'flexible-shipping' );
+		$this->group        = __( 'Product', 'flexible-shipping' );
 		$this->priority     = $priority;
 	}
 

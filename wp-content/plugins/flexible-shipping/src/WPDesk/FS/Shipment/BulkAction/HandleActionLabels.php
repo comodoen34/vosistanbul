@@ -6,11 +6,11 @@
 namespace WPDesk\FS\Shipment\BulkAction;
 
 use Exception;
+use FSVendor\WPDesk\FS\Shipment\Exception\UnableToCreateTmpFileException;
+use FSVendor\WPDesk\FS\Shipment\Exception\UnableToCreateTmpZipFileException;
 use FSVendor\WPDesk\FS\Shipment\Label\LabelsBulkActionHandler;
 use FSVendor\WPDesk\FS\Shipment\Label\LabelsFileCreator;
 use FSVendor\WPDesk\Session\SessionFactory;
-use WPDesk_Flexible_Shipping_Unable_To_Create_Tmp_File_Exception;
-use WPDesk_Flexible_Shipping_Unable_To_Create_Tmp_Zip_File_Exception;
 
 /**
  * .
@@ -57,9 +57,9 @@ class HandleActionLabels implements HandleActionStrategyInterface {
 					unset( $labels[ $key ]['content'] );
 				}
 			}
-		} catch ( WPDesk_Flexible_Shipping_Unable_To_Create_Tmp_Zip_File_Exception $zip_file_exception ) {
+		} catch ( UnableToCreateTmpZipFileException $zip_file_exception ) {
 			$labels['error'] = __( 'Unable to create temporary zip archive for labels. Check temporary folder configuration on server.', 'flexible-shipping' );
-		} catch ( WPDesk_Flexible_Shipping_Unable_To_Create_Tmp_File_Exception $tmp_file_exception ) {
+		} catch ( UnableToCreateTmpFileException $tmp_file_exception ) {
 			$labels['error'] = __( 'Unable to create temporary file for labels. Check temporary folder configuration on server.', 'flexible-shipping' );
 		} catch ( Exception $e ) {
 			$labels['error'] = $e->getMessage();

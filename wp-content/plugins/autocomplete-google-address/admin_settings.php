@@ -60,8 +60,7 @@ function myprefix_register_theme_options_metabox() {
 	<ol>Work on any form</ol>
 	<ol>single or multiple Country restriction</ol>
 	<ol>Woocommerce location map picker with autocomplete all input</ol>
-	<ol><a href="https://www.nishelement.com/google-autocomplete-pro">Go For Pro</a></ol>
-	<ol><a href="https://www.loom.com/share/22ca6b5a807e4dc4aa8f13af2698cd20">Demo</a></ol>
+	<ol><a href="https://www.nishath.com.bd/google-autocomplete-pro/">Go For Pro</a></ol>
 
 	</ul>', 'myprefix' ),
     'id'   => 'ext',

@@ -7,7 +7,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
 "Language: tr\n"
 "Project-Id-Version: Themes - Twenty Twenty-Two\n"
 
@@ -640,18 +640,6 @@ msgstr "Başlık, gezinti ve sosyal bağlantılar ile üst kısım"
 #: inc/patterns/header-title-and-button.php:6
 msgid "Title and button header"
 msgstr "Başlık ve düğme ile üst kısım"
-
-#: inc/patterns/header-text-only-with-tagline-black-background.php:6
-msgid "Text-only header with tagline and black background"
-msgstr "Slogan ve siyah arka plana sahip salt metin üst kısım"
-
-#: inc/patterns/header-text-only-salmon-background.php:6
-msgid "Text-only header with salmon background"
-msgstr "Somon arka plana sahip salt metin üst kısım"
-
-#: inc/patterns/header-text-only-green-background.php:6
-msgid "Text-only header with green background"
-msgstr "Yeşil arka plana sahip salt metin üst kısım"
 
 #: inc/patterns/header-stacked.php:6
 msgid "Logo and navigation header"

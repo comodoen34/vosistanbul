@@ -28,9 +28,9 @@ use WPDesk_Flexible_Shipping;
  */
 class RateCalculator {
 
-	const FS_INTEGRATION = '_fs_integration';
-	const FS_METHOD = '_fs_method';
-	const DESCRIPTION = 'description';
+	const FS_INTEGRATION            = '_fs_integration';
+	const FS_METHOD                 = '_fs_method';
+	const DESCRIPTION               = 'description';
 	const DESCRIPTION_BASE64ENCODED = 'description_base64encoded';
 
 	/**
@@ -211,6 +211,14 @@ class RateCalculator {
 			 */
 			$shipping_contents = apply_filters( 'flexible_shipping_shipping_contents', $shipping_contents, $method_settings->get_raw_settings(), $this->cart, $this->package );
 
+			if ( ! $shipping_contents instanceof ShippingContents || empty( $shipping_contents->get_contents() ) ) {
+				$logger->debug( __( 'Empty contents', 'flexible-shipping' ) );
+
+				return [];
+			}
+
+			do_action( 'flexible-shipping/rate-calculator/before', $shipping_contents, $method_settings, $logger );
+
 			// Translators: contents value.
 			$logger->debug( sprintf( __( 'Contents value: %1$s %2$s', 'flexible-shipping' ), $shipping_contents->get_contents_cost(), $shipping_contents->get_currency() ), $logger->get_input_data_context() );
 			// Translators: contents weight.
@@ -326,6 +334,10 @@ class RateCalculator {
 			self::FS_INTEGRATION                   => $method_settings->get_integration(),
 			self::DESCRIPTION                      => $description,
 		];
+
+		if ( ! apply_filters( 'flexible-shipping/order-meta-data/keep-method-rules', false, $meta_data ) ) {
+			unset( $meta_data[ self::FS_METHOD ][ CommonMethodSettings::METHOD_RULES ] );
+		}
 
 		if ( esc_html( $description ) !== $description ) {
 			$meta_data[ self::DESCRIPTION_BASE64ENCODED ] = base64_encode( $description );

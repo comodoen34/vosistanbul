@@ -24,7 +24,7 @@ class TotalOverallDimensions extends AbstractCondition {
 	public function __construct( int $priority = 10 ) {
 		$this->condition_id = self::CONDITION_ID;
 		$this->name         = __( 'Total overall dimensions', 'flexible-shipping' );
-		$this->group        = __( 'Weight & Dimensions', 'flexible-shipping' );
+		$this->group        = __( 'Product', 'flexible-shipping' );
 		$this->priority     = $priority;
 		$this->is_disabled  = true;
 

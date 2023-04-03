@@ -78,8 +78,8 @@ class Beacon
     public function add_beacon_js()
     {
         if ($this->should_display_beacon()) {
-            \wp_register_script('hs-beacon', $this->assets_url . 'js/hs-bc.js', []);
-            \wp_enqueue_script('hs-beacon');
+            \wp_enqueue_style('hs-beacon', $this->assets_url . 'css/beacon.css', []);
+            \wp_enqueue_script('hs-beacon', $this->assets_url . 'js/hs-bc.js', []);
         }
     }
     /**

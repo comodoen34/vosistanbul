@@ -861,6 +861,7 @@ class SBI_Feed_Builder {
 			),
 			'getMoreFeatures'                   => __( 'Get more features with Instagram Feed Pro', 'instagram-feed' ),
 			'liteFeedUsers'                     => __( 'Lite users get 50% OFF', 'instagram-feed' ),
+			'liteFeedUsersAutoApply'            => __( 'Lite users get 50% OFF automatically applied at checkout', 'instagram-feed' ),
 			'tryDemo'                           => __( 'Try Demo', 'instagram-feed' ),
 
 			'displayImagesVideos'               => __( 'Display images and videos in posts', 'instagram-feed' ),

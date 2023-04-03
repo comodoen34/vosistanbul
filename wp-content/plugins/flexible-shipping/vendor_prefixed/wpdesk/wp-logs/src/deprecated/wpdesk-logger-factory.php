@@ -41,7 +41,7 @@ if (!\class_exists('FSVendor\\WPDesk_Logger_Factory')) {
          *
          * @see http://php.net/manual/en/function.debug-backtrace.php
          */
-        public static function log_wp_error(\WP_Error $e, array $backtrace)
+        public static function log_wp_error(\WP_Error $e, array $backtrace = array())
         {
             $message = 'Error: ' . \get_class($e) . ' Code: ' . $e->get_error_code() . ' Message: ' . $e->get_error_message();
             self::log_message_backtrace($message, \FSVendor\WPDesk_Logger::ERROR, $backtrace);
@@ -76,7 +76,7 @@ if (!\class_exists('FSVendor\\WPDesk_Logger_Factory')) {
          * @param string $level Level of error.
          * @param array  $backtrace Backtrace information with snapshot of error env.
          */
-        public static function log_message_backtrace($message, $level = \FSVendor\WPDesk_Logger::DEBUG, array $backtrace)
+        public static function log_message_backtrace($message, $level = \FSVendor\WPDesk_Logger::DEBUG, array $backtrace = array())
         {
             $message .= ' Backtrace: ' . \json_encode($backtrace);
             if (isset($backtrace[self::BACKTRACE_FILENAME_KEY])) {
