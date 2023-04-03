@@ -109,12 +109,12 @@ the_post(); ?>
 
                     <?php if (!empty($product->get_sale_price())) { ?>
                       <div class="price-box">
-                        <span class="price"><?php echo $product->get_regular_price() * 1.18 . ' TL'; ?></span>
-                        <span class="regular-price"><?php echo $product->get_sale_price() * 1.18 . ' TL'; ?><span style="font-size:12px;"> (KDV Dahil)</span></span>
+                        <span class="price"><?php echo $product->get_regular_price() . ' TL'; ?></span>
+                        <span class="regular-price"><?php echo $product->get_sale_price() . ' TL'; ?><span style="font-size:12px;"> (KDV Dahil)</span></span>
                       </div>
                     <?php } else { ?>
                       <div class="price-box">
-                        <span class="regular-price"><?php echo $product->get_regular_price() * 1.18 . ' TL'; ?><span style="font-size:12px;"> (KDV Dahil)</span></span>
+                        <span class="regular-price"><?php echo $product->get_regular_price() . ' TL'; ?><span style="font-size:12px;"> (KDV Dahil)</span></span>
                       </div>
                     <?php } ?>
                   </div>
@@ -250,40 +250,40 @@ the_post(); ?>
   the_post(); ?>
   <div class="container-fluid pl-50 pr-50 mt-105">
     <div class="container-xxl row mx-auto px-0 justify-content-center">
-        <div>
-          <div class="section-title text-center mb-3">
-            <span>BLOG</span>
-          </div>
-          <div class="fs-6 text-center lh-base mt-1 mx-auto" style="width: min(992px, 100%);">
-            <?php the_field('anasayfa_blog_aciklama'); ?>
-          </div>
+      <div>
+        <div class="section-title text-center mb-3">
+          <span>BLOG</span>
         </div>
-        <div class="row mt-5 gy-3">
-          <?php
-          wp_reset_query();
-          query_posts(array('cat' => '23', 'posts_per_page' => '2', 'order' => 'DESC'));
-          if (have_posts()) : while (have_posts()) : the_post();
-          ?>
-              <div class="col-12 col-lg-6">
-                <div class="row h-100 gy-3">
-                  <?php $blog_pic = get_field('resim'); ?>
-                  <img class="col-12 col-md-6 ps-0 pr-0 pe-md-3" style="aspect-ratio: 1;" src="<?php echo $blog_pic['url']; ?>" alt="<?php the_field('baslik'); ?>" />
-                  <div class="col-12 col-md-6 d-flex flex-column px-0 ">
-                    <div>
-                      <span class="fw-bold fs-3 text-dark"><?php echo get_the_date('j'); ?></span>
-                      <span class="text-secondary fs-5" style="font-weight: 500;"><?php echo get_the_date('M'); ?></span>
-                    </div>
-
-                    <p class="post-title mt-2" style="font-weight: 500;"><?php the_field('baslik'); ?></p>
-                    <p class="mb-1" style="font-weight: 500;"><?php the_field('kisa_aciklama'); ?></p>
-                    <a class="text-decoration-underline" href="<?php the_permalink(); ?>" style="font-weight: 500;">Devamını Oku</a>
+        <div class="fs-6 text-center lh-base mt-1 mx-auto" style="width: min(992px, 100%);">
+          <?php the_field('anasayfa_blog_aciklama'); ?>
+        </div>
+      </div>
+      <div class="row mt-5 gy-3">
+        <?php
+        wp_reset_query();
+        query_posts(array('cat' => '23', 'posts_per_page' => '2', 'order' => 'DESC'));
+        if (have_posts()) : while (have_posts()) : the_post();
+        ?>
+            <div class="col-12 col-lg-6">
+              <div class="row h-100 gy-3">
+                <?php $blog_pic = get_field('resim'); ?>
+                <img class="col-12 col-md-6 ps-0 pr-0 pe-md-3" style="aspect-ratio: 1;" src="<?php echo $blog_pic['url']; ?>" alt="<?php the_field('baslik'); ?>" />
+                <div class="col-12 col-md-6 d-flex flex-column px-0 ">
+                  <div>
+                    <span class="fw-bold fs-3 text-dark"><?php echo get_the_date('j'); ?></span>
+                    <span class="text-secondary fs-5" style="font-weight: 500;"><?php echo get_the_date('M'); ?></span>
                   </div>
+
+                  <p class="post-title mt-2" style="font-weight: 500;"><?php the_field('baslik'); ?></p>
+                  <p class="mb-1" style="font-weight: 500;"><?php the_field('kisa_aciklama'); ?></p>
+                  <a class="text-decoration-underline" href="<?php the_permalink(); ?>" style="font-weight: 500;">Devamını Oku</a>
                 </div>
               </div>
-          <?php endwhile;
-          endif;
-          wp_reset_query(); ?>
-        </div>
+            </div>
+        <?php endwhile;
+        endif;
+        wp_reset_query(); ?>
+      </div>
     </div>
   </div>
 </div>

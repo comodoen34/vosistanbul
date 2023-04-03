@@ -1,12 +1,12 @@
 <?php
 get_header();
- the_post();  ?>
- <div style="height: 130px"></div>
-    <!--Shop Area Start-->
-		<div class="shop-area mb-70">
-		    <div class="container">
-		        <div class="row justify-content-center">
-				<?php /* 					<div class="col-lg-3 order-2 order-lg-1">
+the_post();  ?>
+<div style="height: 130px"></div>
+<!--Shop Area Start-->
+<div class="shop-area mb-70">
+	<div class="container">
+		<div class="row justify-content-center">
+			<?php /* 					<div class="col-lg-3 order-2 order-lg-1">
 						<?php 
 							$term = get_queried_object(); 
 						?>
@@ -35,40 +35,40 @@ get_header();
 		                <!--Banner Widget End-->
 		            </div> */ ?>
 
-		            <div class="col-12 order-1 order-lg-2">
-		                <div class="shop-layout">
-		                    <!--Grid & List View Start-->
-		                    <div class="shop-topbar-wrapper d-md-flex justify-content-md-between align-items-center">
-		                        <div class="grid-list-option">
-		                             <ul class="nav">
-                                      <li>
-                                        <a class="active" data-bs-toggle="tab" href="#grid"><i class="fa fa-th-large"></i></a>
-                                      </li>
-                                      <li>
-                                        <a data-bs-toggle="tab" href="#list"><i class="fa fa-th-list"></i></a>
-                                      </li>
-                                    </ul>
-		                         </div>
-                             <?php 
-                                    wp_reset_query();
-                                    // $args = array( 'post_type' => 'product', 'post_status' => 'publish', 'posts_per_page' => -1 );
-                                    // $products = new WP_Query( $args );
-									$term = get_queried_object();
-									$the_query = new WP_Query( array(
-										'post_type' => 'product',
-										'order'   => 'ASC',
-										'tax_query' => array(
-										  array (
-											  'taxonomy' => 'product_cat',
-											  'field' => 'slug',
-											  'terms' => $term->slug,
-										  )
-										  ),
-									  ) );
-                             ?>
-		                         <!--Toolbar Short Area Start-->
-		                         <div class="toolbar-short-area d-md-flex align-items-center">
-                                    <?php /* 
+			<div class="col-12 order-1 order-lg-2">
+				<div class="shop-layout">
+					<!--Grid & List View Start-->
+					<div class="shop-topbar-wrapper d-md-flex justify-content-md-between align-items-center">
+						<div class="grid-list-option">
+							<ul class="nav">
+								<li>
+									<a class="active" data-bs-toggle="tab" href="#grid"><i class="fa fa-th-large"></i></a>
+								</li>
+								<li>
+									<a data-bs-toggle="tab" href="#list"><i class="fa fa-th-list"></i></a>
+								</li>
+							</ul>
+						</div>
+						<?php
+						wp_reset_query();
+						// $args = array( 'post_type' => 'product', 'post_status' => 'publish', 'posts_per_page' => -1 );
+						// $products = new WP_Query( $args );
+						$term = get_queried_object();
+						$the_query = new WP_Query(array(
+							'post_type' => 'product',
+							'order'   => 'ASC',
+							'tax_query' => array(
+								array(
+									'taxonomy' => 'product_cat',
+									'field' => 'slug',
+									'terms' => $term->slug,
+								)
+							),
+						));
+						?>
+						<!--Toolbar Short Area Start-->
+						<div class="toolbar-short-area d-md-flex align-items-center">
+							<?php /* 
                                     <div class="toolbar-shorter ">
                                         <label>Sırala:</label>
                                          <select class="wide">
@@ -81,133 +81,133 @@ get_header();
                                          </select>
                                      </div>
                                      */ ?>
-                                     <p class="show-product">Toplam <?php echo $the_query->found_posts; ?> Ürün</p>
-                                 </div>
-                                 
-		                         <!--Toolbar Short Area End-->
-		                    </div>
-		                    <!--Grid & List View End-->
-		                    <!--Shop Product Start-->
-		                    <div class="shop-product">
-		                        <div id="myTabContent-2" class="tab-content">
-		                            <div id="grid" class="tab-pane fade show active">
-		                                <div class="product-grid-view">
-		                                    <div class="row">
-                                            <?php 
-                                                wp_reset_query();
-												$term = get_queried_object();
-                                                $the_query = new WP_Query( array(
-                                                  'post_type' => 'product',
-                                                  'order'   => 'ASC',
-												  'tax_query' => array(
-													array (
-														'taxonomy' => 'product_cat',
-														'field' => 'slug',
-														'terms' => $term->slug,
-													)
-													),
-                                                ) );
-                                              
-                                                while ( $the_query->have_posts() ) :
-                                                $the_query->the_post();
-                                                global $product;
-                                            ?>
-		                                        <div class="col-md-4">
-		                                            <!--Single Product Start-->
-                                                    <div class="single-product mb-25">
-                                                        <div class="product-img img-full">
-                                                            <a href="<?php the_permalink(); ?>">
-                                                              <?php echo woocommerce_get_product_thumbnail(); ?>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-content">
-                                                            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                                                            <div class="product-price">
-																<?php if(!empty($product->get_sale_price())) { ?>
-                                                                <div class="price-box">
-                                                                    <span class="price"><?php echo $product->get_regular_price() * 1.18.' TL'; ?></span>
-                                                                    <span class="regular-price"><?php echo $product->get_sale_price() * 1.18.' TL'; ?><span style="font-size:12px;"> (KDV Dahil)</span></span>
-                                                                </div>
-																<?php } else { ?>
+							<p class="show-product">Toplam <?php echo $the_query->found_posts; ?> Ürün</p>
+						</div>
+
+						<!--Toolbar Short Area End-->
+					</div>
+					<!--Grid & List View End-->
+					<!--Shop Product Start-->
+					<div class="shop-product">
+						<div id="myTabContent-2" class="tab-content">
+							<div id="grid" class="tab-pane fade show active">
+								<div class="product-grid-view">
+									<div class="row">
+										<?php
+										wp_reset_query();
+										$term = get_queried_object();
+										$the_query = new WP_Query(array(
+											'post_type' => 'product',
+											'order'   => 'ASC',
+											'tax_query' => array(
+												array(
+													'taxonomy' => 'product_cat',
+													'field' => 'slug',
+													'terms' => $term->slug,
+												)
+											),
+										));
+
+										while ($the_query->have_posts()) :
+											$the_query->the_post();
+											global $product;
+										?>
+											<div class="col-md-4">
+												<!--Single Product Start-->
+												<div class="single-product mb-25">
+													<div class="product-img img-full">
+														<a href="<?php the_permalink(); ?>">
+															<?php echo woocommerce_get_product_thumbnail(); ?>
+														</a>
+													</div>
+													<div class="product-content">
+														<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+														<div class="product-price">
+															<?php if (!empty($product->get_sale_price())) { ?>
 																<div class="price-box">
-                                                                    <span class="regular-price"><?php echo $product->get_regular_price() * 1.18.' TL'; ?><span style="font-size:12px;"> (KDV Dahil)</span></span>
-                                                                </div>	
-																<?php } ?>
-        <!--                                                         <div class="add-to-cart">
+																	<span class="price"><?php echo $product->get_regular_price() . ' TL'; ?></span>
+																	<span class="regular-price"><?php echo $product->get_sale_price() . ' TL'; ?><span style="font-size:12px;"> (KDV Dahil)</span></span>
+																</div>
+															<?php } else { ?>
+																<div class="price-box">
+																	<span class="regular-price"><?php echo $product->get_regular_price() . ' TL'; ?><span style="font-size:12px;"> (KDV Dahil)</span></span>
+																</div>
+															<?php } ?>
+															<!--                                                         <div class="add-to-cart">
                                                                     <a href="<?php the_permalink(); ?>">Ürünü İncele</a>
                                                                 </div> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--Single Product End-->
-		                                        </div>
-                                            <?php 
-                                              endwhile;
-                                              wp_reset_query();
-                                            ?>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                            <div id="list" class="tab-pane fade">
-		                                <div class="product-list-view">
-                                        <?php 
-                                            wp_reset_query();
-                                            $the_query = new WP_Query( array(
-                                              'post_type' => 'product',
-                                              'order'   => 'ASC',
-                                            ) );
-                                          
-                                            while ( $the_query->have_posts() ) :
-                                            $the_query->the_post();
-                                            global $product;
-                                        ?>
-		                                    <div class="product-list-item mb-40">
-		                                        <div class="row">
-		                                            <!--Single List Product Start-->
-		                                            <div class="col-md-4">
-		                                                <div class="single-product">
-		                                                    <div class="product-img img-full">
-                                                            <a href="<?php the_permalink(); ?>">
-                                                              <?php echo woocommerce_get_product_thumbnail(); ?>
-                                                            </a>
-		                                                    </div>
-		                                                </div>
-		                                            </div>
-		                                            <div class="col-md-8">
-		                                                <div class="product-content shop-list">
-		                                                    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                                                            <div class="product-description">
-                                                                <p><?php echo $product->short_description; ?></p>
-                                                            </div>
-                                                            <div class="product-price">
-																<?php if(!empty($product->get_sale_price())) { ?>
-																	<div class="price-box">
-																		<span class="price"><?php echo $product->get_regular_price().' TL'; ?> dsa</span>
-																		<span class="regular-price"><?php echo $product->get_sale_price().' TL'; ?></span>
-																	</div>
-																<?php } else { ?>
-																	<div class="price-box">
-																		<span class="regular-price"><?php echo wc_price( wc_get_price_including_tax( $product ) ); ?><span style="font-size:12px;"> + KDV Dahil</span></span>
-                                                                	</div>
-																<?php } ?>
-                                                            </div>
-                                                            <div class="product-list-action">
-                                                               <div class="add-btn">
-                                                                  <a href="<?php the_permalink(); ?>">Ürünü İncele</a>
-                                                                </div>
-                                                            </div>
-		                                                </div>
-		                                            </div>
-		                                            <!--Single List Product End-->
-		                                        </div>
-		                                    </div>
-                                        <?php 
-                                          endwhile;
-                                          wp_reset_query();
-                                        ?>
-		                                </div>
-		                            </div>
-                                <?php /* 
+														</div>
+													</div>
+												</div>
+												<!--Single Product End-->
+											</div>
+										<?php
+										endwhile;
+										wp_reset_query();
+										?>
+									</div>
+								</div>
+							</div>
+							<div id="list" class="tab-pane fade">
+								<div class="product-list-view">
+									<?php
+									wp_reset_query();
+									$the_query = new WP_Query(array(
+										'post_type' => 'product',
+										'order'   => 'ASC',
+									));
+
+									while ($the_query->have_posts()) :
+										$the_query->the_post();
+										global $product;
+									?>
+										<div class="product-list-item mb-40">
+											<div class="row">
+												<!--Single List Product Start-->
+												<div class="col-md-4">
+													<div class="single-product">
+														<div class="product-img img-full">
+															<a href="<?php the_permalink(); ?>">
+																<?php echo woocommerce_get_product_thumbnail(); ?>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-8">
+													<div class="product-content shop-list">
+														<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+														<div class="product-description">
+															<p><?php echo $product->short_description; ?></p>
+														</div>
+														<div class="product-price">
+															<?php if (!empty($product->get_sale_price())) { ?>
+																<div class="price-box">
+																	<span class="price"><?php echo $product->get_regular_price() . ' TL'; ?> dsa</span>
+																	<span class="regular-price"><?php echo $product->get_sale_price() . ' TL'; ?></span>
+																</div>
+															<?php } else { ?>
+																<div class="price-box">
+																	<span class="regular-price"><?php echo wc_price(wc_get_price_including_tax($product)); ?><span style="font-size:12px;"> + KDV Dahil</span></span>
+																</div>
+															<?php } ?>
+														</div>
+														<div class="product-list-action">
+															<div class="add-btn">
+																<a href="<?php the_permalink(); ?>">Ürünü İncele</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--Single List Product End-->
+											</div>
+										</div>
+									<?php
+									endwhile;
+									wp_reset_query();
+									?>
+								</div>
+							</div>
+							<?php /* 
 		                            <!--Pagination Start-->
 		                            <div class="product-pagination">
 		                                <ul>
@@ -221,13 +221,13 @@ get_header();
 		                            </div>
 		                            <!--Pagination End-->
                                 */ ?>
-		                        </div>
-		                    </div>
-		                    <!--Shop Product End-->
-		                </div>
-		            </div>
-		        </div>
-		    </div>
+						</div>
+					</div>
+					<!--Shop Product End-->
+				</div>
+			</div>
 		</div>
-		<!--Shop Area End-->
+	</div>
+</div>
+<!--Shop Area End-->
 <?php get_footer(); ?>
