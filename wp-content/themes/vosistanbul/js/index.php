@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 <!--Slider Area Start-->
 <div class="slider-area">
-  <?php wp_reset_query();
-  query_posts('page_id=23');
-  the_post(); ?>
-  <?php the_field('anasayfa_banner'); ?>
-  <?php wp_reset_query(); ?>
+<?php wp_reset_query();
+    query_posts('page_id=23');
+    the_post(); ?>
+    <?php the_field('anasayfa_banner'); ?>
+    <?php wp_reset_query(); ?>
   <?php /*
   <div class="hero-slider owl-carousel">
     <!--Single Slider Start-->
@@ -65,66 +65,66 @@ the_post(); ?>
 
 <!--Categories Area Start-->
 <div class="categories-area mt-85">
-  <!--Section Title Start-->
-  <div class="col-12">
+    <!--Section Title Start-->
+    <div class="col-12">
     <div class="section-title text-center mb-30">
-      <span>SİZİN İÇİN SEÇTİKLERİMİZ</span>
-    </div>
+        <span>SİZİN İÇİN SEÇTİKLERİMİZ</span>
+      </div>
   </div>
-  <!--Section Title End-->
+      <!--Section Title End-->
   <div class="container-fluid pl-50 pr-50">
     <div class="container-xxl row mx-auto">
       <div class="col-md-12">
         <div class="row">
-          <?php
-          wp_reset_query();
-          $the_query = new WP_Query(array(
-            'post_type' => 'product',
-            'tax_query' => array(
-              array(
-                'taxonomy' => 'product_cat',
-                'field' => 'slug',
-                'terms' => 'ozel-urunlerimiz',
-              )
-            ),
-          ));
+        <?php
+        wp_reset_query();
+        $the_query = new WP_Query(array(
+          'post_type' => 'product',
+          'tax_query' => array(
+            array(
+              'taxonomy' => 'product_cat',
+              'field' => 'slug',
+              'terms' => 'ozel-urunlerimiz',
+            )
+          ),
+        ));
 
-          while ($the_query->have_posts()) :
-            $the_query->the_post();
-            global $product;
+        while ($the_query->have_posts()) :
+          $the_query->the_post();
+          global $product;
 
-          ?>
-            <div class="col-md-4">
-              <!--Single Product Start-->
-              <div class="single-product mb-25">
-                <div class="product-img img-full">
-                  <a href="<?php the_permalink(); ?>">
-                    <?php echo woocommerce_get_product_thumbnail(); ?>
-                  </a>
-                </div>
-                <div class="product-content">
-                  <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                  <div class="product-price">
-
-                    <?php if (!empty($product->get_sale_price())) { ?>
+        ?>
+          <div class="col-md-4">
+            <!--Single Product Start-->
+            <div class="single-product mb-25">
+              <div class="product-img img-full">
+                <a href="<?php the_permalink(); ?>">
+                  <?php echo woocommerce_get_product_thumbnail(); ?>
+                </a>
+              </div>
+              <div class="product-content">
+                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <div class="product-price">
+                  
+                    <?php if(!empty($product->get_sale_price())) { ?>
                       <div class="price-box">
-                        <span class="price"><?php echo $product->get_regular_price() . ' TL'; ?></span>
-                        <span class="regular-price"><?php echo $product->get_sale_price() . ' TL'; ?><span style="font-size:12px;"> (KDV Dahil)</span></span>
+                        <span class="price"><?php echo $product->get_regular_price() * 1.18.' TL'; ?></span>
+												<span class="regular-price"><?php echo $product->get_sale_price() * 1.18.' TL'; ?><span style="font-size:12px;"> (KDV Dahil)</span></span>
                       </div>
                     <?php } else { ?>
                       <div class="price-box">
-                        <span class="regular-price"><?php echo $product->get_regular_price() . ' TL'; ?><span style="font-size:12px;"> (KDV Dahil)</span></span>
+												<span class="regular-price"><?php echo $product->get_regular_price() * 1.18.' TL'; ?><span style="font-size:12px;"> (KDV Dahil)</span></span>
                       </div>
                     <?php } ?>
-                  </div>
                 </div>
               </div>
-              <!--Single Product End-->
             </div>
-          <?php
-          endwhile;
-          wp_reset_query();
-          ?>
+            <!--Single Product End-->
+          </div>
+        <?php
+        endwhile;
+        wp_reset_query();
+        ?>
         </div>
       </div>
     </div>
@@ -204,7 +204,7 @@ the_post(); ?>
         <!--Single Feature Start-->
         <div class="single-feature mb-35 flex-column gap-2">
           <div class="feature-icon mb-2" style="text-align:center">
-            <img src="<?php bloginfo('template_url'); ?>/images/slider/ozgun.png" width="37%" alt="" />
+          <img src="<?php bloginfo('template_url'); ?>/images/slider/ozgun.png" width="37%" alt="" />
           </div>
           <div class="feature-content">
             <h3><?php echo $cta_butonlar['cta_01_baslik']; ?></h3>
@@ -216,7 +216,7 @@ the_post(); ?>
         <!--Single Feature Start-->
         <div class="single-feature mb-35 flex-column gap-2">
           <div class="feature-icon mb-2" style="text-align:center">
-            <img src="<?php bloginfo('template_url'); ?>/images/slider/taze-ciceklerr.png" width="60%" alt="" />
+          <img src="<?php bloginfo('template_url'); ?>/images/slider/taze-ciceklerr.png" width="60%" alt="" />
           </div>
           <div class="feature-content">
             <h3><?php echo $cta_butonlar['cta_02_baslik']; ?></h3>
@@ -228,7 +228,7 @@ the_post(); ?>
         <!--Single Feature Start-->
         <div class="single-feature mb-35 flex-column gap-2">
           <div class="feature-icon mb-2" style="text-align:center">
-            <img src="<?php bloginfo('template_url'); ?>/images/slider/teslimatt.png" width="47%" alt="" />
+          <img src="<?php bloginfo('template_url'); ?>/images/slider/teslimatt.png" width="47%" alt="" />
           </div>
           <div class="feature-content">
             <h3><?php echo $cta_butonlar['cta_03_baslik']; ?></h3>
@@ -244,9 +244,7 @@ the_post(); ?>
 
 <div class="categories-area mt-85">
   <!-- BLOG -->
-  <?php wp_reset_query();
-  query_posts('page_id=23');
-  the_post(); ?>
+  <?php wp_reset_query(); query_posts('page_id=23'); the_post(); ?>
   <div class="container-fluid pl-50 pr-50 mt-105">
     <div class="container-xxl row mx-auto">
       <div>
@@ -259,30 +257,30 @@ the_post(); ?>
           </div>
         </div>
         <div class="row mt-5 gap-5 gap-lg-0">
-          <?php
-          wp_reset_query();
-          query_posts(array('cat' => '23', 'posts_per_page' => '2', 'order' => 'DESC'));
-          if (have_posts()) : while (have_posts()) : the_post();
-          ?>
-              <div class="col-12 col-lg-6">
-                <div class="row h-100">
-                  <?php $blog_pic = get_field('resim'); ?>
-                  <img class="col-4 ps-0" style="aspect-ratio: 1;" src="<?php echo $blog_pic['url']; ?>" alt="<?php the_field('baslik'); ?>" />
-                  <div class="col-8 d-flex flex-column">
-                    <div>
-                      <span class="fw-bold fs-3 text-dark"><?php echo get_the_date('j'); ?></span>
-                      <span class="text-secondary fs-5" style="font-weight: 500;"><?php echo get_the_date('M'); ?></span>
-                    </div>
-
-                    <p class="post-title mt-2" style="font-weight: 500;"><?php the_field('baslik'); ?></p>
-                    <p class="mb-1" style="font-weight: 500;"><?php the_field('kisa_aciklama'); ?></p>
-                    <a class="text-decoration-underline" href="<?php the_permalink(); ?>" style="font-weight: 500;">Devamını Oku</a>
-                  </div>
+        <?php
+            wp_reset_query();
+            query_posts(array('cat' => '23', 'posts_per_page' => '2', 'order' => 'DESC'));
+            if (have_posts()) : while (have_posts()) : the_post();
+        ?>
+          <div class="col-12 col-lg-6">
+            <div class="row h-100">
+              <?php $blog_pic = get_field('resim'); ?>
+              <img class="col-4 ps-0" style="aspect-ratio: 1;" src="<?php echo $blog_pic['url']; ?>" alt="<?php the_field('baslik'); ?>" />
+              <div class="col-8 d-flex flex-column">
+                <div>
+                  <span class="fw-bold fs-3 text-dark"><?php echo get_the_date('j'); ?></span>
+                  <span class="text-secondary fs-5" style="font-weight: 500;"><?php echo get_the_date('M'); ?></span>
                 </div>
+
+                <p class="post-title mt-2" style="font-weight: 500;"><?php the_field('baslik'); ?></p>
+                <p class="mb-1" style="font-weight: 500;"><?php the_field('kisa_aciklama'); ?></p>
+                <a class="text-decoration-underline" href="<?php the_permalink(); ?>" style="font-weight: 500;">Devamını Oku</a>
               </div>
+            </div>
+          </div>
           <?php endwhile;
-          endif;
-          wp_reset_query(); ?>
+        endif;
+        wp_reset_query(); ?>
         </div>
       </div>
     </div>
@@ -301,11 +299,11 @@ the_post(); ?>
       <!--Section Title End-->
     </div>
     <div class="row">
-      <?php wp_reset_query();
-      query_posts('page_id=247');
-      the_post(); ?>
-      <?php the_content(); ?>
-      <?php wp_reset_query(); ?>
+    <?php wp_reset_query();
+query_posts('page_id=247');
+the_post(); ?>
+            <?php the_content(); ?>
+        <?php wp_reset_query(); ?>
     </div>
   </div>
 </div>

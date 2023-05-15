@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Kutuda Çiçek &#8211; Vos Istanbul</title>
+	<atom:link href="https://vosistanbul.com/product-category/cicekler/kutuda-cicek/feed/" rel="self" type="application/rss+xml" />
+	<link>https://vosistanbul.com</link>
+	<description>Coffee &#124; Flowers</description>
+	<lastBuildDate>Wed, 20 Apr 2022 18:54:06 +0000</lastBuildDate>
+	<language>tr</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2</generator>
+	<item>
+		<title>Kutuda Çiçek</title>
+		<link></link>
+		
+		<dc:creator><![CDATA[teknoloji]]></dc:creator>
+		<pubDate>Wed, 20 Apr 2022 18:54:06 +0000</pubDate>
+				<guid isPermaLink="false"></guid>
+
+					<description><![CDATA[Gösterilen sonuç sayısı: 8 Varsayılan Sıralama En çok satılana göre sırala En çok oy alana göre sırala En yeniye göre sırala Fiyata göre sırala: Düşükten yükseğe Fiyata göre sırala: Yüksekten düşüğe Vos Kutu.1 1.300,00&#160;TL KDV Sepete Ekle Vos Kutu.2 3.400,00&#160;TL KDV Sepete Ekle Vos Kutu.3 1.500,00&#160;TL KDV Sepete Ekle Vos Kutu.4 1.250,00&#160;TL KDV Sepete Ekle [&#8230;]]]></description>
+										<content:encoded><![CDATA[<div class="woocommerce columns-3 "><div class="woocommerce-notices-wrapper"></div><p class="woocommerce-result-count">
+	Gösterilen sonuç sayısı: 8</p>
+<form class="woocommerce-ordering" method="get">
+	<select name="orderby" class="orderby" aria-label="Sipariş">
+					<option value="menu_order"  selected='selected'>Varsayılan Sıralama</option>
+					<option value="popularity" >En çok satılana göre sırala</option>
+					<option value="rating" >En çok oy alana göre sırala</option>
+					<option value="date" >En yeniye göre sırala</option>
+					<option value="price" >Fiyata göre sırala: Düşükten yükseğe</option>
+					<option value="price-desc" >Fiyata göre sırala: Yüksekten düşüğe</option>
+			</select>
+	<input type="hidden" name="paged" value="1" />
+	</form>
+<ul class="products columns-3">
+<li class="product type-product post-152 status-publish first instock product_cat-cicekler product_cat-kutuda-cicek product_cat-ozel-urunlerimiz has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://vosistanbul.com/urunlerimiz/cicekler/kutuda-cicek/vos-box-s-01/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="300" height="300" src="https://vosistanbul.com/wp-content/uploads/2022/05/Vos-Box-S.01--300x300.jpeg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" srcset="https://vosistanbul.com/wp-content/uploads/2022/05/Vos-Box-S.01--300x300.jpeg 300w, https://vosistanbul.com/wp-content/uploads/2022/05/Vos-Box-S.01--100x100.jpeg 100w, https://vosistanbul.com/wp-content/uploads/2022/05/Vos-Box-S.01--600x600.jpeg 600w, https://vosistanbul.com/wp-content/uploads/2022/05/Vos-Box-S.01--1024x1024.jpeg 1024w, https://vosistanbul.com/wp-content/uploads/2022/05/Vos-Box-S.01--150x150.jpeg 150w, https://vosistanbul.com/wp-content/uploads/2022/05/Vos-Box-S.01--768x768.jpeg 768w, https://vosistanbul.com/wp-content/uploads/2022/05/Vos-Box-S.01--1536x1536.jpeg 1536w, https://vosistanbul.com/wp-content/uploads/2022/05/Vos-Box-S.01-.jpeg 1600w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Vos Kutu.1</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>1.300,00&nbsp;<span class="woocommerce-Price-currencySymbol">TL</span></bdi></span> <small class="woocommerce-price-suffix">KDV</small></span>
+</a><a href="https://vosistanbul.com/urunlerimiz/cicekler/kutuda-cicek/vos-box-s-01/?add-to-cart=152" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="152" data-product_sku="" aria-label="&ldquo;Vos Kutu.1&rdquo; ürününü sepete ekle" rel="nofollow">Sepete Ekle</a></li>
+<li class="product type-product post-157 status-publish instock product_cat-cicekler product_cat-kutuda-cicek product_cat-ozel-urunlerimiz has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://vosistanbul.com/urunlerimiz/cicekler/kutuda-cicek/vos-box-l-01/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="300" height="300" src="https://vosistanbul.com/wp-content/uploads/2022/05/Vos-Box-L.01-300x300.jpeg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" srcset="https://vosistanbul.com/wp-content/uploads/2022/05/Vos-Box-L.01-300x300.jpeg 300w, https://vosistanbul.com/wp-content/uploads/2022/05/Vos-Box-L.01-100x100.jpeg 100w, https://vosistanbul.com/wp-content/uploads/2022/05/Vos-Box-L.01-600x600.jpeg 600w, https://vosistanbul.com/wp-content/uploads/2022/05/Vos-Box-L.01-1024x1024.jpeg 1024w, https://vosistanbul.com/wp-content/uploads/2022/05/Vos-Box-L.01-150x150.jpeg 150w, https://vosistanbul.com/wp-content/uploads/2022/05/Vos-Box-L.01-768x769.jpeg 768w, https://vosistanbul.com/wp-content/uploads/2022/05/Vos-Box-L.01.jpeg 1439w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Vos Kutu.2</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>3.400,00&nbsp;<span class="woocommerce-Price-currencySymbol">TL</span></bdi></span> <small class="woocommerce-price-suffix">KDV</small></span>
+</a><a href="https://vosistanbul.com/urunlerimiz/cicekler/kutuda-cicek/vos-box-l-01/?add-to-cart=157" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="157" data-product_sku="" aria-label="&ldquo;Vos Kutu.2&rdquo; ürününü sepete ekle" rel="nofollow">Sepete Ekle</a></li>
+<li class="product type-product post-509 status-publish last instock product_cat-cicekler product_cat-kutuda-cicek product_cat-ozel-urunlerimiz has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://vosistanbul.com/urunlerimiz/cicekler/kutuda-cicek/vos-kutu-3/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="300" height="300" src="https://vosistanbul.com/wp-content/uploads/2023/03/B56E89BB-377C-42A4-AF37-9F8906DA6227-300x300.jpeg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" srcset="https://vosistanbul.com/wp-content/uploads/2023/03/B56E89BB-377C-42A4-AF37-9F8906DA6227-300x300.jpeg 300w, https://vosistanbul.com/wp-content/uploads/2023/03/B56E89BB-377C-42A4-AF37-9F8906DA6227-150x150.jpeg 150w, https://vosistanbul.com/wp-content/uploads/2023/03/B56E89BB-377C-42A4-AF37-9F8906DA6227-100x100.jpeg 100w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Vos Kutu.3</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>1.500,00&nbsp;<span class="woocommerce-Price-currencySymbol">TL</span></bdi></span> <small class="woocommerce-price-suffix">KDV</small></span>
+</a><a href="https://vosistanbul.com/urunlerimiz/cicekler/kutuda-cicek/vos-kutu-3/?add-to-cart=509" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="509" data-product_sku="" aria-label="&ldquo;Vos Kutu.3&rdquo; ürününü sepete ekle" rel="nofollow">Sepete Ekle</a></li>
+<li class="product type-product post-511 status-publish first instock product_cat-cicekler product_cat-kutuda-cicek has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://vosistanbul.com/urunlerimiz/cicekler/kutuda-cicek/vos-kutu-4/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="300" height="300" src="https://vosistanbul.com/wp-content/uploads/2023/03/8916DABE-CB9F-4224-A469-92E057BEB08D-300x300.jpeg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" srcset="https://vosistanbul.com/wp-content/uploads/2023/03/8916DABE-CB9F-4224-A469-92E057BEB08D-300x300.jpeg 300w, https://vosistanbul.com/wp-content/uploads/2023/03/8916DABE-CB9F-4224-A469-92E057BEB08D-150x150.jpeg 150w, https://vosistanbul.com/wp-content/uploads/2023/03/8916DABE-CB9F-4224-A469-92E057BEB08D-100x100.jpeg 100w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Vos Kutu.4</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>1.250,00&nbsp;<span class="woocommerce-Price-currencySymbol">TL</span></bdi></span> <small class="woocommerce-price-suffix">KDV</small></span>
+</a><a href="https://vosistanbul.com/urunlerimiz/cicekler/kutuda-cicek/vos-kutu-4/?add-to-cart=511" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="511" data-product_sku="" aria-label="&ldquo;Vos Kutu.4&rdquo; ürününü sepete ekle" rel="nofollow">Sepete Ekle</a></li>
+<li class="product type-product post-513 status-publish instock product_cat-cicekler product_cat-kutuda-cicek product_cat-ozel-urunlerimiz has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://vosistanbul.com/urunlerimiz/cicekler/kutuda-cicek/vos-kutu-5/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="300" height="300" src="https://vosistanbul.com/wp-content/uploads/2023/03/4F66EF88-899D-41F7-86AB-AB37EFC43A98-300x300.jpeg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" srcset="https://vosistanbul.com/wp-content/uploads/2023/03/4F66EF88-899D-41F7-86AB-AB37EFC43A98-300x300.jpeg 300w, https://vosistanbul.com/wp-content/uploads/2023/03/4F66EF88-899D-41F7-86AB-AB37EFC43A98-150x150.jpeg 150w, https://vosistanbul.com/wp-content/uploads/2023/03/4F66EF88-899D-41F7-86AB-AB37EFC43A98-100x100.jpeg 100w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Vos Kutu.5</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>2.650,00&nbsp;<span class="woocommerce-Price-currencySymbol">TL</span></bdi></span> <small class="woocommerce-price-suffix">KDV</small></span>
+</a><a href="https://vosistanbul.com/urunlerimiz/cicekler/kutuda-cicek/vos-kutu-5/?add-to-cart=513" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="513" data-product_sku="" aria-label="&ldquo;Vos Kutu.5&rdquo; ürününü sepete ekle" rel="nofollow">Sepete Ekle</a></li>
+<li class="product type-product post-520 status-publish last instock product_cat-cicekler product_cat-kutuda-cicek has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://vosistanbul.com/urunlerimiz/cicekler/kutuda-cicek/vos-kutu-6/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="300" height="300" src="https://vosistanbul.com/wp-content/uploads/2023/03/40BCD8A5-73B1-4914-98D0-76A8EF09BBBF-300x300.jpeg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" srcset="https://vosistanbul.com/wp-content/uploads/2023/03/40BCD8A5-73B1-4914-98D0-76A8EF09BBBF-300x300.jpeg 300w, https://vosistanbul.com/wp-content/uploads/2023/03/40BCD8A5-73B1-4914-98D0-76A8EF09BBBF-150x150.jpeg 150w, https://vosistanbul.com/wp-content/uploads/2023/03/40BCD8A5-73B1-4914-98D0-76A8EF09BBBF-100x100.jpeg 100w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Vos Kutu.6</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>2.150,00&nbsp;<span class="woocommerce-Price-currencySymbol">TL</span></bdi></span> <small class="woocommerce-price-suffix">KDV</small></span>
+</a><a href="https://vosistanbul.com/urunlerimiz/cicekler/kutuda-cicek/vos-kutu-6/?add-to-cart=520" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="520" data-product_sku="" aria-label="&ldquo;Vos Kutu.6&rdquo; ürününü sepete ekle" rel="nofollow">Sepete Ekle</a></li>
+<li class="product type-product post-521 status-publish first instock product_cat-cicekler product_cat-kutuda-cicek has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://vosistanbul.com/urunlerimiz/cicekler/kutuda-cicek/vos-kutu-7/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="300" height="300" src="https://vosistanbul.com/wp-content/uploads/2023/03/IMG_4361-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" srcset="https://vosistanbul.com/wp-content/uploads/2023/03/IMG_4361-300x300.jpg 300w, https://vosistanbul.com/wp-content/uploads/2023/03/IMG_4361-150x150.jpg 150w, https://vosistanbul.com/wp-content/uploads/2023/03/IMG_4361-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Vos Kutu.7</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>1.400,00&nbsp;<span class="woocommerce-Price-currencySymbol">TL</span></bdi></span> <small class="woocommerce-price-suffix">KDV</small></span>
+</a><a href="https://vosistanbul.com/urunlerimiz/cicekler/kutuda-cicek/vos-kutu-7/?add-to-cart=521" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="521" data-product_sku="" aria-label="&ldquo;Vos Kutu.7&rdquo; ürününü sepete ekle" rel="nofollow">Sepete Ekle</a></li>
+<li class="product type-product post-523 status-publish instock product_cat-cicekler product_cat-kutuda-cicek product_cat-ozel-urunlerimiz has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://vosistanbul.com/urunlerimiz/cicekler/kutuda-cicek/vos-kutu-8/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="300" height="300" src="https://vosistanbul.com/wp-content/uploads/2023/03/IMG_6846-300x300.jpeg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" srcset="https://vosistanbul.com/wp-content/uploads/2023/03/IMG_6846-300x300.jpeg 300w, https://vosistanbul.com/wp-content/uploads/2023/03/IMG_6846-150x150.jpeg 150w, https://vosistanbul.com/wp-content/uploads/2023/03/IMG_6846-100x100.jpeg 100w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Vos Kutu.8</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>3.150,00&nbsp;<span class="woocommerce-Price-currencySymbol">TL</span></bdi></span> <small class="woocommerce-price-suffix">KDV</small></span>
+</a><a href="https://vosistanbul.com/urunlerimiz/cicekler/kutuda-cicek/vos-kutu-8/?add-to-cart=523" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="523" data-product_sku="" aria-label="&ldquo;Vos Kutu.8&rdquo; ürününü sepete ekle" rel="nofollow">Sepete Ekle</a></li>
+</ul>
+</div>]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
