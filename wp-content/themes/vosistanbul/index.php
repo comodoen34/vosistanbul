@@ -320,10 +320,18 @@ the_post(); ?>
       <div class="row">
         <div class="col d-flex flex-column align-items-center" style="margin: 15px 0;">
           <?php wp_reset_query();
-          query_posts('page_id=23');
-          the_post();
-          ?>
-          <?php the_field('teslimat_bolgelerimiz'); ?>
+          query_posts('page_id=187');
+          the_post(); ?>
+          <?php $kargo_gonderim_bolgeleri = get_field('gonderim_bolgeleri'); ?>
+          <p>
+            <?php
+            foreach ($kargo_gonderim_bolgeleri as $kargo_gonderim_val) {
+              if ($kargo_gonderim_val['acik_kapali'] == 1) {
+                echo $kargo_gonderim_val['ilce_adi'] . ', ';
+              }
+            }
+            ?>
+          </p>
           <?php wp_reset_query(); ?>
         </div>
       </div>
