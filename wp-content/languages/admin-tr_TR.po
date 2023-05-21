@@ -51,7 +51,7 @@ msgstr "Devam"
 #: wp-admin/export.php:60 wp-admin/includes/class-custom-background.php:101
 #: wp-admin/includes/class-custom-image-header.php:138 wp-admin/index.php:133
 #: wp-admin/link-manager.php:80 wp-admin/media-new.php:62 wp-admin/media.php:98
-#: wp-admin/my-sites.php:53 wp-admin/nav-menus.php:687
+#: wp-admin/my-sites.php:53 wp-admin/nav-menus.php:690
 #: wp-admin/options-discussion.php:33 wp-admin/options-general.php:61
 #: wp-admin/options-media.php:42 wp-admin/options-permalink.php:67
 #: wp-admin/options-reading.php:54 wp-admin/options-writing.php:54
@@ -188,122 +188,122 @@ msgstr "<a href=\"https://wordpress.org/documentation/article/understand-comment
 msgid "<a href=\"https://wordpress.org/documentation/article/customizer/\">Documentation on Customizer</a>"
 msgstr "<a href=\"https://wordpress.org/documentation/article/customizer/\">Özelleştirici ile ilgili belgeler</a>"
 
-#: wp-admin/about.php:204
+#: wp-admin/about.php:235
 msgid "Default WordPress themes offer better privacy with Google Fonts now included."
 msgstr "Varsayılan WordPress temaları, artık dahil edilmiş olan Google Yazı Tipleri ile daha iyi gizlilik sunar."
 
-#: wp-admin/about.php:203
+#: wp-admin/about.php:234
 msgid "Local fonts in themes"
 msgstr "Temalardaki yerel yazı tipleri"
 
-#: wp-admin/about.php:194
+#: wp-admin/about.php:225
 msgid "Options to import your favorite widgets from Classic themes to Block themes."
 msgstr "En sevdiğiniz bileşenleri klasik temalardan blok temalarına aktarma seçenekleri."
 
-#: wp-admin/about.php:193
+#: wp-admin/about.php:224
 msgid "Importing widgets"
 msgstr "Bileşenleri içeri aktarma"
 
-#: wp-admin/about.php:184
+#: wp-admin/about.php:215
 msgid "Choose to keep top-level group blocks fixed to the top of a page as visitors scroll."
 msgstr "Ziyaretçiler kaydırma yaparken üst düzey grup bloklarını sayfanın en üstüne sabit tutabilirsiniz."
 
-#: wp-admin/about.php:183
+#: wp-admin/about.php:214
 msgid "Sticky positioning"
 msgstr "Yapışkan konumlandırma"
 
-#: wp-admin/about.php:171
+#: wp-admin/about.php:202
 msgid "Power up your site any way you wish. Add CSS to your site, or your blocks, for another level of control over your site&#8217;s look and feel."
 msgstr "Sitenizi istediğiniz şekilde güçlendirin. Sitenizin görünümü ve hissi üzerinde başka bir kontrol düzeyi için sitenize veya bloklarınıza CSS ekleyin."
 
-#: wp-admin/about.php:164
+#: wp-admin/about.php:195
 msgid "Perfect the design on one type of block, then copy and paste those styles to other blocks to get just the look you want."
 msgstr "Tasarımı bir blok türünde mükemmelleştirin, ardından istediğiniz görünümü elde etmek için bu stilleri kopyalayıp diğer bloklara yapıştırın."
 
-#: wp-admin/about.php:163
+#: wp-admin/about.php:194
 msgid "Copy and paste styles"
 msgstr "Stilleri kopyalayın ve yapıştırın"
 
-#: wp-admin/about.php:157
+#: wp-admin/about.php:188
 msgid "Use the new Style Book to get a complete overview of how every block in your site&#8217;s library looks. All in one place, all at a glance."
 msgstr "Sitenizin kitaplığındaki her bloğun nasıl göründüğüne dair eksiksiz bir genel bakış elde etmek için yeni Stil Kitabı&#8217;nı kullanın. Hepsi tek bir yerde, hepsi bir bakışta."
 
-#: wp-admin/about.php:147
+#: wp-admin/about.php:178
 msgid "Stable and ready for you to dive in and explore: 6.2 is your personal invitation to discover what the next generation of WordPress—and Block themes—can do."
 msgstr "Kararlı, dalış yapmanız ve keşfetmeniz için hazır: 6.2, yeni nesil WordPress'in -ve blok temalarının- neler yapabileceğini keşfetmeniz için kişisel davetinizdir."
 
-#: wp-admin/about.php:146
+#: wp-admin/about.php:177
 msgid "Experience the Site Editor, now out of beta"
 msgstr "Site düzenleyiciyi deneyimleyin, artık beta sürümünden çıktı"
 
-#: wp-admin/about.php:140
+#: wp-admin/about.php:171
 msgid "For those times you want to be alone with your ideas. You can now hide all your panels and controls, leaving you free to bring your content to life."
 msgstr "An olur fikirlerinizle yalnız kalmak istersiniz. Artık tüm panellerinizi ve kontrollerinizi gizleyerek içeriğinize hayat vermekte özgürsünüz."
 
-#: wp-admin/about.php:139
+#: wp-admin/about.php:170
 msgid "Focus on writing with Distraction Free mode"
 msgstr "Dikkat dağınıklığını engelleme modu ile yazmaya odaklanın"
 
-#: wp-admin/about.php:130
+#: wp-admin/about.php:161
 msgid "Openverse&#8217;s library catalogs over 600 million free, openly licensed stock images and audio—and now it&#8217;s directly integrated into the Editor."
 msgstr "Openverse&#8217;in kütüphanesi 600 milyondan fazla ücretsiz, açık lisanslı stok görüntü ve ses kataloglamaktadır ve şimdi düzenleyicinin içine entegre edilmiştir."
 
-#: wp-admin/about.php:129
+#: wp-admin/about.php:160
 msgid "Explore Openverse media right from the Editor"
 msgstr "Openverse ortamını düzenleyici içinden keşfedin"
 
-#: wp-admin/about.php:123
+#: wp-admin/about.php:154
 msgid "Discover a new collection of header and footer patterns to choose from. Use them with any block theme as a quick, high-quality starting point for your site&#8217;s templates."
 msgstr "Aralarından seçim yapabileceğiniz yeni üst alan ve alt alan desenleri koleksiyonunu keşfedin. Bunları sitenizin şablonları için hızlı, yüksek kaliteli bir başlangıç noktası olarak herhangi bir blok temasıyla kullanın."
 
-#: wp-admin/about.php:122
+#: wp-admin/about.php:153
 msgid "Build faster with headers and footers for block themes"
 msgstr "Blok temaları için üst alan ve alt alan ile daha hızlı geliştirme"
 
-#: wp-admin/about.php:108
+#: wp-admin/about.php:139
 msgid "Your block settings sidebar is better organized with tabs for Settings and Styles. So the tools you need are easy to identify and access."
 msgstr "Blok ayarları kenar çubuğunuz, ayarlar ve stiller sekmeleriyle daha iyi organize edilmiş durumda. Böylece ihtiyacınız olan araçların tanımlanması ve erişilmesi kolaylaştı."
 
-#: wp-admin/about.php:107
+#: wp-admin/about.php:138
 msgid "Find the controls you want when you need them"
 msgstr "İhtiyacınız olduğunda istediğiniz denetimlere rahatça erişin"
 
-#: wp-admin/about.php:101
+#: wp-admin/about.php:132
 msgid "A refreshed design gives you more visibility and easier access to the content you need. Use the Media tab to drag and drop content from your existing Media Library quickly. Find patterns faster with a split view that lets you navigate categories and see previews all at once."
 msgstr "Yenilenmiş bir tasarım, daha fazla görünürlük ve ihtiyacınız olan içeriğe daha kolay erişim sağlar. Mevcut ortam kütüphanenizdeki içeriği hızlı bir şekilde sürükleyip bırakmak için ortam sekmesini kullanın. Kategorilerde gezinmenizi ve önizlemelerin tümünü aynı anda görmenizi sağlayan bölünmüş görünümle desenleri daha hızlı bulun."
 
-#: wp-admin/about.php:100
+#: wp-admin/about.php:131
 msgid "Discover a smoother experience for the Block Inserter"
 msgstr "Blok yerleştirici için daha sorunsuz bir deneyimi keşfedin"
 
-#: wp-admin/about.php:84
+#: wp-admin/about.php:115
 msgid "A new sidebar experience makes it easier to edit your site&#8217;s navigation. Add, remove, and reorder menu items faster—no matter how complex your menus are."
 msgstr "Yeni bir kenar çubuğu deneyimi, sitenizin gezinmesini düzenlemeyi kolaylaştırır. Menüleriniz ne kadar karmaşık olursa olsun, menü öğelerini daha hızlı ekleyin, kaldırın ve yeniden sıralayın."
 
-#: wp-admin/about.php:83
+#: wp-admin/about.php:114
 msgid "Manage your menu in more ways with the Navigation block"
 msgstr "Gezinti bloğu ile menünüzü daha farklı şekillerde yönetin"
 
-#: wp-admin/about.php:77
+#: wp-admin/about.php:108
 msgid "An updated interface gives you more control over your site editing experience. Browse through full previews of your templates and template parts, then jump into editing your site from wherever you choose."
 msgstr "Güncellenmiş bir arayüz, site düzenleme deneyiminiz üzerinde daha fazla kontrol sahibi olmanızı sağlıyor. Şablonlarınızın ve şablon parçalarınızın tam önizlemelerine göz atın, ardından seçtiğiniz yerden sitenizi düzenlemeye başlayın."
 
-#: wp-admin/about.php:76
+#: wp-admin/about.php:107
 msgid "Explore and edit your site from the Site Editor"
 msgstr "Site düzenleyici ile sitenizi keşfedin ve düzenleyin"
 
 #. translators: 1: Count of enhancements, 2: Count of bug fixes.
-#: wp-admin/about.php:60
+#: wp-admin/about.php:91
 msgid "WordPress 6.2 includes more than %1$s enhancements and %2$s bug fixes. This page highlights the latest features since the November 2022 release of WordPress 6.1. From quick highlights to developer resources, there&#8217;s a lot to explore."
 msgstr "WordPress 6.2, %1$s adetten fazla geliştirme ve %2$s hata düzeltmesi içerir. Bu sayfa, Kasım 2022'deki WordPress 6.1 sürümünden bu yana en son özellikleri vurgulamaktadır. Hap bilgilerden geliştirici kaynaklarına kadar, keşfedilecek çok şey var."
 
 #. translators: The localized WordPress download URL.
-#: wp-admin/about.php:343
+#: wp-admin/about.php:374
 msgid "https://wordpress.org/download/"
 msgstr "https://wordpress.org/download/"
 
 #. translators: %s: The major version of WordPress for this branch.
-#: wp-admin/about.php:340
+#: wp-admin/about.php:371
 msgid "This is the final release of WordPress %s"
 msgstr "Bu %s için son WordPress sürümüdür."
 
@@ -312,7 +312,7 @@ msgid "Site Editor"
 msgstr "Site düzenleyicisi"
 
 #. translators: 1: Learn WordPress link.
-#: wp-admin/about.php:228
+#: wp-admin/about.php:259
 msgid "Explore <a href=\"%s\">learn.wordpress.org</a> for tutorial videos, online workshops, courses, and lesson plans for Meetup organizers, including new features in WordPress."
 msgstr "WordPress içindeki yeni özelliklerle birlikte Meetup düzenleyicileri için öğretici videolar, çevrimiçi atölyeler, kurslar ve ders planları bulunan <a href=\"%s\">learn.wordpress.org</a> sitesini keşfedin."
 
@@ -644,31 +644,31 @@ msgid "Reach out to WordPress Core developers to ensure you'll never have this p
 msgstr "Bu sorunu bir daha asla yaşamayacağınızdan emin olmak için WordPress Core geliştiricilerine ulaşın."
 
 #. translators: 1: WordPress version number, 2: Link to update WordPress
-#: wp-admin/about.php:337
+#: wp-admin/about.php:368
 msgid "Important! Your version of WordPress (%1$s) will stop receiving security updates in the near future. To keep your site secure, please <a href=\"%2$s\">update to the latest version of WordPress</a>."
 msgstr "Önemli! WordPress sürümünüz (%1$s) yakın zamanda güvenlik güncellemeleri almayı durduracak. Sitenizi güvende tutmak için lütfen <a href=\"%2$s\">son WordPress sürümüne güncelleyin</a>."
 
 #. translators: 1: WordPress version number, 2: Link to update WordPress
-#: wp-admin/about.php:334
+#: wp-admin/about.php:365
 msgid "Important! Your version of WordPress (%1$s) is no longer supported, you will not receive any security updates for your website. To keep your site secure, please <a href=\"%2$s\">update to the latest version of WordPress</a>."
 msgstr "Önemli! WordPress sürümünüz (%1$s) artık desteklenmiyor. Web siteniz için herhangi bir güvenlik güncellemesi alamayacaksınız. Sitenizi güvende tutmak için lütfen <a href=\"%2$s\">son WordPress sürümüne güncelleyin</a>."
 
-#: wp-admin/about.php:249
+#: wp-admin/about.php:280
 msgid "https://make.wordpress.org/core/2023/03/09/wordpress-6-2-field-guide/"
 msgstr "https://make.wordpress.org/core/2023/03/09/wordpress-6-2-field-guide/"
 
 #. translators: 1: WordPress Release Notes link, 2: WordPress version number.
-#: wp-admin/about.php:266
+#: wp-admin/about.php:297
 msgid "<a href=\"%1$s\">Read the WordPress %2$s Release Notes</a> for more information on the included enhancements and issues fixed, installation information, developer notes and resources, release contributors, and the list of file changes in this release."
 msgstr "Bu sürüme dahil edilen geliştirmeler ve düzeltilen sorunlar, yükleme bilgileri, geliştirici notları ve kaynakları, sürüme katkıda bulunanlar ve bu sürümdeki dosya değişikliklerinin listesi hakkında daha fazla bilgi için <a href=\"%1$s\">WordPress %2$s sürüm notlarını okuyun.</a>."
 
 #. translators: %s: WordPress Field Guide link.
-#: wp-admin/about.php:248
+#: wp-admin/about.php:279
 msgid "Check out the latest version of the <a href=\"%s\">WordPress Field Guide</a>. It is overflowing with detailed developer notes to help you build with WordPress."
 msgstr "<a href=\"%s\">WordPress Alan Rehberi</a>nin en son sürümüne göz atın. WordPress ile oluşturmanıza yardımcı olacak ayrıntılı geliştirici notlarıyla dolup taşıyor."
 
 #. translators: %s: Version number.
-#: wp-admin/about.php:219
+#: wp-admin/about.php:250
 msgid "Learn more about WordPress %s"
 msgstr "WordPress %s hakkında daha fazla bilgi edinin"
 
@@ -974,11 +974,11 @@ msgstr "Gizlilik ekranı, yeni bir gizlilik politikası sayfası oluşturmanıza
 msgid "Individual posts may override these settings. Changes here will only be applied to new posts."
 msgstr "Bireysel yazılar bu ayarları geçersiz kılabilir. Buradaki değişiklikler sadece yeni yazılara uygulanacaktır."
 
-#: wp-admin/nav-menus.php:522
+#: wp-admin/nav-menus.php:525
 msgid "Menu item moved to the top"
 msgstr "Menü öğesi en üste taşındı"
 
-#: wp-admin/nav-menus.php:519
+#: wp-admin/nav-menus.php:522
 msgid "Menu item removed"
 msgstr "Menü öğesi kaldırıldı"
 
@@ -1125,25 +1125,25 @@ msgstr "Değişikliklerinizi kaydedebilmeniz için önce %1$s dosyasını yazıl
 msgid "Rewrite rules:"
 msgstr "Yeniden yazma kuralları:"
 
-#: wp-admin/nav-menus.php:1081
+#: wp-admin/nav-menus.php:1084
 msgid "List of menu items selected for deletion:"
 msgstr "Silme için seçilen menü öğeleri listesi:"
 
-#: wp-admin/nav-menus.php:1079
+#: wp-admin/nav-menus.php:1082
 msgid "Remove Selected Items"
 msgstr "Seçili öğeleri kaldır"
 
-#: wp-admin/nav-menus.php:1042 wp-admin/nav-menus.php:1077
+#: wp-admin/nav-menus.php:1045 wp-admin/nav-menus.php:1080
 msgid "Bulk Select"
 msgstr "Toplu seçim"
 
 #. translators: %s: Item name.
-#: wp-admin/nav-menus.php:517
+#: wp-admin/nav-menus.php:520
 msgid "Deleted menu item: %s."
 msgstr "Silinen menü öğesi: %s."
 
 #. translators: %s: Item name.
-#: wp-admin/nav-menus.php:515
+#: wp-admin/nav-menus.php:518
 msgid "item %s"
 msgstr "%s öğesi."
 
@@ -1390,11 +1390,11 @@ msgid "Want more events? <a href=\"%s\">Help organize the next one</a>!"
 msgstr "Daha fazla etkinlik mi istiyorsunuz? <a href=\"%s\">Bir sonrakini düzenlemeye yardımcı olun</a>!"
 
 #. translators: %s: User's display name.
-#: wp-admin/includes/ajax-actions.php:5553
+#: wp-admin/includes/ajax-actions.php:5557
 msgid "A password reset link was emailed to %s."
 msgstr "%s kullanıcısına e-posta ile bir parola sıfırlama bağlantısı gönderildi."
 
-#: wp-admin/includes/ajax-actions.php:5543
+#: wp-admin/includes/ajax-actions.php:5547
 msgid "Cannot send password reset, permission denied."
 msgstr "Parola sıfırlama gönderilemiyor, izin reddedildi."
 
@@ -1596,7 +1596,7 @@ msgstr "Yeni uygulama parolası ekle"
 msgid "Required to create an Application Password, but not to update the user."
 msgstr "Bir Uygulama Parolası oluşturmak için gereklidir, ancak kullanıcıyı güncellemek için gerekli değildir."
 
-#: wp-admin/about.php:284
+#: wp-admin/about.php:315
 msgid "Go to Updates"
 msgstr "Güncellemelere git"
 
@@ -1757,10 +1757,10 @@ msgstr "Son kullanılan"
 
 #. translators: 1: The Site Health action that is no longer used by core. 2:
 #. The new function that replaces it.
-#: wp-admin/includes/ajax-actions.php:5281
-#: wp-admin/includes/ajax-actions.php:5314
-#: wp-admin/includes/ajax-actions.php:5347
-#: wp-admin/includes/ajax-actions.php:5397
+#: wp-admin/includes/ajax-actions.php:5285
+#: wp-admin/includes/ajax-actions.php:5318
+#: wp-admin/includes/ajax-actions.php:5351
+#: wp-admin/includes/ajax-actions.php:5401
 msgid "The Site Health check for %1$s has been replaced with %2$s."
 msgstr "%1$s için Site Sağlığı denetimi %2$s ile değiştirildi."
 
@@ -1999,7 +1999,7 @@ msgctxt "theme"
 msgid "Activate &#8220;%s&#8221;"
 msgstr "Etkinleştir: &#8220;%s&#8221;"
 
-#: wp-admin/includes/ajax-actions.php:5487
+#: wp-admin/includes/ajax-actions.php:5491
 msgid "Sorry, you are not allowed to modify plugins."
 msgstr "Üzgünüm, eklentileri düzenlemenize izin verilmiyor."
 
@@ -2247,20 +2247,20 @@ msgctxt "plugin"
 msgid "<strong>Error:</strong> Current versions of WordPress (%1$s) and PHP (%2$s) do not meet minimum requirements for %3$s. The plugin requires WordPress %4$s and PHP %5$s."
 msgstr "<strong>Hata:</strong> Şu anki WordPress (%1$s) ve PHP (%2$s) sürümü, %3$s için en düşük gereksinimleri karşılamıyor. Eklenti WordPress %4$s ve PHP %5$s gerektiriyor."
 
-#: wp-admin/includes/ajax-actions.php:5509
+#: wp-admin/includes/ajax-actions.php:5513
 msgid "Invalid data. The item does not exist."
 msgstr "Geçersiz veri. Öğe mevcut değil."
 
-#: wp-admin/includes/ajax-actions.php:5480
-#: wp-admin/includes/ajax-actions.php:5505
+#: wp-admin/includes/ajax-actions.php:5484
+#: wp-admin/includes/ajax-actions.php:5509
 msgid "Invalid data. Unknown type."
 msgstr "Geçersiz veri. Bilinmeyen tip."
 
-#: wp-admin/includes/ajax-actions.php:5475
+#: wp-admin/includes/ajax-actions.php:5479
 msgid "Invalid data. Unknown state."
 msgstr "Geçersiz veri. Bilinmeyen durum."
 
-#: wp-admin/includes/ajax-actions.php:5469
+#: wp-admin/includes/ajax-actions.php:5473
 msgid "Invalid data. No selected item."
 msgstr "Geçersiz veri. Seçili öğe yok."
 
@@ -3015,7 +3015,7 @@ msgstr "<a href=\"https://wordpress.org/documentation/article/settings-permalink
 msgid "<a href=\"https://wordpress.org/documentation/article/dashboard-updates-screen/\">Documentation on Updating WordPress</a>"
 msgstr "<a href=\"https://wordpress.org/documentation/article/dashboard-updates-screen/\">WordPress'in güncellenmesi hakkında belge</a>"
 
-#: wp-admin/nav-menus.php:686
+#: wp-admin/nav-menus.php:689
 msgid "<a href=\"https://wordpress.org/documentation/article/appearance-menus-screen/\">Documentation on Menus</a>"
 msgstr "<a href=\"https://wordpress.org/documentation/article/appearance-menus-screen/\">Menü hakkında belgeler</a>"
 
@@ -3556,17 +3556,17 @@ msgid "The authenticity of %s could not be verified as signature verification is
 msgstr "Bu sistemde imza doğrulaması mümkün olmadığından %s güvenilirliği doğrulanamadı."
 
 #. translators: %s: Eraser friendly name.
-#: wp-admin/includes/ajax-actions.php:5156
+#: wp-admin/includes/ajax-actions.php:5160
 msgid "Eraser callback is not valid: %s."
 msgstr "Silici geri çağrısı geçerli değil: %s."
 
 #. translators: %s: Eraser friendly name.
-#: wp-admin/includes/ajax-actions.php:5146
+#: wp-admin/includes/ajax-actions.php:5150
 msgid "Eraser does not include a callback: %s."
 msgstr "Silici bir geri çağrı içermiyor: %s."
 
-#: wp-admin/includes/ajax-actions.php:4868
-#: wp-admin/includes/ajax-actions.php:5059
+#: wp-admin/includes/ajax-actions.php:4872
+#: wp-admin/includes/ajax-actions.php:5063
 msgid "Sorry, you are not allowed to perform this action."
 msgstr "Üzgünüm, bu işlemi gerçekleştirme izniniz yok."
 
@@ -3759,7 +3759,7 @@ msgid "Great job!"
 msgstr "Harika!"
 
 #: wp-admin/about.php:38 wp-admin/credits.php:42 wp-admin/freedoms.php:39
-#: wp-admin/includes/ms.php:1119 wp-admin/nav-menus.php:724
+#: wp-admin/includes/ms.php:1119 wp-admin/nav-menus.php:727
 #: wp-admin/options-privacy.php:161 wp-admin/privacy-policy-guide.php:44
 #: wp-admin/privacy.php:33 wp-admin/site-health.php:131
 msgid "Secondary menu"
@@ -4751,31 +4751,31 @@ msgstr "Güncelleme yapamazsınız çünkü <a href=\"%1$s\">WordPress %2$s</a> 
 msgid "You cannot update because <a href=\"%1$s\">WordPress %2$s</a> requires PHP version %3$s or higher. You are running version %4$s."
 msgstr "Güncelleme yapamazsınız çünkü <a href=\"%1$s\">WordPress %2$s</a> PHP %3$s veya daha üst bir sürümünü gerektiriyor.  Şu anda %4$s sürümünü kullanıyorsunuz."
 
-#: wp-admin/nav-menus.php:980
+#: wp-admin/nav-menus.php:983
 msgid "Add menu items"
 msgstr "Menü öğeleri ekle"
 
 #. translators: %s: URL to create a new menu.
-#: wp-admin/nav-menus.php:941
+#: wp-admin/nav-menus.php:944
 msgid "or <a href=\"%s\">create a new menu</a>. Do not forget to save your changes!"
 msgstr "veya <a href=\"%s\">yeni menü oluştur</a>. Değişiklikleri kayıt etmeyi unutmayın!"
 
 #. translators: Hidden accessibility text.
-#: wp-admin/nav-menus.php:886 wp-admin/nav-menus.php:956
+#: wp-admin/nav-menus.php:889 wp-admin/nav-menus.php:959
 msgid "Click the Save Menu button to save your changes."
 msgstr "Değişikliklerinizi kaydetmek için Menüyü Kaydet düğmesini tıklayın."
 
 #. translators: %s: URL to create a new menu.
-#: wp-admin/nav-menus.php:871
+#: wp-admin/nav-menus.php:874
 msgid "Edit your menu below, or <a href=\"%s\">create a new menu</a>. Do not forget to save your changes!"
 msgstr "Alt kısımda bulunan menüleri düzenleyin veya <a href=\"%s\">yeni bir menü oluşturun!</a>. Değişiklikleri kayıt etmeyi lütfen unutmayın!"
 
 #. translators: Hidden accessibility text.
-#: wp-admin/nav-menus.php:862
+#: wp-admin/nav-menus.php:865
 msgid "Fill in the Menu Name and click the Create Menu button to create your first menu."
 msgstr "İlk menünüzü oluşturmak için Menü Adı'nı girin ve Menü Oluştur düğmesini tıklayın."
 
-#: wp-admin/nav-menus.php:858
+#: wp-admin/nav-menus.php:861
 msgid "Create your first menu below."
 msgstr "Aşağıdan ilk menünüzü oluşturun."
 
@@ -4890,11 +4890,11 @@ msgctxt "plugin"
 msgid "Cannot Install"
 msgstr "Yüklenemiyor"
 
-#. translators: %s: WordPress version number.
 #. translators: %s: WordPress version.
-#: wp-admin/about.php:269 wp-admin/includes/update.php:306
-#: wp-admin/index.php:119 wp-admin/install.php:247 wp-admin/update-core.php:94
-#: wp-admin/upgrade.php:81
+#. translators: %s: WordPress version number.
+#: wp-admin/about.php:67 wp-admin/about.php:300
+#: wp-admin/includes/update.php:306 wp-admin/index.php:119
+#: wp-admin/install.php:247 wp-admin/update-core.php:94 wp-admin/upgrade.php:81
 msgid "https://wordpress.org/support/wordpress-version/version-%s/"
 msgstr "https://wordpress.org/support/wordpress-version/version-%s/"
 
@@ -5499,7 +5499,7 @@ msgid "Report generated for"
 msgstr "Raporu talep eden"
 
 #. translators: %s: Exporter array index.
-#: wp-admin/includes/ajax-actions.php:4952
+#: wp-admin/includes/ajax-actions.php:4956
 msgid "Exporter array at index %s does not include a friendly name."
 msgstr "%s indisindeki dışa aktaran dizisi, kolay bir isim içermiyor."
 
@@ -5511,72 +5511,72 @@ msgstr "Üzgünüm, bu sitede kişisel verinizi silmenize izin verilmiyor."
 msgid "Sorry, you are not allowed to export personal data on this site."
 msgstr "Üzgünüm, bu sitede kişisel verilerinizi dışa aktarmaya izin verilmiyor."
 
-#: wp-admin/includes/ajax-actions.php:5119
+#: wp-admin/includes/ajax-actions.php:5123
 msgid "Eraser index is out of range."
 msgstr "Dışa aktaran indisi aralık dışı."
 
-#: wp-admin/includes/ajax-actions.php:5078
+#: wp-admin/includes/ajax-actions.php:5082
 msgid "Missing eraser index."
 msgstr "Kayıp silen indisi."
 
 #. translators: %s: Exporter friendly name.
-#: wp-admin/includes/ajax-actions.php:5003
+#: wp-admin/includes/ajax-actions.php:5007
 msgid "Expected done (boolean) in response array from exporter: %s."
 msgstr "Dışa aktarandan gelen yanıt dizisinde tamam yanıtı (boolean) bekleniyordu: %s."
 
 #. translators: %s: Exporter friendly name.
-#: wp-admin/includes/ajax-actions.php:4996
+#: wp-admin/includes/ajax-actions.php:5000
 msgid "Expected data array in response array from exporter: %s."
 msgstr "Dışa aktarandan gelen yanıt dizisinde veri dizisi bekleniyordu: %s."
 
 #. translators: %s: Exporter friendly name.
-#: wp-admin/includes/ajax-actions.php:4989
+#: wp-admin/includes/ajax-actions.php:4993
 msgid "Expected data in response array from exporter: %s."
 msgstr "Dışa aktarandan gelen yanıt dizisinde veri bekleniyordu: %s."
 
 #. translators: %s: Exporter friendly name.
-#: wp-admin/includes/ajax-actions.php:4982
+#: wp-admin/includes/ajax-actions.php:4986
 msgid "Expected response as an array from exporter: %s."
 msgstr "Dışa aktarandan bir dizi olarak yanıt bekleniyordu: %s."
 
 #. translators: %s: Exporter friendly name.
-#: wp-admin/includes/ajax-actions.php:4968
+#: wp-admin/includes/ajax-actions.php:4972
 msgid "Exporter callback is not a valid callback: %s."
 msgstr "Dışa aktaran geri çağrısı geçerli bir geri çağrı değil: %s."
 
 #. translators: %s: Exporter friendly name.
-#: wp-admin/includes/ajax-actions.php:4961
+#: wp-admin/includes/ajax-actions.php:4965
 msgid "Exporter does not include a callback: %s."
 msgstr "Dışa aktaran geri çağrı içermez: %s."
 
 #. translators: %s: Exporter array index.
-#: wp-admin/includes/ajax-actions.php:4945
+#: wp-admin/includes/ajax-actions.php:4949
 msgid "Expected an array describing the exporter at index %s."
 msgstr "%s indisindeki dışa aktaranı açıklayan bir dizi bekleniyordu."
 
-#: wp-admin/includes/ajax-actions.php:4931
+#: wp-admin/includes/ajax-actions.php:4935
 msgid "Exporter index is out of range."
 msgstr "Dışa aktaran indisi aralık dışı."
 
-#: wp-admin/includes/ajax-actions.php:4927
+#: wp-admin/includes/ajax-actions.php:4931
 msgid "Exporter index cannot be negative."
 msgstr "Dışa aktaran indisi negatif olamaz."
 
-#: wp-admin/includes/ajax-actions.php:4921
+#: wp-admin/includes/ajax-actions.php:4925
 msgid "An exporter has improperly used the registration filter."
 msgstr "Bir dışa aktaran kayıt filtresini yanlış kullanmıştır."
 
-#: wp-admin/includes/ajax-actions.php:4892
-#: wp-admin/includes/ajax-actions.php:5084
+#: wp-admin/includes/ajax-actions.php:4896
+#: wp-admin/includes/ajax-actions.php:5088
 msgid "Missing page index."
 msgstr "Kayıp sayfa indeksi."
 
-#: wp-admin/includes/ajax-actions.php:4886
+#: wp-admin/includes/ajax-actions.php:4890
 msgid "Missing exporter index."
 msgstr "Kayıp dışa aktaran indisi."
 
-#: wp-admin/includes/ajax-actions.php:4877
-#: wp-admin/includes/ajax-actions.php:5068
+#: wp-admin/includes/ajax-actions.php:4881
+#: wp-admin/includes/ajax-actions.php:5072
 msgid "Invalid request type."
 msgstr "Geçersiz istek tipi."
 
@@ -5706,7 +5706,7 @@ msgstr "Kişisel verilerin dışa aktarımı"
 msgid "Personal Data Export for %s"
 msgstr "%s için kişisel verilerin dışa aktarımı"
 
-#: wp-admin/includes/ajax-actions.php:4882
+#: wp-admin/includes/ajax-actions.php:4886
 msgid "A valid email address must be given."
 msgstr "Geçerli bir e-posta adresi verilmelidir."
 
@@ -5777,61 +5777,61 @@ msgstr "Onay talebi başarıyla tekrar gönderildi."
 msgid "Unable to initiate confirmation request."
 msgstr "Doğrulama isteği başlatılamıyor."
 
-#: wp-admin/includes/ajax-actions.php:4864
-#: wp-admin/includes/ajax-actions.php:5054
+#: wp-admin/includes/ajax-actions.php:4868
+#: wp-admin/includes/ajax-actions.php:5058
 msgid "Invalid request ID."
 msgstr "Geçersiz istek no."
 
 #. translators: 1: Eraser friendly name, 2: Eraser array index.
-#: wp-admin/includes/ajax-actions.php:5228
+#: wp-admin/includes/ajax-actions.php:5232
 msgid "Expected done flag in response array from %1$s eraser (index %2$d)."
 msgstr "%1$s kişisinden (indis %2$d) gelen yanıt dizisinde tamam işareti (boolean) bekleniyordu."
 
 #. translators: 1: Eraser friendly name, 2: Eraser array index.
-#: wp-admin/includes/ajax-actions.php:5217
+#: wp-admin/includes/ajax-actions.php:5221
 msgid "Expected messages key to reference an array in response array from %1$s eraser (index %2$d)."
 msgstr "%1$s kişisinden (indis %2$d) gelen yanıt dizisinde mesaj anahtarlarının bir diziye referans olması bekleniyordu."
 
 #. translators: 1: Eraser friendly name, 2: Eraser array index.
-#: wp-admin/includes/ajax-actions.php:5206
+#: wp-admin/includes/ajax-actions.php:5210
 msgid "Expected messages key in response array from %1$s eraser (index %2$d)."
 msgstr "%1$s kişisinden (indis %2$d) gelen yanıt dizisinde mesaj anahtarları bekleniyordu."
 
 #. translators: 1: Eraser friendly name, 2: Eraser array index.
-#: wp-admin/includes/ajax-actions.php:5195
+#: wp-admin/includes/ajax-actions.php:5199
 msgid "Expected items_retained key in response array from %1$s eraser (index %2$d)."
 msgstr "%1$s kişisinden (indis %2$d) gelen yanıt dizisinde items_retained anahtarı bekleniyordu."
 
 #. translators: 1: Eraser friendly name, 2: Eraser array index.
-#: wp-admin/includes/ajax-actions.php:5184
+#: wp-admin/includes/ajax-actions.php:5188
 msgid "Expected items_removed key in response array from %1$s eraser (index %2$d)."
 msgstr "%1$s kişisinden (indis %2$d) gelen yanıt dizisinde items_removed anahtarı bekleniyordu."
 
 #. translators: 1: Eraser friendly name, 2: Eraser array index.
-#: wp-admin/includes/ajax-actions.php:5173
+#: wp-admin/includes/ajax-actions.php:5177
 msgid "Did not receive array from %1$s eraser (index %2$d)."
 msgstr "%1$s kişisinden (indis %2$d) dizi alınmadı."
 
 #. translators: %d: Eraser array index.
-#: wp-admin/includes/ajax-actions.php:5137
+#: wp-admin/includes/ajax-actions.php:5141
 msgid "Eraser array at index %d does not include a friendly name."
 msgstr "%d indisindeki silen dizisi, kolay bir isim içermiyor."
 
 #. translators: %d: Eraser array index.
-#: wp-admin/includes/ajax-actions.php:5132
+#: wp-admin/includes/ajax-actions.php:5136
 msgid "Expected an array describing the eraser at index %d."
 msgstr "%d indisindeki silen kişiyi açıklayan bir dizi bekleniyordu."
 
-#: wp-admin/includes/ajax-actions.php:4935
-#: wp-admin/includes/ajax-actions.php:5123
+#: wp-admin/includes/ajax-actions.php:4939
+#: wp-admin/includes/ajax-actions.php:5127
 msgid "Page index cannot be less than one."
 msgstr "Sayfa indeksi birden küçük olamaz."
 
-#: wp-admin/includes/ajax-actions.php:5115
+#: wp-admin/includes/ajax-actions.php:5119
 msgid "Eraser index cannot be less than one."
 msgstr "Silen indisi birden küçük olamaz."
 
-#: wp-admin/includes/ajax-actions.php:5074
+#: wp-admin/includes/ajax-actions.php:5078
 msgid "Invalid email address in request."
 msgstr "İstekte geçersiz e-posta adresi."
 
@@ -6322,7 +6322,7 @@ msgstr "Kontrolleri gizle"
 msgid "Expand Sidebar"
 msgstr "Kenar çubuğunu genişlet"
 
-#: wp-admin/nav-menus.php:1113
+#: wp-admin/nav-menus.php:1116
 msgid "Display location"
 msgstr "Tema konumları"
 
@@ -6528,7 +6528,7 @@ msgstr "Üzgünüm, bu ağa kullanıcı eklemenize izin verilmiyor."
 msgid "Sorry, you are not allowed to edit this changeset."
 msgstr "Üzgünüm, bu değişiklik kümesini değiştirmenize izin verilmiyor."
 
-#: wp-admin/includes/ajax-actions.php:4282 wp-admin/update.php:207
+#: wp-admin/includes/ajax-actions.php:4286 wp-admin/update.php:207
 #: wp-admin/update.php:230
 msgid "Sorry, you are not allowed to update themes for this site."
 msgstr "Üzgünüm, bu sitedeki temaları güncellemenize izin verilmiyor."
@@ -6578,7 +6578,7 @@ msgstr "Üzgünüm, bu sitede kayıt dışı ayarları değiştirmenize izin ver
 msgid "Sorry, you are not allowed to manage options for this site."
 msgstr "Üzgünüm, bu sitenin seçeneklerini yönetmenize izin verilmiyor."
 
-#: wp-admin/nav-menus.php:709 wp-admin/widgets-form.php:393
+#: wp-admin/nav-menus.php:712 wp-admin/widgets-form.php:393
 msgid "Manage with Live Preview"
 msgstr "Canlı önizleme ile yönet"
 
@@ -6749,37 +6749,37 @@ msgstr "Üzgünüm, bu sitede bağlantıları düzenlemenize izin verilmiyor."
 msgid "Sorry, you are not allowed to manage privacy options on this site."
 msgstr "Üzgünüm, bu sitenin gizlilik ayarlarını yönetme izniniz yok."
 
-#: wp-admin/includes/ajax-actions.php:4707
+#: wp-admin/includes/ajax-actions.php:4711
 msgid "Plugin could not be deleted."
 msgstr "Eklenti silinemedi."
 
-#: wp-admin/includes/ajax-actions.php:4561 wp-admin/update.php:29
+#: wp-admin/includes/ajax-actions.php:4565 wp-admin/update.php:29
 #: wp-admin/update.php:57 wp-admin/update.php:80
 msgid "Sorry, you are not allowed to update plugins for this site."
 msgstr "Üzgünüm, bu sitede eklentileri güncellemenize izin verilmiyor."
 
-#: wp-admin/includes/ajax-actions.php:4437
-#: wp-admin/includes/ajax-actions.php:4546
-#: wp-admin/includes/ajax-actions.php:4654
+#: wp-admin/includes/ajax-actions.php:4441
+#: wp-admin/includes/ajax-actions.php:4550
+#: wp-admin/includes/ajax-actions.php:4658
 msgid "No plugin specified."
 msgstr "Hiç eklenti belirtilmedi."
 
-#: wp-admin/includes/ajax-actions.php:4413
+#: wp-admin/includes/ajax-actions.php:4417
 msgid "Theme could not be deleted."
 msgstr "Tema silinemedi."
 
-#: wp-admin/includes/ajax-actions.php:4375
+#: wp-admin/includes/ajax-actions.php:4379
 msgid "Sorry, you are not allowed to delete themes on this site."
 msgstr "Üzgünüm, bu siteden tema silmenize izin verilmiyor."
 
-#: wp-admin/includes/ajax-actions.php:4155 wp-admin/theme-install.php:16
+#: wp-admin/includes/ajax-actions.php:4159 wp-admin/theme-install.php:16
 #: wp-admin/update.php:258 wp-admin/update.php:300 wp-admin/update.php:334
 msgid "Sorry, you are not allowed to install themes on this site."
 msgstr "Üzgünüm, bu siteye tema yüklemenize izin verilmiyor."
 
-#: wp-admin/includes/ajax-actions.php:4142
-#: wp-admin/includes/ajax-actions.php:4268
-#: wp-admin/includes/ajax-actions.php:4363
+#: wp-admin/includes/ajax-actions.php:4146
+#: wp-admin/includes/ajax-actions.php:4272
+#: wp-admin/includes/ajax-actions.php:4367
 msgid "No theme specified."
 msgstr "Temea belirtilmedi."
 
@@ -7252,13 +7252,13 @@ msgid "Send User Notification"
 msgstr "Kullanıcı bildirimi gönder"
 
 #. translators: %s: Menu name.
-#: wp-admin/nav-menus.php:1133
+#: wp-admin/nav-menus.php:1136
 msgctxt "menu location"
 msgid "(Currently set to: %s)"
 msgstr "(Mevcut: %s)"
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:308
+#: wp-admin/about.php:339
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>Sürüm %s</strong> bir güvenlik açığını kapatıyor."
 
@@ -7270,15 +7270,15 @@ msgstr "https://en.gravatar.com/"
 msgid "Profile Picture"
 msgstr "Profil resmi"
 
-#: wp-admin/about.php:305
+#: wp-admin/about.php:47 wp-admin/about.php:336
 msgid "Maintenance and Security Releases"
 msgstr "Bakım ve güvenlik dağıtımları"
 
-#: wp-admin/about.php:302
+#: wp-admin/about.php:333
 msgid "Security Releases"
 msgstr "Güvenlik dağıtımları"
 
-#: wp-admin/about.php:299
+#: wp-admin/about.php:330
 msgid "Maintenance Releases"
 msgstr "Bakım dağıtımları"
 
@@ -7821,7 +7821,7 @@ msgstr "Yorumlar (%s)"
 msgid "Comments (%1$s) on &#8220;%2$s&#8221;"
 msgstr "&#8220;%2$s&#8221; için yorumlar (%1$s)"
 
-#: wp-admin/includes/ajax-actions.php:5497
+#: wp-admin/includes/ajax-actions.php:5501
 msgid "Sorry, you are not allowed to modify themes."
 msgstr "Üzgünüm, temaları düzenlemenize izin verilmiyor."
 
@@ -7897,7 +7897,7 @@ msgid_plural "%s approved comments"
 msgstr[0] "%s onaylanmış yorum"
 msgstr[1] "%s onaylanmış yorum"
 
-#: wp-admin/includes/ajax-actions.php:3966
+#: wp-admin/includes/ajax-actions.php:3970
 msgid "Image could not be processed."
 msgstr "Görsel işlenemedi."
 
@@ -7921,7 +7921,7 @@ msgid "Show more details"
 msgstr "Daha fazla detay göster"
 
 #. translators: %s: Number of menus.
-#: wp-admin/nav-menus.php:753
+#: wp-admin/nav-menus.php:756
 msgid "Your theme supports %s menu. Select which menu appears in each location."
 msgid_plural "Your theme supports %s menus. Select which menu appears in each location."
 msgstr[0] "Temanız %s menü destekliyor. Lütfen hangi konumda hangi menünün görüntüleneceğini seçin."
@@ -8131,7 +8131,7 @@ msgctxt "timezone date format"
 msgid "Y-m-d H:i:s"
 msgstr "Y-m-d H:i:s"
 
-#: wp-admin/nav-menus.php:658
+#: wp-admin/nav-menus.php:661
 msgid "To add a custom link, <strong>expand the Custom Links section, enter a URL and link text, and click Add to Menu</strong>"
 msgstr "Özel bir bağlantı eklemek için <strong>Özel bağlantılar bölümünü genişletin, bir adres ve metin girin, daha sonra menüye ekle tuşuna basın.</strong>"
 
@@ -8349,19 +8349,19 @@ msgid "Filter by comment type"
 msgstr "Yorum tipine göre filtrele"
 
 #. translators: %s: User's display name.
-#: wp-admin/includes/ajax-actions.php:3941
+#: wp-admin/includes/ajax-actions.php:3945
 msgid "%s has been logged out."
 msgstr "%s için çıkış yapıldı."
 
-#: wp-admin/includes/ajax-actions.php:3937
+#: wp-admin/includes/ajax-actions.php:3941
 msgid "You are now logged out everywhere else."
 msgstr "Artık geri kalan her yerde çıkış yapmış durumdasınız."
 
-#: wp-admin/includes/ajax-actions.php:3928
+#: wp-admin/includes/ajax-actions.php:3932
 msgid "Could not log out user sessions. Please try again."
 msgstr "Kullanıcı oturumlarından çıkış yapılamadı. Lütfen tekrar deneyin."
 
-#: wp-admin/includes/ajax-actions.php:3815
+#: wp-admin/includes/ajax-actions.php:3819
 msgid "This preview is unavailable in the editor."
 msgstr "Bu önizleme düzenleyici içinden yapılamaz."
 
@@ -8549,7 +8549,7 @@ msgid "Beta Testing"
 msgstr "Beta testi"
 
 #. translators: %s: URL that could not be embedded.
-#: wp-admin/includes/ajax-actions.php:3781
+#: wp-admin/includes/ajax-actions.php:3785
 msgid "%s failed to embed."
 msgstr "%s gömmesi başarısız."
 
@@ -9155,18 +9155,18 @@ msgstr "Listelenen boyutlar ortam kütüphanesine görsel eklerken kullanılacak
 msgid "Comment must be manually approved"
 msgstr "Yorum el ile onaylanmalı"
 
-#: wp-admin/nav-menus.php:656
+#: wp-admin/nav-menus.php:659
 msgid "<strong>Clicking the arrow to the right of any menu item</strong> in the editor will reveal a standard group of settings. Additional settings such as link target, CSS classes, link relationships, and link descriptions can be enabled and disabled via the Screen Options tab."
 msgstr "<strong>Menü elemanlarının sağında yer alan okalra tıklayarak</strong> belirli ayarların olduğu standart bir düzenleyiciyi açabilirsiniz. Ek ayarlar, örneğin bağlantı hedefi, CSS sınıfı, bğalantı ilişkileri ve bağlantı açıklamaları gibi, Ekran seçenekleri sekmesinden açılıp, kapatılabilir."
 
 #. translators: 1: URL to Widgets screen, 2 and 3: The names of the default
 #. themes.
-#: wp-admin/nav-menus.php:625
+#: wp-admin/nav-menus.php:628
 msgid "Menus can be displayed in locations defined by your theme, even used in sidebars by adding a &#8220;Navigation Menu&#8221; widget on the <a href=\"%1$s\">Widgets</a> screen. If your theme does not support the navigation menus feature (the default themes, %2$s and %3$s, do), you can learn about adding this support by following the documentation link to the side."
 msgstr "Menüler temanız tarafından belirlenen alanlarda gösterilebilir. <a href=\"%1$s\">Bileşenler</a> sayfasındaki &#8220;Dolaşım menüsü&#8221; bileşeni ile yan sütunda bile gösterilebilir. Eğer temanız dolaşım menüleri özelliğini desteklemiyorsa (Varsayılan temalar %2$s ve %3$s destekliyor) yan tarafta yer alan belge bağlantısı ile nasıl bu özelliği etkinleştirebileceğinizi öğrenebilirsiniz."
 
 #. translators: %s: URL to Widgets screen.
-#: wp-admin/nav-menus.php:616
+#: wp-admin/nav-menus.php:619
 msgid "Your theme does not natively support menus, but you can use them in sidebars by adding a &#8220;Navigation Menu&#8221; widget on the <a href=\"%s\">Widgets</a> screen."
 msgstr "Temanız menüleri desteklemiyor ama <a href=\"%s\">Bileşenler</a> ekranında yer alan &#8220;Dolaşım menüsü&#8221; bileşeni ile yan sütuna menü ekleyebilirsiniz."
 
@@ -9457,11 +9457,11 @@ msgstr "Artık var olmayan bir ögeyi çöpten geri almaya çalışıyorsunuz."
 msgid "The item you are trying to move to the Trash no longer exists."
 msgstr "Çöpe taşımaya çalıştığınız öge bulunmuyor."
 
-#: wp-admin/nav-menus.php:1031
+#: wp-admin/nav-menus.php:1034
 msgid "Drag the items into the order you prefer. Click the arrow on the right of the item to reveal additional configuration options."
 msgstr "Her ögeyi tercih ettiğiniz sıraya taşıyın. Ögenin sağında yer alan ok tuşuna basarak daha fazla seçenek ortaya çıkartabilirsiniz."
 
-#: wp-admin/nav-menus.php:644
+#: wp-admin/nav-menus.php:647
 msgid "If you have not yet created any menus, <strong>click the &#8217;create a new menu&#8217; link</strong> to get started"
 msgstr "Henüz menü oluşturmadıysanız <strong>&#8217;Yeni menü oluştur&#8217; tuşuna basarak</strong> başlayabilirsiniz"
 
@@ -9501,105 +9501,105 @@ msgctxt "Followed by post revision info"
 msgid "From:"
 msgstr "Kimden:"
 
-#: wp-admin/nav-menus.php:832
+#: wp-admin/nav-menus.php:835
 msgctxt "menu"
 msgid "Use new menu"
 msgstr "Yeni menü kullan"
 
-#: wp-admin/nav-menus.php:808
+#: wp-admin/nav-menus.php:811
 msgctxt "menu"
 msgid "Edit"
 msgstr "Düzenle"
 
-#: wp-admin/nav-menus.php:777
+#: wp-admin/nav-menus.php:780
 msgid "Select a Menu"
 msgstr "Bir menü seçin"
 
-#: wp-admin/nav-menus.php:768
+#: wp-admin/nav-menus.php:771
 msgid "Assigned Menu"
 msgstr "Atanan menü"
 
-#: wp-admin/nav-menus.php:767
+#: wp-admin/nav-menus.php:770
 msgid "Theme Location"
 msgstr "Tema konumu"
 
-#: wp-admin/nav-menus.php:736
+#: wp-admin/nav-menus.php:739
 msgid "Manage Locations"
 msgstr "Konumları düzenle"
 
-#: wp-admin/nav-menus.php:725
+#: wp-admin/nav-menus.php:728
 msgid "Edit Menus"
 msgstr "Menüleri düzenle"
 
-#: wp-admin/nav-menus.php:673
+#: wp-admin/nav-menus.php:676
 msgid "To add a new menu instead of assigning an existing one, <strong>click the &#8217;Use new menu&#8217; link</strong>. Your new menu will be automatically assigned to that theme location"
 msgstr "Var olanı kullanmak yerine yeni bir menü eklemek için <strong>&#8217;Yeni menü kullan&#8217; bağlantısına tıklayın.</strong> Yeni menünüz otomatik olarak ilgili menü konumuna atanacaktır"
 
-#: wp-admin/nav-menus.php:672
+#: wp-admin/nav-menus.php:675
 msgid "To edit a menu currently assigned to a theme location, <strong>click the adjacent &#8217;Edit&#8217; link</strong>"
 msgstr "Bir tema konumuna atanmış bir menüyü düzenlemek için <strong>İlgili &#8217;Düzenle&#8217; bağlantısını kullanın.</strong>"
 
-#: wp-admin/nav-menus.php:671
+#: wp-admin/nav-menus.php:674
 msgid "To assign menus to one or more theme locations, <strong>select a menu from each location&#8217;s dropdown</strong>. When you are finished, <strong>click Save Changes</strong>"
 msgstr "Bir ya da birden çok alana menü atamak için <strong>her alanın açılır listesinden bir menü seçin</strong>. İşiniz bittiğinde <strong>Değşiklikleri kaydet tuşuna basın</strong>"
 
-#: wp-admin/nav-menus.php:670
+#: wp-admin/nav-menus.php:673
 msgid "This screen is used for globally assigning menus to locations defined by your theme."
 msgstr "Bu ekran temanız tarafından tanımlanmış alanlara menü atamalarınız için kullanılır."
 
-#: wp-admin/nav-menus.php:665
+#: wp-admin/nav-menus.php:668
 msgid "Editing Menus"
 msgstr "Menüleri düzenleme"
 
-#: wp-admin/nav-menus.php:660
+#: wp-admin/nav-menus.php:663
 msgid "Delete a menu item by <strong>expanding it and clicking the Remove link</strong>"
 msgstr "Bir menü elemanını <strong>aşağı doğru genişletip Kaldır bağlantısını kullanarak silebilirsiniz.</strong>"
 
-#: wp-admin/nav-menus.php:659
+#: wp-admin/nav-menus.php:662
 msgid "To reorganize menu items, <strong>drag and drop items with your mouse or use your keyboard</strong>. Drag or move a menu item a little to the right to make it a submenu"
 msgstr "Menüleri yeniden organize etmek için <strong>farenizle sürükleyip bırakın ya da klavyenizi kullanın</strong>. Bir menü elemanını hafif sağa alarak alt menü haline getirebilirsiniz"
 
-#: wp-admin/nav-menus.php:657
+#: wp-admin/nav-menus.php:660
 msgid "Add one or several items at once by <strong>selecting the checkbox next to each item and clicking Add to Menu</strong>"
 msgstr "<strong>Sol tarafındaki kutucuğu işaretleyip, menüye ekle tuşuna basarak</strong> aynı anda birden çok ögeyi menüye ekleyebilirsiniz."
 
-#: wp-admin/nav-menus.php:655
+#: wp-admin/nav-menus.php:658
 msgid "Each navigation menu may contain a mix of links to pages, categories, custom URLs or other content types. Menu links are added by selecting items from the expanding boxes in the left-hand column below."
 msgstr "Her bir dolaşım menüsü sayfalara ya da yazılara bağlantılar, kategoriler, özel adresler ya da diğer dosya tiplerini içerebilir. Menü bağlantıları sol tarafta yer alan sütundaki kutular ile eklenebilir."
 
-#: wp-admin/nav-menus.php:650
+#: wp-admin/nav-menus.php:653
 msgid "Menu Management"
 msgstr "Menü yönetimi"
 
-#: wp-admin/nav-menus.php:645
+#: wp-admin/nav-menus.php:648
 msgid "You can assign theme locations to individual menus by <strong>selecting the desired settings</strong> at the bottom of the menu editor. To assign menus to all theme locations at once, <strong>visit the Manage Locations tab</strong> at the top of the screen."
 msgstr "İlgili menülere tema konumları atamak için menü düzenleyicisinin altında <strong>istenen ayarı seçmeniz</strong> yeterlidir. Menüleri tüm tema konumlarına bir kerede atamak için ekranın üstünde yer alan <strong>Konumları yönet sekmesine bakın</strong>"
 
-#: wp-admin/nav-menus.php:643
+#: wp-admin/nav-menus.php:646
 msgid "To edit an existing menu, <strong>choose a menu from the dropdown and click Select</strong>"
 msgstr "Var olan bir menüyü düzenlemek için <strong>aşağı açılır listeden bir menü seçin ve seç tuşuna basın</strong>"
 
-#: wp-admin/nav-menus.php:642
+#: wp-admin/nav-menus.php:645
 msgid "The menu management box at the top of the screen is used to control which menu is opened in the editor below."
 msgstr "Ekranın üst kısmında yer alan menü yönetim kutusu aşağıdaki düzenleme alanında hangi menünün açılacağını belirler."
 
-#: wp-admin/nav-menus.php:632
+#: wp-admin/nav-menus.php:635
 msgid "Add, organize, and modify individual menu items"
 msgstr "Ekleme, organize etme ve menü elemanlarını değiştirme"
 
-#: wp-admin/nav-menus.php:631
+#: wp-admin/nav-menus.php:634
 msgid "Create, edit, and delete menus"
 msgstr "Menüleri oluşturma, düzenleme ve silme"
 
-#: wp-admin/nav-menus.php:630 wp-admin/themes.php:133
+#: wp-admin/nav-menus.php:633 wp-admin/themes.php:133
 msgid "From this screen you can:"
 msgstr "Bu ekranda yapabilecekleriniz:"
 
-#: wp-admin/nav-menus.php:622
+#: wp-admin/nav-menus.php:625
 msgid "This screen is used for managing your navigation menus."
 msgstr "Bu ekran dolaşım menülerinizi yönetmek için kullanılır."
 
-#: wp-admin/nav-menus.php:468
+#: wp-admin/nav-menus.php:471
 msgid "Menu locations updated."
 msgstr "Menü konumları güncellendi."
 
@@ -9649,11 +9649,11 @@ msgstr "Reddedildi: %s"
 msgid "Capabilities"
 msgstr "Yetenekler"
 
-#: wp-admin/nav-menus.php:1088 wp-admin/network/settings.php:501
+#: wp-admin/nav-menus.php:1091 wp-admin/network/settings.php:501
 msgid "Menu Settings"
 msgstr "Menü ayarları"
 
-#: wp-admin/nav-menus.php:988
+#: wp-admin/nav-menus.php:991
 msgid "Menu structure"
 msgstr "Menü yapısı"
 
@@ -9688,7 +9688,7 @@ msgstr "Bu yazıyı çöpe taşıyamazsınız. %s şu anda yazıyı düzenliyor.
 msgid "%s has taken over and is currently editing."
 msgstr "%s yazıyı üstüne almış ve şu an düzenliyor."
 
-#: wp-admin/nav-menus.php:893
+#: wp-admin/nav-menus.php:896
 msgid "Select a menu to edit:"
 msgstr "Düzenlemek için bir menü seçin:"
 
@@ -9705,19 +9705,19 @@ msgstr "İşte bu! Yüklemenin bu aşamasını başarıyla tamamladın. WordPres
 msgid "Client version"
 msgstr "İstemci sürümü"
 
-#: wp-admin/nav-menus.php:1104
+#: wp-admin/nav-menus.php:1107
 msgid "Auto add pages"
 msgstr "Sayfaları otomatik ekle"
 
-#: wp-admin/nav-menus.php:1058
+#: wp-admin/nav-menus.php:1061
 msgid "Give your menu a name, then click Create Menu."
 msgstr "Menünüze bir isim verin ve Menü oluştur tuşuna basın."
 
-#: wp-admin/nav-menus.php:1029
+#: wp-admin/nav-menus.php:1032
 msgid "Edit your default menu by adding or removing items. Drag the items into the order you prefer. Click Create Menu to save your changes."
 msgstr "Varsayılan menünüzü eleman ekleyip ya da çıkartıp düzenleyin. Her bir elemanı istediğiniz sıraya taşıyın. Menü oluştur tuşuna basarak değişiklikleri kaydedin."
 
-#: wp-admin/nav-menus.php:326
+#: wp-admin/nav-menus.php:329
 msgid "Selected menus have been successfully deleted."
 msgstr "Seçilen menüler başarıyla silindi."
 
@@ -10615,14 +10615,15 @@ msgstr "Siteye davet etmek için var olan bir kullanıcının e-posta adresini g
 msgid "Show Toolbar when viewing site"
 msgstr "Siteyi görüntülerken araç çubuğunu göster"
 
+#. translators: %s: HelpHub URL.
 #. translators: %s: Documentation URL.
-#: wp-admin/about.php:331
+#: wp-admin/about.php:64 wp-admin/about.php:362
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "Daha fazla bilgi için <a href=\"%s\">dağıtım notlarına</a> bakın."
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:325
+#: wp-admin/about.php:52 wp-admin/about.php:356
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>%1$s sürümü</strong> bazı güvenlik açıkları için çıkartıldı ve %2$s açığı kapattı."
@@ -10630,33 +10631,33 @@ msgstr[1] "<strong>%1$s sürümü</strong> bazı güvenlik açıkları için ç�
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:319
+#: wp-admin/about.php:350
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>%1$s sürümü</strong> bir güvenlik açığı için çıkartıldı ve %2$s hatayı düzeltti."
 msgstr[1] "<strong>%1$s sürümü</strong> bir güvenlik açığı için çıkartıldı ve %2$s hatayı düzeltti."
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs.
-#: wp-admin/about.php:313
+#: wp-admin/about.php:344
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>%1$s sürümü</strong> %2$s açığı kapatıyor."
 msgstr[1] "<strong>%1$s sürümü</strong> %2$s açığı kapatıyor."
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:310
+#: wp-admin/about.php:341
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>%s sürümü</strong> bazı güvenlik açıklarını giderdi."
 
-#: wp-admin/about.php:304
+#: wp-admin/about.php:335
 msgid "Maintenance and Security Release"
 msgstr "Bakım ve Güvenlik dağıtımı"
 
-#: wp-admin/about.php:301
+#: wp-admin/about.php:332
 msgid "Security Release"
 msgstr "Güvenlik dağıtımı"
 
-#: wp-admin/about.php:298
+#: wp-admin/about.php:329
 msgid "Maintenance Release"
 msgstr "Bakım dağıtımı"
 
@@ -10934,15 +10935,15 @@ msgid "Because this is a multisite installation, you may add accounts that alrea
 msgstr "Çoklu site kurulumu olduğu için ağda var olan diğer kullanıcıları kullanıcı ismi ya da e-posta ile ekleyebilir, rollerini atayabilirsiniz. Daha fazla seçenek için, parola belirlemek vb, ağ yöneticisi olmalı ve Ağ yönetimi > Tüm kullanıcılar bölümünden ulaştığınız kullanıcının bağlantılarını kullanın."
 
 #. translators: %s: Version number.
-#: wp-admin/about.php:51
+#: wp-admin/about.php:82
 msgid "Welcome to WordPress %s"
 msgstr "WordPress %s sürümüne hoşgeldiniz."
 
-#: wp-admin/about.php:287
+#: wp-admin/about.php:318
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Başlangıç ekranına git &rarr; Ana sayfa"
 
-#: wp-admin/about.php:284
+#: wp-admin/about.php:315
 msgid "Go to Dashboard &rarr; Updates"
 msgstr "Başlangıç &rarr; Güncellemeler ekranına git"
 
@@ -11081,8 +11082,8 @@ msgstr "Sol taraftaki dolaşım menüsü tüm WordPress yönetim ekranlarına ba
 #: wp-admin/includes/class-custom-image-header.php:100
 #: wp-admin/includes/class-wp-screen.php:856 wp-admin/includes/ms.php:1134
 #: wp-admin/index.php:44 wp-admin/link-manager.php:57 wp-admin/media-new.php:49
-#: wp-admin/media.php:86 wp-admin/my-sites.php:44 wp-admin/nav-menus.php:637
-#: wp-admin/nav-menus.php:678 wp-admin/options-discussion.php:24
+#: wp-admin/media.php:86 wp-admin/my-sites.php:44 wp-admin/nav-menus.php:640
+#: wp-admin/nav-menus.php:681 wp-admin/options-discussion.php:24
 #: wp-admin/options-general.php:53 wp-admin/options-media.php:34
 #: wp-admin/options-permalink.php:23 wp-admin/options-privacy.php:38
 #: wp-admin/options-reading.php:25 wp-admin/options-writing.php:23
@@ -11188,8 +11189,8 @@ msgstr "Süper yönetici"
 #. translators: %s: Theme version number.
 #. translators: %s: WordPress version.
 #. translators: %s: Theme version.
-#: wp-admin/includes/ajax-actions.php:4571
-#: wp-admin/includes/ajax-actions.php:4614
+#: wp-admin/includes/ajax-actions.php:4575
+#: wp-admin/includes/ajax-actions.php:4618
 #: wp-admin/includes/class-wp-debug-data.php:951
 #: wp-admin/includes/class-wp-debug-data.php:998
 #: wp-admin/includes/class-wp-debug-data.php:1320
@@ -11241,7 +11242,7 @@ msgstr "Ayarlar kaydedildi."
 #: wp-admin/includes/class-custom-image-header.php:136
 #: wp-admin/includes/ms.php:1156 wp-admin/index.php:131
 #: wp-admin/link-manager.php:78 wp-admin/media-new.php:60 wp-admin/media.php:96
-#: wp-admin/my-sites.php:51 wp-admin/nav-menus.php:685
+#: wp-admin/my-sites.php:51 wp-admin/nav-menus.php:688
 #: wp-admin/options-discussion.php:31 wp-admin/options-general.php:59
 #: wp-admin/options-media.php:40 wp-admin/options-permalink.php:59
 #: wp-admin/options-privacy.php:46 wp-admin/options-reading.php:52
@@ -11501,7 +11502,7 @@ msgstr "%1$s / %2$s"
 msgid "%s Page Template"
 msgstr "%s sayfa şablonu"
 
-#: wp-admin/includes/ajax-actions.php:4676 wp-admin/plugins.php:624
+#: wp-admin/includes/ajax-actions.php:4680 wp-admin/plugins.php:624
 msgid "You cannot delete a plugin while it is active on the main site."
 msgstr "Ana sitede etkin durumdayken bir eklentiyi silemezsiniz."
 
@@ -11643,7 +11644,7 @@ msgstr "Eklentiyi güncelle"
 msgid "Theme updated successfully."
 msgstr "Tema başarıyla güncellendi."
 
-#: wp-admin/includes/ajax-actions.php:4342
+#: wp-admin/includes/ajax-actions.php:4346
 #: wp-admin/includes/class-theme-upgrader.php:63
 #: wp-admin/includes/class-theme-upgrader.php:100
 msgid "Theme update failed."
@@ -11654,7 +11655,7 @@ msgstr "Tema güncellemesi başarısız."
 msgid "Plugin updated successfully."
 msgstr "Eklenti başarıyla güncellendi."
 
-#: wp-admin/includes/ajax-actions.php:4633
+#: wp-admin/includes/ajax-actions.php:4637
 #: wp-admin/includes/class-plugin-upgrader.php:64
 #: wp-admin/includes/class-plugin-upgrader.php:91
 msgid "Plugin update failed."
@@ -12272,7 +12273,7 @@ msgstr "Bu ekranın görüntüsünü birkaç değişik yolla özelleştirebilirs
 msgid "Search Installed Plugins"
 msgstr "Yüklü eklentilerde ara"
 
-#: wp-admin/nav-menus.php:749
+#: wp-admin/nav-menus.php:752
 msgid "Your theme supports one menu. Select which menu you would like to use."
 msgstr "Temanız bir menü destekliyor. Kullanmak istediğiniz menüyü seçin."
 
@@ -12415,7 +12416,7 @@ msgstr "Alt alan adı ayarlarını kullanmak istiyorsanız DNS kayıtlarınıza 
 msgid "The installer attempted to contact a random hostname (%s) on your domain."
 msgstr "Yükleyici rastgele bir sunucu adını (%s) kullanmayı denedi."
 
-#: wp-admin/nav-menus.php:281
+#: wp-admin/nav-menus.php:284
 msgid "The menu item has been successfully deleted."
 msgstr "Menü elemanı başarıyla silindi."
 
@@ -12590,7 +12591,7 @@ msgstr "Kullanıcı adları değiştirilemez."
 msgid "items"
 msgstr "ogeler"
 
-#: wp-admin/nav-menus.php:304
+#: wp-admin/nav-menus.php:307
 msgid "The menu has been successfully deleted."
 msgstr "Menü başarıyla silindi."
 
@@ -12613,7 +12614,7 @@ msgstr "CSS sınıfları (seçime bağlı)"
 msgid "Link Target"
 msgstr "Bağlantı hedefi"
 
-#: wp-admin/nav-menus.php:1014 wp-admin/nav-menus.php:1179
+#: wp-admin/nav-menus.php:1017 wp-admin/nav-menus.php:1182
 msgid "Save Menu"
 msgstr "Menüyü kaydet"
 
@@ -12705,7 +12706,7 @@ msgstr "WordPress güncellemeleri"
 msgid "Edit menu item"
 msgstr "Menü elemanını düzenle"
 
-#: wp-admin/about.php:287 wp-admin/includes/network.php:148
+#: wp-admin/about.php:318 wp-admin/includes/network.php:148
 msgid "Go to Dashboard"
 msgstr "Başlangıca git"
 
@@ -12759,7 +12760,7 @@ msgstr "Bu adres yönetim ihtiyaçları için kullanılıyor. Eğer değiştirir
 msgid "View All"
 msgstr "Tümünü göster"
 
-#: wp-admin/nav-menus.php:400 wp-admin/nav-menus.php:422
+#: wp-admin/nav-menus.php:403 wp-admin/nav-menus.php:425
 msgid "Please enter a valid menu name."
 msgstr "Lütfen geçerli bir menü ismi giriniz."
 
@@ -13276,7 +13277,7 @@ msgstr "Eklenti dosyaları"
 msgid "Select plugin to edit:"
 msgstr "Düzenlemek istediğiniz eklentiyi seçin:"
 
-#: wp-admin/includes/ajax-actions.php:4844 wp-admin/plugin-editor.php:187
+#: wp-admin/includes/ajax-actions.php:4848 wp-admin/plugin-editor.php:187
 #: wp-admin/theme-editor.php:194
 msgid "File edited successfully."
 msgstr "Dosya başarılı bir şekilde düzenlendi."
@@ -14114,6 +14115,11 @@ msgstr "Bu yazıyı sabit yap"
 #: wp-admin/includes/class-wp-posts-list-table.php:1963
 msgid "Not Sticky"
 msgstr "Sabit değil"
+
+#: wp-admin/includes/class-wp-posts-list-table.php:1959
+#: wp-admin/includes/class-wp-posts-list-table.php:1962
+msgid "Sticky"
+msgstr "Sabit"
 
 #: wp-admin/includes/class-wp-posts-list-table.php:1921
 msgid "Allow Pings"
@@ -15497,7 +15503,7 @@ msgstr "Yorumu güncelle"
 
 #. translators: 1: Post edited date, 2: Post edited time.
 #. translators: 1: Date of last edit, 2: Time of last edit.
-#: wp-admin/edit-form-advanced.php:630 wp-admin/includes/ajax-actions.php:2864
+#: wp-admin/edit-form-advanced.php:630 wp-admin/includes/ajax-actions.php:2868
 msgid "Last edited on %1$s at %2$s"
 msgstr "En son %1$s tarihinde, saat %2$s iken düzenlendi"
 
@@ -15505,7 +15511,7 @@ msgstr "En son %1$s tarihinde, saat %2$s iken düzenlendi"
 #. Post edited time.
 #. translators: 1: User's display name, 2: Date of last edit, 3: Time of last
 #. edit.
-#: wp-admin/edit-form-advanced.php:627 wp-admin/includes/ajax-actions.php:2861
+#: wp-admin/edit-form-advanced.php:627 wp-admin/includes/ajax-actions.php:2865
 msgid "Last edited by %1$s on %2$s at %3$s"
 msgstr "En son %1$s tarafından %2$s tarihinde saat %3$s iken düzenlendi"
 
@@ -15691,7 +15697,7 @@ msgid "Custom Header"
 msgstr "Özel Başlık"
 
 #: wp-admin/includes/dashboard.php:251 wp-admin/includes/template.php:2592
-#: wp-admin/nav-menus.php:841 wp-admin/options.php:413
+#: wp-admin/nav-menus.php:844 wp-admin/options.php:413
 msgid "Save Changes"
 msgstr "Değişiklikleri kaydet"
 

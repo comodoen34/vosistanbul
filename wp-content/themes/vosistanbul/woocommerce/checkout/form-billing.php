@@ -100,6 +100,7 @@ defined('ABSPATH') || exit;
 					<script type="text/javascript">
 						jQuery(document).ready(function() {
 							$('input[name=billing_postcode]').val('<?php echo $all_d_s[$key]['posta_kodu']; ?>');
+							console.log(<?php echo $all_d_s[$key]['posta_kodu']; ?>);
 						});
 					</script>
 
