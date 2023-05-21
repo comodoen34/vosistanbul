@@ -38,7 +38,6 @@ defined('ABSPATH') || exit;
 
 	foreach ($main_cart_items as $key => $field) {
 		$selected_address = $main_cart_items[$key]['teslimat_adres_secimi'];
-		echo $selected_address;
 		break;
 	}
 	?>
@@ -84,29 +83,26 @@ defined('ABSPATH') || exit;
 		<?php endif; ?>
 
 		<?php
-		$first_address = strtolower($selected_address);
 		$found_zip_code;
 		wp_reset_query();
 		query_posts('page_id=187');
 		the_post();
 
 		$all_d_s = get_field('gonderim_bolgeleri');
-		foreach ($all_d_s as $key => $field) {
-			$second_address = strtolower($all_d_s[$key]['ilce_adi']);
-			if (str_contains($first_address, $second_address)) {
-				if ($all_d_s[$key]['acik_kapali'] == 1) {
-					$found_zip_code = $all_d_s[$key]['posta_kodu'];
+
+		foreach ($all_d_s as $posta_field) {
+			if ($posta_field['acik_kapali'] == 1 && $posta_field['posta_kodu'] == $selected_address) {
+				$found_zip_code = $posta_field['posta_kodu'];
 		?>
-					<script type="text/javascript">
-						jQuery(document).ready(function() {
-							$('input[name=billing_postcode]').val('<?php echo $all_d_s[$key]['posta_kodu']; ?>');
-							console.log(<?php echo $all_d_s[$key]['posta_kodu']; ?>);
-						});
-					</script>
+				<script type="text/javascript">
+					jQuery(document).ready(function() {
+						$('input[name=billing_postcode]').val('<?php echo $found_zip_code; ?>');
+						console.log(<?php echo $found_zip_code; ?>);
+					});
+				</script>
 
 		<?php
-					break;
-				}
+				break;
 			}
 		}
 		?>

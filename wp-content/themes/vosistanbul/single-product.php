@@ -102,10 +102,29 @@ the_post(); ?>
 							</div>
                             */ ?>
 
-                        <div class="product-size mb-30">
+                        <!-- <div class="product-size mb-30">
                             <p style="margin-top:16px;">ADRES:</p>
-                            <input type="text" id="checkoutCustomForm" name="_teslimat_adres_secimi" placeholder="Gönderim Adresi Seçiniz">
+                            <input type="text" id="checkoutCustomForm" name="_teslimat_adres_secimi___" placeholder="Gönderim Adresi Seçiniz">
+                        </div> -->
+                        <?php wp_reset_query();
+                        query_posts('page_id=187');
+                        the_post(); ?>
+                        <div class="product-size mb-30">
+                            <p style="margin-top:8px;">ADRES:</p>
+                            <?php $kargo_gonderim_bolgeleri = get_field('gonderim_bolgeleri'); ?>
+                            <select id="teslimat_adres_secimi_id" name="_teslimat_adres_secimi" class="nice-select" name="sortby">
+                                <option disabled selected value="0">Lütfen İlçe Seçiniz</option>
+                                <?php
+                                foreach ($kargo_gonderim_bolgeleri as $kargo_gonderim_val) {
+                                    if ($kargo_gonderim_val['acik_kapali'] == 1) {
+                                        echo $kargo_gonderim_val['posta_kodu'];
+                                ?>
+                                        <option value="<?php echo $kargo_gonderim_val['posta_kodu']; ?>"><?php echo $kargo_gonderim_val['ilce_adi']; ?></option>
+                                <?php }
+                                } ?>
+                            </select>
                         </div>
+                        <?php wp_reset_query(); ?>
                         <div class="color-pick mb-30 d-flex flex-column">
                             <p>TESLİMAT TARİHİ : </p>
                             <div class="d-flex flex-wrap" style="row-gap: .25rem;">
@@ -131,7 +150,7 @@ the_post(); ?>
 
                         </div>
 
-                        <p class="errorTeslimTarihi" style="display:none;">Lutfen bir secim yapiniz</p>
+                        <p class="errorTeslimTarihi" style="display:none;">Lütfen Adres veya Teslimat Tarihi Seçimi Yapınız</p>
                         <?php $product_id = $product->id;
                         ?>
                         <div class="single-product-quantity">
@@ -267,8 +286,9 @@ the_post(); ?>
 
                             $('#addToCart').click(function(e) {
                                 const tempTeslim = $('input[name="_teslimat_tarihi_secim"]:checked').val();
-                                const tempAdress = $('input[name="_teslimat_adres_secimi"]').val();
-                                if (tempTeslim && tempAdress) {
+                                const tempAdress = $("select#teslimat_adres_secimi_id option").filter(":selected").val();
+                                console.log(tempTeslim);
+                                if (tempTeslim && tempAdress != 0) {
                                     return true;
                                 } else {
                                     $(".errorTeslimTarihi").css("display", "block");
